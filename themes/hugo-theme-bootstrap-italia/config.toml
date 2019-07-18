@@ -1,0 +1,74 @@
+languageCode = "it-it"
+title = "Security Awareness"
+
+[Params]
+  ente = "Ente appartenenza/Owner"
+  enteLink = ""
+  siteTitle = "Corso di base di sicurezza"
+  siteDescription = " Corso di base di sicurezza digitale"
+
+  footerColumn1Title = "Security Awareness"
+  footerColumn1Text = "Un breve corso per la sicurezza digitale"
+  footerColumn1Links = [
+    { label = "Episodio 2", url = "#" },
+    { label = "Episodio 3", url = "#" }
+  ]
+
+  footerColumn2Title = "Security Awareness"
+  footerColumn2Text = "Security Awareness - Corso"
+
+  footerBottomLinks = [
+    { label = "Note legali", url = "#" },
+    { label = "Privacy policy", url = "#" }
+  ]
+
+  [Params.socials]
+    [Params.socials.facebook]
+    name = "Facebook"
+    URL = ""
+    icon = "it-facebook"
+
+    [Params.socials.github]
+    name = "GitHub"
+    URL = ""
+    icon = "it-github"
+
+    [Params.socials.twitter]
+    name = "Twitter"
+    URL = ""
+    icon = "it-twitter"
+
+ [menu]
+    # slim-header
+     [[menu.main]]
+     name = "Forum"
+     URL = ""
+     weight = 2
+
+     [[menu.main]]
+     name = "Docs"
+     URL = ""
+     weight = 3
+
+    # header-nav
+    [[menu.navbar]]
+    name = "Link 1"
+    URL = ""
+    weight = 2
+
+    [[menu.navbar]]
+    name = "Link 2"
+    URL = "link2"
+    weight = 3
+
+    [[menu.navbar]]
+    name = "Link 4"
+    URL = ""
+    parent = "Dropdown"
+    weight = 4
+
+    [[menu.navbar]]
+    name = "Link 5"
+    URL = ""
+    parent = "Dropdown"
+    weight = 5

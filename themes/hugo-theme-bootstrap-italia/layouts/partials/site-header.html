@@ -1,0 +1,147 @@
+<div class="it-header-wrapper">
+  <div class="it-header-slim-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="d-none d-lg-block navbar-brand" href="{{ .Site.Params.enteLink }}">{{ .Site.Params.ente }}</a>
+            <div class="nav-mobile">
+              <nav>
+                <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale" role="button" aria-expanded="false" aria-controls="menu-principale">
+                  <span>{{ .Site.Params.ente }}</span>
+                  <svg class="icon">
+                    <use xlink:href="/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menu-principale">
+                  <ul class="link-list">
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                    {{ end}}
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="header-slim-right-zone">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <span>ITA</span>
+                  <svg class="icon d-none d-lg-block">
+                    <use xlink:href="/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          <li><a class="list-item" href="#"><span>ITA</span></a></li>
+                          <li><a class="list-item" href="#"><span>ENG</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="it-access-top-wrapper">
+                <button class="btn btn-primary btn-sm" href="#" type="button">Accedi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="/svg/sprite.svg#it-code-circle"></use>
+                  </svg>
+                  <div class="it-brand-text">
+                    <h2 class="no_toc"> {{ .Site.Title }}</h2>
+                    <h3 class="no_toc d-none d-md-block">{{ .Site.Params.siteDescription }}</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="it-right-zone">
+                <div class="it-socials d-none d-md-flex">
+                  <span>Seguici su</span>
+                  <ul>
+                    {{ range .Site.Params.socials }}
+                        <li>
+                          <a href="{{ .URL }}" aria-label="{{ .Name }}" target="_blank">
+                            <svg class="icon">
+                              <use xlink:href="/svg/sprite.svg#{{ .icon }}"></use>
+                            </svg>
+                          </a>
+                        </li>
+                    {{ end }}
+                  </ul>
+                </div>
+                <div class="it-search-wrapper">
+                  <span class="d-none d-md-block">Cerca</span>
+                  <a class="search-link rounded-icon" href="#" aria-label="Cerca">
+                    <svg class="icon">
+                      <use xlink:href="/svg/sprite.svg#it-search"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="it-header-navbar-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <nav class="navbar navbar-expand-lg has-megamenu">
+              <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+                <svg class="icon">
+                  <use xlink:href="/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="nav10">
+                <div class="overlay"></div>
+                <div class="close-div sr-only">
+                  <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+                </div>
+                <div class="menu-wrapper">
+                  <ul class="navbar-nav">
+                     {{ range .Site.Menus.navbar }}
+                     {{ if .HasChildren }}
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            {{ .Name }}
+                          </a>
+                          <div class="dropdown-menu" >
+                            {{ range .Children }}
+                            <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                            {{ end }}
+                          </div>
+                        </li>
+                        {{ else }}
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                        </li>
+                     {{ end }}
+                     {{ end }}
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

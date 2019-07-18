@@ -1,0 +1,11 @@
+.it-header-slim-wrapper .it-header-slim-wrapper-content span.nav-mobile ul.link-list {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.it-header-slim-wrapper .link-list-wrapper ul li a {
+    padding-left: 0;
+}
+.icon {
+    transform: none !important;
+}

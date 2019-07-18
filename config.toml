@@ -1,0 +1,6 @@
+baseURL = "http://example.org/"
+
+title = "Corso di sicurezza digitale"
+theme = "hugo-theme-bootstrap-italia"
+languageCode = "it-it"
+

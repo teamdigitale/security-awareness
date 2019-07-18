@@ -1,0 +1,13 @@
+# theme.toml template for a Hugo theme
+
+name = "Bootstrap Italia Hugo Theme"
+license = "MIT"
+licenselink = "https://github.com/francescozaia/hugo-theme-bootstrap-italia/blob/master/LICENSE.md"
+description = "A Base theme for building full featured Hugo sites"
+homepage = "https://github.com/francescozaia/hugo-theme-bootstrap-italia"
+tags = ["website", "starter", "responsive"]
+min_version = 0.30.2
+
+[author]
+  name = "Francesco Zaia"
+  homepage = "https://github.com/francescozaia"
