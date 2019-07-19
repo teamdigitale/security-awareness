@@ -1,4 +1,4 @@
-#Security awareness
+# Security awareness
 
 A simple compatct web site based on [Hugo CMS](https://gohugo.io)
 
@@ -7,11 +7,11 @@ https://github.com/francescozaia/hugo-theme-bootstrap-italia
 
 To install hugo follow the following steps (https://gohugo.io/getting-started/quick-start/)
 
-#####Mac
+##### Mac
 ```
 brew install hugo
 ```
-#####Linux
+##### Linux
 ```
 apt-get install hugo
 yum install hugo
