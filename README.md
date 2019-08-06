@@ -14,7 +14,7 @@ brew install hugo
 ##### Linux
 ```
 apt-get install hugo
-yum install hugo
+sudo dnf install hugo
 ```
 
 
