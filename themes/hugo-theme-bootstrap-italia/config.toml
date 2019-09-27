@@ -1,11 +1,10 @@
-languageCode = "it-it"
-title = "Security Awareness"
+
 
 [Params]
   ente = "Team per la Trasformazione Digitale"
   enteLink = "http://teamdigitale.governo.it"
   siteTitle = "Corso di base di sicurezza"
-  siteDescription = " Corso di base di sicurezza digitale"
+  siteDescription = "Corso di base di sicurezza digitale"
 
   footerColumn1Title = "Security Awareness"
   footerColumn1Text = "Un breve corso per la sicurezza digitale"
@@ -50,59 +49,3 @@ title = "Security Awareness"
     name = "YouTube"
     URL = "https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/"
     icon = "it-youtube"
-
- [menu]
-    # slim-header
-    [[menu.main]]
-    name = "Forum"
-    URL = "https://forum.italia.it"
-    weight = 2
-
-    [[menu.main]]
-    name = "Docs"
-    URL = "https://docs.italia.it"
-    weight = 3
-
-    [[menu.main]]
-    name = "Developers"
-    URL = "https://developers.italia.it"
-    weight = 4
-
-    [[menu.main]]
-    name = "Designers"
-    URL = "https://designers.italia.it"
-    weight = 5
-
-    # header-nav
-    [[menu.navbar]]
-    name = "Episodi"
-    weight = 2
-
-    [[menu.navbar]]
-    name = "Episodio 1 - Errore Umano"
-    URL = "/ep1"
-    parent = "Episodi"
-    weight = 1
-
-    [[menu.navbar]]
-    name = "Episodio 2 - Password Leak"
-    URL = ""
-    parent = "Episodi"
-    weight = 2
-
-    [[menu.navbar]]
-    name = "Episodio 3 - Spearphishing"
-    URL = ""
-    parent = "Episodi"
-    weight = 3
-
-    [[menu.navbar]]
-    name = "Episodio 4 - Ransomware"
-    URL = ""
-    parent = "Episodi"
-    weight = 4
-
-    [[menu.navbar]]
-    name = "Quiz"
-    URL = "/quiz"
-    weight = 2

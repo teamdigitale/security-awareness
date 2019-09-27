@@ -35,8 +35,9 @@
                     <div class="col-12">
                       <div class="link-list-wrapper">
                         <ul class="link-list">
-                          <li><a class="list-item" href="#"><span>ITA</span></a></li>
-                          <li><a class="list-item" href="#"><span>ENG</span></a></li>
+                          {{ range $.Site.Home.AllTranslations }}
+                          <li><a class="list-item" href="{{ .Permalink }}"><span>{{ .Language.LanguageName }}</span></a></li>
+                          {{ end }}
                         </ul>
                       </div>
                     </div>

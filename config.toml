@@ -1,7 +1,126 @@
 baseURL = "http://localhost:1313/"
-
-title = "Corso di sicurezza digitale"
 theme = "hugo-theme-bootstrap-italia"
-languageCode = "it-it"
+
+DefaultContentLanguage = "it"
 
 publishDir = "./docs"
+
+[languages]
+  [languages.it]
+    title = "Corso di sicurezza digitale"
+    languageName = "ITA"
+    contentDir = "content/it"
+    weight = 1
+
+  [languages.en]
+    title = "Course on the digital security"
+    languageName = "ENG"
+    contentDir = "content/en"
+    weight = 2
+
+  [menu]
+    [[languages.it.menu.main]]
+      name = "Forum"
+      URL = "https://forum.italia.it"
+      weight = 2
+
+    [[languages.en.menu.main]]
+      name = "Forum"
+      URL = "https://forum.italia.it"
+      weight = 2
+
+    [[languages.it.menu.main]]
+      name = "Docs"
+      URL = "https://docs.italia.it"
+      weight = 3
+
+    [[languages.en.menu.main]]
+      name = "Docs"
+      URL = "https://docs.italia.it"
+      weight = 3
+
+    [[languages.it.menu.main]]
+      name = "Developers"
+      URL = "https://developers.italia.it"
+      weight = 4
+
+    [[languages.en.menu.main]]
+      name = "Developers"
+      URL = "https://developers.italia.it"
+      weight = 4
+
+    [[languages.it.menu.main]]
+      name = "Designers"
+      URL = "https://designers.italia.it"
+      weight = 5
+    
+    [[languages.en.menu.main]]
+      name = "Designers"
+      URL = "https://designers.italia.it"
+      weight = 5
+
+    [[languages.it.menu.navbar]]
+      name = "Episodi"
+      weight = 2
+
+    [[languages.en.menu.navbar]]
+      name = "Episodes"
+      weight = 2
+
+    [[languages.it.menu.navbar]]
+      name = "Episodio 1 - Errore Umano"
+      URL = "/it/ep1"
+      parent = "Episodi"
+      weight = 1
+
+    [[languages.en.menu.navbar]]
+      name = "Episode 1 - Human Error"
+      URL = "/en/ep1"
+      parent = "Episodes"
+      weight = 1
+
+    [[languages.it.menu.navbar]]
+      name = "Episodio 2 - Password Leak"
+      URL = ""
+      parent = "Episodi"
+      weight = 2
+
+    [[languages.en.menu.navbar]]
+      name = "Episode 2 - Password Leak"
+      URL = ""
+      parent = "Episodes"
+      weight = 2
+
+    [[languages.it.menu.navbar]]
+      name = "Episodio 3 - Spearphishing"
+      URL = ""
+      parent = "Episodi"
+      weight = 3
+
+    [[languages.en.menu.navbar]]
+      name = "Episode 3 - Spearphishing"
+      URL = ""
+      parent = "Episodes"
+      weight = 3
+
+    [[languages.it.menu.navbar]]
+      name = "Episodio 4 - Ransomware"
+      URL = ""
+      parent = "Episodi"
+      weight = 4
+
+    [[languages.en.menu.navbar]]
+      name = "Episode 4 - Ransomware"
+      URL = ""
+      parent = "Episodes"
+      weight = 4
+
+    [[languages.it.menu.navbar]]
+      name = "Quiz"
+      URL = "/quiz"
+      weight = 2
+
+    [[languages.en.menu.navbar]]
+      name = "Quiz"
+      URL = "/quiz"
+      weight = 2

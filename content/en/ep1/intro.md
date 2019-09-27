@@ -1,0 +1,5 @@
+## Introduction
+
+In questa storia introduciamo il concetto di **sicurezza digitale** legato ai corretti comportamenti delle persone in ambiente lavorativo e privato. Secondo FONTE, **circa l’80 per cento degli attacchi informatici avvengono "tra il computer e la sedia"**, ovvero non dipendono da debolezze tecniche dei sistemi informatici ma dall’errore umano. Questo significa che i dipendenti sono un anello importante per la protezione dei dati aziendali, la sicurezza digitale è quindi responsabilità di ognuno di noi. Obiettivo del corso è fornire **strumenti base per aumentare la sicurezza**, anche attraverso dei comportamenti individuali prudenti. 
+
+In questa storia, ad esempio, impariamo cosa può succedere (e succede davvero, nel mondo reale!) quando non si prendono le dovute precauzioni **nella gestione dei documenti di lavoro**, che possono contenere delle informazioni preziose... 
