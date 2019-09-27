@@ -1,0 +1,56 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-8 my-5">
+      {{ ( .Page.Resources.GetMatch "intro-it.md" ).Content }}
+
+      <h2 id="i-personaggi">{{ ( .Page.Resources.GetMatch "characters-it.md" ).Params.name }}</h2>
+
+      <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
+          <div class="it-carousel-all owl-carousel it-img-card">
+            {{ range ( .Page.Resources.GetMatch "characters-it.md" ).Params.characters }}
+              <div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-img no-after">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="{{ .image }}" title="{{ .name }}" alt="{{ .name }}"></div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">{{ .name }}</h5>
+                      <p class="card-text">{{ .description }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+      </div>
+
+      <h2 id="i-personaggi">{{ ( .Page.Resources.GetMatch "story-it.md" ).Params.name }}</h2>
+
+      <div class="it-grid-list-wrapper">
+        <div class="grid-row">
+          {{ range ( .Page.Resources.GetMatch "story-it.md" ).Params.vignettes }}
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="{{ . }}" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+      
+
+      {{ ( .Page.Resources.GetMatch "glossary-it.md" ).Content }}
+
+      {{ ( .Page.Resources.GetMatch "link-it.md" ).Content }}
+    </div>
+  </div>
+</div>
+{{ end }}
