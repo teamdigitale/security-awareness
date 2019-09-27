@@ -55,7 +55,7 @@ title = "Security Awareness"
     # slim-header
     [[menu.main]]
     name = "Forum"
-    URL = "http://forum.italia.it"
+    URL = "https://forum.italia.it"
     weight = 2
 
     [[menu.main]]
@@ -65,7 +65,7 @@ title = "Security Awareness"
 
     [[menu.main]]
     name = "Developers"
-    URL = "http://developers.italia.it"
+    URL = "https://developers.italia.it"
     weight = 4
 
     [[menu.main]]
