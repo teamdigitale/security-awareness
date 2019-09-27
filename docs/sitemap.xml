@@ -7,6 +7,10 @@
   </url>
   
   <url>
+    <loc>http://example.org/ep1.it/</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/categories/</loc>
     <priority>0</priority>
   </url>
