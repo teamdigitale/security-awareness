@@ -1,8 +1,7 @@
-baseURL = "http://example.org/"
+baseURL = "http://localhost:1313/"
 
 title = "Corso di sicurezza digitale"
 theme = "hugo-theme-bootstrap-italia"
 languageCode = "it-it"
 
 publishDir = "./docs"
-

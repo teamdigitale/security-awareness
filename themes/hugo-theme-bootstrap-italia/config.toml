@@ -2,16 +2,19 @@ languageCode = "it-it"
 title = "Security Awareness"
 
 [Params]
-  ente = "Ente appartenenza/Owner"
-  enteLink = ""
+  ente = "Team per la Trasformazione Digitale"
+  enteLink = "http://teamdigitale.governo.it"
   siteTitle = "Corso di base di sicurezza"
   siteDescription = " Corso di base di sicurezza digitale"
 
   footerColumn1Title = "Security Awareness"
   footerColumn1Text = "Un breve corso per la sicurezza digitale"
   footerColumn1Links = [
-    { label = "Episodio 2", url = "#" },
-    { label = "Episodio 3", url = "#" }
+    { label = "Episodio 1 - Erorre Umano", url = "/ep1" },
+    { label = "Episodio 2 - Password Leak", url = "#" },
+    { label = "Episodio 3 - Spearphishing", url = "#" },
+    { label = "Episodio 4 - Ransomware", url = "#" },
+    { label = "Quiz", url = "/quiz" }
   ]
 
   footerColumn2Title = "Security Awareness"
@@ -23,52 +26,83 @@ title = "Security Awareness"
   ]
 
   [Params.socials]
-    [Params.socials.facebook]
-    name = "Facebook"
-    URL = ""
-    icon = "it-facebook"
+    [Params.socials.medium]
+    name = "Medium"
+    URL = "https://medium.com/team-per-la-trasformazione-digitale"
+    icon = "it-medium"
 
     [Params.socials.github]
     name = "GitHub"
-    URL = ""
+    URL = "https://github.com/teamdigitale/security-awareness"
     icon = "it-github"
 
     [Params.socials.twitter]
     name = "Twitter"
-    URL = ""
+    URL = "https://twitter.com/teamdigitaleIT"
     icon = "it-twitter"
+
+    [Params.socials.linkedin]
+    name = "LinkedIn"
+    URL = "https://www.linkedin.com/company/teamdigitale"
+    icon = "it-linkedin"
+
+    [Params.socials.youtube]
+    name = "YouTube"
+    URL = "https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/"
+    icon = "it-youtube"
 
  [menu]
     # slim-header
-     [[menu.main]]
-     name = "Forum"
-     URL = ""
-     weight = 2
+    [[menu.main]]
+    name = "Forum"
+    URL = "http://forum.italia.it"
+    weight = 2
 
-     [[menu.main]]
-     name = "Docs"
-     URL = ""
-     weight = 3
+    [[menu.main]]
+    name = "Docs"
+    URL = "https://docs.italia.it"
+    weight = 3
+
+    [[menu.main]]
+    name = "Developers"
+    URL = "http://developers.italia.it"
+    weight = 4
+
+    [[menu.main]]
+    name = "Designers"
+    URL = "https://designers.italia.it"
+    weight = 5
 
     # header-nav
     [[menu.navbar]]
-    name = "Link 1"
-    URL = ""
+    name = "Episodi"
     weight = 2
 
     [[menu.navbar]]
-    name = "Link 2"
-    URL = "link2"
+    name = "Episodio 1 - Errore Umano"
+    URL = "/ep1"
+    parent = "Episodi"
+    weight = 1
+
+    [[menu.navbar]]
+    name = "Episodio 2 - Password Leak"
+    URL = ""
+    parent = "Episodi"
+    weight = 2
+
+    [[menu.navbar]]
+    name = "Episodio 3 - Spearphishing"
+    URL = ""
+    parent = "Episodi"
     weight = 3
 
     [[menu.navbar]]
-    name = "Link 4"
+    name = "Episodio 4 - Ransomware"
     URL = ""
-    parent = "Dropdown"
+    parent = "Episodi"
     weight = 4
 
     [[menu.navbar]]
-    name = "Link 5"
-    URL = ""
-    parent = "Dropdown"
-    weight = 5
+    name = "Quiz"
+    URL = "/quiz"
+    weight = 2
