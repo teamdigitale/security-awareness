@@ -7,7 +7,7 @@
     position: fixed;
     bottom: 3px;
     right: 10px;
-    background-color: cadetblue;
+    background-color: #0073e6;
     padding: 1px;
     font-family: "Titillium Web",Geneva,Tahoma,sans-serif;
     font-size: 14px;
@@ -72,7 +72,7 @@
       background-color: #0066cc; }
       .sv_main input[type="button"]:hover,
       .sv_main button:hover {
-        background-color: #179d82; }
+        background-color: #0073e6; }
     .sv_main .sv_q_other input,
     .sv_main .sv_q_text_root,
     .sv_main .sv_q_dropdown_control,
@@ -130,15 +130,15 @@
       border-bottom: 1px solid #e7e7e7; }
     .sv_main .sv_q_m_cell_selected {
       color: white;
-      background-color: #179d82; }
+      background-color: #0073e6; }
     .sv_main .sv_q_rating_item.active .sv_q_rating_item_text {
-      background-color: #179d82;
-      border-color: #179d82;
+      background-color: #0073e6;
+      border-color: #0073e6;
       color: white; }
     .sv_main .sv_q_rating_item .sv_q_rating_item_text {
       border: 1px solid #e7e7e7; }
       .sv_main .sv_q_rating_item .sv_q_rating_item_text:hover {
-        border: 1px solid #179d82; }
+        border: 1px solid #0073e6; }
     .sv_main .sv_q_imgsel.checked label > div {
       background-color: #0066cc; }
     .sv_main .sv_q_file_remove:hover {
