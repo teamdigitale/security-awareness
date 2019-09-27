@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Corso di sicurezza digitale</title>
-    <link>http://example.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Corso di sicurezza digitale</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>http://example.org/ep1.it/</link>
+      <title>Episodio 1 - Errore Umano</title>
+      <link>http://localhost:1313/ep1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/ep1.it/</guid>
-      <description>Introduzione In questa storia introduciamo il concetto di **sicurezza digitale **legato ai corretti comportamenti delle persone in ambiente lavorativo e privato. Secondo FONTE, circa l’80 per cento degli attacchi informatici avvengono “tra il computer e la sedia”, ovvero non dipendono da debolezze tecniche dei sistemi informatici ma dall’errore umano. Questo significa che i dipendenti sono un anello importante per la protezione dei dati aziendali, la sicurezza digitale è quindi responsabilità di ognuno di noi.</description>
+      <guid>http://localhost:1313/ep1/</guid>
+      <description></description>
     </item>
     
   </channel>
