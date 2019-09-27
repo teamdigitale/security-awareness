@@ -6,7 +6,7 @@
 <meta name="description" content="">
 <meta name="author" content="Team per la Trasformazione Digitale">
 
-<title>Corso di sicurezza digitale </title>
+<title>Corso di sicurezza digitale  | Quiz</title>
 
 <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
@@ -241,11 +241,28 @@
 
     <main>
       
-<main id="main">
-  <div>
-    <h1 id="title">404 :(  <a href="/">Homepage</a></h1>
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-8 my-5">
+      <div id="surveyContainer"></div>
+
+<script>
+var surveyJSON = { surveyId: '173d65eb-1feb-4bbb-8103-79ae34ce2123'}
+
+function sendDataToServer(survey) {
+    survey.sendResult('723cc519-e005-4602-abbb-04dd3fa7aee3');
+}
+
+var survey = new Survey.Model(surveyJSON);
+$("#surveyContainer").Survey({
+    model: survey,
+    onComplete: sendDataToServer
+});
+</script>
+
+    </div>
   </div>
-</main>
+</div>
 
     </main>
     

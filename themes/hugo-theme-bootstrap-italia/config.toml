@@ -52,8 +52,8 @@ title = "Security Awareness"
 
     # header-nav
     [[menu.navbar]]
-    name = "Link 1"
-    URL = ""
+    name = "Quiz"
+    URL = "/quiz"
     weight = 2
 
     [[menu.navbar]]
