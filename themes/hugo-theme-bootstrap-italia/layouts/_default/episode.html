@@ -5,7 +5,6 @@
       {{ ( .Page.Resources.GetMatch "intro-it.md" ).Content }}
 
       <h2 id="i-personaggi">{{ ( .Page.Resources.GetMatch "characters-it.md" ).Params.name }}</h2>
-
       <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
           <div class="it-carousel-all owl-carousel it-img-card">
             {{ range ( .Page.Resources.GetMatch "characters-it.md" ).Params.characters }}
@@ -29,7 +28,6 @@
       </div>
 
       <h2 id="la-storia">{{ ( .Page.Resources.GetMatch "story-it.md" ).Params.name }}</h2>
-
       <div class="it-grid-list-wrapper">
         <div class="grid-row">
           {{ range ( .Page.Resources.GetMatch "story-it.md" ).Params.vignettes }}
@@ -46,17 +44,19 @@
         </div>
       </div>
       
-
       <h2 id="glossario">{{ ( .Page.Resources.GetMatch "glossary-it.md" ).Params.name }}</h2>
-
       {{ range ( .Page.Resources.GetMatch "glossary-it.md" ).Params.terms }}
       <div class="callout">
-          <div class="callout-title"><svg class="icon"><use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-info-circle"></use></svg><span class="sr-only">Confermato</span> {{ .name }}</div>
+          <div class="callout-title"><svg class="icon"><use xlink:href="/svg/sprite.svg#it-info-circle"></use></svg><span class="sr-only">Confermato</span> {{ .name }}</div>
           <p>{{ .description }}</p>
         </div>
       {{ end }}
 
-      {{ ( .Page.Resources.GetMatch "link-it.md" ).Content }}
+      <h2 id="link">{{ ( .Page.Resources.GetMatch "link-it.md" ).Params.name }}</h2>
+      <div class="callout callout-highlight important">
+        <div class="callout-title"><svg class="icon"><use xlink:href="/svg/sprite.svg#it-info-circle"></use></svg>Importante</div>
+        {{ ( .Page.Resources.GetMatch "link-it.md" ).Content }}
+      </div>
     </div>
   </div>
 </div>

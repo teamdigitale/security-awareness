@@ -1,4 +1,6 @@
-## Link e storie simili e approfondimenti
+---
+name: "Link e storie simili e approfondimenti"
+---
 
 Qualsiasi tipo di documento che stampi potrebbe sempre avere al suo interno qualche contenuto “sensibile”: numeri di telefono, indirizzi email o altri dati personali, appunti, cifre, scambi di email, importi relativi a dei pagamenti, o addirittura **informazioni riservate**. Quando stampi dei documenti ricorda sempre di:
 
