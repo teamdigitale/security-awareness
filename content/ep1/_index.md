@@ -11,11 +11,11 @@ In questa storia, ad esempio, impariamo cosa può succedere (e succede davvero, 
 
 
 ### I personaggi della storia
-![I personaggi](/img/sa1_intro.png)
+![I personaggi](sa1_intro.png)
 
 
 ### La storia
-![La storia](/img/sa1_story.png)
+![La storia](sa1_story.png)
 
 ### Glossario
 **Clean Desk Policy**:
