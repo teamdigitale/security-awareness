@@ -52,23 +52,22 @@ title = "Security Awareness"
 
     # header-nav
     [[menu.navbar]]
-    name = "Quiz"
-    URL = "/quiz"
+    name = "Episodi"
     weight = 2
 
     [[menu.navbar]]
-    name = "Link 2"
-    URL = "link2"
-    weight = 3
-
-    [[menu.navbar]]
-    name = "Link 4"
-    URL = ""
-    parent = "Dropdown"
+    name = "Episodio 1"
+    URL = "/ep1"
+    parent = "Episodi"
     weight = 4
 
     [[menu.navbar]]
-    name = "Link 5"
+    name = "Episodio 2"
     URL = ""
-    parent = "Dropdown"
+    parent = "Episodi"
     weight = 5
+
+    [[menu.navbar]]
+    name = "Quiz"
+    URL = "/quiz"
+    weight = 2

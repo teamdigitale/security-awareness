@@ -1,45 +1,57 @@
 ## Security awareness
 
-In questa storia introduciamo il concetto di **sicurezza digitale** legato ai corretti comportamenti delle persone in ambiente lavorativo e personale. Secondo FONTE, circa **l’80 per cento degli attacchi informatici avvengono “tra il computer e la sedia”**, ovvero non dipendono da debolezze tecniche dei sistemi informatici ma dall’errore umano. 
-
-I dipendenti sono un anello importante per la protezione dei dati aziendali, la sicurezza digitale è quindi responsabilità di ognuno di noi. Obiettivo del corso è fornire strumenti base per aumentare la sicurezza. 
-
-In questa storia, ad esempio, impariamo cosa può succedere (e succede davvero, nel mondo reale!) quando non si prendono le dovute precauzioni nella gestione dei documenti di lavoro, che possono contenere delle informazioni preziose... 
+### Panoramica
+Sicurezza (intesa come riservatezza, integrità e disponibilità) delle informazioni è di fondamentale importanza. Se da un lato sono stati effettuati notevoli investimenti in tecnologie di sicurezza  (Antivirus, Firewall, IPS) dall’altro la formazione degli impiegati sul tema è stata spesso trascurata, , nonostante secondo le ultime statistiche circa l’80% degli incidenti di informatici è stato causato da errore umano. 
+Sebbene i rischi dovuti  al  comportamento delle persone non possano essere completamente eliminati, aumentare la consapevolezza può aiutare a diminuire la superficie di attacco. 
 
 
-### I personaggi della storia
-![I personaggi](/img/sa1_intro.png)
+### Obiettivi
+- Introdurre consapevolezza culturale circa la sicurezza e privacy all’interno delle PA e PAC
+- Ridurre i rischi derivanti da attacchi di Cyber security.
+- Massimizzare gli effetti e i benefici provenienti dai controlli di sicurezza.
+- Minimizzare gli incidenti di sicurezza in durata e numero. 
 
+### Specifiche e principali tematiche dei corsi
+I corsi di security training potrebbero essere erogati e resi disponibili a tutte le pubbliche amministrazioni su un dominio di terzo livello del sito italia.it.
+Idealmente alla fine del corso dovrebbe esserci un mini quiz di  autovalutazione del proprio livello di consapevolezza dei rischi derivanti dall’uso di computer. 
+I corsi, fatti su base volontaria, possono produrre i risultati ad un URL univoco per ognuno dei quiz intrapresi.
+I corsi idealmente  dovrebbero non solo dettare una serie di regole o best practice da seguire ma anche spiegare il perché sia importante seguire queste regole mediante esempi reali. Dovrebbero altresì fornire strumenti per distinguere frodi informatiche. 
 
-### La storia
-![La storia](/img/sa1_story.png)
+### Moduli formativi
+I moduli, conterranno ed estenderanno, i contenuti elencati nel paragrafo precedente, sotto forma di “pillole formative”, interattive. Il “Main topic” potrà essere coperto da uno o più moduli, che conterranno eventi simulati, con domande interattive volte a coinvolgere l’utente nel corso della fruizione.
 
-### Glossario
-**Clean Desk Policy**:
- In italiano “Politica della scrivania pulita”, consiste nel tenere sempre la scrivania sgombra da documenti alla fine della giornata lavorativa, o quando ci si allontana dalla propria postazione.
+#### Introduzione alle differenti tipologie di minaccia nell’ information security
+Breve introduzione sulle differenti tipologie di minaccia: Organizzazioni criminali, APT, Hacktivisti, Script kiddies, impiegati e colleghi, ecc.
+Perché’ la sicurezza delle informazioni e’ una responsabilità’ di tutti, non solo dell’IT. 
+Importanza della cultura e delle politiche di sicurezza, oltre ai controlli tecnologici.
 
+#### Il Comportamento “Sociale” in ambito Professionale
+Il presente modulo spiega come il cosiddetto “Social Engineering” sfrutti le disattenzioni e le caratteristiche del comportamento umano, contro gli “impiegati”, bersagli privilegiati (anche se non esclusivi) per questi attacchi.
 
-**Dumpster Diving**: 
-Consiste nel recupero di informazioni sensibili rovistando nella spazzatura.
+#### Il Phishing e Lo Spear Phishing
+Un approfondimento sul tema dell’adescamento attraverso e-mail false, il modulo racconterà alcuni casi di successo e fornirà strumenti di base per difendersi. Applicando le “buone pratiche” presentate in questo corso, si avranno gli strumenti per sopravvivergli.
 
+#### Le Password e la Multi-Factor Authentication (MFA)
+Sentiamo dire da tempo che la “password” non è più adeguata a difendersi dai tentativi dei “cattivi” di indovinarla. Questo modulo vi svelerà i segreti che consentono di difendersi in modo intelligente, e soprattutto quali sono le differenze tra “password”, “passphrase” ed autenticazione multi-fattore o “OTP”.
 
-### Link e storie simili e approfondimenti
-Qualsiasi tipo di documento che stampi potrebbe sempre avere al suo interno qualche contenuto “sensibile”: numeri di telefono, indirizzi email o altri dati personali, appunti, cifre, scambi di email, importi relativi a dei pagamenti, o addirittura informazioni riservate. Quando stampi dei documenti  ricorda sempre di:
+#### Minacce di sicurezza sul tragitto casa-lavoro e fuori dall’ufficio
+Il trasporto del personal computer nel tragitto per  arrivare in ufficio con i mezzi pubblici o in treno, e quando lo lasciamo in auto, magari per un weekend fuori in cui portiamo dietro il PC, quali sono i rischi ed i potenziali danni che possono emergere dalla distrazione o dall’incuria?
 
-* Verificare la presenza di eventuali contenuti sensibili.
-* Non lasciarli incustoditi ad esempio sulla tua scrivania. 
-* Non gettarli nella spazzatura prima di averli distrutti.
-* Avere premure di custodirli in un posto sicuro anche quando sei a casa.
-* Non lasciarli nella stampante. 
+#### Minacce di sicurezza sempre presenti in ufficio
+Dati, documenti e processi considerati di “rilevanza aziendale” si ritiene siano al sicuro in ufficio, poiché in fondo ci sono “solo colleghi”, ma in realtà ci sono potenziali minacce alla sicurezza dai cosiddetti “internal attackers”. Elemento fondamentale per poter arginare le minacce informatiche e la corruzione, sono l’attenzione a ruoli e classificazione delle informazioni, capiamo come e perchè.
 
-Suggerimenti per la “Clean Desk Policy”
-Specialmente alla fine di una giornata di lavoro e’ importante:
+#### La Separazione dei Ruoli
+Perchè è importante che i ruoli assegnati per l’accesso ai documenti, alle cartelle, ed alle applicazioni, siano diversi per diverse mansioni, e come mai questa “separazione” è così importante per minimizzare il rischio “corruzione” e perdita di dati personali e sensibili. 
 
+#### Data Classification, cos’è e perchè applicare la classificazione dei dati
+Cosa significa attribuire una “classificazione” ad un documento, quali sono le implicazioni per la propria “gestione sicura dei dati” e quali quelle per chi lo riceve. Perché è importante saper identificare quanto un’informazione sia “sensibile” o meno.
 
-* Riporre i documenti in luogo sicuro (ad esempio: armadio chiuso con serratura)
-* Distruggere i documenti non piu’ utilizzati, eventualmente tenendo traccia (log) di cio’ che e’ stato distrutto, se richiesto.
-* Spegnere il proprio computer
-* In caso si lavori con il portatile, spegnerlo prima di portarlo con se’ (non chiuderlo e basta, ne’ impostarlo in “sleep” o “ibernate”.
-* Non annotare informazioni riservate, come ad esempio password, su foglietti o post-it, lasciandoli sulla scrivania o attaccati al muro del tuo ufficio o sul monitor.
+#### Cifratura (Encryption), perché è fondamentale per la tutela della privacy
+Spiegheremo i concetti di Trasporto, Conservazione e Firma. Come la cifratura consente di assicurare il rispetto dei principi di Integrità Riservatezza, Confidenzialità e Disponibilità, e come sarebbe la nostra vita digitale, senza.
 
+#### La “Compliance”, e cosa implica essere conformi a regolamenti e raccomandazioni
+Il Rischio e la Compliance, che relazione hanno e perchè sono quasi sempre nominati nella stessa frase? Capiamo meglio perché in alcuni casi è bene seguire delle “raccomandazioni comuni” per gestire processi equivalenti.
 
+#### Uso sicuro di Internet e i social media
+Evitare siti malevoli. Come riconoscere l'autenticità’ di un sito. HTTPS, verifica dei certificati e siti “not trusted”.
+L’uso dei social media e i pericoli correlati. 
