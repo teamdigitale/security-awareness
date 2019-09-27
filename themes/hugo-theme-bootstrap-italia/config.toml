@@ -10,8 +10,11 @@ title = "Security Awareness"
   footerColumn1Title = "Security Awareness"
   footerColumn1Text = "Un breve corso per la sicurezza digitale"
   footerColumn1Links = [
-    { label = "Episodio 1", url = "/ep1" },
-    { label = "Episodio 2", url = "#" }
+    { label = "Episodio 1 - Erorre Umano", url = "/ep1" },
+    { label = "Episodio 2 - Password Leak", url = "#" },
+    { label = "Episodio 3 - Spearphishing", url = "#" },
+    { label = "Episodio 4 - Ransomware", url = "#" },
+    { label = "Quiz", url = "/quiz" }
   ]
 
   footerColumn2Title = "Security Awareness"
@@ -76,16 +79,28 @@ title = "Security Awareness"
     weight = 2
 
     [[menu.navbar]]
-    name = "Episodio 1"
+    name = "Episodio 1 - Errore Umano"
     URL = "/ep1"
     parent = "Episodi"
-    weight = 4
+    weight = 1
 
     [[menu.navbar]]
-    name = "Episodio 2"
+    name = "Episodio 2 - Password Leak"
     URL = ""
     parent = "Episodi"
-    weight = 5
+    weight = 2
+
+    [[menu.navbar]]
+    name = "Episodio 3 - Spearphishing"
+    URL = ""
+    parent = "Episodi"
+    weight = 3
+
+    [[menu.navbar]]
+    name = "Episodio 4 - Ransomware"
+    URL = ""
+    parent = "Episodi"
+    weight = 4
 
     [[menu.navbar]]
     name = "Quiz"
