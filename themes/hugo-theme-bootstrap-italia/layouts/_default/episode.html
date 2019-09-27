@@ -28,7 +28,7 @@
           </div>
       </div>
 
-      <h2 id="i-personaggi">{{ ( .Page.Resources.GetMatch "story-it.md" ).Params.name }}</h2>
+      <h2 id="la-storia">{{ ( .Page.Resources.GetMatch "story-it.md" ).Params.name }}</h2>
 
       <div class="it-grid-list-wrapper">
         <div class="grid-row">
@@ -47,7 +47,14 @@
       </div>
       
 
-      {{ ( .Page.Resources.GetMatch "glossary-it.md" ).Content }}
+      <h2 id="glossario">{{ ( .Page.Resources.GetMatch "glossary-it.md" ).Params.name }}</h2>
+
+      {{ range ( .Page.Resources.GetMatch "glossary-it.md" ).Params.terms }}
+      <div class="callout">
+          <div class="callout-title"><svg class="icon"><use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-info-circle"></use></svg><span class="sr-only">Confermato</span> {{ .name }}</div>
+          <p>{{ .description }}</p>
+        </div>
+      {{ end }}
 
       {{ ( .Page.Resources.GetMatch "link-it.md" ).Content }}
     </div>
