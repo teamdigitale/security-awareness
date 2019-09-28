@@ -8,23 +8,62 @@ publishDir = "./docs"
 [languages]
   [languages.it]
     title = "Corso di sicurezza digitale"
+    ente = "Team per la Trasformazione Digitale"
+    enteLink = "http://teamdigitale.governo.it"
+    siteTitle = "Corso di base di sicurezza"
+    siteDescription = "Corso di base di sicurezza digitale"
     languageName = "ITA"
     contentDir = "content/it"
     weight = 1
 
+    footerColumn1Title = "Security Awareness"
+    footerColumn1Text = "Un breve corso per la sicurezza digitale"
+    footerColumn1Links = [
+      { label = "Episodio 1 - Erorre Umano", url = "/ep1" },
+      { label = "Episodio 2 - Password Leak", url = "#" },
+      { label = "Episodio 3 - Spearphishing", url = "#" },
+      { label = "Episodio 4 - Ransomware", url = "#" },
+      { label = "Quiz", url = "/quiz" }
+    ]
+
+    footerColumn2Title = "Security Awareness"
+    footerColumn2Text = "Security Awareness - Corso"
+
+    footerBottomLinks = [
+      { label = "Note legali", url = "#" },
+      { label = "Privacy policy", url = "#" }
+    ]
+
   [languages.en]
     title = "Course on the digital security"
+    ente = "Digital Transformation Team"
+    enteLink = "http://teamdigitale.governo.it/en/"
+    siteTitle = "Base course on security"
+    siteDescription = "Base course on digital security"
     languageName = "ENG"
     contentDir = "content/en"
     weight = 2
 
-  [menu]
-    [[languages.it.menu.main]]
-      name = "Forum"
-      URL = "https://forum.italia.it"
-      weight = 2
+    footerColumn1Title = "Security Awareness"
+    footerColumn1Text = "A short course for digital security"
+    footerColumn1Links = [
+      { label = "Episode 1 - Human Error", url = "/en/ep1" },
+      { label = "Episode 2 - Password Leak", url = "#" },
+      { label = "Episode 3 - Spearphishing", url = "#" },
+      { label = "Episode 4 - Ransomware", url = "#" },
+      { label = "Quiz", url = "/quiz" }
+    ]
 
-    [[languages.en.menu.main]]
+    footerColumn2Title = "Security Awareness"
+    footerColumn2Text = "Security Awareness - Course"
+
+    footerBottomLinks = [
+      { label = "Legal notes", url = "#" },
+      { label = "Privacy policy", url = "#" }
+    ]
+
+  [languages.it.menu]
+    [[languages.it.menu.main]]
       name = "Forum"
       URL = "https://forum.italia.it"
       weight = 2
@@ -34,17 +73,7 @@ publishDir = "./docs"
       URL = "https://docs.italia.it"
       weight = 3
 
-    [[languages.en.menu.main]]
-      name = "Docs"
-      URL = "https://docs.italia.it"
-      weight = 3
-
     [[languages.it.menu.main]]
-      name = "Developers"
-      URL = "https://developers.italia.it"
-      weight = 4
-
-    [[languages.en.menu.main]]
       name = "Developers"
       URL = "https://developers.italia.it"
       weight = 4
@@ -54,11 +83,6 @@ publishDir = "./docs"
       URL = "https://designers.italia.it"
       weight = 5
     
-    [[languages.en.menu.main]]
-      name = "Designers"
-      URL = "https://designers.italia.it"
-      weight = 5
-
     [[languages.it.menu.navbar]]
       name = "Episodi"
       weight = 2
@@ -69,14 +93,8 @@ publishDir = "./docs"
 
     [[languages.it.menu.navbar]]
       name = "Episodio 1 - Errore Umano"
-      URL = "/it/ep1"
+      URL = "/ep1"
       parent = "Episodi"
-      weight = 1
-
-    [[languages.en.menu.navbar]]
-      name = "Episode 1 - Human Error"
-      URL = "/en/ep1"
-      parent = "Episodes"
       weight = 1
 
     [[languages.it.menu.navbar]]
@@ -85,22 +103,10 @@ publishDir = "./docs"
       parent = "Episodi"
       weight = 2
 
-    [[languages.en.menu.navbar]]
-      name = "Episode 2 - Password Leak"
-      URL = ""
-      parent = "Episodes"
-      weight = 2
-
     [[languages.it.menu.navbar]]
       name = "Episodio 3 - Spearphishing"
       URL = ""
       parent = "Episodi"
-      weight = 3
-
-    [[languages.en.menu.navbar]]
-      name = "Episode 3 - Spearphishing"
-      URL = ""
-      parent = "Episodes"
       weight = 3
 
     [[languages.it.menu.navbar]]
@@ -109,16 +115,55 @@ publishDir = "./docs"
       parent = "Episodi"
       weight = 4
 
+    [[languages.it.menu.navbar]]
+      name = "Quiz"
+      URL = "/quiz"
+      weight = 2
+
+  [languages.en.menu]
+    [[languages.en.menu.main]]
+      name = "Forum"
+      URL = "https://forum.italia.it"
+      weight = 2
+
+    [[languages.en.menu.main]]
+      name = "Docs"
+      URL = "https://docs.italia.it"
+      weight = 3
+
+    [[languages.en.menu.main]]
+      name = "Developers"
+      URL = "https://developers.italia.it"
+      weight = 4
+
+    [[languages.en.menu.main]]
+      name = "Designers"
+      URL = "https://designers.italia.it"
+      weight = 5
+
+    [[languages.en.menu.navbar]]
+      name = "Episode 1 - Human Error"
+      URL = "/en/ep1"
+      parent = "Episodes"
+      weight = 1
+
+    [[languages.en.menu.navbar]]
+      name = "Episode 2 - Password Leak"
+      URL = ""
+      parent = "Episodes"
+      weight = 2
+
+    [[languages.en.menu.navbar]]
+      name = "Episode 3 - Spearphishing"
+      URL = ""
+      parent = "Episodes"
+      weight = 3
+
     [[languages.en.menu.navbar]]
       name = "Episode 4 - Ransomware"
       URL = ""
       parent = "Episodes"
       weight = 4
-
-    [[languages.it.menu.navbar]]
-      name = "Quiz"
-      URL = "/quiz"
-      weight = 2
 
     [[languages.en.menu.navbar]]
       name = "Quiz"

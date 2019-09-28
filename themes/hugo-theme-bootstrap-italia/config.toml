@@ -1,29 +1,4 @@
-
-
 [Params]
-  ente = "Team per la Trasformazione Digitale"
-  enteLink = "http://teamdigitale.governo.it"
-  siteTitle = "Corso di base di sicurezza"
-  siteDescription = "Corso di base di sicurezza digitale"
-
-  footerColumn1Title = "Security Awareness"
-  footerColumn1Text = "Un breve corso per la sicurezza digitale"
-  footerColumn1Links = [
-    { label = "Episodio 1 - Erorre Umano", url = "/ep1" },
-    { label = "Episodio 2 - Password Leak", url = "#" },
-    { label = "Episodio 3 - Spearphishing", url = "#" },
-    { label = "Episodio 4 - Ransomware", url = "#" },
-    { label = "Quiz", url = "/quiz" }
-  ]
-
-  footerColumn2Title = "Security Awareness"
-  footerColumn2Text = "Security Awareness - Corso"
-
-  footerBottomLinks = [
-    { label = "Note legali", url = "#" },
-    { label = "Privacy policy", url = "#" }
-  ]
-
   [Params.socials]
     [Params.socials.medium]
     name = "Medium"

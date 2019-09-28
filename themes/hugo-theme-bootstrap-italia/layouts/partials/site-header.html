@@ -32,11 +32,19 @@
                 </a>
                 <div class="dropdown-menu">
                   <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 padleft">
                       <div class="link-list-wrapper">
                         <ul class="link-list">
                           {{ range $.Site.Home.AllTranslations }}
-                          <li><a class="list-item" href="{{ .Permalink }}"><span>{{ .Language.LanguageName }}</span></a></li>
+                          <li>
+                            <a class="list-item" href="{{ .Permalink }}">
+                              <div class="avatar size-xs">
+                                <img src="/img/{{ .Language.LanguageName }}.png" alt="Luisa Neri">
+                              </div>
+
+                              <span>{{ .Language.LanguageName }}</span>
+                            </a>
+                          </li>
                           {{ end }}
                         </ul>
                       </div>
@@ -62,14 +70,14 @@
                     <use xlink:href="/svg/sprite.svg#it-code-circle"></use>
                   </svg>
                   <div class="it-brand-text">
-                    <h2 class="no_toc"> {{ .Site.Title }}</h2>
+                    <h2 class="no_toc"> {{ .Site.Params.siteTitle }}</h2>
                     <h3 class="no_toc d-none d-md-block">{{ .Site.Params.siteDescription }}</h3>
                   </div>
                 </a>
               </div>
               <div class="it-right-zone">
                 <div class="it-socials d-none d-md-flex">
-                  <span>Seguici su</span>
+                  <span>{{ T "follow" }}</span>
                   <ul>
                     {{ range .Site.Params.socials }}
                       <li>

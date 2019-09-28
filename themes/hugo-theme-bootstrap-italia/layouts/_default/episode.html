@@ -54,7 +54,7 @@
 
       <h2 id="link">{{ ( .Page.Resources.GetMatch "link.md" ).Params.name }}</h2>
       <div class="callout callout-highlight important">
-        <div class="callout-title"><svg class="icon"><use xlink:href="/svg/sprite.svg#it-info-circle"></use></svg>Importante</div>
+        <div class="callout-title"><svg class="icon"><use xlink:href="/svg/sprite.svg#it-info-circle"></use></svg>{{ T "important" }}</div>
         {{ ( .Page.Resources.GetMatch "link.md" ).Content }}
       </div>
     </div>

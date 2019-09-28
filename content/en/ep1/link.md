@@ -2,22 +2,22 @@
 name: "Link to similar stories and further study"
 ---
 
-Qualsiasi tipo di documento che stampi potrebbe sempre avere al suo interno qualche contenuto “sensibile”: numeri di telefono, indirizzi email o altri dati personali, appunti, cifre, scambi di email, importi relativi a dei pagamenti, o addirittura **informazioni riservate**. Quando stampi dei documenti ricorda sempre di:
+Any type of document you print could always contain some "sensitive" content: phone numbers, email addresses or other personal data, notes, numbers, email exchanges, amounts related to payments, or even **confidential information**. When you print documents, always remember:
 
-- Verificare la presenza di eventuali contenuti sensibili.
-- Non lasciarli incustoditi ad esempio sulla tua scrivania. 
-- Non gettarli nella spazzatura prima di averli distrutti.
-- Avere premura di custodirli in un posto sicuro anche quando sei a casa.
-- Non lasciarli nella stampante. 
-- Non creare mai copie non autorizzate di documenti riservati.
+- Check for any sensitive content.
+- Do not leave them unattended for example on your desk.
+- Do not throw them in the trash before destroying them.
+- Take care to keep them in a safe place even when you are at home.
+- Do not leave them in the printer.
+- Never create unauthorized copies of confidential documents.
 
 
-In particolare alla fine di una giornata di lavoro è importante:
+In particular at the end of a working day it is important:
 
-- Riporre i documenti in luogo sicuro (ad esempio: armadio chiuso con serratura).
-- Distruggere i documenti non più  utilizzati, eventualmente tenendo traccia (log) di ciò che è stato distrutto, se richiesto.
-- Bloccare lo schermo ogni volta che ci si allontana dalla propria postazione, impostando una password per la riattivazione.
-- Spegnere il proprio computer prima di lasciare l’ufficio.
-- In caso si lavori con il portatile, spegnerlo prima di portarlo con sé (non chiuderlo e basta, né impostarlo in "sleep" o "ibernate".
-- Non annotare informazioni riservate, come ad esempio password, su foglietti o post-it, lasciandoli sulla scrivania o attaccati al muro del tuo ufficio o sul monitor.
-- Custodire le pennette USB accuratamente, se necessario sotto chiave, ricordando sempre che tipo di documenti sono salvati al loro interno. 
+- Put the documents in a safe place (for example: closed locker).
+- Destroy the documents no longer used, possibly keeping track (log) of what was destroyed, if required.
+- Lock the screen every time you leave your workstation, setting a password for reactivation.
+- Turn off your computer before leaving the office.
+- In case you work with the laptop, turn it off before taking it with you (don't just close it, or set it to "sleep" or "hibernate".
+- Do not record confidential information, such as passwords, on slips of paper or post-it notes, leaving them on your desk or attached to the wall of your office or on the monitor.
+- Keep the USB pen drives carefully, if necessary under lock and key, always remembering what kind of documents are stored inside them.

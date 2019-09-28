@@ -3,18 +3,18 @@ name: "The characters of the story"
 characters:
   character-1:
     name: 'Ludovica' 
-    description: "Ludovica è un manager di ferro. Sempre attenta a tutti i dettagli, è una lavoratrice instancabile."
-    image: "characters-it/Ludovica.png"
+    description: "Ludovica is an iron manager. Always attentive to all details, she is a tireless worker."
+    image: "characters/Ludovica.png"
   character-2:
     name: 'Carla'
-    description: "Carla è l’assistente di Ludovica. Si divide tra gli impegni in ufficio (davvero tanti) e il suo secondo \"lavoro\" di mamma, cercando di essere quanto più presente in famiglia."
-    image: "characters-it/Carla.png"
+    description: "Carla is Ludovica's assistant. He divides his time between his duties in the office (really many) and his second \"job\" as a mother, trying to be as present as possible in the family."
+    image: "characters/Carla.png"
   character-3:
     name: 'Luca'
-    description: "Luca fa l’ultimo anno di scuola elementare. Sempre pronto a inseguire un pallone che rotola, ogni tanto trova il tempo per fare i compiti..."
-    image: "characters-it/Luca.png"
+    description: "Luca is in his last year of elementary school. Always ready to chase a rolling ball, he sometimes finds time to do his homework ..."
+    image: "characters/Luca.png"
   character-4:
     name: 'Filippo'
-    description: "Filippo è il maestro più amato della classe di Luca: si è guadagnato questo privilegio grazie alla sua simpatia, ma anche perché cerca sempre nuove attività creative per liberare la fantasia dei ragazzi!"
-    image: "characters-it/Filippo.png"
+    description: "Filippo is the most beloved teacher of Luca's class: he has earned this privilege thanks to his sympathy, but also because he is always looking for new creative activities to free the imagination of the boys!"
+    image: "characters/Filippo.png"
 ---

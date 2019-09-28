@@ -1,10 +1,10 @@
 ---
-name: "Glossary"
+name: "Glossario"
 terms:
   term-1:
     name: 'Clean Desk Policy' 
-    description: "In italiano “Politica della scrivania pulita”, consiste nel tenere sempre la scrivania sgombra da documenti alla fine della giornata lavorativa, o quando ci si allontana dalla propria postazione."
+    description: "The clean desk policy consists in always keeping the desk clear of documents at the end of the working day, or when you move away from your desk."
   term-2:
     name: 'Dumpster Diving'
-    description: "Consiste nel recupero di informazioni sensibili rovistando nella spazzatura."
+    description: "It consists of retrieving sensitive information by poking around in the garbage."
 ---

@@ -1202,3 +1202,7 @@
     content: "";
     display: table;
     clear: both; }  
+
+.padleft {
+  padding-left: 1em !important;
+}
