@@ -20,9 +20,9 @@ publishDir = "./docs"
     footerColumn1Text = "Un breve corso per la sicurezza digitale"
     footerColumn1Links = [
       { label = "Episodio 1 - Erorre Umano", url = "/ep1" },
-      { label = "Episodio 2 - Password Leak", url = "#" },
-      { label = "Episodio 3 - Spearphishing", url = "#" },
-      { label = "Episodio 4 - Ransomware", url = "#" },
+      { label = "Episodio 2 - Password Leak", url = "/ep2" },
+      { label = "Episodio 3 - Spearphishing", url = "/ep3" },
+      { label = "Episodio 4 - Ransomware", url = "/ep4" },
       { label = "Quiz", url = "/quiz" }
     ]
 
@@ -48,10 +48,10 @@ publishDir = "./docs"
     footerColumn1Text = "A short course for digital security"
     footerColumn1Links = [
       { label = "Episode 1 - Human Error", url = "/en/ep1" },
-      { label = "Episode 2 - Password Leak", url = "#" },
-      { label = "Episode 3 - Spearphishing", url = "#" },
-      { label = "Episode 4 - Ransomware", url = "#" },
-      { label = "Quiz", url = "/quiz" }
+      { label = "Episode 2 - Password Leak", url = "/en/ep2" },
+      { label = "Episode 3 - Spearphishing", url = "/en/ep3" },
+      { label = "Episode 4 - Ransomware", url = "/en/ep3" },
+      { label = "Quiz", url = "/en/quiz" }
     ]
 
     footerColumn2Title = "Security Awareness"
@@ -99,19 +99,19 @@ publishDir = "./docs"
 
     [[languages.it.menu.navbar]]
       name = "Episodio 2 - Password Leak"
-      URL = ""
+      URL = "/ep2"
       parent = "Episodi"
       weight = 2
 
     [[languages.it.menu.navbar]]
       name = "Episodio 3 - Spearphishing"
-      URL = ""
+      URL = "/ep3"
       parent = "Episodi"
       weight = 3
 
     [[languages.it.menu.navbar]]
       name = "Episodio 4 - Ransomware"
-      URL = ""
+      URL = "/ep4"
       parent = "Episodi"
       weight = 4
 
@@ -149,23 +149,23 @@ publishDir = "./docs"
 
     [[languages.en.menu.navbar]]
       name = "Episode 2 - Password Leak"
-      URL = ""
+      URL = "/en/ep2"
       parent = "Episodes"
       weight = 2
 
     [[languages.en.menu.navbar]]
       name = "Episode 3 - Spearphishing"
-      URL = ""
+      URL = "/en/ep3"
       parent = "Episodes"
       weight = 3
 
     [[languages.en.menu.navbar]]
       name = "Episode 4 - Ransomware"
-      URL = ""
+      URL = "/en/ep4"
       parent = "Episodes"
       weight = 4
 
     [[languages.en.menu.navbar]]
       name = "Quiz"
-      URL = "/quiz"
+      URL = "/en/quiz"
       weight = 2
