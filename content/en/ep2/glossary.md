@@ -2,9 +2,9 @@
 name: "Glossary"
 terms:
   term-1:
-    name: 'Gestionale' 
-    description: "Chiamato anche E.R.P. ovvero Enterprise Resource Planning, il “software gestionale” è software con compiti di gestione di flussi di lavoro. Un esempio è SAP, il famoso gestionale contabile, ma si considerano tali anche altri software simili che assolvono ad esempio compiti di “gestione pratiche”."
+    name: 'Management System' 
+    description: "Also called E.R.P. or Enterprise Resource Planning, the \"management software\" is software with tasks of managing workflows. An example is SAP, the famous accounting manager, but other similar software are also considered as such which perform, for example, \"management practices\" tasks."
   term-2:
     name: 'Password'
-    description: "Parola Chiave: Ne abbiamo sentito parlare molto spesso, è il codice che inseriamo sui sistemi informatici, quando apriamo l’email, e sulle applicazioni che utilizziamo quotidianamente, insieme allo \"username\", il nome utente. Sappiamo per sentito dire ed in base alle raccomandazioni fornite da molti siti internet che deve essere una parola, o una frase complessa con codici particolari e che non dovrebbe mai essere facile da indovinare (mai utilizzare data di nascita, nome di un animale domestico o targa dell'auto...). Per questo si consiglia sempre di utilizzare \"password\" diverse e complesse."
+    description: "Keyword: We have heard about it very often, it is the code that we insert on the computer systems, when we open the email, and on the applications we use daily, together with the username, the username. We know by hearsay and based on the recommendations provided by many internet sites that it must be a word, or a complex sentence with particular codes and that it should never be easy to guess (never use birth date, name of a pet or plaque car ...). For this reason it is always advisable to use different and complex passwords."
 ---
