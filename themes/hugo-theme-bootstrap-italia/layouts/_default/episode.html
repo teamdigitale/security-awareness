@@ -48,14 +48,14 @@
       <h2 id="glossario">{{ ( .Page.Resources.GetMatch "glossary.md" ).Params.name }}</h2>
       {{ range ( .Page.Resources.GetMatch "glossary.md" ).Params.terms }}
       <div class="callout">
-          <div class="callout-title"><svg class="icon"><use xlink:href="{{ .Site.BaseURL }}svg/sprite.svg#it-info-circle"></use></svg><span class="sr-only">Confermato</span> {{ .name }}</div>
+          <div class="callout-title"><svg class="icon"><use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-info-circle"></use></svg><span class="sr-only">Confermato</span> {{ .name }}</div>
           <p>{{ .description }}</p>
         </div>
       {{ end }}
 
       <h2 id="link">{{ ( .Page.Resources.GetMatch "link.md" ).Params.name }}</h2>
       <div class="callout callout-highlight important">
-        <div class="callout-title"><svg class="icon"><use xlink:href="{{ .Site.BaseURL }}svg/sprite.svg#it-info-circle"></use></svg>{{ T "important" }}</div>
+        <div class="callout-title"><svg class="icon"><use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-info-circle"></use></svg>{{ T "important" }}</div>
         {{ ( .Page.Resources.GetMatch "link.md" ).Content }}
       </div>
     </div>

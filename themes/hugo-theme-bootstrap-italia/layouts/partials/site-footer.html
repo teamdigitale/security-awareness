@@ -27,7 +27,7 @@
                 <li class="list-inline-item">
                   <a class="p-2 text-white" href="{{ .url }}" target="_blank">
                     <svg class="icon icon-sm icon-white align-top">
-                      <use xlink:href="{{ .Site.BaseURL }}/svg/sprite.svg#{{ .icon }}"></use>
+                      <use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#{{ .icon }}"></use>
                     </svg>
                     <span class="sr-only">{{ .Name }}</span>
                   </a>
@@ -45,7 +45,7 @@
       <h3 class="sr-only">{{ T "useful-link" }}</h3>
       <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
         {{ range .Site.Params.footerBottomLinks }}
-        <li class="list-inline-item"><a href="{{ .url }}" title="{{ .label }}">{{ .label }}</a></li>
+        <li class="list-inline-item"><a href="{{ $.Site.BaseURL }}{{ .url }}" title="{{ .label }}">{{ .label }}</a></li>
         {{ end }}
       </ul>
     </div>
