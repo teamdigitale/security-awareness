@@ -5,19 +5,19 @@ episodes:
   episode-1:
     name: "Ep1"
     title: "Errore Umano" 
-    url: "/ep1"
+    url: "ep1"
   episode-2:
     name: "Ep2"
     title: "Password Leak" 
-    url: "/ep2"
+    url: "ep2"
   episode-3:
     name: "Ep3"
     title: "Spearphishing"
-    url: "/ep3"
+    url: "ep3"
   episode-4:
     name: "Ep4"
     title: "Ransomware" 
-    url: "/ep4"
+    url: "ep4"
 ---
 
 ## Security awareness
