@@ -10,7 +10,7 @@
             <div class="link-list-wrapper">
               <ul class="footer-list link-list clearfix">
                 {{ range .Site.Params.footerColumn1Links }}
-                  <li><a class="list-item" href="{{ .url }}" title="{{ .label }}">{{ .label }}</a></li>
+                  <li><a class="list-item" href="{{ $.Site.BaseURL }}{{ .url }}" title="{{ .label }}">{{ .label }}</a></li>
                 {{ end }}
               </ul>
             </div>
