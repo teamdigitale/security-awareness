@@ -14,18 +14,18 @@
 <link rel="apple-touch-icon" sizes="144x144" href="{{ .Site.BaseURL }}img/apple-icon-144x144.png">
 <link rel="apple-touch-icon" sizes="152x152" href="{{ .Site.BaseURL }}img/apple-icon-152x152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}img/apple-icon-180x180.png">
-<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}img/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}img/android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}img/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}img/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="{{ $.Site.BaseURL }}img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ $.Site.BaseURL }}img/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="{{ $.Site.BaseURL }}img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="{{ $.Site.BaseURL }}img/favicon-16x16.png" sizes="16x16">
 
-<link rel="apple-touch-icon" href="{{ .Site.BaseURL }}icons/favicons/apple-touch-icon.png">
-<link rel="icon" href="{{ .Site.BaseURL }}icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="{{ .Site.BaseURL }}icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="{{ .Site.BaseURL }}icons/favicons/manifest.webmanifest">
-<link rel="mask-icon" href="{{ .Site.BaseURL }}icons/favicons/safari-pinned-tab.svg" color="#0066CC">
-<link rel="icon" href="{{ .Site.BaseURL }}bootstrap-italia/favicon.ico">
-<meta name="msapplication-config" content="{{ .Site.BaseURL }}icons/favicons/browserconfig.xml">
+<link rel="apple-touch-icon" href="{{ $.Site.BaseURL }}icons/favicons/apple-touch-icon.png">
+<link rel="icon" href="{{ $.Site.BaseURL }}icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="{{ $.Site.BaseURL }}icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="{{ $.Site.BaseURL }}icons/favicons/manifest.webmanifest">
+<link rel="mask-icon" href="{{ $.Site.BaseURL }}icons/favicons/safari-pinned-tab.svg" color="#0066CC">
+<link rel="icon" href="{{ $.Site.BaseURL }}bootstrap-italia/favicon.ico">
+<meta name="msapplication-config" content="{{ $.Site.BaseURL }}icons/favicons/browserconfig.xml">
 <meta name="theme-color" content="#0066CC">
 
 <meta name="twitter:card" content="summary_large_image">
@@ -33,25 +33,25 @@
 <meta name="twitter:creator" content="Team per la Trasformazione Digitale">
 <meta name="twitter:title" content="Security Awareness">
 <meta name="twitter:description" content="Security Awareness">
-<meta name="twitter:image" content="{{ .Site.BaseURL }}icons/social-card.png">
+<meta name="twitter:image" content="{{ $.Site.BaseURL }}icons/social-card.png">
 
 <meta property="og:url" content="https://teamdigitale.github.io/security-awareness/">
 <meta property="og:title" content="Security Awareness">
 <meta property="og:description" content="Basic course on cyber security">
 <meta property="og:type" content="website">
-<meta property="og:image" content="{{ .Site.BaseURL }}icons/social-card.png">
-<meta property="og:image:secure_url" content="{{ .Site.BaseURL }}icons/social-card.png">
+<meta property="og:image" content="{{ $.Site.BaseURL }}icons/social-card.png">
+<meta property="og:image:secure_url" content="{{ $.Site.BaseURL }}icons/social-card.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap-italia.min.css">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+<link rel="stylesheet" href="{{ $.Site.BaseURL }}css/bootstrap-italia.min.css">
+<link rel="stylesheet" href="{{ $.Site.BaseURL }}css/main.css">
 
 <!-- Script and Styles for SurveyJS -->
 <script src="https://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
-<link href="{{ .Site.BaseURL }}css/survey.css" type="text/css" rel="stylesheet" />
+<link href="{{ $.Site.BaseURL }}css/survey.css" type="text/css" rel="stylesheet" />
 <script src="https://surveyjs.azureedge.net/1.1.13/survey.jquery.js"></script>
 
 {{ template "_internal/google_analytics_async.html" . }}
