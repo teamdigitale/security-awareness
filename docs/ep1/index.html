@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Team per la Trasformazione Digitale">
+
+<title>Corso di sicurezza digitale  | Episodio 1 - Errore Umano</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="img/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/icons/favicons/apple-touch-icon.png">
+<link rel="icon" href="/icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/icons/favicons/manifest.webmanifest">
+<link rel="mask-icon" href="/icons/favicons/safari-pinned-tab.svg" color="#0066CC">
+<link rel="icon" href="/bootstrap-italia/favicon.ico">
+<meta name="msapplication-config" content="/icons/favicons/browserconfig.xml">
+<meta name="theme-color" content="#0066CC">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@teamdigitaleIT">
+<meta name="twitter:creator" content="Team per la Trasformazione Digitale">
+<meta name="twitter:title" content="Bootstrap Italia">
+<meta name="twitter:description" content="Bootstrap Italia è un tema Bootstrap 4 per la creazione di applicazioni web nel pieno rispetto delle Linee guida di design per i servizi web della PA">
+<meta name="twitter:image" content="/icons/favicons/social-card.png">
+
+<meta property="og:url" content="https://italia.github.io/bootstrap-italia/">
+<meta property="og:title" content="Bootstrap Italia">
+<meta property="og:description" content="Bootstrap Italia è un tema Bootstrap 4 per la creazione di applicazioni web nel pieno rispetto delle Linee guida di design per i servizi web della PA">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/icons/favicons/social-card.png">
+<meta property="og:image:secure_url" content="/icons/favicons/social-card.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<link rel="stylesheet" href="/css/bootstrap-italia.min.css">
+<link rel="stylesheet" href="/css/main.css">
+
+
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<link href="/css/survey.css" type="text/css" rel="stylesheet" />
+<script src="https://surveyjs.azureedge.net/1.1.13/survey.jquery.js"></script>
+
+
+
+
+  </head>
+
+  <body>
+    <div class="it-header-wrapper">
+  <div class="it-header-slim-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="d-none d-lg-block navbar-brand" href="http://teamdigitale.governo.it">Team per la Trasformazione Digitale</a>
+            <div class="nav-mobile">
+              <nav>
+                <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale" role="button" aria-expanded="false" aria-controls="menu-principale">
+                  <span>Team per la Trasformazione Digitale</span>
+                  <svg class="icon">
+                    <use xlink:href="/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menu-principale">
+                  <ul class="link-list">
+                    
+                    <li><a href="https://forum.italia.it">Forum</a></li>
+                    
+                    <li><a href="https://docs.italia.it">Docs</a></li>
+                    
+                    <li><a href="https://developers.italia.it">Developers</a></li>
+                    
+                    <li><a href="https://designers.italia.it">Designers</a></li>
+                    
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="header-slim-right-zone">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <span>ITA</span>
+                  <svg class="icon d-none d-lg-block">
+                    <use xlink:href="/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12 padleft">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          
+                          <li>
+                            <a class="list-item" href="http://localhost:1313/">
+                              <div class="avatar size-xs">
+                                <img src="/img/ITA.png" alt="Luisa Neri">
+                              </div>
+
+                              <span>ITA</span>
+                            </a>
+                          </li>
+                          
+                          <li>
+                            <a class="list-item" href="http://localhost:1313/en/">
+                              <div class="avatar size-xs">
+                                <img src="/img/ENG.png" alt="Luisa Neri">
+                              </div>
+
+                              <span>ENG</span>
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="/">
+                  <svg class="icon">
+                    <use xlink:href="/svg/sprite.svg#it-password-invisible"></use>
+                  </svg>
+                  <div class="it-brand-text">
+                    <h2 class="no_toc"> Corso di base di sicurezza</h2>
+                    <h3 class="no_toc d-none d-md-block">Corso di base di sicurezza digitale</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="it-right-zone">
+                <div class="it-socials d-none d-md-flex">
+                  <span>Seguici su</span>
+                  <ul>
+                    
+                      <li>
+                        <a href="https://github.com/teamdigitale/security-awareness" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="/svg/sprite.svg#it-github"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.linkedin.com/company/teamdigitale" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="/svg/sprite.svg#it-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://medium.com/team-per-la-trasformazione-digitale" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="/svg/sprite.svg#it-medium"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://twitter.com/teamdigitaleIT" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="/svg/sprite.svg#it-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="/svg/sprite.svg#it-youtube"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="it-header-navbar-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg has-megamenu">
+              <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+                <svg class="icon">
+                  <use xlink:href="/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="nav10">
+                <div class="overlay"></div>
+                <div class="close-div sr-only">
+                  <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+                </div>
+                <div class="menu-wrapper">
+                  <ul class="navbar-nav">
+                     
+                      
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Episodi
+                          </a>
+                          <div class="dropdown-menu" >
+                            
+                            <a class="dropdown-item" href="http://localhost:1313/ep1">Episodio 1 - Errore Umano</a>
+                            
+                            <a class="dropdown-item" href="http://localhost:1313/ep2">Episodio 2 - Password Leak</a>
+                            
+                            <a class="dropdown-item" href="http://localhost:1313/ep3">Episodio 3 - Spearphishing</a>
+                            
+                            <a class="dropdown-item" href="http://localhost:1313/ep4">Episodio 4 - Ransomware</a>
+                            
+                          </div>
+                        </li>
+                        
+                     
+                      
+                        <li class="nav-item">
+                          <a class="nav-link" href="http://localhost:1313/quiz">Quiz</a>
+                        </li>
+                      
+                     
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main>
+      
+<style>.img-responsive-wrapper .img-responsive {padding-bottom: 100% !important}</style>
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-8 my-5">
+      
+
+<h2 id="introduzione">Introduzione</h2>
+
+<p>In questa storia introduciamo il concetto di <strong>sicurezza digitale</strong> legato ai corretti comportamenti delle persone in ambiente lavorativo e privato. Secondo FONTE, <strong>circa l’80 per cento degli attacchi informatici avvengono &ldquo;tra il computer e la sedia&rdquo;</strong>, ovvero non dipendono da debolezze tecniche dei sistemi informatici ma dall’errore umano. Questo significa che i dipendenti sono un anello importante per la protezione dei dati aziendali, la sicurezza digitale è quindi responsabilità di ognuno di noi. Obiettivo del corso è fornire <strong>strumenti base per aumentare la sicurezza</strong>, anche attraverso dei comportamenti individuali prudenti.</p>
+
+<p>In questa storia, ad esempio, impariamo cosa può succedere (e succede davvero, nel mondo reale!) quando non si prendono le dovute precauzioni <strong>nella gestione dei documenti di lavoro</strong>, che possono contenere delle informazioni preziose&hellip;</p>
+
+
+      <h2 id="i-personaggi">I personaggi della storia</h2>
+      <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
+          <div class="it-carousel-all owl-carousel it-img-card">
+            
+              <div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-img no-after">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Ludovica.png" title="Ludovica" alt="Ludovica"></div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Ludovica</h5>
+                      <p class="card-text">Ludovica è un manager di ferro. Sempre attenta a tutti i dettagli, è una lavoratrice instancabile.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-img no-after">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Carla.png" title="Carla" alt="Carla"></div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Carla</h5>
+                      <p class="card-text">Carla è l’assistente di Ludovica. Si divide tra gli impegni in ufficio (davvero tanti) e il suo secondo &#34;lavoro&#34; di mamma, cercando di essere quanto più presente in famiglia.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-img no-after">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Luca.png" title="Luca" alt="Luca"></div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Luca</h5>
+                      <p class="card-text">Luca fa l’ultimo anno di scuola elementare. Sempre pronto a inseguire un pallone che rotola, ogni tanto trova il tempo per fare i compiti...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-img no-after">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Filippo.png" title="Filippo" alt="Filippo"></div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Filippo</h5>
+                      <p class="card-text">Filippo è il maestro più amato della classe di Luca: si è guadagnato questo privilegio grazie alla sua simpatia, ma anche perché cerca sempre nuove attività creative per liberare la fantasia dei ragazzi!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+      </div>
+
+      <h2 id="la-storia">La storia</h2>
+      <div class="it-grid-list-wrapper">
+        <div class="grid-row">
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v01.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v02.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v03.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v04.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v05.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v06.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v07.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v08.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v09.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v10.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v11.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v12.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v13.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v14.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v15.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-4">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v16.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+      
+      <h2 id="glossario">Glossary</h2>
+      
+      <div class="callout">
+          <div class="callout-title"><svg class="icon"><use xlink:href="/svg/sprite.svg#it-info-circle"></use></svg><span class="sr-only">Confermato</span> Clean Desk Policy</div>
+          <p>In italiano “Politica della scrivania pulita”, consiste nel tenere sempre la scrivania sgombra da documenti alla fine della giornata lavorativa, o quando ci si allontana dalla propria postazione.</p>
+        </div>
+      
+      <div class="callout">
+          <div class="callout-title"><svg class="icon"><use xlink:href="/svg/sprite.svg#it-info-circle"></use></svg><span class="sr-only">Confermato</span> Dumpster Diving</div>
+          <p>Consiste nel recupero di informazioni sensibili rovistando nella spazzatura.</p>
+        </div>
+      
+
+      <h2 id="link">Link e storie simili e approfondimenti</h2>
+      <div class="callout callout-highlight important">
+        <div class="callout-title"><svg class="icon"><use xlink:href="/svg/sprite.svg#it-info-circle"></use></svg>Importante</div>
+        <p>Qualsiasi tipo di documento che stampi potrebbe sempre avere al suo interno qualche contenuto “sensibile”: numeri di telefono, indirizzi email o altri dati personali, appunti, cifre, scambi di email, importi relativi a dei pagamenti, o addirittura <strong>informazioni riservate</strong>. Quando stampi dei documenti ricorda sempre di:</p>
+
+<ul>
+<li>Verificare la presenza di eventuali contenuti sensibili.</li>
+<li>Non lasciarli incustoditi ad esempio sulla tua scrivania.</li>
+<li>Non gettarli nella spazzatura prima di averli distrutti.</li>
+<li>Avere premura di custodirli in un posto sicuro anche quando sei a casa.</li>
+<li>Non lasciarli nella stampante.</li>
+<li>Non creare mai copie non autorizzate di documenti riservati.</li>
+</ul>
+
+<p>In particolare alla fine di una giornata di lavoro è importante:</p>
+
+<ul>
+<li>Riporre i documenti in luogo sicuro (ad esempio: armadio chiuso con serratura).</li>
+<li>Distruggere i documenti non più  utilizzati, eventualmente tenendo traccia (log) di ciò che è stato distrutto, se richiesto.</li>
+<li>Bloccare lo schermo ogni volta che ci si allontana dalla propria postazione, impostando una password per la riattivazione.</li>
+<li>Spegnere il proprio computer prima di lasciare l’ufficio.</li>
+<li>In caso si lavori con il portatile, spegnerlo prima di portarlo con sé (non chiuderlo e basta, né impostarlo in &ldquo;sleep&rdquo; o &ldquo;ibernate&rdquo;.</li>
+<li>Non annotare informazioni riservate, come ad esempio password, su foglietti o post-it, lasciandoli sulla scrivania o attaccati al muro del tuo ufficio o sul monitor.</li>
+<li>Custodire le pennette USB accuratamente, se necessario sotto chiave, ricordando sempre che tipo di documenti sono salvati al loro interno.</li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+    
+<footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section class="py-4">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 pb-2">
+            <h4><a>Security Awareness</a></h4>
+            <p>Un breve corso per la sicurezza digitale</p>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                
+                  <li><a class="list-item" href="/ep1" title="Episodio 1 - Erorre Umano">Episodio 1 - Erorre Umano</a></li>
+                
+                  <li><a class="list-item" href="/ep2" title="Episodio 2 - Password Leak">Episodio 2 - Password Leak</a></li>
+                
+                  <li><a class="list-item" href="/ep3" title="Episodio 3 - Spearphishing">Episodio 3 - Spearphishing</a></li>
+                
+                  <li><a class="list-item" href="/ep4" title="Episodio 4 - Ransomware">Episodio 4 - Ransomware</a></li>
+                
+                  <li><a class="list-item" href="/quiz" title="Quiz">Quiz</a></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 pb-2">
+            <h4><a>Security Awareness</a></h4>
+            <p>Security Awareness - Corso</p>
+          </div>
+          <div class="col-lg-4 col-md-4 pb-2">
+            <div class="pb-2">
+              <h4><a>Seguici su</a></h4>
+              <ul class="list-inline text-left social">
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://github.com/teamdigitale/security-awareness" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="/svg/sprite.svg#it-github"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.linkedin.com/company/teamdigitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="/svg/sprite.svg#it-linkedin"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://medium.com/team-per-la-trasformazione-digitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="/svg/sprite.svg#it-medium"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://twitter.com/teamdigitaleIT" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="/svg/sprite.svg#it-twitter"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="/svg/sprite.svg#it-youtube"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <h3 class="sr-only">Sezione Link Utili</h3>
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        
+        <li class="list-inline-item"><a href="#" title="Note legali">Note legali</a></li>
+        
+        <li class="list-inline-item"><a href="#" title="Privacy policy">Privacy policy</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script>window.__PUBLIC_PATH__ = '/fonts'</script>
+<script src="/js/bootstrap-italia.bundle.min.js"></script>
+</body>
+</html>
+
+  </body>
+</html>
