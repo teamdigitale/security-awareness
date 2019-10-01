@@ -10,7 +10,7 @@
                 <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale" role="button" aria-expanded="false" aria-controls="menu-principale">
                   <span>{{ .Site.Params.ente }}</span>
                   <svg class="icon">
-                    <use xlink:href="/svg/sprite.svg#it-expand"></use>
+                    <use xlink:href="{{ .Site.BaseURL }}/svg/sprite.svg#it-expand"></use>
                   </svg>
                 </a>
                 <div class="link-list-wrapper collapse" id="menu-principale">
@@ -27,7 +27,7 @@
                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                   <span>{{ .Site.Language.LanguageName }}</span>
                   <svg class="icon d-none d-lg-block">
-                    <use xlink:href="/svg/sprite.svg#it-expand"></use>
+                    <use xlink:href="{{ .Site.BaseURL }}/svg/sprite.svg#it-expand"></use>
                   </svg>
                 </a>
                 <div class="dropdown-menu">
@@ -39,7 +39,7 @@
                           <li>
                             <a class="list-item" href="{{ .Permalink }}">
                               <div class="avatar size-xs">
-                                <img src="/img/{{ .Language.LanguageName }}.png" alt="Luisa Neri">
+                                <img src="{{ .Site.BaseURL }}/img/{{ .Language.LanguageName }}.png" alt="Luisa Neri">
                               </div>
 
                               <span>{{ .Language.LanguageName }}</span>
@@ -67,7 +67,7 @@
               <div class="it-brand-wrapper">
                 <a href="/">
                   <svg class="icon">
-                    <use xlink:href="/svg/sprite.svg#it-password-invisible"></use>
+                    <use xlink:href="{{ .Site.BaseURL }}/svg/sprite.svg#it-password-invisible"></use>
                   </svg>
                   <div class="it-brand-text">
                     <h2 class="no_toc"> {{ .Site.Params.siteTitle }}</h2>
@@ -83,7 +83,7 @@
                       <li>
                         <a href="{{ .url }}" aria-label="{{ .Name }}" target="_blank">
                           <svg class="icon">
-                            <use xlink:href="/svg/sprite.svg#{{ .icon }}"></use>
+                            <use xlink:href="{{ .Site.BaseURL }}/svg/sprite.svg#{{ .icon }}"></use>
                           </svg>
                         </a>
                       </li>
@@ -94,7 +94,7 @@
                   <span class="d-none d-md-block">Cerca</span>
                   <a class="search-link rounded-icon" href="#" aria-label="Cerca">
                     <svg class="icon">
-                      <use xlink:href="/svg/sprite.svg#it-search"></use>
+                      <use xlink:href="{{ .Site.BaseURL }}/svg/sprite.svg#it-search"></use>
                     </svg>
                   </a>
                 </div-->
@@ -111,7 +111,7 @@
             <nav class="navbar navbar-expand-lg has-megamenu">
               <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
                 <svg class="icon">
-                  <use xlink:href="/svg/sprite.svg#it-burger"></use>
+                  <use xlink:href="{{ .Site.BaseURL }}/svg/sprite.svg#it-burger"></use>
                 </svg>
               </button>
               <div class="navbar-collapsable" id="nav10">
