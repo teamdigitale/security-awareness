@@ -1,9 +1,36 @@
-baseurl = "http://localhost:1313/security-awareness/"
+baseurl = "https://teamdigitale.github.io/security-awareness/"
 theme = "hugo-theme-bootstrap-italia"
 
 DefaultContentLanguage = "it"
 
 publishDir = "./docs"
+
+[Params]
+  [Params.socials]
+    [Params.socials.medium]
+    name = "Medium"
+    URL = "https://medium.com/team-per-la-trasformazione-digitale"
+    icon = "it-medium"
+
+    [Params.socials.github]
+    name = "GitHub"
+    URL = "https://github.com/teamdigitale/security-awareness"
+    icon = "it-github"
+
+    [Params.socials.twitter]
+    name = "Twitter"
+    URL = "https://twitter.com/teamdigitaleIT"
+    icon = "it-twitter"
+
+    [Params.socials.linkedin]
+    name = "LinkedIn"
+    URL = "https://www.linkedin.com/company/teamdigitale"
+    icon = "it-linkedin"
+
+    [Params.socials.youtube]
+    name = "YouTube"
+    URL = "https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/"
+    icon = "it-youtube"
 
 [languages]
   [languages.it]

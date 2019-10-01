@@ -3,86 +3,86 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/security-awareness/en/categories/</loc>
+    <loc>https://teamdigitale.github.io/security-awareness/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:1313/security-awareness/categories/"
+                href="https://teamdigitale.github.io/security-awareness/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/security-awareness/en/categories/"
+                href="https://teamdigitale.github.io/security-awareness/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/security-awareness/en/ep1/</loc>
+    <loc>https://teamdigitale.github.io/security-awareness/en/ep1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:1313/security-awareness/ep1/"
+                href="https://teamdigitale.github.io/security-awareness/ep1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/security-awareness/en/ep1/"
+                href="https://teamdigitale.github.io/security-awareness/en/ep1/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/security-awareness/en/ep2/</loc>
+    <loc>https://teamdigitale.github.io/security-awareness/en/ep2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:1313/security-awareness/ep2/"
+                href="https://teamdigitale.github.io/security-awareness/ep2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/security-awareness/en/ep2/"
+                href="https://teamdigitale.github.io/security-awareness/en/ep2/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/security-awareness/en/quiz/</loc>
+    <loc>https://teamdigitale.github.io/security-awareness/en/quiz/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:1313/security-awareness/quiz/"
+                href="https://teamdigitale.github.io/security-awareness/quiz/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/security-awareness/en/quiz/"
+                href="https://teamdigitale.github.io/security-awareness/en/quiz/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/security-awareness/en/</loc>
+    <loc>https://teamdigitale.github.io/security-awareness/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:1313/security-awareness/"
+                href="https://teamdigitale.github.io/security-awareness/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/security-awareness/en/"
+                href="https://teamdigitale.github.io/security-awareness/en/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/security-awareness/en/tags/</loc>
+    <loc>https://teamdigitale.github.io/security-awareness/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:1313/security-awareness/tags/"
+                href="https://teamdigitale.github.io/security-awareness/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/security-awareness/en/tags/"
+                href="https://teamdigitale.github.io/security-awareness/en/tags/"
                 />
   </url>
   
