@@ -2,12 +2,12 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	<sitemap>
-	   	<loc>/security-awareness/it/sitemap.xml</loc>
+	   	<loc>http://localhost:1313/security-awareness/it/sitemap.xml</loc>
 		
 	</sitemap>
 	
 	<sitemap>
-	   	<loc>/security-awareness/en/sitemap.xml</loc>
+	   	<loc>http://localhost:1313/security-awareness/en/sitemap.xml</loc>
 		
 	</sitemap>
 	

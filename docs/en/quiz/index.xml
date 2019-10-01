@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quiz on Course on the digital security</title>
-    <link>/security-awareness/en/quiz/</link>
+    <link>http://localhost:1313/security-awareness/en/quiz/</link>
     <description>Recent content in Quiz on Course on the digital security</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="/security-awareness/en/quiz/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/security-awareness/en/quiz/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

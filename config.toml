@@ -1,4 +1,4 @@
-baseurl = "/security-awareness/"
+baseurl = "http://localhost:1313/security-awareness/"
 theme = "hugo-theme-bootstrap-italia"
 
 DefaultContentLanguage = "it"

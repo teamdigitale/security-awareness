@@ -3,86 +3,86 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/security-awareness/en/categories/</loc>
+    <loc>http://localhost:1313/security-awareness/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="/security-awareness/categories/"
+                href="http://localhost:1313/security-awareness/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/security-awareness/en/categories/"
+                href="http://localhost:1313/security-awareness/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>/security-awareness/en/ep1/</loc>
+    <loc>http://localhost:1313/security-awareness/en/ep1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="/security-awareness/ep1/"
+                href="http://localhost:1313/security-awareness/ep1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/security-awareness/en/ep1/"
+                href="http://localhost:1313/security-awareness/en/ep1/"
                 />
   </url>
   
   <url>
-    <loc>/security-awareness/en/ep2/</loc>
+    <loc>http://localhost:1313/security-awareness/en/ep2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="/security-awareness/ep2/"
+                href="http://localhost:1313/security-awareness/ep2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/security-awareness/en/ep2/"
+                href="http://localhost:1313/security-awareness/en/ep2/"
                 />
   </url>
   
   <url>
-    <loc>/security-awareness/en/quiz/</loc>
+    <loc>http://localhost:1313/security-awareness/en/quiz/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="/security-awareness/quiz/"
+                href="http://localhost:1313/security-awareness/quiz/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/security-awareness/en/quiz/"
+                href="http://localhost:1313/security-awareness/en/quiz/"
                 />
   </url>
   
   <url>
-    <loc>/security-awareness/en/</loc>
+    <loc>http://localhost:1313/security-awareness/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="/security-awareness/"
+                href="http://localhost:1313/security-awareness/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/security-awareness/en/"
+                href="http://localhost:1313/security-awareness/en/"
                 />
   </url>
   
   <url>
-    <loc>/security-awareness/en/tags/</loc>
+    <loc>http://localhost:1313/security-awareness/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="/security-awareness/tags/"
+                href="http://localhost:1313/security-awareness/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/security-awareness/en/tags/"
+                href="http://localhost:1313/security-awareness/en/tags/"
                 />
   </url>
   
