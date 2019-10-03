@@ -1,0 +1,8 @@
+.padleft {
+  padding-left: 1em !important;
+}
+
+.noafter:after {
+  margin-top: 12px !important; 
+  background: none !important;
+}

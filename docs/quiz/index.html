@@ -280,6 +280,7 @@ function sendDataToServer(survey) {
 }
 
 var survey = new Survey.Model(surveyJSON);
+survey.locale = "it";
 $("#surveyContainer").Survey({
     model: survey,
     onComplete: sendDataToServer
