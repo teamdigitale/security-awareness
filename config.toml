@@ -111,6 +111,16 @@ publishDir = "./docs"
       weight = 5
     
     [[languages.it.menu.navbar]]
+      name = "Home"
+      URL = "/"
+      weight = 1
+
+    [[languages.en.menu.navbar]]
+      name = "Home"
+      URL = "/"
+      weight = 1
+
+    [[languages.it.menu.navbar]]
       name = "Episodi"
       weight = 2
 
