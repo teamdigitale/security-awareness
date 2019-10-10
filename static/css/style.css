@@ -6,3 +6,10 @@
   margin-top: 12px !important; 
   background: none !important;
 }
+
+.vignettes:grid-row-start {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  margin-top: -1px;
+  margin-left: -1px;
+}
