@@ -28,7 +28,7 @@ The digital security course (or "security awareness") that you are about to star
 ### What do we mean by security?
 By information security we mean:
 
-- **confidentiality** - access to information must be guaranteed only to those who are entitled to it;
+- **confidentiality** - access to information must be guaranteed only to those who are entitled;
 - **integrity** - the information must be preserved intact and complete;
 - **availability** - the information must be accessible to those who are entitled to it.
 
