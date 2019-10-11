@@ -37,7 +37,7 @@ Unfortunately the error is always around the corner, therefore the risks due to 
 
 In other words: **you are the most important link for data protection** and information. Are you ready to become a computer security superhero?
 
-<center><h4><a href="ep1" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Go immediately to Episode I!</a></h4></center>
+<center><a href="ep1" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Go immediately to Episode I!</a></center>
 
 
 ### Targets
