@@ -121,7 +121,7 @@ publishDir = "./docs"
       weight = 1
 
     [[languages.it.menu.navbar]]
-      name = "Chi shiamo"
+      name = "Chi siamo"
       URL = "/"
       weight = 2
 
