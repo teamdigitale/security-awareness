@@ -7,9 +7,20 @@
   background: none !important;
 }
 
-.vignettes:grid-row-start {
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  margin-top: -1px;
-  margin-left: -1px;
+.vignettes {
+  border: 1px solid grey;
+}
+
+h2 {
+  margin-top: 1.2em;
+}
+
+.footer-team img {
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.footer-team-text {
+  width: 10rem;
+  line-height: 1;
 }

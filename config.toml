@@ -46,10 +46,10 @@ publishDir = "./docs"
     footerColumn1Title = "Security Awareness"
     footerColumn1Text = "Un breve corso per la sicurezza digitale"
     footerColumn1Links = [
-      { label = "Episodio 1 - Erorre Umano", url = "ep1" },
-      { label = "Episodio 2 - Password Leak", url = "ep2" },
-      { label = "Episodio 3 - Spearphishing", url = "ep3" },
-      { label = "Episodio 4 - Ransomware", url = "ep4" },
+      { label = "Home", url = "/" },
+      { label = "Chi siamo", url = "/" },
+      { label = "Perchè questo corso?", url = "/" },
+      { label = "Episodi", url = "/" },
       { label = "Quiz", url = "quiz" }
     ]
 
@@ -74,10 +74,10 @@ publishDir = "./docs"
     footerColumn1Title = "Security Awareness"
     footerColumn1Text = "A short course for digital security"
     footerColumn1Links = [
-      { label = "Episode 1 - Human Error", url = "en/ep1" },
-      { label = "Episode 2 - Password Leak", url = "en/ep2" },
-      { label = "Episode 3 - Spearphishing", url = "en/ep3" },
-      { label = "Episode 4 - Ransomware", url = "en/ep3" },
+      { label = "Home", url = "/en/" },
+      { label = "Chi siamo", url = "/en/" },
+      { label = "Perchè questo corso?", url = "/en/" },
+      { label = "Episodi", url = "/en/" },
       { label = "Quiz", url = "en/quiz" }
     ]
 
@@ -121,12 +121,32 @@ publishDir = "./docs"
       weight = 1
 
     [[languages.it.menu.navbar]]
-      name = "Episodi"
+      name = "Chi shiamo"
+      URL = "/"
       weight = 2
 
     [[languages.en.menu.navbar]]
-      name = "Episodes"
+      name = "Who are we"
+      URL = "/"
       weight = 2
+
+    [[languages.it.menu.navbar]]
+      name = "Perchè questo corso?"
+      URL = "/"
+      weight = 3
+
+    [[languages.en.menu.navbar]]
+      name = "Why this course?"
+      URL = "/"
+      weight = 3
+
+    [[languages.it.menu.navbar]]
+      name = "Episodi"
+      weight = 4
+
+    [[languages.en.menu.navbar]]
+      name = "Episodes"
+      weight = 4
 
     [[languages.it.menu.navbar]]
       name = "Episodio 1 - Errore Umano"
@@ -155,7 +175,7 @@ publishDir = "./docs"
     [[languages.it.menu.navbar]]
       name = "Quiz"
       URL = "/quiz"
-      weight = 2
+      weight = 5
 
   [languages.en.menu]
     [[languages.en.menu.main]]
@@ -205,4 +225,4 @@ publishDir = "./docs"
     [[languages.en.menu.navbar]]
       name = "Quiz"
       URL = "/en/quiz"
-      weight = 2
+      weight = 5
