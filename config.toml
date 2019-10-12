@@ -53,8 +53,7 @@ publishDir = "./docs"
       { label = "Quiz", url = "quiz" }
     ]
 
-    footerColumn2Title = "Security Awareness"
-    footerColumn2Text = "Security Awareness - Corso"
+    footerColumn2Title = "Un progetto di"
 
     footerBottomLinks = [
       { label = "Note legali", url = "#" },
@@ -81,8 +80,7 @@ publishDir = "./docs"
       { label = "Quiz", url = "en/quiz" }
     ]
 
-    footerColumn2Title = "Security Awareness"
-    footerColumn2Text = "Security Awareness - Course"
+    footerColumn2Title = "A project by"
 
     footerBottomLinks = [
       { label = "Legal notes", url = "#" },
