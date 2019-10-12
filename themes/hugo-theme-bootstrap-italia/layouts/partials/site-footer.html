@@ -17,14 +17,14 @@
           </div>
           <div class="col-lg-4 col-md-4 pb-2">
             <h4><a>{{ .Site.Params.footerColumn2Title }}</a></h4>
-            <a href="https://teamdigitale.governo.it/">
+            <a href="{{ .Site.Params.footerColumn2Link }}">
               <div class="d-flex">
                 <div class="d-flex footer-team">
                   <img class="" src="{{ $.Site.BaseURL }}img/governo.svg" alt="">
                   <img class="" src="{{ $.Site.BaseURL }}img/dt-logo.svg" alt="">
                 </div>
                 <div class="px-2 border-white border-left footer-team-text text-white">
-                  TEAM PER LA TRASFORMAZIONE DIGITALE
+                  {{ .Site.Params.footerColumn2Text }}
                 </div>
               </div>
             </a>

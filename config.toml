@@ -54,6 +54,8 @@ publishDir = "./docs"
     ]
 
     footerColumn2Title = "Un progetto di"
+    footerColumn2Text = "TEAM PER LA TRASFORMAZIONE DIGITALE"
+    footerColumn2Link = "https://teamdigitale.governo.it/"
 
     footerBottomLinks = [
       { label = "Note legali", url = "#" },
@@ -74,13 +76,15 @@ publishDir = "./docs"
     footerColumn1Text = "A short course for digital security"
     footerColumn1Links = [
       { label = "Home", url = "/en/" },
-      { label = "Chi siamo", url = "/en/" },
-      { label = "Perchè questo corso?", url = "/en/" },
-      { label = "Episodi", url = "/en/" },
+      { label = "Who are we", url = "/en/" },
+      { label = "Why this course?", url = "/en/" },
+      { label = "Episodes", url = "/en/" },
       { label = "Quiz", url = "en/quiz" }
     ]
 
     footerColumn2Title = "A project by"
+    footerColumn2Text = "DIGITAL TRANSFORMATION TEAM"
+    footerColumn2Link = "https://teamdigitale.governo.it/en"
 
     footerBottomLinks = [
       { label = "Legal notes", url = "#" },
