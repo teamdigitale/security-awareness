@@ -12,6 +12,7 @@
         {{ $elems := len .Page.Params.questions }}
 
         {{ range .Page.Params.questions }}
+          {{ $progress := div (mul 100 $divnum) $elems }}
           {{ $divnum = add $divnum 1 }}
 
           <div class="question {{ if ne $divnum 1 }}hidden{{ end }}" id="div_{{ $divnum }}">
@@ -34,6 +35,15 @@
                   </div>
                 {{ end }}
               {{ end}}
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>{{ $progress }}%</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: {{ $progress }}%" aria-valuenow="{{ $progress }}" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
 
             <p>&nbsp;</p>
