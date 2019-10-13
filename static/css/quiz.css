@@ -19,6 +19,10 @@
     padding: 15px;
 }
 
-.question:nth-child(even) {
-    background: whitesmoke;
-}
+.goto-test {
+    display: block;
+    margin-top: 3em;
+    width: 100%;
+    text-align: center;
+  }
+  
