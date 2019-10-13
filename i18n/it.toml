@@ -18,3 +18,6 @@ other = "Invia quiz per valutazione"
 
 [answer-needed]
 other = "Rispondere alla domanda!"
+
+[call-error]
+other = "C'è stato un errore tecnico."

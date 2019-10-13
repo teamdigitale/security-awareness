@@ -286,15 +286,18 @@
       
 <iframe name="hidden_iframe" id="hidden_iframe" class="hidden"></iframe>
 
+<div class="notification with-icon error" style="z-index: 1000" role="alert" aria-labelledby="missing-title" id="missing">
+  <h5 id="missing-title">
+    <svg class="icon"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-close-circle"></use></svg>
+    <span id="warn-message"></span>
+  </h5>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col col-lg-8 my-5">
       <h2>Self-assessment quiz - Episode 2</h2>
       <div class="callout callout-highlight"><p>To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment test!</p></div>
-
-      <div class="notification with-icon error" style="z-index: 1000" role="alert" aria-labelledby="missing-title" id="missing">
-        <h5 id="missing-title"><svg class="icon"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-close-circle"></use></svg>Please, answer the question!</h5>
-      </div>
 
       <form id="quiz">
         
@@ -865,6 +868,7 @@ As answers choose:</p>
 
   function nextQuestion(itemid) {
     if ($("input[name='question1']").filter(':checked').val() === undefined) {
+      $("#warn-message").html("Please, answer the question!");
       notificationShow('missing', 6000);
       return;
     }
@@ -897,7 +901,8 @@ As answers choose:</p>
     
       request.done(function (response){
         if (response.result == "error") {
-          $('#result').html('Si è verificato un errore.');
+          $("#warn-message").html("We are experiencing a technical error.");
+          notificationShow('missing', 6000);
         }
         else {
           $('#result').html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Success - see Google Sheet</a>');
