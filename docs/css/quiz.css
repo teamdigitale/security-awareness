@@ -1,0 +1,24 @@
+.valign-top {
+    vertical-align: top;
+}
+
+.title_question {
+    margin-top: 1em;
+    border-bottom: 2px solid #0066cc; 
+    width:100%;
+    font-weight: bold;
+}
+
+.label_check {
+    display: inline-block;
+    margin-left: 10px;
+    width: calc(100% - 30px);
+}
+
+.question {
+    padding: 15px;
+}
+
+.question:nth-child(even) {
+    background: whitesmoke;
+}

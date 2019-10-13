@@ -1,0 +1,116 @@
+{{ define "main" }}
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-8 my-5">
+      <h2>{{ .Page.Params.quiztitle }}</h2>
+      <div class="callout callout-highlight"><p>{{ .Page.Params.description }}</p></div>
+
+      <form id="quiz">
+        {{ range .Page.Params.questions }}
+          <div class="question">
+            {{ $curquestion := . }}
+            <p class="title_question">{{ .text }}</p>
+                    
+            <div>
+              {{ range .choices }}
+                {{ if eq $curquestion.type "radiogroup" }}
+                  <div class="form-check valign">
+                      <input name="{{ $curquestion.name }}" id="{{ $curquestion.name }}_{{ .value }}" type="radio" value="{{ .value }}" />
+                      <label class="label_check" for="{{ $curquestion.name }}_{{ .value }}" class="form-text">{{ .text }}</label>
+                  </div>
+                {{ end }}
+
+                {{ if eq $curquestion.type "checkbox" }}
+                  <div class="form-check valign">
+                      <input name="{{ $curquestion.name }}" id="{{ $curquestion.name }}_{{ .value }}" type="checkbox" value="{{ .value }}" />
+                      <label class="label_check" for="{{ $curquestion.name }}_{{ .value }}" class="form-text">{{ .text }}</label>
+                  </div>
+                {{ end }}
+              {{ end}}
+            </div>
+          </div>
+        {{ end }}
+
+        <p>&nbsp;</p>
+
+        <div class="mx-auto text-center">
+          <input type="hidden" id="quiztype" name="quiztype" value="{{ .Page.Params.type }}">
+          <input type="submit" class="btn btn-primary" value="{{ T "send-quiz" }}">
+        </div>
+      </form>
+
+      <div id="result"></div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('head').append('<link rel="stylesheet" href="{{ $.Site.BaseURL }}css/quiz.css" type="text/css" />');
+
+  jQuery(document).ready(function($) {
+    // variable to hold request
+    var request;
+    // bind to the submit event of our form
+    $("#quiz").submit(function(event){
+      // abort any pending request
+      if (request) {
+        request.abort();
+      }
+      // setup some local variables
+      var $form = $(this);
+      // let's select and cache all the fields
+      var $inputs = $form.find("input, select, button, textarea");
+      // serialize the data in the form
+      var serializedData = $form.serialize();
+    
+      // let's disable the inputs for the duration of the ajax request
+      // Note: we disable elements AFTER the form data has been serialized.
+      // Disabled form elements will not be serialized.
+      $inputs.prop("disabled", true);
+      $('#result').text('Sending data...');
+    
+      // fire off the request to /form.php
+      request = $.ajax({
+        url: "https://script.google.com/a/teamdigitale.governo.it/macros/s/AKfycbwIWmC3tpgZSwBK_nK6JwmkVH2u23t0VLJkr4zszQ/exec",
+        type: "post",
+        data: serializedData,
+        target: '#hidden_iframe'
+      });
+    
+      // callback handler that will be called on success
+      request.done(function (response){
+        // log a message to the console
+        console.log(response);
+        
+        if (response.result == "error") {
+          $('#result').html('Si è verificato un errore.');
+        }
+        else {
+          $('#result').html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Success - see Google Sheet</a>');
+        }
+      });
+    
+      // callback handler that will be called on failure
+      request.fail(function (jqXHR, textStatus, errorThrown){
+        // log the error to the console
+        console.error(
+          "The following error occured: "+
+          textStatus, errorThrown
+        );
+      });
+    
+      // callback handler that will be called regardless
+      // if the request failed or succeeded
+      request.always(function () {
+        // reenable the inputs
+        $inputs.prop("disabled", false);
+      });
+    
+      // prevent default posting of form
+      event.preventDefault();
+    });
+  });
+</script>
+{{ end }}

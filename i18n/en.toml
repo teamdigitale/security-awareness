@@ -6,3 +6,6 @@ other = "Section Useful Links"
 
 [important]
 other = "Important"
+
+[send-quiz]
+other = "Send quiz for self evaluation"

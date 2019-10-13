@@ -6,3 +6,6 @@ other = "Sezione Link Utili"
 
 [important]
 other = "Importante"
+
+[send-quiz]
+other = "Invia quiz per valutazione"
