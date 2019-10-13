@@ -15,3 +15,6 @@ other = "Domanda successiva"
 
 [send-quiz]
 other = "Invia quiz per valutazione"
+
+[answer-needed]
+other = "Rispondere alla domanda!"

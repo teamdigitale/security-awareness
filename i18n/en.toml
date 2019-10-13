@@ -15,3 +15,6 @@ other = "Next question"
 
 [send-quiz]
 other = "Send quiz for self evaluation"
+
+[answer-needed]
+other = "Please, answer the question!"
