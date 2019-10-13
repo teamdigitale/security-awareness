@@ -32,3 +32,10 @@ h2 {
 .hidden {
   display: none;
 }
+
+.goto_test {
+  display: block;
+  margin-top: 3em;
+  width: 100%;
+  text-align: center;
+}
