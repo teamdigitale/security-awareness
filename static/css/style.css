@@ -15,6 +15,10 @@ h2 {
   margin-top: 1.2em;
 }
 
+.it-brand-text > h2 {
+  margin-top: 0px !important;
+}
+
 .footer-team img {
   height: 3rem;
   margin-right: 0.5rem;
