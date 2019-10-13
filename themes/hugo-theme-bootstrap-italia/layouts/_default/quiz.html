@@ -64,8 +64,8 @@
   $('head').append('<link rel="stylesheet" href="{{ $.Site.BaseURL }}css/quiz.css" type="text/css" />');
 
   function nextQuestion(itemid) {
-      $("#div_"+itemid).addClass("hidden");
-      $("#div_"+(itemid+1)).removeClass("hidden");
+    $("#div_"+itemid).addClass("hidden");
+    $("#div_"+(itemid+1)).removeClass("hidden");
   }
 
   jQuery(document).ready(function($) {
