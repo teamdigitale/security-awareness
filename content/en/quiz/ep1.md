@@ -8,109 +8,109 @@ questions:
   question-1:
     type: "radiogroup"
     name: "question1"
-    text: "Qual è stato l’errore principale commesso da Carla?"
+    text: "What was Carla's main mistake?"
     correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
-        text: "Portare documenti riservati a casa."
+        text: "Bring confidential documents home."
       choice-2:
         value: "item2"
-        text: "Lasciare documenti riservati incustoditi."
+        text: "Leave confidential documents unattended."
       choice-3:
         value: "item3"
-        text: "Stampare documenti riservati."
+        text: "Print reserved documents."
       choice-4:
         value: "item4"
-        text: "Non distruggere i documenti riservati dopo l'uso."
+        text: "Do not destroy confidential documents after use."
   question-2:
     type: "radiogroup"
     name: "question2"
-    text: "Cos'è la \"Clean Desk Policy\"?"
+    text: "What is the \"Clean Desk Policy\"?"
     correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
-        text: "Una prescrizione che richiede di pulire la scrivania."
+        text: "A prescription that requires you to clean the desk."
       choice-2:
         value: "item2"
-        text: "Una prescrizione che chiede di tenere ordinata la scrivania."
+        text: "A prescription that asks you to keep your desk tidy."
       choice-3:
         value: "item3"
-        text: "Una prescrizione che richiede di non lasciare materiale sensibile incustodito sulla scrivania."
+        text: "A prescription that requires you not to leave sensitive material unattended on your desk."
       choice-4:
         value: "item4"
-        text: "Una serie di buone pratiche, come mettere sotto chiave documenti sensibili prima di lasciare l’ufficio."
+        text: "A series of good practices, how to lock up sensitive documents before leaving the office."
   question-3:
     type: "radiogroup"
     name: "question3"
-    text: "Hai fatto un backup di documenti riservati su una chiavetta USB:"
+    text: "You made a backup of confidential documents on a USB stick:"
     correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
-        text: "La porti sempre con te per maggiore sicurezza."
+        text: "Always carry it with you for added security."
       choice-2:
         value: "item2"
-        text: "La lasci sempre in ufficio."
+        text: "You always leave her in the office."
       choice-3:
         value: "item3"
-        text: "Non dovresti creare copie di backup non autorizzate."
+        text: "You should not create unauthorized backups."
       choice-4:
         value: "item4"
-        text: "La lasci sulla scrivania in modo da averla sempre a disposizione."
+        text: "Leave it on your desk so you always have it available."
   question-4:
     type: "checkbox"
     name: "question4"
-    text: "Seleziona una o più luoghi dell’ufficio dove un malintenzionato potrebbe accedere a dati riservati:"
+    text: "Select one or more places in the office where an attacker could access confidential data:"
     correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
-        text: "Cestino dei rifiuti."
+        text: "Garbage can."
       choice-2:
         value: "item2"
-        text: "Quaderno appunti."
+        text: "Notebook notes."
       choice-3:
         value: "item3"
-        text: "Stampante."
+        text: "Printer."
       choice-4:
         value: "item4"
-        text: "Chiavette USB."
+        text: "USB keysticks."
   question-5:
     type: "radiogroup"
     name: "question5"
-    text: "Perché è importante adottare e seguire la \"Clean Desk Policy\" o \"Politica della scrivania pulita\"?"
+    text: "Why is it important to adopt and follow the \"Clean Desk Policy\" or \"Clean Desk Policy\"?"
     correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
-        text: "Migliora la sicurezza e la confidenzialità delle informazioni trattate e crea un ambiente di lavoro più confortevole e meno stressante."
+        text: "It improves the security and confidentiality of the information processed and creates a more comfortable and less stressful work environment."
       choice-2:
         value: "item2"
-        text: "Per avere una postazione di lavoro ordinata e sanificata."
+        text: "To have an orderly and sanitized work station."
       choice-3:
         value: "item3"
-        text: "Per smaltire correttamente la carta negli appositi contenitori della raccolta differenziata."
+        text: "To properly dispose of the paper in the special containers for recycling."
       choice-4:
         value: "item4"
-        text: "Per agevolare il lavoro degli addetti alle pulizie."
+        text: "To facilitate the work of cleaners."
   question-6:
     type: "radiogroup"
     name: "question6"
-    text: "Conosci quale testo di legge attualmente regolamenta e tutela le persone fisiche con riguardo al trattamento dei dati personali e la libera circolazione di tali dati?"
+    text: "Do you know which law currently regulates and protects individuals with regard to the processing of personal data and the free circulation of such data?"
     correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
-        text: "Sì è il regolamento UE 2016/679 anche noto come GDPR (General Data Protection Regulation)."
+        text: "Yes it is the EU regulation 2016/679 also known as GDPR (General Data Protection Regulation)."
       choice-2:
         value: "item2"
-        text: "Sì è il regolamento UE 2016/679 anche noto come GDPR (General Data Protection Regulation), ma non si applica alle Pubbliche Amministrazioni."
+        text: "Yes it is the EU regulation 2016/679 also known as GDPR (General Data Protection Regulation), but it does not apply to Public Administrations."
       choice-3:
         value: "item3"
-        text: "Sì è il D.Lgs 196/2003 anche noto come Codice Privacy."
+        text: "Yes it is Legislative Decree 196/2003 also known as the Privacy Code."
       choice-4:
         value: "item4"
-        text: "Sì è il D.Lgs 196/2003 anche noto come Codice Privacy, ma non si applica alle Pubbliche Amministrazioni."
+        text: "Yes it is the Legislative Decree 196/2003 also known as the Privacy Code, but it does not apply to Public Administrations."
 ---

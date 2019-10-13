@@ -1,5 +1,5 @@
 {{ define "main" }}
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<iframe name="hidden_iframe" id="hidden_iframe" class="hidden"></iframe>
 
 <div class="container">
   <div class="row">
@@ -8,8 +8,13 @@
       <div class="callout callout-highlight"><p>{{ .Page.Params.description }}</p></div>
 
       <form id="quiz">
+        {{ $divnum := 0 }}
+        {{ $elems := len .Page.Params.questions }}
+
         {{ range .Page.Params.questions }}
-          <div class="question">
+          {{ $divnum = add $divnum 1 }}
+
+          <div class="question {{ if ne $divnum 1 }}hidden{{ end }}" id="div_{{ $divnum }}">
             {{ $curquestion := . }}
             <p class="title_question">{{ .text }}</p>
                     
@@ -17,7 +22,7 @@
               {{ range .choices }}
                 {{ if eq $curquestion.type "radiogroup" }}
                   <div class="form-check valign">
-                      <input name="{{ $curquestion.name }}" id="{{ $curquestion.name }}_{{ .value }}" type="radio" value="{{ .value }}" />
+                      <input name="{{ $curquestion.name }}" id="{{ $curquestion.name }}_{{ .value }}" type="radio" value="{{ .value }}" required />
                       <label class="label_check" for="{{ $curquestion.name }}_{{ .value }}" class="form-text">{{ .text }}</label>
                   </div>
                 {{ end }}
@@ -30,15 +35,24 @@
                 {{ end }}
               {{ end}}
             </div>
+
+            <p>&nbsp;</p>
+
+            {{ if ne $divnum $elems }}
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="{{ T "next-question" }}" onclick="nextQuestion({{ $divnum }})">
+            </div>
+            {{ end }}
+
+            {{ if eq $divnum $elems }}
+            <div class="mx-auto text-center">
+              <input type="submit" class="btn btn-primary" value="{{ T "send-quiz" }}">
+            </div>
+            {{ end }}
           </div>
         {{ end }}
 
-        <p>&nbsp;</p>
-
-        <div class="mx-auto text-center">
-          <input type="hidden" id="quiztype" name="quiztype" value="{{ .Page.Params.type }}">
-          <input type="submit" class="btn btn-primary" value="{{ T "send-quiz" }}">
-        </div>
+        <input type="hidden" id="quiztype" name="quiztype" value="{{ .Page.Params.type }}">
       </form>
 
       <div id="result"></div>
@@ -48,6 +62,11 @@
 
 <script type="text/javascript">
   $('head').append('<link rel="stylesheet" href="{{ $.Site.BaseURL }}css/quiz.css" type="text/css" />');
+
+  function nextQuestion(itemid) {
+      $("#div_"+itemid).addClass("hidden");
+      $("#div_"+(itemid+1)).removeClass("hidden");
+  }
 
   jQuery(document).ready(function($) {
     // variable to hold request

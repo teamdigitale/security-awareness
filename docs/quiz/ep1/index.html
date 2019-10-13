@@ -284,7 +284,7 @@
 
     <main>
       
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<iframe name="hidden_iframe" id="hidden_iframe" class="hidden"></iframe>
 
 <div class="container">
   <div class="row">
@@ -294,7 +294,12 @@
 
       <form id="quiz">
         
-          <div class="question">
+        
+
+        
+          
+
+          <div class="question " id="div_1">
             
             <p class="title_question">Qual è stato l’errore principale commesso da Carla?</p>
                     
@@ -302,7 +307,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question1" id="question1_item1" type="radio" value="item1" />
+                      <input name="question1" id="question1_item1" type="radio" value="item1" required />
                       <label class="label_check" for="question1_item1" class="form-text">Portare documenti riservati a casa.</label>
                   </div>
                 
@@ -311,7 +316,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question1" id="question1_item2" type="radio" value="item2" />
+                      <input name="question1" id="question1_item2" type="radio" value="item2" required />
                       <label class="label_check" for="question1_item2" class="form-text">Lasciare documenti riservati incustoditi.</label>
                   </div>
                 
@@ -320,7 +325,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question1" id="question1_item3" type="radio" value="item3" />
+                      <input name="question1" id="question1_item3" type="radio" value="item3" required />
                       <label class="label_check" for="question1_item3" class="form-text">Stampare documenti riservati.</label>
                   </div>
                 
@@ -329,7 +334,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question1" id="question1_item4" type="radio" value="item4" />
+                      <input name="question1" id="question1_item4" type="radio" value="item4" required />
                       <label class="label_check" for="question1_item4" class="form-text">Non distruggere i documenti riservati dopo l&#39;uso.</label>
                   </div>
                 
@@ -337,9 +342,21 @@
                 
               
             </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Domanda successiva" onclick="nextQuestion( 1 )">
+            </div>
+            
+
+            
           </div>
         
-          <div class="question">
+          
+
+          <div class="question hidden" id="div_2">
             
             <p class="title_question">Cos&#39;è la &#34;Clean Desk Policy&#34;?</p>
                     
@@ -347,7 +364,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question2" id="question2_item1" type="radio" value="item1" />
+                      <input name="question2" id="question2_item1" type="radio" value="item1" required />
                       <label class="label_check" for="question2_item1" class="form-text">Una prescrizione che richiede di pulire la scrivania.</label>
                   </div>
                 
@@ -356,7 +373,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question2" id="question2_item2" type="radio" value="item2" />
+                      <input name="question2" id="question2_item2" type="radio" value="item2" required />
                       <label class="label_check" for="question2_item2" class="form-text">Una prescrizione che chiede di tenere ordinata la scrivania.</label>
                   </div>
                 
@@ -365,7 +382,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question2" id="question2_item3" type="radio" value="item3" />
+                      <input name="question2" id="question2_item3" type="radio" value="item3" required />
                       <label class="label_check" for="question2_item3" class="form-text">Una prescrizione che richiede di non lasciare materiale sensibile incustodito sulla scrivania.</label>
                   </div>
                 
@@ -374,7 +391,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question2" id="question2_item4" type="radio" value="item4" />
+                      <input name="question2" id="question2_item4" type="radio" value="item4" required />
                       <label class="label_check" for="question2_item4" class="form-text">Una serie di buone pratiche, come mettere sotto chiave documenti sensibili prima di lasciare l’ufficio.</label>
                   </div>
                 
@@ -382,9 +399,21 @@
                 
               
             </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Domanda successiva" onclick="nextQuestion( 2 )">
+            </div>
+            
+
+            
           </div>
         
-          <div class="question">
+          
+
+          <div class="question hidden" id="div_3">
             
             <p class="title_question">Hai fatto un backup di documenti riservati su una chiavetta USB:</p>
                     
@@ -392,7 +421,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question3" id="question3_item1" type="radio" value="item1" />
+                      <input name="question3" id="question3_item1" type="radio" value="item1" required />
                       <label class="label_check" for="question3_item1" class="form-text">La porti sempre con te per maggiore sicurezza.</label>
                   </div>
                 
@@ -401,7 +430,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question3" id="question3_item2" type="radio" value="item2" />
+                      <input name="question3" id="question3_item2" type="radio" value="item2" required />
                       <label class="label_check" for="question3_item2" class="form-text">La lasci sempre in ufficio.</label>
                   </div>
                 
@@ -410,7 +439,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question3" id="question3_item3" type="radio" value="item3" />
+                      <input name="question3" id="question3_item3" type="radio" value="item3" required />
                       <label class="label_check" for="question3_item3" class="form-text">Non dovresti creare copie di backup non autorizzate.</label>
                   </div>
                 
@@ -419,7 +448,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question3" id="question3_item4" type="radio" value="item4" />
+                      <input name="question3" id="question3_item4" type="radio" value="item4" required />
                       <label class="label_check" for="question3_item4" class="form-text">La lasci sulla scrivania in modo da averla sempre a disposizione.</label>
                   </div>
                 
@@ -427,9 +456,21 @@
                 
               
             </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Domanda successiva" onclick="nextQuestion( 3 )">
+            </div>
+            
+
+            
           </div>
         
-          <div class="question">
+          
+
+          <div class="question hidden" id="div_4">
             
             <p class="title_question">Seleziona una o più luoghi dell’ufficio dove un malintenzionato potrebbe accedere a dati riservati:</p>
                     
@@ -472,9 +513,21 @@
                 
               
             </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Domanda successiva" onclick="nextQuestion( 4 )">
+            </div>
+            
+
+            
           </div>
         
-          <div class="question">
+          
+
+          <div class="question hidden" id="div_5">
             
             <p class="title_question">Perché è importante adottare e seguire la &#34;Clean Desk Policy&#34; o &#34;Politica della scrivania pulita&#34;?</p>
                     
@@ -482,7 +535,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question5" id="question5_item1" type="radio" value="item1" />
+                      <input name="question5" id="question5_item1" type="radio" value="item1" required />
                       <label class="label_check" for="question5_item1" class="form-text">Migliora la sicurezza e la confidenzialità delle informazioni trattate e crea un ambiente di lavoro più confortevole e meno stressante.</label>
                   </div>
                 
@@ -491,7 +544,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question5" id="question5_item2" type="radio" value="item2" />
+                      <input name="question5" id="question5_item2" type="radio" value="item2" required />
                       <label class="label_check" for="question5_item2" class="form-text">Per avere una postazione di lavoro ordinata e sanificata.</label>
                   </div>
                 
@@ -500,7 +553,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question5" id="question5_item3" type="radio" value="item3" />
+                      <input name="question5" id="question5_item3" type="radio" value="item3" required />
                       <label class="label_check" for="question5_item3" class="form-text">Per smaltire correttamente la carta negli appositi contenitori della raccolta differenziata.</label>
                   </div>
                 
@@ -509,7 +562,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question5" id="question5_item4" type="radio" value="item4" />
+                      <input name="question5" id="question5_item4" type="radio" value="item4" required />
                       <label class="label_check" for="question5_item4" class="form-text">Per agevolare il lavoro degli addetti alle pulizie.</label>
                   </div>
                 
@@ -517,9 +570,21 @@
                 
               
             </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Domanda successiva" onclick="nextQuestion( 5 )">
+            </div>
+            
+
+            
           </div>
         
-          <div class="question">
+          
+
+          <div class="question hidden" id="div_6">
             
             <p class="title_question">Conosci quale testo di legge attualmente regolamenta e tutela le persone fisiche con riguardo al trattamento dei dati personali e la libera circolazione di tali dati?</p>
                     
@@ -527,7 +592,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question6" id="question6_item1" type="radio" value="item1" />
+                      <input name="question6" id="question6_item1" type="radio" value="item1" required />
                       <label class="label_check" for="question6_item1" class="form-text">Sì è il regolamento UE 2016/679 anche noto come GDPR (General Data Protection Regulation).</label>
                   </div>
                 
@@ -536,7 +601,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question6" id="question6_item2" type="radio" value="item2" />
+                      <input name="question6" id="question6_item2" type="radio" value="item2" required />
                       <label class="label_check" for="question6_item2" class="form-text">Sì è il regolamento UE 2016/679 anche noto come GDPR (General Data Protection Regulation), ma non si applica alle Pubbliche Amministrazioni.</label>
                   </div>
                 
@@ -545,7 +610,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question6" id="question6_item3" type="radio" value="item3" />
+                      <input name="question6" id="question6_item3" type="radio" value="item3" required />
                       <label class="label_check" for="question6_item3" class="form-text">Sì è il D.Lgs 196/2003 anche noto come Codice Privacy.</label>
                   </div>
                 
@@ -554,7 +619,7 @@
               
                 
                   <div class="form-check valign">
-                      <input name="question6" id="question6_item4" type="radio" value="item4" />
+                      <input name="question6" id="question6_item4" type="radio" value="item4" required />
                       <label class="label_check" for="question6_item4" class="form-text">Sì è il D.Lgs 196/2003 anche noto come Codice Privacy, ma non si applica alle Pubbliche Amministrazioni.</label>
                   </div>
                 
@@ -562,15 +627,20 @@
                 
               
             </div>
+
+            <p>&nbsp;</p>
+
+            
+
+            
+            <div class="mx-auto text-center">
+              <input type="submit" class="btn btn-primary" value="Invia quiz per valutazione">
+            </div>
+            
           </div>
         
 
-        <p>&nbsp;</p>
-
-        <div class="mx-auto text-center">
-          <input type="hidden" id="quiztype" name="quiztype" value="episode1">
-          <input type="submit" class="btn btn-primary" value="Invia quiz per valutazione">
-        </div>
+        <input type="hidden" id="quiztype" name="quiztype" value="episode1">
       </form>
 
       <div id="result"></div>
@@ -580,6 +650,11 @@
 
 <script type="text/javascript">
   $('head').append('<link rel="stylesheet" href="https:\/\/teamdigitale.github.io\/security-awareness\/css/quiz.css" type="text/css" />');
+
+  function nextQuestion(itemid) {
+      $("#div_"+itemid).addClass("hidden");
+      $("#div_"+(itemid+1)).removeClass("hidden");
+  }
 
   jQuery(document).ready(function($) {
     

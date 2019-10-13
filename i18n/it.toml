@@ -10,5 +10,8 @@ other = "Importante"
 [goto-quiz]
 other = "Val al test"
 
+[next-question]
+other = "Domanda successiva"
+
 [send-quiz]
 other = "Invia quiz per valutazione"

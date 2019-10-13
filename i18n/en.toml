@@ -10,5 +10,8 @@ other = "Important"
 [goto-quiz]
 other = "Go to the quiz"
 
+[next-question]
+other = "Next question"
+
 [send-quiz]
 other = "Send quiz for self evaluation"

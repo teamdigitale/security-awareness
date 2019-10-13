@@ -88,16 +88,19 @@ questions:
     choices:
       choice-1:
         value: "item1"
-        text: "Dopo quanto tempo pensi che sia una buona pratica cambiare la password?"
+        text: "Una volta l’anno come indicato dalle corrette pratiche di sicurezza."
       choice-2:
         value: "item2"
-        text: "Una volta l'anno come indicato dalle corrette pratiche di sicurezza."
+        text: "Almeno ogni sei mesi."
       choice-3:
         value: "item3"
-        text: "Almeno ogni sei mesi."
+        text: "Almeno ogni 3 mesi."
       choice-4:
         value: "item4"
-        text: "Almeno ogni 3 mesi."
+        text: "Ogni settimana."
+      choice-5:
+        value: "item5"
+        text: "Quando reputo che sia necessario, anche prima del tempo consigliato."
   question-6:
     type: "radiogroup"
     name: "question6"
@@ -148,8 +151,5 @@ questions:
         text: "è un sistema che fa perdere solo tempo."
       choice-3:
         value: "item3"
-        text: "è un sistema che autentica due volte sul programma di gestione, così se per diverso tempo non viene usato, l’accesso dura il doppio."
-      choice-4:
-        value: "item4"
         text: "è un sistema che autentica due volte sul programma di gestione, così se per diverso tempo non viene usato, l’accesso dura il doppio."
 ---
