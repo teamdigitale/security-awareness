@@ -292,6 +292,10 @@
       <h2>Self-assessment quiz - Episode 1</h2>
       <div class="callout callout-highlight"><p>To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment test!</p></div>
 
+      <div class="notification with-icon error" style="z-index: 1000" role="alert" aria-labelledby="missing-title" id="missing">
+        <h5 id="missing-title"><svg class="icon"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-close-circle"></use></svg>Rispondere alla domanda!</h5>
+      </div>
+
       <form id="quiz">
         
         
@@ -712,6 +716,11 @@
   $('head').append('<link rel="stylesheet" href="https:\/\/teamdigitale.github.io\/security-awareness\/css/quiz.css" type="text/css" />');
 
   function nextQuestion(itemid) {
+    if ($("input[name='question1']").filter(':checked').val() === undefined) {
+      notificationShow('missing', 6000);
+      return;
+    }
+    
     $("#div_"+itemid).addClass("hidden");
     $("#div_"+(itemid+1)).removeClass("hidden");
   }
@@ -719,7 +728,9 @@
   jQuery(document).ready(function($) {
     var request;
     
-    $("#quiz").submit(function(event){
+    $("#quiz").submit(function(event) {
+      $("#div_6").addClass("hidden");
+
       if (request) request.abort();
       
       var $form = $(this);
