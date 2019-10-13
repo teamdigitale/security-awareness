@@ -293,6 +293,13 @@
   </h5>
 </div>
 
+<div class="notification with-icon success" style="z-index: 1000" role="alert" aria-labelledby="uploaded-title" id="uploaded">
+  <h5 id="uploaded-title">
+    <svg class="icon"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-close-circle"></use></svg>
+    <span id="ok-message"></span>
+  </h5>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col col-lg-8 my-5">
@@ -905,12 +912,14 @@ As answers choose:</p>
           notificationShow('missing', 6000);
         }
         else {
-          $('#result').html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Success - see Google Sheet</a>');
+          $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Test submitted - see Google Sheet</a>');
+          notificationShow('uploaded', 6000);
         }
       });
     
       request.fail(function (jqXHR, textStatus, errorThrown){
-        console.error("The following error occured: " + textStatus, errorThrown);
+        $("#warn-message").html("We are experiencing a technical error.: " + textStatus, errorThrown);
+        notificationShow('missing', 6000);
       });
     
       request.always(function () {

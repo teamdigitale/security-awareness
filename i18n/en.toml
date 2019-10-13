@@ -21,3 +21,6 @@ other = "Please, answer the question!"
 
 [call-error]
 other = "We are experiencing a technical error."
+
+[call-ok]
+other = "Test submitted - see Google Sheet"
