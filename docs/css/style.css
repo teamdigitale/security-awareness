@@ -24,3 +24,10 @@ h2 {
   width: 10rem;
   line-height: 1;
 }
+
+.goto-test {
+  display: block;
+  margin-top: 3em;
+  width: 100%;
+  text-align: center;
+}

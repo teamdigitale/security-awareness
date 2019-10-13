@@ -58,6 +58,13 @@
         <div class="callout-title"><svg class="icon"><use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-info-circle"></use></svg>{{ T "important" }}</div>
         {{ ( .Page.Resources.GetMatch "link.md" ).Content }}
       </div>
+
+      <div class="goto-test">
+        <a href="quiz" class="btn btn-primary">
+          {{ T "goto-quiz" }}
+          <svg class="icon icon-sm icon-white mr-2"><use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-arrow-right"></use></svg>
+        </a>
+      </div>
     </div>
   </div>
 </div>
