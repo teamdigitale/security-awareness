@@ -785,28 +785,18 @@ As answers choose:</p>
   }
 
   jQuery(document).ready(function($) {
-    
     var request;
     
     $("#quiz").submit(function(event){
-      
-      if (request) {
-        request.abort();
-      }
+      if (request) request.abort();
       
       var $form = $(this);
-      
       var $inputs = $form.find("input, select, button, textarea");
-      
       var serializedData = $form.serialize();
     
-      
-      
-      
       $inputs.prop("disabled", true);
       $('#result').text('Sending data...');
     
-      
       request = $.ajax({
         url: "https://script.google.com/a/teamdigitale.governo.it/macros/s/AKfycbwIWmC3tpgZSwBK_nK6JwmkVH2u23t0VLJkr4zszQ/exec",
         type: "post",
@@ -814,11 +804,7 @@ As answers choose:</p>
         target: '#hidden_iframe'
       });
     
-      
       request.done(function (response){
-        
-        console.log(response);
-        
         if (response.result == "error") {
           $('#result').html('Si è verificato un errore.');
         }
@@ -827,23 +813,14 @@ As answers choose:</p>
         }
       });
     
-      
       request.fail(function (jqXHR, textStatus, errorThrown){
-        
-        console.error(
-          "The following error occured: "+
-          textStatus, errorThrown
-        );
+        console.error("The following error occured: " + textStatus, errorThrown);
       });
     
-      
-      
       request.always(function () {
-        
         $inputs.prop("disabled", false);
       });
     
-      
       event.preventDefault();
     });
   });
