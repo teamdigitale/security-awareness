@@ -60,7 +60,7 @@
       </div>
 
       <div class="goto-test">
-        <a href="quiz" class="btn btn-primary">
+        <a href="{{ $.Site.BaseURL }}{{ .Page.Params.quiz }}" class="btn btn-primary">
           {{ T "goto-quiz" }}
           <svg class="icon icon-sm icon-white mr-2"><use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-arrow-right"></use></svg>
         </a>

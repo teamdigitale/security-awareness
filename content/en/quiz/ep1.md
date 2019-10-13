@@ -2,8 +2,8 @@
 title: "Quiz"
 layout: quiz
 type: episode1
-quiztitle: "Quiz di autovalutazione"
-description: "Per verificare la corretta comprensione e conoscenza dei temi di Security Awareness trattati in questo corso, qui è possibile effettuare un test di autovalutazione!"
+quiztitle: "Self-assessment quiz - Episode 1"
+description: "To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment test!"
 questions:
   question-1:
     type: "radiogroup"
