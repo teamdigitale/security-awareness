@@ -37,7 +37,7 @@ L’errore purtroppo è sempre dietro l’angolo, pertanto i rischi dovuti al co
 
 In altre parole: **tu sei l’anello più importante per la protezione dei dati** e delle informazioni. Sei pronto a diventare un supereroe della sicurezza informatica? 
 
-<center><a href="ep1" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Vai subito a Episodio I!</a></center>
+<center><a href="ep1" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Vai subito a Episodio 1!</a></center>
 
 
 ### Obiettivi

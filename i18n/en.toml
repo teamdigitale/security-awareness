@@ -8,13 +8,13 @@ other = "Section Useful Links"
 other = "Important"
 
 [goto-quiz]
-other = "Go to the quiz"
+other = "Go to the test"
 
 [next-question]
 other = "Next question"
 
 [send-quiz]
-other = "Send quiz for self evaluation"
+other = "Send test for self evaluation"
 
 [answer-needed]
 other = "Please, answer the question!"
@@ -24,3 +24,6 @@ other = "We are experiencing a technical error."
 
 [call-ok]
 other = "Test submitted - see Google Sheet"
+
+[send-data]
+other = "Sending test to server..."

@@ -856,7 +856,7 @@ As answers choose:</p>
 
             
             <div class="mx-auto text-center">
-              <input type="submit" class="btn btn-primary" value="Send quiz for self evaluation">
+              <input type="submit" class="btn btn-primary" value="Send test for self evaluation">
             </div>
             
           </div>
@@ -897,7 +897,11 @@ As answers choose:</p>
       var serializedData = $form.serialize();
     
       $inputs.prop("disabled", true);
-      $('#result').text('Sending data...');
+      $('#result').html('<p>Sending test to server...</p>' +
+                        '<div class="progress-spinner progress-spinner-active"><span class="sr-only">...</span></div></div>');
+
+      event.preventDefault();
+      return;
     
       request = $.ajax({
         url: "https://script.google.com/a/teamdigitale.governo.it/macros/s/AKfycbwIWmC3tpgZSwBK_nK6JwmkVH2u23t0VLJkr4zszQ/exec",
@@ -914,6 +918,7 @@ As answers choose:</p>
         else {
           $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Test submitted - see Google Sheet</a>');
           notificationShow('uploaded', 6000);
+          $('#result').text('Data sent');
         }
       });
     

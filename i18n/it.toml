@@ -14,7 +14,7 @@ other = "Val al test"
 other = "Domanda successiva"
 
 [send-quiz]
-other = "Invia quiz per valutazione"
+other = "Invia test per valutazione"
 
 [answer-needed]
 other = "Rispondere alla domanda!"
@@ -24,3 +24,6 @@ other = "C'è stato un errore tecnico."
 
 [call-ok]
 other = "Test inviato - vedi il Google Sheet"
+
+[send-data]
+other = "Invio del test al server..."
