@@ -1,5 +1,5 @@
 ---
-name: "Glossary"
+name: "Glossario"
 terms:
   term-1:
     name: 'Clean Desk Policy' 
