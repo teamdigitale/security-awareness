@@ -1,4 +1,4 @@
-## Introduction
+## Introduzione
 
 In questa storia introduciamo il concetto di **sicurezza digitale** legato ai corretti comportamenti delle persone in ambiente lavorativo e privato. **Circa [il 66 per cento degli attacchi informatici](https://www.social-engineer.org/social-engineering/social-engineering-infographic/) avvengono “tra il computer e la sedia”**, ovvero non dipendono da debolezze tecniche dei sistemi informatici ma dall’errore umano. Questo significa che i dipendenti sono un anello importante per la protezione dei dati aziendali, la sicurezza digitale è quindi responsabilità di ognuno di noi. Obiettivo del corso è fornire **strumenti base per aumentare la sicurezza**, anche attraverso dei comportamenti individuali prudenti. 
 
