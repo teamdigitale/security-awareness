@@ -47,17 +47,20 @@
       
       <h2 id="glossario">{{ ( .Page.Resources.GetMatch "glossary.md" ).Params.name }}</h2>
       {{ range ( .Page.Resources.GetMatch "glossary.md" ).Params.terms }}
-      <div class="callout">
+      <div class="callout" style="max-width: 100% !important;">
           <div class="callout-title"><svg class="icon"><use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-info-circle"></use></svg><span class="sr-only">Confermato</span> {{ .name }}</div>
           <p>{{ .description }}</p>
         </div>
       {{ end }}
 
-      <h2 id="link">{{ ( .Page.Resources.GetMatch "link.md" ).Params.name }}</h2>
-      <div class="callout callout-highlight important">
+      <h2 id="link">{{ ( .Page.Resources.GetMatch "lesson.md" ).Params.name }}</h2>
+      <div class="callout callout-highlight important" style="max-width: 100% !important;">
         <div class="callout-title"><svg class="icon"><use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-info-circle"></use></svg>{{ T "important" }}</div>
-        {{ ( .Page.Resources.GetMatch "link.md" ).Content }}
+        {{ ( .Page.Resources.GetMatch "lesson.md" ).Content }}
       </div>
+
+      <h2 id="link">{{ ( .Page.Resources.GetMatch "actions.md" ).Params.name }}</h2>
+      {{ ( .Page.Resources.GetMatch "actions.md" ).Content }}
 
       <div class="goto_test">
         <a href="{{ $.Site.BaseURL }}{{ .Page.Params.quiz }}" class="btn btn-primary">

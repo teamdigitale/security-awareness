@@ -1,8 +1,10 @@
 ---
-name: "Link to similar stories and further study"
+name: "What should I do?"
 ---
 
-Any type of document you print could always contain some "sensitive" content: phone numbers, email addresses or other personal data, notes, numbers, email exchanges, amounts related to payments, or even **confidential information**. When you print documents, always remember:
+Any type of document you print could always contain some "sensitive" content: phone numbers, email addresses or other personal data, notes, numbers, email exchanges, amounts related to payments, or even **confidential information**.
+
+When you print documents, always remember:
 
 - Check for any sensitive content.
 - Do not leave them unattended for example on your desk.
@@ -10,7 +12,6 @@ Any type of document you print could always contain some "sensitive" content: ph
 - Take care to keep them in a safe place even when you are at home.
 - Do not leave them in the printer.
 - Never create unauthorized copies of confidential documents.
-
 
 In particular at the end of a working day it is important:
 

@@ -26,14 +26,14 @@ episodes:
 The digital security course (or "security awareness") that you are about to start will allow you to find out what are the correct behaviors to keep to **manage information securely**.
 
 ### What do we mean by security?
-By information security we mean:
+By security of data and information we mean:
 
-- **confidentiality** - access to information must be guaranteed only to those who are entitled;
-- **integrity** - the information must be preserved intact and complete;
-- **availability** - the information must be accessible to those who are entitled to it.
+- **confidentiality** - access to data and information must be guaranteed only to guaranteed parties;
+- **integrity** - the data and information must be preserved intact and complete;
+- **availability** - the possibility, for registered subjects, to have access to the necessary resources within the established times and methods.
 
 While security technologies (Antivirus, Firewall, IPS) help you protect information (on your computer, smartphone or PC in the office), training is essential on the other: statistics reveal that about **80 percent of cyber incidents are due to human error!**
-Unfortunately the error is always around the corner, therefore the risks due to the behavior of people cannot be eliminated completely. But, raising awareness about cyber security can **help "reduce the attack surface"** and be able to better manage your information, both at home and at work.
+Unfortunately the error is always around the corner, therefore the risks due to the behavior of people cannot be eliminated completely. But raising awareness about computer security can **help you "reduce the attack surface"** and be able to better manage your data and information, both at home and at work.
 
 In other words: **you are the most important link for data protection** and information. Are you ready to become a computer security superhero?
 
@@ -45,7 +45,6 @@ This course is designed for Public Administration employees but is suitable for 
 
 - learn to guarantee security and privacy in information management;
 - reduce the risks associated with possible cyber security attacks;
-- maximize the effects and benefits of security checks;
-- minimize security incidents in duration and number.
+- help protect the privacy, availability and integrity of your organization's data.
 
 ### The lessons

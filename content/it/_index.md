@@ -26,13 +26,13 @@ episodes:
 Il corso di sicurezza digitale (o "security awareness") che stai per iniziare ti permetterà di scoprire quali sono i corretti comportamenti da tenere per **gestire le informazioni in sicurezza**.
 
 ### Cosa intendiamo per sicurezza?
-Per sicurezza delle informazioni intendiamo:
+Per sicurezza dai dati delle informazioni intendiamo:
 
-- **riservatezza** - l’accesso alle informazioni deve essere garantito solo a chi ne ha diritto;
-- **integrità** - le informazioni devono essere preservate integre e complete;
-- **disponibilità** - le informazioni devono essere accessibili per chi ne ha diritto.
+- **riservatezza** - l’accesso ai dati e alle informazioni deve essere garantito solo ai soggetti autorizzati;
+- **integrità** - i dati e le informazioni devono essere preservati integri e completi;
+- **disponibilità** - la possibilità, per i soggetti autorizzati, di poter accedere alle risorse necessarie nei tempi e nei modi stabiliti.
 
-Se da un lato le tecnologie di sicurezza (Antivirus, Firewall, IPS) ti aiutano a proteggere le informazioni (nel tuo computer, nello smartphone o nel pc in ufficio), dall’altro la formazione è fondamentale: statistiche rivelano che circa **l’80 per cento degli incidenti informatici è dovuto a errore umano!** 
+Se da un lato le tecnologie di sicurezza (Antivirus, Firewall, IPS) ti aiutano a proteggere i dati e le informazioni (nel tuo computer, nello smartphone o nel pc in ufficio), dall’altro la formazione è fondamentale: statistiche rivelano che circa **l’80 per cento degli incidenti informatici è dovuto a errore umano!** 
 L’errore purtroppo è sempre dietro l’angolo, pertanto i rischi dovuti al comportamento delle persone non possono essere eliminati del tutto. Ma, aumentare la consapevolezza sulla sicurezza informatica può **aiutare a "diminuire la superficie di attacco"** e ad essere in grado di gestire nel modo migliore le tue informazioni, sia a casa che a lavoro.
 
 In altre parole: **tu sei l’anello più importante per la protezione dei dati** e delle informazioni. Sei pronto a diventare un supereroe della sicurezza informatica? 
@@ -45,8 +45,7 @@ Questo corso è pensato per i dipendenti delle Pubbliche Amministrazioni ma è a
 
 - imparare a garantire sicurezza e privacy nella gestione delle informazioni;
 - ridurre i rischi legati a possibili attacchi di cyber security;
-- massimizzare gli effetti e i benefici provenienti dai controlli di sicurezza;
-- minimizzare gli incidenti di sicurezza in durata e numero.
+- aiutare a proteggere la riservatezza, disponibilità e l'integrità dei dati della propria organizzazione.
 
 
 ### Le lezioni
