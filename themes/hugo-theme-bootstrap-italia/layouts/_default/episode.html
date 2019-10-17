@@ -6,35 +6,39 @@
       {{ ( .Page.Resources.GetMatch "intro.md" ).Content }}
 
       <h2 id="i-personaggi">{{ ( .Page.Resources.GetMatch "characters.md" ).Params.name }}</h2>
-      <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
-          <div class="it-carousel-all owl-carousel it-img-card">
-            {{ range ( .Page.Resources.GetMatch "characters.md" ).Params.characters }}
-              <div class="it-single-slide-wrapper">
-                <div class="card-wrapper">
-                  <div class="card card-img no-after">
-                    <div class="img-responsive-wrapper">
-                      <div class="img-responsive">
-                        <div class="img-wrapper"><img src="{{ .image }}" title="{{ .name }}" alt="{{ .name }}"></div>
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">{{ .name }}</h5>
-                      <p class="card-text">{{ .description }}</p>
-                    </div>
+      <div class="it-carousel-wrapper it-carousel-landscape-abstract">
+        <div class="it-carousel-all owl-carousel">
+          {{ range ( .Page.Resources.GetMatch "characters.md" ).Params.characters }}
+          <div class="it-single-slide-wrapper">
+            <a href="#">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive">
+                  <div class="img-wrapper"><img src="{{ .image }}" title="{{ .name }}" alt="{{ .name }}"></div>
+                </div>
+              </div>
+            </a>
+            <div class="it-text-slider-wrapper-outside">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title big-heading">{{ .name }}</h5>
+                    <p class="card-text">{{ .description }}</p>
                   </div>
                 </div>
               </div>
-            {{ end }}
+            </div>
           </div>
+          {{ end }}
+        </div>
       </div>
 
       <h2 id="la-storia">{{ ( .Page.Resources.GetMatch "story.md" ).Params.name }}</h2>
       <div class="it-grid-list-wrapper">
-        <div class="grid-row">
+        <div class="grid-row" style="justify-content: center;">
           {{ range ( .Page.Resources.GetMatch "story.md" ).Params.vignettes }}
-            <div class="col-6 col-lg-4">
+            <div class="col-6 col-lg-4 vignettes">
               <div class="it-grid-item-wrapper">
-                <div class="img-responsive-wrapper vignettes">
+                <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper"><img src="{{ . }}" alt="vignetta" title="Vignetta"></div>
                   </div>
@@ -46,11 +50,24 @@
       </div>
       
       <h2 id="glossario">{{ ( .Page.Resources.GetMatch "glossary.md" ).Params.name }}</h2>
+      {{ $title := ( .Page.Resources.GetMatch "glossary.md" ).Params.title }}
       {{ range ( .Page.Resources.GetMatch "glossary.md" ).Params.terms }}
-      <div class="callout" style="max-width: 100% !important;">
-          <div class="callout-title"><svg class="icon"><use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-info-circle"></use></svg><span class="sr-only">Confermato</span> {{ .name }}</div>
-          <p>{{ .description }}</p>
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>{{ $title }}</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ .name }}</h5>
+              <p class="card-text">{{ .description }}</p>
+            </div>
+          </div>
         </div>
+        <!--div class="callout" style="max-width: 100% !important;"-->
       {{ end }}
 
       <h2 id="link">{{ ( .Page.Resources.GetMatch "lesson.md" ).Params.name }}</h2>

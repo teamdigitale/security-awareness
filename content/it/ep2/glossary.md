@@ -1,5 +1,6 @@
 ---
 name: "Glossario"
+title: "Password Leak"
 terms:
   term-1:
     name: 'Gestionale' 

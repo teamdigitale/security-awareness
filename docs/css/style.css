@@ -8,11 +8,12 @@
 }
 
 .vignettes {
-  border: 1px solid grey;
+  padding: 0 10px 20px !important;
 }
 
 h2 {
-  margin-top: 1.2em;
+  margin-top: 2em;
+  margin-bottom: 1.2em;
 }
 
 .it-brand-text > h2 {
@@ -38,4 +39,13 @@ h2 {
   margin-top: 3em;
   width: 100%;
   text-align: center;
+}
+
+.card .card-body p {
+  font-family: "Titillium Web",Geneva,Tahoma,sans-serif !important;
+}
+
+.row [class*=col-]>.card-wrapper, .row [class*=col-]>.card-wrapper>.card .glossary {
+  height: unset !important;
+  padding-bottom: 40px;
 }

@@ -1,5 +1,6 @@
 ---
 name: "Glossary"
+title: "Password Leak"
 terms:
   term-1:
     name: 'Management System' 

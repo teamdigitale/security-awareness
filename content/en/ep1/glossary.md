@@ -1,5 +1,6 @@
 ---
 name: "Glossary"
+title: "Human Error"
 terms:
   term-1:
     name: 'Clean Desk Policy' 
