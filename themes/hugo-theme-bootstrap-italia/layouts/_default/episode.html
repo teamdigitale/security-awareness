@@ -67,11 +67,10 @@
             </div>
           </div>
         </div>
-        <!--div class="callout" style="max-width: 100% !important;"-->
       {{ end }}
 
       <h2 id="link">{{ ( .Page.Resources.GetMatch "lesson.md" ).Params.name }}</h2>
-      <div class="callout callout-highlight important" style="max-width: 100% !important;">
+      <div class="callout callout-highlight note" style="max-width: 100% !important;">
         <div class="callout-title"><svg class="icon"><use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-info-circle"></use></svg>{{ T "important" }}</div>
         {{ ( .Page.Resources.GetMatch "lesson.md" ).Content }}
       </div>

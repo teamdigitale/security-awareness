@@ -45,7 +45,20 @@ h2 {
   font-family: "Titillium Web",Geneva,Tahoma,sans-serif !important;
 }
 
+.callout p {
+  font-family: "Titillium Web",Geneva,Tahoma,sans-serif !important;
+}
+
 .row [class*=col-]>.card-wrapper, .row [class*=col-]>.card-wrapper>.card .glossary {
   height: unset !important;
   padding-bottom: 40px;
+}
+
+.it-carousel-wrapper.it-carousel-landscape-abstract .it-single-slide-wrapper>a .img-responsive-wrapper .img-responsive {
+  position: unset !important;
+}
+
+.img-responsive-wrapper .img-responsive .img-wrapper img {
+  width: 90%;
+  height: 90%;
 }
