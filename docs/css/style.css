@@ -58,7 +58,11 @@ h2 {
   position: unset !important;
 }
 
-.img-responsive-wrapper .img-responsive .img-wrapper img {
+.img-responsive-wrapper .img-responsive {
+  padding-bottom: 100% !important;
+}
+
+.img-responsive-wrapper .img-responsive .img-wrapper img.character {
   width: 90%;
   height: 90%;
 }
@@ -69,4 +73,8 @@ footer {
 
 footer > .h4, h4 {
   line-height: 2;
+}
+
+.higher {
+  margin-top: -30px;
 }

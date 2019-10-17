@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+<div class="container">
+    <div class="row">
+        <div class="col col-lg-8 my-5">
+            {{ .Page.Content }}
+
+            <h2>{{ .Page.Params.pmtitle }}</h2>
+            <div class="it-grid-list-wrapper it-image-label-grid">
+                <div class="grid-row">
+                    {{ range .Page.Params.pm }}
+                    <div class="col-3 col-lg-6">
+                        <div class="it-grid-item-wrapper">
+                            <div class="img-responsive-wrapper">
+                                <div class="img-responsive">
+                                <div class="img-wrapper"><img src="{{ .img }}" alt="{{ .name }}" title="{{ .name }}"></div>
+                                </div>
+                            </div>
+                            <span class="it-griditem-text-wrapper higher">
+                                <span class="it-griditem-text">
+                                    <h4>{{ .name }}</h4>
+                                    <small>{{ .title }}<br/>{{ .org }}<br/><i>{{ .descr }}</i></small>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

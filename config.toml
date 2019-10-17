@@ -47,7 +47,7 @@ publishDir = "./docs"
     footerColumn1Text = "Un breve corso per la sicurezza digitale"
     footerColumn1Links = [
       { label = "Home", url = "/" },
-      { label = "Chi siamo", url = "/" },
+      { label = "Chi siamo", url = "/chisiamo" },
       { label = "Perchè questo corso?", url = "/" },
       { label = "Episodi", url = "/" },
       { label = "Quiz", url = "quiz" }
@@ -76,7 +76,7 @@ publishDir = "./docs"
     footerColumn1Text = "A short course for digital security"
     footerColumn1Links = [
       { label = "Home", url = "/en/" },
-      { label = "Who are we", url = "/en/" },
+      { label = "Who are we", url = "/en/whoweare" },
       { label = "Why this course?", url = "/en/" },
       { label = "Episodes", url = "/en/" },
       { label = "Quiz", url = "en/quiz" }
@@ -124,12 +124,12 @@ publishDir = "./docs"
 
     [[languages.it.menu.navbar]]
       name = "Chi siamo"
-      URL = "/"
+      URL = "/chisiamo"
       weight = 2
 
     [[languages.en.menu.navbar]]
       name = "Who are we"
-      URL = "/"
+      URL = "/en/whoweare"
       weight = 2
 
     [[languages.it.menu.navbar]]
