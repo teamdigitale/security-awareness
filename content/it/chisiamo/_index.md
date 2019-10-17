@@ -28,13 +28,13 @@ pm:
     org: Team per la Trasformazione Digitale
     img: francesco_deaugustinis.png
     descr: Francesco è giornalista freelance ed editore di contenuti. Amante dei fumetti e dei graphic novel, non ha potuto fare a meno di partecipare a questo folle progetto di sensibilizzazione sulla sicurezza!
-  pm-4:
+  pm-5:
     name: Daniela Battisti
     title: Relazioni internazionali
     org: Team per la Trasformazione Digitale
     img: daniela_battisti.png
     descr: Daniela ha un dottorato in Classics ma sono un appassionata di tecnologia digitale. Daniela è a capo delle relazioni internazionali nel team di trasformazione digitale.
-  pm-5:
+  pm-6:
     name: Mirko Calvaresi
     title: Supporto sviluppo tecnico
     org: Team per la Trasformazione Digitale
