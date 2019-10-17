@@ -71,10 +71,6 @@ footer {
   margin-top: 80px;
 }
 
-footer > .h4, h4 {
+footer > .h4, footer > h4 {
   line-height: 2;
-}
-
-.higher {
-  margin-top: -30px;
 }
