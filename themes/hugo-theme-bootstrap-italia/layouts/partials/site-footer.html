@@ -4,18 +4,7 @@
     <div class="container">
       <section class="py-4">
         <div class="row">
-          <div class="col-lg-4 col-md-4 pb-2">
-            <h4><a>{{ .Site.Params.footerColumn1Title }}</a></h4>
-            <p>{{ .Site.Params.footerColumn1Text }}</p>
-            <div class="link-list-wrapper">
-              <ul class="footer-list link-list clearfix">
-                {{ range .Site.Params.footerColumn1Links }}
-                  <li><a class="list-item" href="{{ $.Site.BaseURL }}{{ .url }}" title="{{ .label }}">{{ .label }}</a></li>
-                {{ end }}
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 pb-2">
+          <div class="col-lg-6 col-md-4 pb-4">
             <h4><a>{{ .Site.Params.footerColumn2Title }}</a></h4>
             <a href="{{ .Site.Params.footerColumn2Link }}">
               <div class="d-flex">
@@ -28,9 +17,10 @@
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col-lg-4 col-md-4 pb-2">
-            <div class="pb-2">
+
+            <p>&nbsp;</p>
+          
+            <div class="pb-4">
               <h4><a>{{ T "follow" }}</a></h4>
               <ul class="list-inline text-left social">
                 {{ range .Site.Params.socials }}
@@ -42,6 +32,18 @@
                     <span class="sr-only">{{ .Name }}</span>
                   </a>
                 </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-4 pb-4">
+            <h4><a>{{ .Site.Params.footerColumn1Title }}</a></h4>
+            <p>{{ .Site.Params.footerColumn1Text }}</p>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                {{ range .Site.Params.footerColumn1Links }}
+                  <li><a class="list-item" href="{{ $.Site.BaseURL }}{{ .url }}" title="{{ .label }}">{{ .label }}</a></li>
                 {{ end }}
               </ul>
             </div>

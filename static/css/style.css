@@ -62,3 +62,11 @@ h2 {
   width: 90%;
   height: 90%;
 }
+
+footer {
+  margin-top: 80px;
+}
+
+footer > .h4, h4 {
+  line-height: 2;
+}
