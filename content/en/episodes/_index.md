@@ -24,4 +24,4 @@ episodes:
     url: "ep4"
 ---
 
-## The lessons for the first series
+<img src="{{% baseurl %}}img/00_episodes.png" %}}" class="imgtitle2" /><br/>
