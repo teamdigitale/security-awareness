@@ -15,6 +15,11 @@
   src: url(../fonts/animeace2_ital.otf) format("opentype");
 }
 
+.comicfont {
+  font-family: "Anime Ace 2";
+  font-weight: unset !important;
+}
+
 h1.home {
   display: inline-block;
   font-family: "Anime Ace 2";
