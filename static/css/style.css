@@ -153,15 +153,3 @@ footer > .h4, footer > h4 {
   font-family: "Titillium Web",Geneva,Tahoma,sans-serif !important;
   color: #435a70;
 }
-
-.imgtitle {
-  max-height: 90px;
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-.imgtitle2 {
-  max-height: 45px;
-  max-width: 100%;
-  margin-bottom: 20px;
-}

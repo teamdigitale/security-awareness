@@ -5,42 +5,45 @@
       {{ ( .Page.Resources.GetMatch "intro.md" ).Content }}
 
       <h2 id="i-personaggi">{{ ( .Page.Resources.GetMatch "characters.md" ).Params.name }}</h2>
-
-      <div style="display: flex; align-items: center">
-        <div style="vertical-align: middle; text-align: center; width: 10% !important; float: left;">
-          <a class="customPrevBtn carousel-control left" onclick="$('#personaggi').trigger('prev.owl.carousel')">
-            <img src="{{ $.Site.BaseURL }}img/prev.png" alt="&lt;" style="cursor: pointer" />
-          </a>
-        </div>
-        <div class="it-carousel-wrapper it-carousel-landscape-abstract" style="float: left; width: 80%">
-          <div class="it-carousel-all owl-carousel" id="personaggi">
-            {{ range ( .Page.Resources.GetMatch "characters.md" ).Params.characters }}
-            <div class="it-single-slide-wrapper">
-              <a style="flex-basis: 30% !important">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper"><img src="{{ .image }}" title="{{ .name }}" alt="{{ .name }}" class="character"></div>
-                  </div>
-                </div>
-              </a>
-              <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
-                <div class="card-wrapper">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title big-heading">{{ .name }}</h5>
-                      <p class="card-text">{{ .description }}</p>
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-1 align-self-center">
+            <a class="customPrevBtn carousel-control left" onclick="$('#personaggi').trigger('prev.owl.carousel')">
+              <img src="{{ $.Site.BaseURL }}img/prev.png" alt="&lt;" style="cursor: pointer" />
+            </a>
+          </div>
+          <div class="col-10">
+            <div class="it-carousel-wrapper it-carousel-landscape-abstract">
+              <div class="it-carousel-all owl-carousel" id="personaggi">
+                {{ range ( .Page.Resources.GetMatch "characters.md" ).Params.characters }}
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="{{ .image }}" title="{{ .name }}" alt="{{ .name }}" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading">{{ .name }}</h5>
+                          <p class="card-text">{{ .description }}</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                {{ end }}
               </div>
             </div>
-            {{ end }}
           </div>
-        </div>
-        <div style="vertical-align: middle; text-align: center; width: 10% !important; float: left">
-            <a class="customNextBtn carousel-control left" onclick="$('#personaggi').trigger('next.owl.carousel')">
-              <img src="{{ $.Site.BaseURL }}img/next.png" alt="&gt;" style="cursor: pointer" />
-            </a>
+          <div class="col-1 align-self-center">
+              <a class="customNextBtn carousel-control left" onclick="$('#personaggi').trigger('next.owl.carousel')">
+                <img src="{{ $.Site.BaseURL }}img/next.png" alt="&gt;" style="cursor: pointer" />
+              </a>
+          </div>
         </div>
       </div>
 
@@ -48,7 +51,7 @@
       <div class="it-grid-list-wrapper">
         <div class="grid-row" style="justify-content: center;">
           {{ range ( .Page.Resources.GetMatch "story.md" ).Params.vignettes }}
-            <div class="col-6 col-lg-4 vignettes">
+            <div class="col-6 col-lg-4 col-md-6 col-sm-12 vignettes">
               <div class="it-grid-item-wrapper">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
