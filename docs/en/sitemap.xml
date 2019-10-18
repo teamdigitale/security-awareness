@@ -118,4 +118,18 @@
     <loc>https://teamdigitale.github.io/security-awareness/en/whoweare/</loc>
   </url>
   
+  <url>
+    <loc>https://teamdigitale.github.io/security-awareness/en/why/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://teamdigitale.github.io/security-awareness/why/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://teamdigitale.github.io/security-awareness/en/why/"
+                />
+  </url>
+  
 </urlset>
