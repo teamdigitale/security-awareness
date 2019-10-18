@@ -3,7 +3,7 @@ title: "Security awareness"
 layout: "timeline"
 ---
 
-<img src="{{% baseurl %}}img/titolo-home-it.png" %}}" style="width: 100%; margin-bottom: 20px" />
+<img src="{{% baseurl %}}img/00_titolo_corso.png" %}}" class="imgtitle" />
 
 <center><img src="{{% baseurl %}}img/picture-home.png" %}}" style="width: 70%" /></center>
 
