@@ -282,7 +282,7 @@
       <div style="display: flex; align-items: center">
         <div style="vertical-align: middle; text-align: center; width: 10% !important; float: left;">
           <a class="customPrevBtn carousel-control left" onclick="$('#personaggi').trigger('prev.owl.carousel')">
-            <img src="https://teamdigitale.github.io/security-awareness/img/prev.png" alt="&lt;" />
+            <img src="https://teamdigitale.github.io/security-awareness/img/prev.png" alt="&lt;" style="cursor: pointer" />
           </a>
         </div>
         <div class="it-carousel-wrapper it-carousel-landscape-abstract" style="float: left; width: 80%">
@@ -372,25 +372,10 @@
         </div>
         <div style="vertical-align: middle; text-align: center; width: 10% !important; float: left">
             <a class="customNextBtn carousel-control left" onclick="$('#personaggi').trigger('next.owl.carousel')">
-              <img src="https://teamdigitale.github.io/security-awareness/img/next.png" alt="&gt;" />
+              <img src="https://teamdigitale.github.io/security-awareness/img/next.png" alt="&gt;" style="cursor: pointer" />
             </a>
         </div>
       </div>
-
-      <script>
-        var owl = $('#personaggi');
-        owl.owlCarousel();
-        
-        $('.customNextBtn').click(function() {
-          $('#personaggi').trigger('next.owl.carousel');
-        })
-        
-        $('.customPrevBtn').click(function() {
-            
-            
-            owl.trigger('prev.owl.carousel', [300]);
-        })
-      </script>
 
       <h2 id="la-storia">La storia</h2>
       <div class="it-grid-list-wrapper">
@@ -572,8 +557,18 @@
               <span>Password Leak</span>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Gestionale</h5>
-              <p class="card-text">Chiamato anche E.R.P. ovvero Enterprise Resource Planning, il “software gestionale” è software con compiti di gestione di flussi di lavoro. Un esempio è SAP, il famoso gestionale contabile, ma si considerano tali anche altri software simili che assolvono ad esempio compiti di “gestione pratiche”.</p>
+              <h5 class="card-title">Software gestionale</h5>
+              <p class="card-text">Chiamato anche E.R.P. ovvero Enterprise Resource Planning, il “software gestionale” è software con compiti di gestione di flussi di lavoro.<br/>
+I principali nella categoria sono&#58;
+<ul class="cardlist">
+  <li>Software di contabilità</li>
+  <li>Software per il magazzino</li>
+  <li>Software per la produzione</li>
+  <li>Software per il budgeting</li>
+  <li>Software di gestione ed analisi finanziaria</li>
+  <li>Software dedicato</li>
+</ul>
+</p>
             </div>
           </div>
         </div>
@@ -589,7 +584,7 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">Password</h5>
-              <p class="card-text">Parola Chiave: Ne abbiamo sentito parlare molto spesso, è il codice che inseriamo sui sistemi informatici, quando apriamo l’email, e sulle applicazioni che utilizziamo quotidianamente, insieme allo &#34;username&#34;, il nome utente. Sappiamo per sentito dire ed in base alle raccomandazioni fornite da molti siti internet che deve essere una parola, o una frase complessa con codici particolari e che non dovrebbe mai essere facile da indovinare (mai utilizzare data di nascita, nome di un animale domestico o targa dell&#39;auto...). Per questo si consiglia sempre di utilizzare &#34;password&#34; diverse e complesse.</p>
+              <p class="card-text">Parola Chiave: Ne abbiamo sentito parlare molto spesso, è il codice che inseriamo sui sistemi informatici, quando apriamo l’email, e sulle applicazioni che utilizziamo quotidianamente, insieme allo "username", il nome utente. Sappiamo per sentito dire ed in base alle raccomandazioni fornite da molti siti internet che deve essere una parola, o una frase complessa con codici particolari e che non dovrebbe mai essere facile da indovinare (mai utilizzare data di nascita, nome di un animale domestico o targa dell'auto...). Per questo si consiglia sempre di utilizzare "password" diverse e complesse.</p>
             </div>
           </div>
         </div>

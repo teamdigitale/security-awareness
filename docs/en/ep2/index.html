@@ -282,7 +282,7 @@
       <div style="display: flex; align-items: center">
         <div style="vertical-align: middle; text-align: center; width: 10% !important; float: left;">
           <a class="customPrevBtn carousel-control left" onclick="$('#personaggi').trigger('prev.owl.carousel')">
-            <img src="https://teamdigitale.github.io/security-awareness/img/prev.png" alt="&lt;" />
+            <img src="https://teamdigitale.github.io/security-awareness/img/prev.png" alt="&lt;" style="cursor: pointer" />
           </a>
         </div>
         <div class="it-carousel-wrapper it-carousel-landscape-abstract" style="float: left; width: 80%">
@@ -372,25 +372,10 @@
         </div>
         <div style="vertical-align: middle; text-align: center; width: 10% !important; float: left">
             <a class="customNextBtn carousel-control left" onclick="$('#personaggi').trigger('next.owl.carousel')">
-              <img src="https://teamdigitale.github.io/security-awareness/img/next.png" alt="&gt;" />
+              <img src="https://teamdigitale.github.io/security-awareness/img/next.png" alt="&gt;" style="cursor: pointer" />
             </a>
         </div>
       </div>
-
-      <script>
-        var owl = $('#personaggi');
-        owl.owlCarousel();
-        
-        $('.customNextBtn').click(function() {
-          $('#personaggi').trigger('next.owl.carousel');
-        })
-        
-        $('.customPrevBtn').click(function() {
-            
-            
-            owl.trigger('prev.owl.carousel', [300]);
-        })
-      </script>
 
       <h2 id="la-storia">The story</h2>
       <div class="it-grid-list-wrapper">
@@ -573,7 +558,17 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">Management System</h5>
-              <p class="card-text">Also called E.R.P. or Enterprise Resource Planning, the &#34;management software&#34; is software with tasks of managing workflows. An example is SAP, the famous accounting manager, but other similar software are also considered as such which perform, for example, &#34;management practices&#34; tasks.</p>
+              <p class="card-text">Also called E.R.P. or Enterprise Resource Planning, the \"management software\" is software with tasks of managing workflows.<br/>
+The main ones in the category are&#58;
+<ul class="cardlist">
+  <li>Accounting software</li>
+  <li>Warehouse software</li>
+  <li>Production software</li>
+  <li>Budgeting software</li>
+  <li>Financial management and analysis software</li>
+  <li>Dedicated software</li>
+</ul>
+</p>
             </div>
           </div>
         </div>

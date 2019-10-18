@@ -9,7 +9,7 @@
       <div style="display: flex; align-items: center">
         <div style="vertical-align: middle; text-align: center; width: 10% !important; float: left;">
           <a class="customPrevBtn carousel-control left" onclick="$('#personaggi').trigger('prev.owl.carousel')">
-            <img src="{{ $.Site.BaseURL }}img/prev.png" alt="&lt;" />
+            <img src="{{ $.Site.BaseURL }}img/prev.png" alt="&lt;" style="cursor: pointer" />
           </a>
         </div>
         <div class="it-carousel-wrapper it-carousel-landscape-abstract" style="float: left; width: 80%">
@@ -39,25 +39,10 @@
         </div>
         <div style="vertical-align: middle; text-align: center; width: 10% !important; float: left">
             <a class="customNextBtn carousel-control left" onclick="$('#personaggi').trigger('next.owl.carousel')">
-              <img src="{{ $.Site.BaseURL }}img/next.png" alt="&gt;" />
+              <img src="{{ $.Site.BaseURL }}img/next.png" alt="&gt;" style="cursor: pointer" />
             </a>
         </div>
       </div>
-
-      <script>
-        var owl = $('#personaggi');
-        owl.owlCarousel();
-        // Go to the next item
-        $('.customNextBtn').click(function() {
-          $('#personaggi').trigger('next.owl.carousel');
-        })
-        // Go to the previous item
-        $('.customPrevBtn').click(function() {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
-            owl.trigger('prev.owl.carousel', [300]);
-        })
-      </script>
 
       <h2 id="la-storia">{{ ( .Page.Resources.GetMatch "story.md" ).Params.name }}</h2>
       <div class="it-grid-list-wrapper">
@@ -90,7 +75,7 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">{{ .name }}</h5>
-              <p class="card-text">{{ .description }}</p>
+              <p class="card-text">{{ .description | safeHTML }}</p>
             </div>
           </div>
         </div>

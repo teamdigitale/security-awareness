@@ -87,3 +87,17 @@ footer > .h4, footer > h4 {
 .weak {
   font-weight: 300 !important;
 }
+
+.small {
+  color: black;
+  font-size: .8rem !important;
+  line-height: 1.5;
+  display: block;
+}
+
+.cardlist {
+  font-size: .88889rem;
+  line-height: 1.33333rem;
+  font-family: "Titillium Web",Geneva,Tahoma,sans-serif !important;
+  color: #435a70;
+}

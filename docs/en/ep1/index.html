@@ -284,7 +284,7 @@
       <div style="display: flex; align-items: center">
         <div style="vertical-align: middle; text-align: center; width: 10% !important; float: left;">
           <a class="customPrevBtn carousel-control left" onclick="$('#personaggi').trigger('prev.owl.carousel')">
-            <img src="https://teamdigitale.github.io/security-awareness/img/prev.png" alt="&lt;" />
+            <img src="https://teamdigitale.github.io/security-awareness/img/prev.png" alt="&lt;" style="cursor: pointer" />
           </a>
         </div>
         <div class="it-carousel-wrapper it-carousel-landscape-abstract" style="float: left; width: 80%">
@@ -374,25 +374,10 @@
         </div>
         <div style="vertical-align: middle; text-align: center; width: 10% !important; float: left">
             <a class="customNextBtn carousel-control left" onclick="$('#personaggi').trigger('next.owl.carousel')">
-              <img src="https://teamdigitale.github.io/security-awareness/img/next.png" alt="&gt;" />
+              <img src="https://teamdigitale.github.io/security-awareness/img/next.png" alt="&gt;" style="cursor: pointer" />
             </a>
         </div>
       </div>
-
-      <script>
-        var owl = $('#personaggi');
-        owl.owlCarousel();
-        
-        $('.customNextBtn').click(function() {
-          $('#personaggi').trigger('next.owl.carousel');
-        })
-        
-        $('.customPrevBtn').click(function() {
-            
-            
-            owl.trigger('prev.owl.carousel', [300]);
-        })
-      </script>
 
       <h2 id="la-storia">The story</h2>
       <div class="it-grid-list-wrapper">
@@ -592,6 +577,44 @@
             <div class="card-body">
               <h5 class="card-title">Dumpster Diving</h5>
               <p class="card-text">It consists of retrieving sensitive information by poking around in the garbage.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>Human Error</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Data Classification</h5>
+              <p class="card-text">Data classification is the process of analysis and organization in categories based on the sensitivity of the content of the documents.<br/>
+Some of the categories&#58;
+<ol class="cardlist">
+<li><b>Public information&#58;</b> Information that can be communicated without restrictions</li>
+<li><b>Confidential information&#58;</b> There is a legal obligation to protect the confidentiality of information</li>
+</ol>
+</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>Human Error</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Remote working</h5>
+              <p class="card-text">Work linked to his duties in the company but which, instead of being carried out on site, is carried out by any other place, precisely "remotely". Particular attention should be paid to this type of work, both in the transfer of data on which you work, which may not be safe, and because any other location different from the company may not have the same security dynamics.</p>
             </div>
           </div>
         </div>
