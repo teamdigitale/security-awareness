@@ -24,4 +24,4 @@ episodes:
     url: "ep4"
 ---
 
-<img src="{{% baseurl %}}img/00_episodes.png" %}}" class="imgtitle2" /><br/>
+<h1 class="otherpages">Episodes</h1>

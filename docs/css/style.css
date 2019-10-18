@@ -1,3 +1,55 @@
+@font-face {
+  font-family: "Anime Ace 2";
+  src: url(../fonts/animeace2_reg.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Anime Ace 2";
+  font-weight: bold;
+  src: url(../fonts/animeace2_bld.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Anime Ace 2";
+  font-style: italic;
+  src: url(../fonts/animeace2_ital.otf) format("opentype");
+}
+
+h1.home {
+  display: inline-block;
+  font-family: "Anime Ace 2";
+  background-color: #0066cc;
+  color: white;
+  font-size: 1.5em;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: unset !important;
+}
+
+h1.otherpages {
+  display: inline-block;
+  font-family: "Anime Ace 2";
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: unset !important;
+}
+
+h2.home {
+  font-family: "Anime Ace 2";
+  font-size: .9em;
+  padding-left: 10px;
+  margin-top: 0px !important;
+  text-transform: uppercase;
+  font-weight: unset !important;
+}
+
+p.customfont { 
+  font-family: "My Custom Font", Verdana, Tahoma;
+}
+
 .padleft {
   padding-left: 1em !important;
 }

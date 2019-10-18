@@ -3,7 +3,8 @@ title: "Security awareness"
 layout: "timeline"
 ---
 
-<img src="{{% baseurl %}}img/00_titolo_corso.png" %}}" class="imgtitle" />
+<h1 class="home">Corso di base di sicurezza digitale</h1>
+<h2 class="home">Per i dipendenti della pubblica amministrazione</h2>
 
 <center><img src="{{% baseurl %}}img/picture-home.png" %}}" style="width: 70%" /></center>
 
