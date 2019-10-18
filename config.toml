@@ -48,7 +48,7 @@ publishDir = "./docs"
     footerColumn1Links = [
       { label = "Home", url = "/" },
       { label = "Chi siamo", url = "/chisiamo" },
-      { label = "Perchè questo corso?", url = "/" },
+      { label = "Perchè questo corso?", url = "/why" },
       { label = "Episodi", url = "/" },
       { label = "Quiz", url = "quiz" }
     ]
@@ -77,7 +77,7 @@ publishDir = "./docs"
     footerColumn1Links = [
       { label = "Home", url = "/en/" },
       { label = "Who are we", url = "/en/whoweare" },
-      { label = "Why this course?", url = "/en/" },
+      { label = "Why this course?", url = "/en/why" },
       { label = "Episodes", url = "/en/" },
       { label = "Quiz", url = "en/quiz" }
     ]
@@ -134,12 +134,12 @@ publishDir = "./docs"
 
     [[languages.it.menu.navbar]]
       name = "Perchè questo corso?"
-      URL = "/"
+      URL = "/why"
       weight = 3
 
     [[languages.en.menu.navbar]]
       name = "Why this course?"
-      URL = "/"
+      URL = "/en/why"
       weight = 3
 
     [[languages.it.menu.navbar]]
