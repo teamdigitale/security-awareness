@@ -49,6 +49,20 @@
   </url>
   
   <url>
+    <loc>https://teamdigitale.github.io/security-awareness/episodes/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://teamdigitale.github.io/security-awareness/en/episodes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://teamdigitale.github.io/security-awareness/episodes/"
+                />
+  </url>
+  
+  <url>
     <loc>https://teamdigitale.github.io/security-awareness/why/</loc>
     <xhtml:link
                 rel="alternate"

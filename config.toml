@@ -47,9 +47,9 @@ publishDir = "./docs"
     footerColumn1Text = "Un breve corso per la sicurezza digitale"
     footerColumn1Links = [
       { label = "Home", url = "/" },
-      { label = "Chi siamo", url = "/chisiamo" },
-      { label = "Perchè questo corso?", url = "/why" },
-      { label = "Episodi", url = "/" },
+      { label = "Chi siamo", url = "chisiamo" },
+      { label = "Perchè questo corso?", url = "why" },
+      { label = "Episodi", url = "episodes" },
       { label = "Quiz", url = "quiz" }
     ]
 
@@ -75,10 +75,10 @@ publishDir = "./docs"
     footerColumn1Title = "Security Awareness"
     footerColumn1Text = "A short course for digital security"
     footerColumn1Links = [
-      { label = "Home", url = "/en/" },
-      { label = "Who are we", url = "/en/whoweare" },
-      { label = "Why this course?", url = "/en/why" },
-      { label = "Episodes", url = "/en/" },
+      { label = "Home", url = "en" },
+      { label = "Who are we", url = "en/whoweare" },
+      { label = "Why this course?", url = "en/why" },
+      { label = "Episodes", url = "en/episodes" },
       { label = "Quiz", url = "en/quiz" }
     ]
 
@@ -144,34 +144,12 @@ publishDir = "./docs"
 
     [[languages.it.menu.navbar]]
       name = "Episodi"
+      URL = "/episodes"
       weight = 4
 
     [[languages.en.menu.navbar]]
       name = "Episodes"
-      weight = 4
-
-    [[languages.it.menu.navbar]]
-      name = "Episodio 1 - Errore Umano"
-      URL = "/ep1"
-      parent = "Episodi"
-      weight = 1
-
-    [[languages.it.menu.navbar]]
-      name = "Episodio 2 - Password Leak"
-      URL = "/ep2"
-      parent = "Episodi"
-      weight = 2
-
-    [[languages.it.menu.navbar]]
-      name = "Episodio 3 - Spearphishing"
-      URL = "/ep3"
-      parent = "Episodi"
-      weight = 3
-
-    [[languages.it.menu.navbar]]
-      name = "Episodio 4 - Ransomware"
-      URL = "/ep4"
-      parent = "Episodi"
+      URL = "/en/episodes"
       weight = 4
 
     [[languages.it.menu.navbar]]
@@ -199,30 +177,6 @@ publishDir = "./docs"
       name = "Designers"
       URL = "https://designers.italia.it"
       weight = 5
-
-    [[languages.en.menu.navbar]]
-      name = "Episode 1 - Human Error"
-      URL = "/en/ep1"
-      parent = "Episodes"
-      weight = 1
-
-    [[languages.en.menu.navbar]]
-      name = "Episode 2 - Password Leak"
-      URL = "/en/ep2"
-      parent = "Episodes"
-      weight = 2
-
-    [[languages.en.menu.navbar]]
-      name = "Episode 3 - Spearphishing"
-      URL = "/en/ep3"
-      parent = "Episodes"
-      weight = 3
-
-    [[languages.en.menu.navbar]]
-      name = "Episode 4 - Ransomware"
-      URL = "/en/ep4"
-      parent = "Episodes"
-      weight = 4
 
     [[languages.en.menu.navbar]]
       name = "Quiz"

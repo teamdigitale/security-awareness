@@ -1,26 +1,11 @@
 ---
 title: "Security awareness"
 layout: "timeline"
-episodes:
-  episode-1:
-    name: "Ep1"
-    title: "Errore Umano" 
-    url: "ep1"
-  episode-2:
-    name: "Ep2"
-    title: "Password Leak" 
-    url: "ep2"
-  episode-3:
-    name: "Ep3"
-    title: "Spearphishing"
-    url: "ep3"
-  episode-4:
-    name: "Ep4"
-    title: "Ransomware" 
-    url: "ep4"
 ---
 
-## Un corso di sicurezza digitale
+<img src="{{% baseurl %}}img/titolo-home-it.png" %}}" style="width: 100%; margin-bottom: 20px" />
+
+<center><img src="{{% baseurl %}}img/picture-home.png" %}}" style="width: 70%" /></center>
 
 **Attenzione: Questo non è un corso come tanti altri!**
 Il corso di sicurezza digitale (o "security awareness") che stai per iniziare ti permetterà di scoprire quali sono i corretti comportamenti da tenere per **gestire le informazioni in sicurezza**.
@@ -37,7 +22,7 @@ L’errore purtroppo è sempre dietro l’angolo, pertanto i rischi dovuti al co
 
 In altre parole: **tu sei l’anello più importante per la protezione dei dati** e delle informazioni. Sei pronto a diventare un supereroe della sicurezza informatica? 
 
-<center><a href="ep1" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Vai subito a Episodio 1!</a></center>
+<center><img src="{{% baseurl %}}img/sidi-home.png" %}}" style="width: 50%" /></center>
 
 
 ### Obiettivi
@@ -48,4 +33,4 @@ Questo corso è pensato per i dipendenti delle Pubbliche Amministrazioni ma è a
 - aiutare a proteggere la riservatezza, disponibilità e l'integrità dei dati della propria organizzazione.
 
 
-### Le lezioni
+<center><a href="ep1" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Vai agli episodi</a></center>

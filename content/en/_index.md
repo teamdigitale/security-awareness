@@ -1,26 +1,11 @@
 ---
 title: "Security awareness"
 layout: "timeline"
-episodes:
-  episode-1:
-    name: "Ep1"
-    title: "Human Error" 
-    url: "en/ep1"
-  episode-2:
-    name: "Ep2"
-    title: "Password Leak" 
-    url: "en/ep2"
-  episode-3:
-    name: "Ep3"
-    title: "Spearphishing"
-    url: "en/ep3"
-  episode-4:
-    name: "Ep4"
-    title: "Ransomware" 
-    url: "en/ep4"
 ---
 
-## A digital security course
+<img src="{{% baseurl %}}img/titolo-home-it.png" %}}" style="width: 100%; margin-bottom: 20px" />
+
+<center><img src="{{% baseurl %}}img/picture-home.png" %}}" style="width: 70%" /></center>
 
 **Attention: This is not a course like many others!**
 The digital security course (or "security awareness") that you are about to start will allow you to find out what are the correct behaviors to keep to **manage information securely**.
@@ -37,7 +22,7 @@ Unfortunately the error is always around the corner, therefore the risks due to 
 
 In other words: **you are the most important link for data protection** and information. Are you ready to become a computer security superhero?
 
-<center><a href="ep1" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Go immediately to Episode 1!</a></center>
+<center><img src="{{% baseurl %}}img/sidi-home.png" %}}" style="width: 50%" /></center>
 
 
 ### Targets
@@ -47,4 +32,5 @@ This course is designed for Public Administration employees but is suitable for 
 - reduce the risks associated with possible cyber security attacks;
 - help protect the privacy, availability and integrity of your organization's data.
 
-### The lessons
+
+<center><a href="ep1" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Vai agli episodi</a></center>
