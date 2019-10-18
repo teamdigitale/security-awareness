@@ -16,6 +16,11 @@ h2 {
   margin-bottom: 1.2em;
 }
 
+h3 {
+  margin-top: 1.6em;
+  margin-bottom: 1em;
+}
+
 .it-brand-text > h2 {
   margin-top: 0px !important;
 }
