@@ -104,5 +104,6 @@ footer > .h4, footer > h4 {
 
 .imgtitle {
   height: 90px;
+  max-width: 100%;
   margin-bottom: 20px;
 }
