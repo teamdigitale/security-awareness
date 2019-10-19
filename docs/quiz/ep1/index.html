@@ -299,7 +299,7 @@
             
             <p class="title_question">Qual è stato l’errore principale commesso da Carla?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -366,7 +366,7 @@
             
             <p class="title_question">Cos&#39;è la &#34;Clean Desk Policy&#34;?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -433,7 +433,7 @@
             
             <p class="title_question">Hai fatto un backup di documenti riservati su una chiavetta USB:</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -500,7 +500,7 @@
             
             <p class="title_question">Seleziona una o più luoghi dell’ufficio dove un malintenzionato potrebbe accedere a dati riservati:</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
 
@@ -567,7 +567,7 @@
             
             <p class="title_question">Perché è importante adottare e seguire la &#34;Clean Desk Policy&#34; o &#34;Politica della scrivania pulita&#34;?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -634,7 +634,7 @@
             
             <p class="title_question">Conosci quale testo di legge attualmente regolamenta e tutela le persone fisiche con riguardo al trattamento dei dati personali e la libera circolazione di tali dati?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -719,20 +719,47 @@
 
   jQuery(document).ready(function($) {
     var request;
+
+    $(function () {
+      $('.shuffle').each(function(i, obj) {
+        var parent = $(obj);
+        var divs = parent.children();
+        while (divs.length) {
+            parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+        }
+      });
+    });
     
     $("#quiz").submit(function(event) {
+      event.preventDefault();
       $("#div_6").addClass("hidden");
 
       if (request) request.abort();
       
       var $form = $(this);
       var $inputs = $form.find("input, select, button, textarea");
-      var serializedData = $form.serialize();
-    
+      
+      var arrayData = {};
+      var formData = $form.serializeArray();
+      formData.sort(function(a, b){
+        return a["value"] == b["value"] ? 0 : +(a["value"] > b["value"]) || -1;
+      });
+
+      formData.forEach(function(elem) {
+        var val = "";
+        if (elem["name"] in arrayData) {
+          val = arrayData[elem["name"]] + ",";
+        }
+        val += "" + elem["value"];
+        arrayData[elem["name"]] = val;
+      });
+      
+      var serializedData = $.param(arrayData);
+
       $inputs.prop("disabled", true);
       $('#result').html('<p>Invio del test al server...</p>' +
                         '<div class="progress-spinner progress-spinner-active"><span class="sr-only">...</span></div></div>');
-    
+
       request = $.ajax({
         url: "https://script.google.com/a/teamdigitale.governo.it/macros/s/AKfycbwIWmC3tpgZSwBK_nK6JwmkVH2u23t0VLJkr4zszQ/exec",
         type: "post",
@@ -760,8 +787,6 @@
       request.always(function () {
         $inputs.prop("disabled", false);
       });
-    
-      event.preventDefault();
     });
   });
 </script>

@@ -299,7 +299,7 @@
             
             <p class="title_question">Qual è stato l’errore principale commesso da Carla?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -366,7 +366,7 @@
             
             <p class="title_question">Telefonata da parte di un tecnico del servizio di assistenza centralizzato. L’azienda &#34;TISupport&#34; S.P.A., che ha in gestione tutti i nostri sistemi informatici, chiama al fisso sottolineando che la password utente è quasi scaduta e consiglia di cambiarla. Il tecnico, per facilitare la cosa, propone di cambiarla al telefono, come procedi?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -433,7 +433,7 @@
             
             <p class="title_question">Dopo quanto tempo pensi che sia una buona pratica cambiare la password?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -509,7 +509,7 @@
             
             <p class="title_question">Ti chiama un collega e ti dice che ha smarrito le sue credenziali per accedere al programma di gestione. Cosa fai per aiutarlo?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -581,7 +581,7 @@ Qual è il tuo colore preferito?
 
 Come risposte scegli:</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -648,7 +648,7 @@ Come risposte scegli:</p>
             
             <p class="title_question">Il programma di gestione ha l’autenticazione a due fattori. Sai di cosa si tratta?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -706,7 +706,7 @@ Come risposte scegli:</p>
             
             <p class="title_question">Cos&#39;è la &#34;Clean Desk Policy&#34;?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -773,7 +773,7 @@ Come risposte scegli:</p>
             
             <p class="title_question">Hai fatto un backup di documenti riservati su una chiavetta USB:</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -840,7 +840,7 @@ Come risposte scegli:</p>
             
             <p class="title_question">Seleziona una o più luoghi dell’ufficio dove un malintenzionato potrebbe accedere a dati riservati:</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
 
@@ -907,7 +907,7 @@ Come risposte scegli:</p>
             
             <p class="title_question">Perché è importante adottare e seguire la &#34;Clean Desk Policy&#34; o &#34;Politica della scrivania pulita&#34;?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -974,7 +974,7 @@ Come risposte scegli:</p>
             
             <p class="title_question">Conosci quale testo di legge attualmente regolamenta e tutela le persone fisiche con riguardo al trattamento dei dati personali e la libera circolazione di tali dati?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -1041,7 +1041,7 @@ Come risposte scegli:</p>
             
             <p class="title_question">Viene installato il nuovo gestionale in ufficio, permette di accedere ad informazioni più strutturate, senza dover andare in giro a destra e sinistra per verificare i dati di una pratica, è un bel passo avanti! Peccato che sia stato sviluppato nuovamente fuori dalla rete aziendale e che abbia bisogno di credenziali diverse da quelle del PC per utilizzarlo... Devi impostare la nuova password per usarlo, come procedi?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -1117,7 +1117,7 @@ Come risposte scegli:</p>
             
             <p class="title_question">Utilizzi spesso una password appositamente modificata per ricordarti sempre come accedere e non dover scrivere in giro le tue credenziali. La maggior parte della password è uguale, tra i vari siti, ma cambiano alcune lettere per differenziarla in base al sito. In ufficio devi modificare le tue credenziali e stavolta sembra che la mail sia piuttosto minacciosa, si raccomandano di non usare password che utilizzi di già, come ti comporti?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -1184,7 +1184,7 @@ Come risposte scegli:</p>
             
             <p class="title_question">Sei comodamente al tuo pc, controlli la posta aziendale, ad un certo punto appare la seguente e-mail &#34;Oggetto: conferma modifica password utente&#34;. Il testo è semplice e sembra quello dell’applicazione che usi spesso, il gestionale che usi ogni giorno. C’è il tasto per procedere... cosa fai?</p>
                     
-            <div>
+            <div class="shuffle">
               
                 
                   <div class="form-check valign">
@@ -1269,20 +1269,47 @@ Come risposte scegli:</p>
 
   jQuery(document).ready(function($) {
     var request;
+
+    $(function () {
+      $('.shuffle').each(function(i, obj) {
+        var parent = $(obj);
+        var divs = parent.children();
+        while (divs.length) {
+            parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+        }
+      });
+    });
     
     $("#quiz").submit(function(event) {
+      event.preventDefault();
       $("#div_14").addClass("hidden");
 
       if (request) request.abort();
       
       var $form = $(this);
       var $inputs = $form.find("input, select, button, textarea");
-      var serializedData = $form.serialize();
-    
+      
+      var arrayData = {};
+      var formData = $form.serializeArray();
+      formData.sort(function(a, b){
+        return a["value"] == b["value"] ? 0 : +(a["value"] > b["value"]) || -1;
+      });
+
+      formData.forEach(function(elem) {
+        var val = "";
+        if (elem["name"] in arrayData) {
+          val = arrayData[elem["name"]] + ",";
+        }
+        val += "" + elem["value"];
+        arrayData[elem["name"]] = val;
+      });
+      
+      var serializedData = $.param(arrayData);
+
       $inputs.prop("disabled", true);
       $('#result').html('<p>Invio del test al server...</p>' +
                         '<div class="progress-spinner progress-spinner-active"><span class="sr-only">...</span></div></div>');
-    
+
       request = $.ajax({
         url: "https://script.google.com/a/teamdigitale.governo.it/macros/s/AKfycbwIWmC3tpgZSwBK_nK6JwmkVH2u23t0VLJkr4zszQ/exec",
         type: "post",
@@ -1310,8 +1337,6 @@ Come risposte scegli:</p>
       request.always(function () {
         $inputs.prop("disabled", false);
       });
-    
-      event.preventDefault();
     });
   });
 </script>
