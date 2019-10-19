@@ -287,6 +287,8 @@
       <h2>Quiz di autovalutazione - Episodio 2</h2>
       <div class="callout callout-highlight"><p>Per verificare la corretta comprensione e conoscenza dei temi di Security Awareness trattati in questo corso, qui è possibile effettuare un test di autovalutazione!</p></div>
 
+      <div id="result"></div>
+
       <form id="quiz">
         
         
@@ -845,8 +847,6 @@ Come risposte scegli:</p>
 
         <input type="hidden" id="quiztype" name="quiztype" value="episode2">
       </form>
-
-      <div id="result"></div>
     </div>
   </div>
 </div>
@@ -863,6 +863,26 @@ Come risposte scegli:</p>
     
     $("#div_"+itemid).addClass("hidden");
     $("#div_"+(itemid+1)).removeClass("hidden");
+  }
+
+  function showEsito(esito) {
+    if (esito["esito"]) {
+      $('#result').addClass("alert alert-success");
+      $('#result').text('Hai passato il test con successo!');
+      return;
+    }
+    
+    $('#result').addClass("alert alert-danger");
+    $('#result').text('Non hai passato il test, hai commesso qualche errore...');
+    for (q in esito['errors']) {
+      var questionid = q.replace("question", "#div_");
+
+      $(".progress-bar-wrapper").addClass("hidden");
+      $(questionid).find("input[type='button']").addClass("hidden");
+      $(questionid).find("input").prop("disabled", true);
+      $("#"+q+"_"+esito['errors'][q]).parent().addClass("wrong");
+      $(questionid).removeClass("hidden");
+    }
   }
 
   jQuery(document).ready(function($) {
@@ -919,17 +939,19 @@ Come risposte scegli:</p>
         if (response.result == "error") {
           $("#warn-message").html("C\x27è stato un errore tecnico.");
           notificationShow('missing', 6000);
+          $('#result').text('C\x27è stato un errore tecnico.');
         }
         else {
           $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Test inviato - vedi il Google Sheet</a>');
           notificationShow('uploaded', 6000);
-          $('#result').text('Data sent');
+          $('#result').text('Data sent!');
         }
       });
     
       request.fail(function (jqXHR, textStatus, errorThrown){
         $("#warn-message").html("C\x27è stato un errore tecnico.: " + textStatus, errorThrown);
         notificationShow('missing', 6000);
+        $('#result').text('C\x27è stato un errore tecnico.');
       });
     
       request.always(function () {

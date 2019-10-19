@@ -287,6 +287,8 @@
       <h2>Self-assessment quiz - Episode 2</h2>
       <div class="callout callout-highlight"><p>To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment test!</p></div>
 
+      <div id="result"></div>
+
       <form id="quiz">
         
         
@@ -845,8 +847,6 @@ As answers choose:</p>
 
         <input type="hidden" id="quiztype" name="quiztype" value="episode2">
       </form>
-
-      <div id="result"></div>
     </div>
   </div>
 </div>
@@ -863,6 +863,26 @@ As answers choose:</p>
     
     $("#div_"+itemid).addClass("hidden");
     $("#div_"+(itemid+1)).removeClass("hidden");
+  }
+
+  function showEsito(esito) {
+    if (esito["esito"]) {
+      $('#result').addClass("alert alert-success");
+      $('#result').text('Hai passato il test con successo!');
+      return;
+    }
+    
+    $('#result').addClass("alert alert-danger");
+    $('#result').text('Non hai passato il test, hai commesso qualche errore...');
+    for (q in esito['errors']) {
+      var questionid = q.replace("question", "#div_");
+
+      $(".progress-bar-wrapper").addClass("hidden");
+      $(questionid).find("input[type='button']").addClass("hidden");
+      $(questionid).find("input").prop("disabled", true);
+      $("#"+q+"_"+esito['errors'][q]).parent().addClass("wrong");
+      $(questionid).removeClass("hidden");
+    }
   }
 
   jQuery(document).ready(function($) {
@@ -919,17 +939,19 @@ As answers choose:</p>
         if (response.result == "error") {
           $("#warn-message").html("We are experiencing a technical error.");
           notificationShow('missing', 6000);
+          $('#result').text('We are experiencing a technical error.');
         }
         else {
           $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Test submitted - see Google Sheet</a>');
           notificationShow('uploaded', 6000);
-          $('#result').text('Data sent');
+          $('#result').text('Data sent!');
         }
       });
     
       request.fail(function (jqXHR, textStatus, errorThrown){
         $("#warn-message").html("We are experiencing a technical error.: " + textStatus, errorThrown);
         notificationShow('missing', 6000);
+        $('#result').text('We are experiencing a technical error.');
       });
     
       request.always(function () {
