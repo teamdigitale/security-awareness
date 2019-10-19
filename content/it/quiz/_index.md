@@ -9,7 +9,6 @@ questions:
     type: "radiogroup"
     name: "question1"
     text: "Qual è stato l’errore principale commesso da Carla?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -27,7 +26,6 @@ questions:
     type: "radiogroup"
     name: "question2"
     text: "Cos'è la \"Clean Desk Policy\"?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -45,7 +43,6 @@ questions:
     type: "radiogroup"
     name: "question3"
     text: "Hai fatto un backup di documenti riservati su una chiavetta USB:"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -63,7 +60,6 @@ questions:
     type: "checkbox"
     name: "question4"
     text: "Seleziona una o più luoghi dell’ufficio dove un malintenzionato potrebbe accedere a dati riservati:"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -81,7 +77,6 @@ questions:
     type: "radiogroup"
     name: "question5"
     text: "Perché è importante adottare e seguire la \"Clean Desk Policy\" o \"Politica della scrivania pulita\"?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -99,7 +94,6 @@ questions:
     type: "radiogroup"
     name: "question6"
     text: "Conosci quale testo di legge attualmente regolamenta e tutela le persone fisiche con riguardo al trattamento dei dati personali e la libera circolazione di tali dati?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -117,7 +111,6 @@ questions:
     type: "radiogroup"
     name: "question7"
     text: "Viene installato il nuovo gestionale in ufficio, permette di accedere ad informazioni più strutturate, senza dover andare in giro a destra e sinistra per verificare i dati di una pratica, è un bel passo avanti! Peccato che sia stato sviluppato nuovamente fuori dalla rete aziendale e che abbia bisogno di credenziali diverse da quelle del PC per utilizzarlo... Devi impostare la nuova password per usarlo, come procedi?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -138,7 +131,6 @@ questions:
     type: "radiogroup"
     name: "question8"
     text: "Utilizzi spesso una password appositamente modificata per ricordarti sempre come accedere e non dover scrivere in giro le tue credenziali. La maggior parte della password è uguale, tra i vari siti, ma cambiano alcune lettere per differenziarla in base al sito. In ufficio devi modificare le tue credenziali e stavolta sembra che la mail sia piuttosto minacciosa, si raccomandano di non usare password che utilizzi di già, come ti comporti?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -156,7 +148,6 @@ questions:
     type: "radiogroup"
     name: "question9"
     text: "Sei comodamente al tuo pc, controlli la posta aziendale, ad un certo punto appare la seguente e-mail \"Oggetto: conferma modifica password utente\". Il testo è semplice e sembra quello dell’applicazione che usi spesso, il gestionale che usi ogni giorno. C’è il tasto per procedere... cosa fai?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -174,7 +165,6 @@ questions:
     type: "radiogroup"
     name: "question10"
     text: "Telefonata da parte di un tecnico del servizio di assistenza centralizzato. L’azienda \"TISupport\" S.P.A., che ha in gestione tutti i nostri sistemi informatici, chiama al fisso sottolineando che la password utente è quasi scaduta e consiglia di cambiarla. Il tecnico, per facilitare la cosa, propone di cambiarla al telefono, come procedi?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -192,7 +182,6 @@ questions:
     type: "radiogroup"
     name: "question11"
     text: "Dopo quanto tempo pensi che sia una buona pratica cambiare la password?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -213,7 +202,6 @@ questions:
     type: "radiogroup"
     name: "question12"
     text: "Ti chiama un collega e ti dice che ha smarrito le sue credenziali per accedere al programma di gestione. Cosa fai per aiutarlo?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -231,7 +219,6 @@ questions:
     type: "radiogroup"
     name: "question13"
     text: "Mentre inserisci le nuove credenziali, per il recupero della password, il programma di gestione ti chiede di scegliere delle risposte che serviranno per il recupero. Alle domande: \n\nQual è il nome con cui ti chiamavano da piccola/o? \nQual è il tuo colore preferito? \n\nCome risposte scegli:"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -249,7 +236,6 @@ questions:
     type: "radiogroup"
     name: "question14"
     text: "Il programma di gestione ha l’autenticazione a due fattori. Sai di cosa si tratta?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"

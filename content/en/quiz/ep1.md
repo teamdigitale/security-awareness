@@ -9,7 +9,6 @@ questions:
     type: "radiogroup"
     name: "question1"
     text: "What was Carla's main mistake?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -27,7 +26,6 @@ questions:
     type: "radiogroup"
     name: "question2"
     text: "What is the \"Clean Desk Policy\"?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -45,7 +43,6 @@ questions:
     type: "radiogroup"
     name: "question3"
     text: "You made a backup of confidential documents on a USB stick:"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -63,7 +60,6 @@ questions:
     type: "checkbox"
     name: "question4"
     text: "Select one or more places in the office where an attacker could access confidential data:"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -81,7 +77,6 @@ questions:
     type: "radiogroup"
     name: "question5"
     text: "Why is it important to adopt and follow the \"Clean Desk Policy\" or \"Clean Desk Policy\"?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -99,7 +94,6 @@ questions:
     type: "radiogroup"
     name: "question6"
     text: "Do you know which law currently regulates and protects individuals with regard to the processing of personal data and the free circulation of such data?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"

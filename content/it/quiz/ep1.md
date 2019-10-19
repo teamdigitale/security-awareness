@@ -9,7 +9,6 @@ questions:
     type: "radiogroup"
     name: "question1"
     text: "Qual è stato l’errore principale commesso da Carla?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -27,7 +26,6 @@ questions:
     type: "radiogroup"
     name: "question2"
     text: "Cos'è la \"Clean Desk Policy\"?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -45,7 +43,6 @@ questions:
     type: "radiogroup"
     name: "question3"
     text: "Hai fatto un backup di documenti riservati su una chiavetta USB:"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -63,7 +60,6 @@ questions:
     type: "checkbox"
     name: "question4"
     text: "Seleziona una o più luoghi dell’ufficio dove un malintenzionato potrebbe accedere a dati riservati:"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -81,7 +77,6 @@ questions:
     type: "radiogroup"
     name: "question5"
     text: "Perché è importante adottare e seguire la \"Clean Desk Policy\" o \"Politica della scrivania pulita\"?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -99,7 +94,6 @@ questions:
     type: "radiogroup"
     name: "question6"
     text: "Conosci quale testo di legge attualmente regolamenta e tutela le persone fisiche con riguardo al trattamento dei dati personali e la libera circolazione di tali dati?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"

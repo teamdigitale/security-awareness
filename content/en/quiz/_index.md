@@ -8,7 +8,6 @@ questions:
     type: "radiogroup"
     name: "question1"
     text: "What was Carla's main mistake?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -26,7 +25,6 @@ questions:
     type: "radiogroup"
     name: "question2"
     text: "What is the \"Clean Desk Policy\"?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -44,7 +42,6 @@ questions:
     type: "radiogroup"
     name: "question3"
     text: "You made a backup of confidential documents on a USB stick:"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -62,7 +59,6 @@ questions:
     type: "checkbox"
     name: "question4"
     text: "Select one or more places in the office where an attacker could access confidential data:"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -80,7 +76,6 @@ questions:
     type: "radiogroup"
     name: "question5"
     text: "Why is it important to adopt and follow the \"Clean Desk Policy\" or \"Clean Desk Policy\"?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -98,7 +93,6 @@ questions:
     type: "radiogroup"
     name: "question6"
     text: "Do you know which law currently regulates and protects individuals with regard to the processing of personal data and the free circulation of such data?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -116,7 +110,6 @@ questions:
     type: "radiogroup"
     name: "question7"
     text: "The new management software is installed in the office, allows access to more structured information, without having to go around to the right and left to verify the data of a practice, it is a nice step forward! It is a pity that it was developed again outside the corporate network and that it needs credentials different from those of the PC to use it ... You have to set the new password to use it, how do you proceed?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -137,7 +130,6 @@ questions:
     type: "radiogroup"
     name: "question8"
     text: "You often use a specially modified password to always remember how to log in and not having to write your credentials around. Most of the password is the same, between the various sites, but some letters change to differentiate it according to the site. In the office you have to change your credentials and this time it seems that the email is rather threatening, they recommend not using passwords that you already use, how do you behave?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -155,7 +147,6 @@ questions:
     type: "radiogroup"
     name: "question9"
     text: "You are comfortably at your PC, check the company mail, at a certain point the following e-mail appears: \"Subject: confirmation of user password change\". The text is simple and seems to be that of the application you use often, the management software you use every day. There is a button to proceed... what do you do?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -173,7 +164,6 @@ questions:
     type: "radiogroup"
     name: "question10"
     text: "Phone call from a centralized service technician. The company \"TISupport\" S.P.A., which manages all our IT systems, calls to the landline underlining that the user password has almost expired and recommends changing it. To facilitate this, the technician proposes to change it over the phone, how do you proceed?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -191,7 +181,6 @@ questions:
     type: "radiogroup"
     name: "question11"
     text: "How long do you think it is good practice to change your password?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -212,7 +201,6 @@ questions:
     type: "radiogroup"
     name: "question12"
     text: "A colleague calls you and tells you that he has lost his credentials to access the management program. What do you do to help him?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -230,7 +218,6 @@ questions:
     type: "radiogroup"
     name: "question13"
     text: "While entering the new credentials, for password recovery, the management program asks you to choose answers that will be used for recovery. To the questions:\n\nWhat is the name by which they called you as a child?\nWhat's your favourite colour?\n\nAs answers choose:"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
@@ -248,7 +235,6 @@ questions:
     type: "radiogroup"
     name: "question14"
     text: "The management program has two-factor authentication. Do you know what it is?"
-    correctAnswer: "item1"
     choices:
       choice-1:
         value: "item1"
