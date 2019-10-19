@@ -22,6 +22,7 @@
       <div class="callout callout-highlight"><p>{{ .Page.Params.description }}</p></div>
 
       <div id="result"></div>
+      <canvas id="doughnutChart" class="hidden"></canvas>
 
       <form id="quiz">
         {{ $divnum := 0 }}
@@ -99,9 +100,41 @@
   }
 
   function showEsito(esito) {
-    if (esito["esito"]) {
+    if (esito["passed"] == true) {
       $('#result').addClass("alert alert-success");
       $('#result').text('Hai passato il test con successo!');
+
+      if ("success_rate" in esito) {
+        $("#doughnutChart").removeClass("hidden");
+        var donutOptions = {
+          cutoutPercentage: 66, 
+          legend: {
+            position:'bottom', 
+            labels: {
+              pointStyle:'circle',
+              usePointStyle:true
+            }
+          }
+        };
+        var chDonutData1 = {
+            labels: ['Passed', 'Wrong'],
+            datasets: [
+              {
+                backgroundColor: ['#0066cc', '#cacacc'],
+                borderWidth: 0,
+                data: [esito['success_rate'] * 100, 100 - (esito['success_rate'] * 100)]
+              }
+            ]
+        };
+        var chDonut1 = $("#doughnutChart");
+        if (chDonut1) {
+          new Chart(chDonut1, {
+              type: 'pie',
+              data: chDonutData1,
+              options: donutOptions
+          });
+        }
+      }
       return;
     }
     
@@ -169,6 +202,7 @@
       });
     
       request.done(function (response){
+        console.log(response);
         if (response.result == "error") {
           $("#warn-message").html("{{ T "call-error" }}");
           notificationShow('missing', 6000);
@@ -177,7 +211,7 @@
         else {
           $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">{{ T "call-ok" }}</a>');
           notificationShow('uploaded', 6000);
-          $('#result').text('Data sent!');
+          showEsito(response['esito']);
         }
       });
     
