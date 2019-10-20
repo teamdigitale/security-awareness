@@ -30,3 +30,15 @@ other = "Test inviato - vedi il Google Sheet"
 
 [send-data]
 other = "Invio del test al server..."
+
+[passed]
+other = "Test passato"
+
+[wrong]
+other = "Test fallito"
+
+[passed-test]
+other = "Hai passato il test con successo!"
+
+[not-passed-test]
+other = "Non hai passato il test, hai commesso qualche errore..."

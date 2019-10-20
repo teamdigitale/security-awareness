@@ -103,6 +103,7 @@ h3 {
 
 .hidden {
   display: none;
+  visibility: hidden;
 }
 
 .goto_test {
@@ -161,4 +162,5 @@ footer > .h4, footer > h4 {
 
 .wrong {
   border: 1px solid red;
+  background-color: #ffd7c7;
 }

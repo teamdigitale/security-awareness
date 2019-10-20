@@ -55,6 +55,7 @@
 
 
 <script src="https://teamdigitale.github.io/security-awareness/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="https://teamdigitale.github.io/security-awareness/js/chart-2.8.0.bundle.min.js" type="text/javascript"></script>
 
 
   </head>
@@ -285,9 +286,10 @@
   <div class="row">
     <div class="col col-lg-8 my-5">
       <h2>Self-assessment quiz - Episode 2</h2>
-      <div class="callout callout-highlight"><p>To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment test!</p></div>
+      <div class="callout callout-highlight" id="message"><p>To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment test!</p></div>
 
       <div id="result"></div>
+      <canvas id="doughnutChart" class="hidden" style="margin-top: 80px"></canvas>
 
       <form id="quiz">
         
@@ -865,28 +867,74 @@ As answers choose:</p>
     $("#div_"+(itemid+1)).removeClass("hidden");
   }
 
-  function showEsito(esito) {
-    if (esito["esito"]) {
+  function showEsito(esito, responses) {
+    $("#message").addClass("hidden");
+
+    if (esito["passed"] == true) {
       $('#result').addClass("alert alert-success");
-      $('#result').text('Hai passato il test con successo!');
+      $('#result').text('You have successfully passed the test!');
+
+      if ("success_rate" in esito) {
+        $("#doughnutChart").removeClass("hidden");
+        
+        new Chart($("#doughnutChart"), {
+            type: 'pie',
+            data: {
+                labels: ['Passed the test', 'Failed the test'],
+                datasets: [
+                  {
+                    backgroundColor: ['#0066cc', '#cacacc'],
+                    borderWidth: 0,
+                    data: [esito['success_rate'] * 100, 100 - (esito['success_rate'] * 100)]
+                  }
+                ]
+            },
+            options: {
+              cutoutPercentage: 60, 
+              legend: {
+                position: 'bottom', 
+                labels: {
+                  pointStyle: 'circle',
+                  usePointStyle: true
+                }
+              }
+            }
+        });
+      }
       return;
     }
     
     $('#result').addClass("alert alert-danger");
-    $('#result').text('Non hai passato il test, hai commesso qualche errore...');
+    $('#result').text('You haven\x27t passed the test, you made some errors...');
     for (q in esito['errors']) {
       var questionid = q.replace("question", "#div_");
 
       $(".progress-bar-wrapper").addClass("hidden");
       $(questionid).find("input[type='button']").addClass("hidden");
       $(questionid).find("input").prop("disabled", true);
-      $("#"+q+"_"+esito['errors'][q]).parent().addClass("wrong");
+
+      for (r in responses) {
+        responses[r].split(',').forEach(function (a) {
+          $("#"+q+"_"+a).prop('checked', true);
+        });
+      }
+
+      esito['errors'][q].split(',').forEach(function (a) {
+        $("#"+q+"_"+a).parent().addClass("wrong");
+      });
+
       $(questionid).removeClass("hidden");
     }
   }
 
   jQuery(document).ready(function($) {
     var request;
+
+    $(function () {
+      var esito = {'passed':false, 'errors':{'question1':'item1','question4':'item1,item2'}};
+      var responses = {'question1':'item2','question4':'item1,item2,item3'};
+      showEsito(esito, responses);
+    });
 
     $(function () {
       $('.shuffle').each(function(i, obj) {
@@ -900,7 +948,9 @@ As answers choose:</p>
     
     $("#quiz").submit(function(event) {
       event.preventDefault();
+
       $("#div_8").addClass("hidden");
+      $("#message").addClass("hidden");
 
       if (request) request.abort();
       
@@ -944,7 +994,7 @@ As answers choose:</p>
         else {
           $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Test submitted - see Google Sheet</a>');
           notificationShow('uploaded', 6000);
-          $('#result').text('Data sent!');
+          showEsito(response['esito'], arrayData);
         }
       });
     

@@ -19,10 +19,10 @@
   <div class="row">
     <div class="col col-lg-8 my-5">
       <h2>{{ .Page.Params.quiztitle }}</h2>
-      <div class="callout callout-highlight"><p>{{ .Page.Params.description }}</p></div>
+      <div class="callout callout-highlight" id="message"><p>{{ .Page.Params.description }}</p></div>
 
       <div id="result"></div>
-      <canvas id="doughnutChart" class="hidden"></canvas>
+      <canvas id="doughnutChart" class="hidden" style="margin-top: 80px"></canvas>
 
       <form id="quiz">
         {{ $divnum := 0 }}
@@ -99,54 +99,62 @@
     $("#div_"+(itemid+1)).removeClass("hidden");
   }
 
-  function showEsito(esito) {
+  function showEsito(esito, responses) {
+    $("#message").addClass("hidden");
+
     if (esito["passed"] == true) {
       $('#result').addClass("alert alert-success");
-      $('#result').text('Hai passato il test con successo!');
+      $('#result').text('{{ T "passed-test" }}');
 
       if ("success_rate" in esito) {
         $("#doughnutChart").removeClass("hidden");
-        var donutOptions = {
-          cutoutPercentage: 66, 
-          legend: {
-            position:'bottom', 
-            labels: {
-              pointStyle:'circle',
-              usePointStyle:true
-            }
-          }
-        };
-        var chDonutData1 = {
-            labels: ['Passed', 'Wrong'],
-            datasets: [
-              {
-                backgroundColor: ['#0066cc', '#cacacc'],
-                borderWidth: 0,
-                data: [esito['success_rate'] * 100, 100 - (esito['success_rate'] * 100)]
+        
+        new Chart($("#doughnutChart"), {
+            type: 'pie',
+            data: {
+                labels: ['{{ T "passed" }}', '{{ T "wrong" }}'],
+                datasets: [
+                  {
+                    backgroundColor: ['#0066cc', '#cacacc'],
+                    borderWidth: 0,
+                    data: [esito['success_rate'] * 100, 100 - (esito['success_rate'] * 100)]
+                  }
+                ]
+            },
+            options: {
+              cutoutPercentage: 60, 
+              legend: {
+                position: 'bottom', 
+                labels: {
+                  pointStyle: 'circle',
+                  usePointStyle: true
+                }
               }
-            ]
-        };
-        var chDonut1 = $("#doughnutChart");
-        if (chDonut1) {
-          new Chart(chDonut1, {
-              type: 'pie',
-              data: chDonutData1,
-              options: donutOptions
-          });
-        }
+            }
+        });
       }
       return;
     }
     
     $('#result').addClass("alert alert-danger");
-    $('#result').text('Non hai passato il test, hai commesso qualche errore...');
+    $('#result').text('{{ T "not-passed-test" }}');
     for (q in esito['errors']) {
       var questionid = q.replace("question", "#div_");
 
       $(".progress-bar-wrapper").addClass("hidden");
       $(questionid).find("input[type='button']").addClass("hidden");
       $(questionid).find("input").prop("disabled", true);
-      $("#"+q+"_"+esito['errors'][q]).parent().addClass("wrong");
+
+      for (r in responses) {
+        responses[r].split(',').forEach(function (a) {
+          $("#"+q+"_"+a).prop('checked', true);
+        });
+      }
+
+      esito['errors'][q].split(',').forEach(function (a) {
+        $("#"+q+"_"+a).parent().addClass("wrong");
+      });
+
       $(questionid).removeClass("hidden");
     }
   }
@@ -166,7 +174,9 @@
     
     $("#quiz").submit(function(event) {
       event.preventDefault();
+
       $("#div_{{ $elems }}").addClass("hidden");
+      $("#message").addClass("hidden");
 
       if (request) request.abort();
       
@@ -202,7 +212,6 @@
       });
     
       request.done(function (response){
-        console.log(response);
         if (response.result == "error") {
           $("#warn-message").html("{{ T "call-error" }}");
           notificationShow('missing', 6000);
@@ -211,7 +220,7 @@
         else {
           $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">{{ T "call-ok" }}</a>');
           notificationShow('uploaded', 6000);
-          showEsito(response['esito']);
+          showEsito(response['esito'], arrayData);
         }
       });
     
