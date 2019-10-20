@@ -783,12 +783,6 @@
     var request;
 
     $(function () {
-      var esito = {'passed':false, 'errors':{'question1':'item1','question4':'item1,item2'}};
-      var responses = {'question1':'item2','question4':'item1,item2,item3'};
-      showEsito(esito, responses);
-    });
-
-    $(function () {
       $('.shuffle').each(function(i, obj) {
         var parent = $(obj);
         var divs = parent.children();
