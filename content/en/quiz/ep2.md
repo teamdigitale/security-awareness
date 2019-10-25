@@ -77,7 +77,7 @@ questions:
         value: "item4"
         text: "Ask anyone you speak to, a given identifier to recognize the technician on the phone. You also give yourself the number of his manager, to check if the initiative is actually this, it seems too convenient to be true!"
   question-5:
-    type: "radiogroup"
+    type: "checkbox"
     name: "question5"
     text: "How long do you think it is good practice to change your password?"
     choices:

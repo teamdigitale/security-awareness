@@ -77,7 +77,7 @@ questions:
         value: "item4"
         text: "Chiedi con chi parli, un dato identificativo per riconoscere il tecnico al telefono. Ti fai dare anche il numero del suo responsabile, per verificare se l’iniziativa è effettivamente questa, ti sembra troppo comodo per essere vero!"
   question-5:
-    type: "radiogroup"
+    type: "checkbox"
     name: "question5"
     text: "Dopo quanto tempo pensi che sia una buona pratica cambiare la password?"
     choices:
