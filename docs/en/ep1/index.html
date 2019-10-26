@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Team per la Trasformazione Digitale">
+
+<title>digital security  | Episode 1 - Human Error</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/apple-touch-icon.png">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://teamdigitale.github.io/security-awareness/icons/favicons/manifest.webmanifest">
+<link rel="mask-icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/safari-pinned-tab.svg" color="#0066CC">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/bootstrap-italia/favicon.ico">
+<meta name="msapplication-config" content="https://teamdigitale.github.io/security-awareness/icons/favicons/browserconfig.xml">
+<meta name="theme-color" content="#0066CC">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@teamdigitaleIT">
+<meta name="twitter:creator" content="Team per la Trasformazione Digitale">
+<meta name="twitter:title" content="Security Awareness">
+<meta name="twitter:description" content="Security Awareness">
+<meta name="twitter:image" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+
+<meta property="og:url" content="https://teamdigitale.github.io/security-awareness/">
+<meta property="og:title" content="Security Awareness">
+<meta property="og:description" content="Basic course on cyber security">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+<meta property="og:image:secure_url" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/bootstrap-italia.min.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/main.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/style.css" type="text/css" />
+
+
+<script src="https://teamdigitale.github.io/security-awareness/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="https://teamdigitale.github.io/security-awareness/js/chart-2.8.0.bundle.min.js" type="text/javascript"></script>
+
+
+  </head>
+
+  <body>
+    <div class="it-header-wrapper">
+  <div class="it-header-slim-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="d-none d-lg-block navbar-brand" href="http://teamdigitale.governo.it/en/">Digital Transformation Team</a>
+            <div class="nav-mobile">
+              <nav>
+                <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale" role="button" aria-expanded="false" aria-controls="menu-principale">
+                  <span>Digital Transformation Team</span>
+                  <svg class="icon">
+                    <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menu-principale">
+                  <ul class="link-list">
+                    
+                    <li><a href="https://forum.italia.it">Forum</a></li>
+                    
+                    <li><a href="https://docs.italia.it">Docs</a></li>
+                    
+                    <li><a href="https://developers.italia.it">Developers</a></li>
+                    
+                    <li><a href="https://designers.italia.it">Designers</a></li>
+                    
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="header-slim-right-zone">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <span>ENG</span>
+                  <svg class="icon d-none d-lg-block">
+                    <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12 padleft">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          
+                          <li>
+                            <a class="list-item" href="https://teamdigitale.github.io/security-awareness/">
+                              <div class="avatar size-xs">
+                                <img src="https://teamdigitale.github.io/security-awareness/img/ITA.png" alt="ITA">
+                              </div>
+
+                              <span>ITA</span>
+                            </a>
+                          </li>
+                          
+                          <li>
+                            <a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/">
+                              <div class="avatar size-xs">
+                                <img src="https://teamdigitale.github.io/security-awareness/img/ENG.png" alt="ENG">
+                              </div>
+
+                              <span>ENG</span>
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="/security-awareness/en">
+                  <img src="https://teamdigitale.github.io/security-awareness/img/sa-logo.png" alt="digital security" class="icon" />
+                  <div class="it-brand-text">
+                    <h2 class="no_toc nomargin"> digital security</h2>
+                    <h3 class="no_toc d-none d-md-block nomargin">for the public administration</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="it-right-zone">
+                <div class="it-socials d-none d-md-flex">
+                  <span>Follow us on</span>
+                  <ul>
+                    
+                      <li>
+                        <a href="https://github.com/teamdigitale/security-awareness" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-github"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.linkedin.com/company/teamdigitale" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://medium.com/team-per-la-trasformazione-digitale" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-medium"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://twitter.com/teamdigitaleIT" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-youtube"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="it-header-navbar-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg has-megamenu">
+              <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+                <svg class="icon">
+                  <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="nav10">
+                <div class="overlay"></div>
+                <div class="close-div sr-only">
+                  <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+                </div>
+                <div class="menu-wrapper">
+                  <ul class="navbar-nav">
+                     
+                      
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/">Home</a>
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/whoweare">Who are we</a>
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/why">Why this course?</a>
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/episodes">Episodes</a>
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/quiz">Quiz</a>
+                        </li>
+                      
+                     
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main>
+      
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-8 my-5">
+      <h1 class="otherpages">Episode 1</h1>
+<h2 class="home">Human Error</h2>
+
+In this story we introduce the concept of <b>digital security</b> linked to the correct behavior of people in a working and private environment. <b>About <a href="https://www.social-engineer.org/social-engineering/social-engineering-infographic/">66 percent of cyber attacks</a> occur "between the computer and the chair"</b>, that is, they do not depend on technical weaknesses in computer systems but on human error. This means that employees are an important link for protecting corporate data, digital security is therefore the responsibility of each of us. The aim of the course is to provide <b>basic tools to increase safety</b>, also through prudent individual behavior.
+
+In this story, for example, we learn what can happen (and it really happens in the real world!) When we don't take the necessary precautions <b>in the management of work documents</b>, which may contain valuable information...
+
+      <h2 id="i-personaggi">The characters of the story</h2>
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-1 align-self-center">
+            <a class="customPrevBtn carousel-control left" onclick="$('#personaggi').trigger('prev.owl.carousel')">
+              <img src="https://teamdigitale.github.io/security-awareness/img/prev.png" alt="&lt;" style="cursor: pointer" />
+            </a>
+          </div>
+          <div class="col-10">
+            <div class="it-carousel-wrapper it-carousel-landscape-abstract">
+              <div class="it-carousel-all owl-carousel" id="personaggi">
+                
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Ludovica.png" title="Ludovica" alt="Ludovica" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading comicfont">Ludovica</h5>
+                          <p class="card-text">Ludovica is an iron manager. Always attentive to all details, she is a tireless worker.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Carla.png" title="Carla" alt="Carla" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading comicfont">Carla</h5>
+                          <p class="card-text">Carla is Ludovica&#39;s assistant. He divides his time between his duties in the office (really many) and his second &#34;job&#34; as a mother, trying to be as present as possible in the family.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Luca.png" title="Luca" alt="Luca" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading comicfont">Luca</h5>
+                          <p class="card-text">Luca is in his last year of elementary school. Always ready to chase a rolling ball, he sometimes finds time to do his homework ...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Filippo.png" title="Filippo" alt="Filippo" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading comicfont">Filippo</h5>
+                          <p class="card-text">Filippo is the most beloved teacher of Luca&#39;s class: he has earned this privilege thanks to his sympathy, but also because he is always looking for new creative activities to free the imagination of the boys!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-1 align-self-center">
+              <a class="customNextBtn carousel-control left" onclick="$('#personaggi').trigger('next.owl.carousel')">
+                <img src="https://teamdigitale.github.io/security-awareness/img/next.png" alt="&gt;" style="cursor: pointer" />
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="la-storia">The story</h2>
+      <div class="it-grid-list-wrapper">
+        <div class="grid-row" style="justify-content: center;">
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v01.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v02.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v03.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v04.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v05.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v06.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v07.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v08.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v09.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v10.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v11.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v12.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v13.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v14.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v15.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e1v16.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+      
+      <h2 id="glossario">Glossary</h2>
+      
+      
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>Human Error</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Clean Desk Policy</h5>
+              <p class="card-text">The clean desk policy consists in always keeping the desk clear of documents at the end of the working day, or when you move away from your desk.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>Human Error</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Dumpster Diving</h5>
+              <p class="card-text">It consists of retrieving sensitive information by poking around in the garbage.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>Human Error</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Data Classification</h5>
+              <p class="card-text">Data classification is the process of analysis and organization in categories based on the sensitivity of the content of the documents.<br/>
+Some of the categories&#58;
+<ol class="cardlist">
+<li><b>Public information&#58;</b> Information that can be communicated without restrictions</li>
+<li><b>Confidential information&#58;</b> There is a legal obligation to protect the confidentiality of information</li>
+</ol>
+</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>Human Error</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Remote working</h5>
+              <p class="card-text">Work linked to his duties in the company but which, instead of being carried out on site, is carried out by any other place, precisely "remotely". Particular attention should be paid to this type of work, both in the transfer of data on which you work, which may not be safe, and because any other location different from the company may not have the same security dynamics.</p>
+            </div>
+          </div>
+        </div>
+      
+
+      <h2 id="link">Today&#39;s lesson</h2>
+      <div class="callout callout-highlight note" style="max-width: 100% !important;">
+        <div class="callout-title"><svg class="icon"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-info-circle"></use></svg>Important</div>
+        <p>Does it seem incredible what you read? Yet paper documents are a real threat to the data they contain, and &ldquo;human errors&rdquo; such as leaving them around or throwing them without destroying them can have serious consequences. Imagine, for example, documents containing telephone numbers, sensitive data of citizens or users of a certain service. Or, worse, printed pages on which someone has pinned their passwords to access the corporate network or an institution.</p>
+
+<p>What if <strong>this information ends up in the hands of an attacker?</strong> For this reason, before printing a document, ask yourself if it is really necessary. And if the answer is yes, remember that, once printed, <strong>you will be responsible for the security of the data contained in that sheet</strong> &hellip;</p>
+
+      </div>
+
+      <h2 id="link">What should I do?</h2>
+      <p>Any type of document you print could always contain some &ldquo;sensitive&rdquo; content: phone numbers, email addresses or other personal data, notes, numbers, email exchanges, amounts related to payments, or even <strong>confidential information</strong>.</p>
+
+<p>When you print documents, always remember:</p>
+
+<ul>
+<li>Check for any sensitive content.</li>
+<li>Do not leave them unattended for example on your desk.</li>
+<li>Do not throw them in the trash before destroying them.</li>
+<li>Take care to keep them in a safe place even when you are at home.</li>
+<li>Do not leave them in the printer.</li>
+<li>Never create unauthorized copies of confidential documents.</li>
+</ul>
+
+<p>In particular at the end of a working day it is important:</p>
+
+<ul>
+<li>Put the documents in a safe place (for example: closed locker).</li>
+<li>Destroy the documents no longer used, possibly keeping track (log) of what was destroyed, if required.</li>
+<li>Lock the screen every time you leave your workstation, setting a password for reactivation.</li>
+<li>Turn off your computer before leaving the office.</li>
+<li>In case you work with the laptop, turn it off before taking it with you (don&rsquo;t just close it, or set it to &ldquo;sleep&rdquo; or &ldquo;hibernate&rdquo;.</li>
+<li>Do not record confidential information, such as passwords, on slips of paper or post-it notes, leaving them on your desk or attached to the wall of your office or on the monitor.</li>
+<li>Keep the USB pen drives carefully, if necessary under lock and key, always remembering what kind of documents are stored inside them.</li>
+</ul>
+
+
+      <div class="goto_test">
+        <a href="https://teamdigitale.github.io/security-awareness/en/quiz/ep1" class="btn btn-primary">
+          Go to the test
+          <svg class="icon icon-sm icon-white mr-2"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-arrow-right"></use></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+    
+<footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section class="py-4">
+        <div class="row">
+          <div class="col-lg-6 pb-4">
+            <h4><a>A project by</a></h4>
+            <a href="https://teamdigitale.governo.it/en">
+              <div class="d-flex">
+                <div class="d-flex footer-team">
+                  <img class="" src="https://teamdigitale.github.io/security-awareness/img/governo.svg" alt="">
+                  <img class="" src="https://teamdigitale.github.io/security-awareness/img/dt-logo.svg" alt="">
+                </div>
+                <div class="px-2 border-white border-left footer-team-text text-white">
+                  DIGITAL TRANSFORMATION TEAM
+                </div>
+              </div>
+            </a>
+
+            <p>&nbsp;</p>
+          
+            <div class="pb-4">
+              <h4><a>Follow us on</a></h4>
+              <ul class="list-inline text-left social">
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://github.com/teamdigitale/security-awareness" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-github"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.linkedin.com/company/teamdigitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-linkedin"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://medium.com/team-per-la-trasformazione-digitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-medium"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://twitter.com/teamdigitaleIT" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-twitter"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-youtube"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pb-4">
+            <h4><a>Security Awareness</a></h4>
+            <p>A short course for digital security</p>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en" title="Home">Home</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/whoweare" title="Who are we">Who are we</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/why" title="Why this course?">Why this course?</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/episodes" title="Episodes">Episodes</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/quiz" title="Quiz">Quiz</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <h3 class="sr-only">Section Useful Links</h3>
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        
+        <li class="list-inline-item"><a href="https://teamdigitale.github.io/security-awareness/#" title="Legal notes">Legal notes</a></li>
+        
+        <li class="list-inline-item"><a href="https://teamdigitale.github.io/security-awareness/#" title="Privacy policy">Privacy policy</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script>window.__PUBLIC_PATH__ = 'https:\/\/teamdigitale.github.io\/security-awareness\/fonts'</script>
+<script src="https://teamdigitale.github.io/security-awareness/js/bootstrap-italia.bundle.min.js"></script>
+</body>
+</html>
+
+  </body>
+</html>

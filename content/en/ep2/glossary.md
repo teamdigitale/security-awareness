@@ -29,11 +29,11 @@ terms:
     description: |
       Sensitive data are personal data whose collection can take place only with the consent of the interested party and authorization by the Guarantor for the protection of personal data. These data must be processed and protected with appropriate security measures. Those related to are considered to be sensitive&#58;
       <ol class="cardlist">
-        <li>racial and ethnic origin; </li>
-         <li> religious, philosophical or other beliefs; </li>
-         <li> political opinions and membership of parties and trade unions; </li>
-         <li> associations or organizations of a religious, philosophical, political or trade union nature; </li>
-         <li> state of health; </li>
-         <li> sexual life.</li>
+        <li>racial and ethnic origin;</li>
+        <li>religious, philosophical or other beliefs;</li>
+        <li>political opinions and membership of parties and trade unions;</li>
+        <li>associations or organizations of a religious, philosophical, political or trade union nature;</li>
+        <li>state of health;</li>
+        <li>sexual life.</li>
       </ol>
 ---
