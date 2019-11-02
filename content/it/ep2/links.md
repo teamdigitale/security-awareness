@@ -14,6 +14,6 @@ links:
   link-3:
     url: http://www.modenatoday.it/cronaca/truffa-home-banking-bper-modena-marzo-2019.html 
     src: modenatoday.it
-    text: Approfondimento 
+    text: Approfondimento 3
     caption: Una truffa in cui un malintenzionato ha rubato nome utente e password per svuotare il conto di un malcapitato
 ---
