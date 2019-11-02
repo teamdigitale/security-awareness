@@ -3,7 +3,7 @@ title: "Quiz"
 layout: quiz
 type: episode1
 quiztitle: "Quiz di autovalutazione - Episodio 1"
-description: "Per verificare la corretta comprensione e conoscenza dei temi di Security Awareness trattati in questo corso, qui è possibile effettuare un test di autovalutazione!"
+description: "Per verificare la corretta comprensione e conoscenza dei temi di Security Awareness trattati in questo corso, qui è possibile effettuare un quiz di autovalutazione!"
 questions:
   question-1:
     type: "radiogroup"
@@ -90,21 +90,4 @@ questions:
       choice-4:
         value: "item4"
         text: "Per agevolare il lavoro degli addetti alle pulizie."
-  question-6:
-    type: "radiogroup"
-    name: "question6"
-    text: "Conosci quale testo di legge attualmente regolamenta e tutela le persone fisiche con riguardo al trattamento dei dati personali e la libera circolazione di tali dati?"
-    choices:
-      choice-1:
-        value: "item1"
-        text: "Sì è il regolamento UE 2016/679 anche noto come GDPR (General Data Protection Regulation)."
-      choice-2:
-        value: "item2"
-        text: "Sì è il regolamento UE 2016/679 anche noto come GDPR (General Data Protection Regulation), ma non si applica alle Pubbliche Amministrazioni."
-      choice-3:
-        value: "item3"
-        text: "Sì è il D.Lgs 196/2003 anche noto come Codice Privacy."
-      choice-4:
-        value: "item4"
-        text: "Sì è il D.Lgs 196/2003 anche noto come Codice Privacy, ma non si applica alle Pubbliche Amministrazioni."
 ---

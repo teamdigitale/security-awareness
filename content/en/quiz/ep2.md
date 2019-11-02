@@ -3,7 +3,7 @@ title: "Quiz"
 layout: quiz
 type: episode2
 quiztitle: "Self-assessment quiz - Episode 2"
-description: "To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment test!"
+description: "To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment quiz!"
 questions:
   question-1:
     type: "radiogroup"

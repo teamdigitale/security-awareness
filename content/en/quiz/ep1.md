@@ -3,7 +3,7 @@ title: "Quiz"
 layout: quiz
 type: episode1
 quiztitle: "Self-assessment quiz - Episode 1"
-description: "To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment test!"
+description: "To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment quiz!"
 questions:
   question-1:
     type: "radiogroup"
@@ -90,21 +90,4 @@ questions:
       choice-4:
         value: "item4"
         text: "To facilitate the work of cleaners."
-  question-6:
-    type: "radiogroup"
-    name: "question6"
-    text: "Do you know which law currently regulates and protects individuals with regard to the processing of personal data and the free circulation of such data?"
-    choices:
-      choice-1:
-        value: "item1"
-        text: "Yes it is the EU regulation 2016/679 also known as GDPR (General Data Protection Regulation)."
-      choice-2:
-        value: "item2"
-        text: "Yes it is the EU regulation 2016/679 also known as GDPR (General Data Protection Regulation), but it does not apply to Public Administrations."
-      choice-3:
-        value: "item3"
-        text: "Yes it is Legislative Decree 196/2003 also known as the Privacy Code."
-      choice-4:
-        value: "item4"
-        text: "Yes it is the Legislative Decree 196/2003 also known as the Privacy Code, but it does not apply to Public Administrations."
 ---

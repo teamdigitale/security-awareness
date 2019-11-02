@@ -11,13 +11,13 @@ other = "Section Useful Links"
 other = "Important"
 
 [goto-quiz]
-other = "Go to the test"
+other = "Go to the quiz"
 
 [next-question]
 other = "Next question"
 
 [send-quiz]
-other = "Send test for self evaluation"
+other = "Send quiz for self evaluation"
 
 [answer-needed]
 other = "Please, answer the question!"
@@ -26,19 +26,19 @@ other = "Please, answer the question!"
 other = "We are experiencing a technical error."
 
 [call-ok]
-other = "Test submitted - see Google Sheet"
+other = "Quiz submitted - see Google Sheet"
 
 [send-data]
-other = "Sending test to server..."
+other = "Sending quiz to server..."
 
 [passed]
-other = "Passed the test"
+other = "Passed the quiz"
 
 [wrong]
-other = "Failed the test"
+other = "Failed the quiz"
 
 [passed-test]
-other = "You have successfully passed the test!"
+other = "You have successfully passed the quiz!"
 
 [not-passed-test]
-other = "You haven't passed the test, you made some errors..."
+other = "You haven't passed the quiz, you made some errors..."

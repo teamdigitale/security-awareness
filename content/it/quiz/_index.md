@@ -3,7 +3,7 @@ title: "Quiz"
 layout: quiz
 type: finale
 quiztitle: "Quiz di autovalutazione"
-description: "Per verificare la corretta comprensione e conoscenza dei temi di Security Awareness trattati in questo corso, qui è possibile effettuare un test di autovalutazione!"
+description: "Per verificare la corretta comprensione e conoscenza dei temi di Security Awareness trattati in questo corso, qui è possibile effettuare un quiz di autovalutazione!"
 questions:
   question-1:
     type: "radiogroup"

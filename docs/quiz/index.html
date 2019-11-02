@@ -286,7 +286,7 @@
   <div class="row">
     <div class="col col-lg-8 my-5">
       <h2>Quiz di autovalutazione</h2>
-      <div class="callout callout-highlight" id="message"><p>Per verificare la corretta comprensione e conoscenza dei temi di Security Awareness trattati in questo corso, qui è possibile effettuare un test di autovalutazione!</p></div>
+      <div class="callout callout-highlight" id="message"><p>Per verificare la corretta comprensione e conoscenza dei temi di Security Awareness trattati in questo corso, qui è possibile effettuare un quiz di autovalutazione!</p></div>
 
       <div id="result"></div>
       <canvas id="doughnutChart" class="hidden" style="margin-top: 80px"></canvas>
@@ -1243,7 +1243,7 @@ Come risposte scegli:</p>
 
             
             <div class="mx-auto text-center">
-              <input type="submit" class="btn btn-primary" value="Invia test per valutazione">
+              <input type="submit" class="btn btn-primary" value="Invia quiz per valutazione">
             </div>
             
           </div>
@@ -1274,7 +1274,7 @@ Come risposte scegli:</p>
 
     if (esito["passed"] == true) {
       $('#result').addClass("alert alert-success");
-      $('#result').text('Hai passato il test con successo!');
+      $('#result').text('Hai passato il quiz con successo!');
 
       if ("success_rate" in esito) {
         $("#doughnutChart").removeClass("hidden");
@@ -1282,7 +1282,7 @@ Come risposte scegli:</p>
         new Chart($("#doughnutChart"), {
             type: 'pie',
             data: {
-                labels: ['Test passato', 'Test fallito'],
+                labels: ['Quiz passato', 'Quiz fallito'],
                 datasets: [
                   {
                     backgroundColor: ['#0066cc', '#cacacc'],
@@ -1307,7 +1307,7 @@ Come risposte scegli:</p>
     }
     
     $('#result').addClass("alert alert-danger");
-    $('#result').text('Non hai passato il test, hai commesso qualche errore...');
+    $('#result').text('Non hai passato il quiz, hai commesso qualche errore...');
     for (q in esito['errors']) {
       var questionid = q.replace("question", "#div_");
 
@@ -1371,7 +1371,7 @@ Come risposte scegli:</p>
       var serializedData = $.param(arrayData);
 
       $inputs.prop("disabled", true);
-      $('#result').html('<p>Invio del test al server...</p>' +
+      $('#result').html('<p>Invio del quiz al server...</p>' +
                         '<div class="progress-spinner progress-spinner-active"><span class="sr-only">...</span></div></div>');
 
       request = $.ajax({
@@ -1388,7 +1388,7 @@ Come risposte scegli:</p>
           $('#result').text('C\x27è stato un errore tecnico.');
         }
         else {
-          $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Test inviato - vedi il Google Sheet</a>');
+          $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Quiz inviato - vedi il Google Sheet</a>');
           notificationShow('uploaded', 6000);
           showEsito(response['esito'], arrayData);
         }

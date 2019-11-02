@@ -11,13 +11,13 @@ other = "Sezione Link Utili"
 other = "Importante"
 
 [goto-quiz]
-other = "Val al test"
+other = "Val al quiz"
 
 [next-question]
 other = "Domanda successiva"
 
 [send-quiz]
-other = "Invia test per valutazione"
+other = "Invia quiz per valutazione"
 
 [answer-needed]
 other = "Rispondere alla domanda!"
@@ -26,19 +26,19 @@ other = "Rispondere alla domanda!"
 other = "C'è stato un errore tecnico."
 
 [call-ok]
-other = "Test inviato - vedi il Google Sheet"
+other = "Quiz inviato - vedi il Google Sheet"
 
 [send-data]
-other = "Invio del test al server..."
+other = "Invio del quiz al server..."
 
 [passed]
-other = "Test passato"
+other = "Quiz passato"
 
 [wrong]
-other = "Test fallito"
+other = "Quiz fallito"
 
 [passed-test]
-other = "Hai passato il test con successo!"
+other = "Hai passato il quiz con successo!"
 
 [not-passed-test]
-other = "Non hai passato il test, hai commesso qualche errore..."
+other = "Non hai passato il quiz, hai commesso qualche errore..."

@@ -63,6 +63,29 @@
           {{ end }}
         </div>
       </div>
+
+      {{ if ( .Page.Resources.GetMatch "links.md" ).Params.links }}
+        <h2 id="glossario">{{ ( .Page.Resources.GetMatch "links.md" ).Params.name }}</h2>
+        <div class="it-list-wrapper">
+          <ul class="it-list">
+            {{ range ( .Page.Resources.GetMatch "links.md" ).Params.links }}
+              <li>
+                <a href="{{ .url }}" target="_blank">
+                  <div class="it-right-zone">
+                    <span class="text">{{ .text }}<em style="margin-top: 12gipx">{{ .caption }}</em></span>
+                    <span class="it-multiple">
+                      <span class="metadata">{{ .src }}</span>
+                      <svg class="icon" style="margin-top: 8px">
+                        <use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-code-circle"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
       
       <h2 id="glossario">{{ ( .Page.Resources.GetMatch "glossary.md" ).Params.name }}</h2>
       {{ $title := ( .Page.Resources.GetMatch "glossary.md" ).Params.title }}

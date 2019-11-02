@@ -286,7 +286,7 @@
   <div class="row">
     <div class="col col-lg-8 my-5">
       <h2>Self-assessment quiz</h2>
-      <div class="callout callout-highlight" id="message"><p>To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment test!</p></div>
+      <div class="callout callout-highlight" id="message"><p>To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment quiz!</p></div>
 
       <div id="result"></div>
       <canvas id="doughnutChart" class="hidden" style="margin-top: 80px"></canvas>
@@ -1243,7 +1243,7 @@ As answers choose:</p>
 
             
             <div class="mx-auto text-center">
-              <input type="submit" class="btn btn-primary" value="Send test for self evaluation">
+              <input type="submit" class="btn btn-primary" value="Send quiz for self evaluation">
             </div>
             
           </div>
@@ -1274,7 +1274,7 @@ As answers choose:</p>
 
     if (esito["passed"] == true) {
       $('#result').addClass("alert alert-success");
-      $('#result').text('You have successfully passed the test!');
+      $('#result').text('You have successfully passed the quiz!');
 
       if ("success_rate" in esito) {
         $("#doughnutChart").removeClass("hidden");
@@ -1282,7 +1282,7 @@ As answers choose:</p>
         new Chart($("#doughnutChart"), {
             type: 'pie',
             data: {
-                labels: ['Passed the test', 'Failed the test'],
+                labels: ['Passed the quiz', 'Failed the quiz'],
                 datasets: [
                   {
                     backgroundColor: ['#0066cc', '#cacacc'],
@@ -1307,7 +1307,7 @@ As answers choose:</p>
     }
     
     $('#result').addClass("alert alert-danger");
-    $('#result').text('You haven\x27t passed the test, you made some errors...');
+    $('#result').text('You haven\x27t passed the quiz, you made some errors...');
     for (q in esito['errors']) {
       var questionid = q.replace("question", "#div_");
 
@@ -1371,7 +1371,7 @@ As answers choose:</p>
       var serializedData = $.param(arrayData);
 
       $inputs.prop("disabled", true);
-      $('#result').html('<p>Sending test to server...</p>' +
+      $('#result').html('<p>Sending quiz to server...</p>' +
                         '<div class="progress-spinner progress-spinner-active"><span class="sr-only">...</span></div></div>');
 
       request = $.ajax({
@@ -1388,7 +1388,7 @@ As answers choose:</p>
           $('#result').text('We are experiencing a technical error.');
         }
         else {
-          $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Test submitted - see Google Sheet</a>');
+          $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Quiz submitted - see Google Sheet</a>');
           notificationShow('uploaded', 6000);
           showEsito(response['esito'], arrayData);
         }
