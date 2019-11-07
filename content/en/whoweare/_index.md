@@ -70,7 +70,7 @@ others:
     title: Ruolo
     org: Società
     img: christian_razzino.png
-    descr: Descrizione
+    descr: Christian is a technology inspired and experienced Cyber Security professional with over 20 years hands-on experience, dealing with both offensive/defensive sides of security, in the Italian ethical hacking scene since half ’90. Electronic music lover and producer, with deep passion for synthesizers and retro computing, currently he operates as CISO in a private security company, leading a complex digital transformation to drive the company in cyber security field. He joined "Security Awareness" project to bring the field experience that the human factor can be the first vulnerability and the first security measure as well.
   others-6:
     name: Antonio Zindato
     title: Ruolo

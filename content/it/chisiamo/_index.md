@@ -70,7 +70,7 @@ others:
     title: Ruolo
     org: Società
     img: christian_razzino.png
-    descr: Descrizione
+    descr: Christian è un esperto ed entusiasta professionista IT Security con oltre 20 anni di esperienza nel settore. Nella scena hacking italiana dalla metà degli anni 90, produttore e sostenitore di musica elettronica, con una profonda passione per i sintetizzatori, attualmente opera come Security Manager in una società di sicurezza privata per guidare l'azienda in una complessa trasformazione digitale verso il campo della Cyber Security. Si è unito al progetto di "Security Awareness" per portare l'esperienza che il fattore umano può essere la prima vulnerabilità ma anche la prima misura di sicurezza.
   others-6:
     name: Antonio Zindato
     title: Ruolo
