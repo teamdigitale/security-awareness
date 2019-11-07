@@ -22,7 +22,7 @@
       <div class="callout callout-highlight" id="message"><p>{{ .Page.Params.description }}</p></div>
 
       <div id="result"></div>
-      <canvas id="doughnutChart" class="hidden" style="margin-top: 80px"></canvas>
+      <div id="doughnutChart"></div>
 
       <form id="quiz">
         {{ $divnum := 0 }}
@@ -108,29 +108,22 @@
 
       if ("success_rate" in esito) {
         $("#doughnutChart").removeClass("hidden");
-        
-        new Chart($("#doughnutChart"), {
-            type: 'pie',
-            data: {
-                labels: ['{{ T "passed" }}', '{{ T "wrong" }}'],
-                datasets: [
-                  {
-                    backgroundColor: ['#0066cc', '#cacacc'],
-                    borderWidth: 0,
-                    data: [esito['success_rate'] * 100, 100 - (esito['success_rate'] * 100)]
-                  }
-                ]
-            },
-            options: {
-              cutoutPercentage: 60, 
-              legend: {
-                position: 'bottom', 
-                labels: {
-                  pointStyle: 'circle',
-                  usePointStyle: true
-                }
-              }
-            }
+
+        new roughViz.Donut({
+          element: '#doughnutChart',
+          legend: false,
+          data: {
+            labels: ['{{ T "passed" }}', '{{ T "wrong" }}'],
+            values: [esito['success_rate'] * 100, 100 - (esito['success_rate'] * 100)]
+          },
+          font: 'Anime Ace 2',
+          title: 'Esito quiz',
+          labels: 'letter',
+          values: 'frequency',
+          titleFontSize: '1rem',
+          tooltipFontSize: '0.6rem',
+          colors: ['#0066cc', '#cacacc'],
+          fillWeight: 1.5,
         });
       }
       return;

@@ -164,3 +164,8 @@ footer > .h4, footer > h4 {
   border: 1px solid red;
   background-color: #ffd7c7;
 }
+
+#doughnutChart {
+  text-align: center;
+  font-family: "Anime Ace 2";
+}
