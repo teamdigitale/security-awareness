@@ -376,17 +376,37 @@
                 
 
                 
-              
-                
-
-                
-              
-                
-
+                  <div class="form-check valign">
+                      <input name="question2" id="question2_item1" type="checkbox" value="item1" />
+                      <label class="label_check" for="question2_item1" class="form-text">Una prescrizione che richiede di pulire la scrivania.</label>
+                  </div>
                 
               
                 
 
+                
+                  <div class="form-check valign">
+                      <input name="question2" id="question2_item2" type="checkbox" value="item2" />
+                      <label class="label_check" for="question2_item2" class="form-text">Una prescrizione che chiede di tenere ordinata la scrivania.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question2" id="question2_item3" type="checkbox" value="item3" />
+                      <label class="label_check" for="question2_item3" class="form-text">Una prescrizione che richiede di non lasciare materiale sensibile incustodito sulla scrivania.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question2" id="question2_item4" type="checkbox" value="item4" />
+                      <label class="label_check" for="question2_item4" class="form-text">Una serie di buone pratiche, come mettere sotto chiave documenti sensibili prima di lasciare l’ufficio.</label>
+                  </div>
                 
               
             </div>
@@ -726,6 +746,7 @@
       });
       
       var serializedData = $.param(arrayData);
+      console.log(serializedData);
 
       $inputs.prop("disabled", true);
       $('#result').html('<p>Invio del quiz al server...</p>' +
@@ -739,6 +760,7 @@
       });
     
       request.done(function (response){
+        console.log(response);
         if (response.result == "error") {
           $("#warn-message").html("C\x27è stato un errore tecnico.");
           notificationShow('missing', 6000);

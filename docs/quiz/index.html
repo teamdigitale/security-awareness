@@ -1530,6 +1530,7 @@
       });
       
       var serializedData = $.param(arrayData);
+      console.log(serializedData);
 
       $inputs.prop("disabled", true);
       $('#result').html('<p>Invio del quiz al server...</p>' +
@@ -1543,6 +1544,7 @@
       });
     
       request.done(function (response){
+        console.log(response);
         if (response.result == "error") {
           $("#warn-message").html("C\x27è stato un errore tecnico.");
           notificationShow('missing', 6000);

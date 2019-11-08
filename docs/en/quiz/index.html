@@ -1530,6 +1530,7 @@
       });
       
       var serializedData = $.param(arrayData);
+      console.log(serializedData);
 
       $inputs.prop("disabled", true);
       $('#result').html('<p>Sending quiz to server...</p>' +
@@ -1543,6 +1544,7 @@
       });
     
       request.done(function (response){
+        console.log(response);
         if (response.result == "error") {
           $("#warn-message").html("We are experiencing a technical error.");
           notificationShow('missing', 6000);

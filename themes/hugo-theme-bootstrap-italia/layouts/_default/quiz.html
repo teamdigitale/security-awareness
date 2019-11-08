@@ -192,6 +192,7 @@
       });
       
       var serializedData = $.param(arrayData);
+      console.log(serializedData);
 
       $inputs.prop("disabled", true);
       $('#result').html('<p>{{ T "send-data" }}</p>' +
@@ -205,6 +206,7 @@
       });
     
       request.done(function (response){
+        console.log(response);
         if (response.result == "error") {
           $("#warn-message").html("{{ T "call-error" }}");
           notificationShow('missing', 6000);
