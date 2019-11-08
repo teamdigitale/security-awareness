@@ -672,12 +672,6 @@
       $(questionid).find("input[type='button']").addClass("hidden");
       $(questionid).find("input").prop("disabled", true);
 
-      for (r in responses) {
-        responses[r].split(',').forEach(function (a) {
-          $("#"+q+"_"+a).prop('checked', true);
-        });
-      }
-
       esito['errors'][q].split(',').forEach(function (a) {
         $("#"+q+"_"+a).parent().addClass("wrong");
       });
@@ -726,7 +720,6 @@
       });
       
       var serializedData = $.param(arrayData);
-      console.log(serializedData);
 
       $inputs.prop("disabled", true);
       $('#result').html('<p>Sending quiz to server...</p>' +
@@ -740,7 +733,6 @@
       });
     
       request.done(function (response){
-        console.log(response);
         if (response.result == "error") {
           $("#warn-message").html("We are experiencing a technical error.");
           notificationShow('missing', 6000);
