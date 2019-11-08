@@ -8,7 +8,7 @@ questions:
   question-1:
     type: "radiogroup"
     name: "question1"
-    text: "Viene installato il nuovo gestionale in ufficio, permette di accedere ad informazioni più strutturate, senza dover andare in giro a destra e sinistra per verificare i dati di una pratica, è un bel passo avanti! Peccato che sia stato sviluppato nuovamente fuori dalla rete aziendale e che abbia bisogno di credenziali diverse da quelle del PC per utilizzarlo... Devi impostare la nuova password per usarlo, come procedi?"
+    text: "Viene installato un nuovo software gestionale in ufficio che permette di accedere ad informazioni più strutturate, senza dover andare in giro a destra e sinistra per verificare i dati di una pratica. E' un bel passo avanti! Peccato che sia stato sviluppato nuovamente fuori dalla rete aziendale e che abbia bisogno di credenziali diverse da quelle del PC per utilizzarlo. Devi impostare la nuova password per usarlo, come procedi?"
     choices:
       choice-1:
         value: "item1"
@@ -21,7 +21,7 @@ questions:
         text: "Un’altra password? uhm... utilizzerai la tua tecnica segreta che ti permette di creare password lunghe, complicate, ma che solo tu puoi capire/ricordare. La tua codifica è infallibile, fin’ora."
       choice-4:
         value: "item4"
-        text: "\"forzaroma\" andrà benissimo, e siccome è la quarta volta che la cambi, aggiungi un bel 4!"
+        text: "La password \"forzaroma\" andrà benissimo, e siccome è la quarta volta che la cambi, aggiungi un bel 4!"
       choice-5:
         value: "item5"
         text: "Verifichi se il tuo responsabile del supporto informatico abbia delle raccomandazioni su come procedere, nell’attesa che l’applicazione venga integrata con la tua utenza locale del PC, eliminando il bisogno di un’altra password!"

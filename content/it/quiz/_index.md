@@ -6,25 +6,8 @@ quiztitle: "Quiz di autovalutazione"
 description: "Per verificare la corretta comprensione e conoscenza dei temi di Security Awareness trattati in questo corso, qui è possibile effettuare un quiz di autovalutazione!"
 questions:
   question-1:
-    type: "radiogroup"
+    type: "checkbox"
     name: "question1"
-    text: "Qual è stato l’errore principale commesso da Carla?"
-    choices:
-      choice-1:
-        value: "item1"
-        text: "Portare documenti riservati a casa."
-      choice-2:
-        value: "item2"
-        text: "Lasciare documenti riservati incustoditi."
-      choice-3:
-        value: "item3"
-        text: "Stampare documenti riservati."
-      choice-4:
-        value: "item4"
-        text: "Non distruggere i documenti riservati dopo l'uso."
-  question-2:
-    type: "radiogroup"
-    name: "question2"
     text: "Cos'è la \"Clean Desk Policy\"?"
     choices:
       choice-1:
@@ -39,9 +22,9 @@ questions:
       choice-4:
         value: "item4"
         text: "Una serie di buone pratiche, come mettere sotto chiave documenti sensibili prima di lasciare l’ufficio."
-  question-3:
+  question-2:
     type: "radiogroup"
-    name: "question3"
+    name: "question2"
     text: "Hai fatto un backup di documenti riservati su una chiavetta USB:"
     choices:
       choice-1:
@@ -56,9 +39,9 @@ questions:
       choice-4:
         value: "item4"
         text: "La lasci sulla scrivania in modo da averla sempre a disposizione."
-  question-4:
+  question-3:
     type: "checkbox"
-    name: "question4"
+    name: "question3"
     text: "Seleziona una o più luoghi dell’ufficio dove un malintenzionato potrebbe accedere a dati riservati:"
     choices:
       choice-1:
@@ -73,10 +56,10 @@ questions:
       choice-4:
         value: "item4"
         text: "Chiavette USB."
-  question-5:
-    type: "radiogroup"
-    name: "question5"
-    text: "Perché è importante adottare e seguire la \"Clean Desk Policy\" o \"Politica della scrivania pulita\"?"
+  question-4:
+    type: "radiobutton"
+    name: "question4"
+    text: "Perché è importante adottare e seguire la “Clean Desk Policy” o “Politica della scrivania pulita”?"
     choices:
       choice-1:
         value: "item1"
@@ -90,9 +73,9 @@ questions:
       choice-4:
         value: "item4"
         text: "Per agevolare il lavoro degli addetti alle pulizie."
-  question-6:
+  question-5:
     type: "radiogroup"
-    name: "question6"
+    name: "question5"
     text: "Conosci quale testo di legge attualmente regolamenta e tutela le persone fisiche con riguardo al trattamento dei dati personali e la libera circolazione di tali dati?"
     choices:
       choice-1:
@@ -107,9 +90,9 @@ questions:
       choice-4:
         value: "item4"
         text: "Sì è il D.Lgs 196/2003 anche noto come Codice Privacy, ma non si applica alle Pubbliche Amministrazioni."
-  question-7:
+  question-6:
     type: "radiogroup"
-    name: "question7"
+    name: "question6"
     text: "Viene installato il nuovo gestionale in ufficio, permette di accedere ad informazioni più strutturate, senza dover andare in giro a destra e sinistra per verificare i dati di una pratica, è un bel passo avanti! Peccato che sia stato sviluppato nuovamente fuori dalla rete aziendale e che abbia bisogno di credenziali diverse da quelle del PC per utilizzarlo... Devi impostare la nuova password per usarlo, come procedi?"
     choices:
       choice-1:
@@ -127,9 +110,9 @@ questions:
       choice-5:
         value: "item5"
         text: "Verifichi se il tuo responsabile del supporto informatico abbia delle raccomandazioni su come procedere, nell’attesa che l’applicazione venga integrata con la tua utenza locale del PC, eliminando il bisogno di un’altra password!"
-  question-8:
+  question-7:
     type: "radiogroup"
-    name: "question8"
+    name: "question7"
     text: "Utilizzi spesso una password appositamente modificata per ricordarti sempre come accedere e non dover scrivere in giro le tue credenziali. La maggior parte della password è uguale, tra i vari siti, ma cambiano alcune lettere per differenziarla in base al sito. In ufficio devi modificare le tue credenziali e stavolta sembra che la mail sia piuttosto minacciosa, si raccomandano di non usare password che utilizzi di già, come ti comporti?"
     choices:
       choice-1:
@@ -144,9 +127,9 @@ questions:
       choice-4:
         value: "item4"
         text: "Crei delle credenziali che non utilizzano nulla delle precedenti password e visto che la mail è così minacciosa, allunghi la password trasformandola in una passphrase!"
-  question-9:
+  question-8:
     type: "radiogroup"
-    name: "question9"
+    name: "question8"
     text: "Sei comodamente al tuo pc, controlli la posta aziendale, ad un certo punto appare la seguente e-mail \"Oggetto: conferma modifica password utente\". Il testo è semplice e sembra quello dell’applicazione che usi spesso, il gestionale che usi ogni giorno. C’è il tasto per procedere... cosa fai?"
     choices:
       choice-1:
@@ -161,46 +144,9 @@ questions:
       choice-4:
         value: "item4"
         text: "Apri la mail a tutto schermo, che non si sa mai, e leggi bene se la mail è inviata dall’interno dell’azienda o dall’esterno e verifichi il mittente leggendo bene l’indirizzo email, poi solo se ti torna, clicchi e vedi dove ti manda la pagina, controllando anche l’indirizzo web che si apre... in caso di ulteriori sospetti chiami anche il supporto IT..."
-  question-10:
+  question-9:
     type: "radiogroup"
-    name: "question10"
-    text: "Telefonata da parte di un tecnico del servizio di assistenza centralizzato. L’azienda \"TISupport\" S.P.A., che ha in gestione tutti i nostri sistemi informatici, chiama al fisso sottolineando che la password utente è quasi scaduta e consiglia di cambiarla. Il tecnico, per facilitare la cosa, propone di cambiarla al telefono, come procedi?"
-    choices:
-      choice-1:
-        value: "item1"
-        text: "Effettivamente sono passati tre mesi dall’ultima volta che ricordi di averla modificata, è plausibile che ti venga chiesto di cambiarla, ma si, è anche più comodo farlo in diretta... procedi con il tecnico."
-      choice-2:
-        value: "item2"
-        text: "Anche se sono passati tre mesi dall’ultimo cambio, preferisci comunque aspettare la notifica di cambio password. Ringrazi, saluti e ti segni di cambiare la password quando ti arriva la prossima segnalazione del sistema."
-      choice-3:
-        value: "item3"
-        text: "Password, al telefono, non ti convince, anche se in effetti sembra un’ottima iniziativa per non far dimenticare il cambio all’utente, e aspetti che ti arrivi la notifica."
-      choice-4:
-        value: "item4"
-        text: "Chiedi con chi parli, un dato identificativo per riconoscere il tecnico al telefono. Ti fai dare anche il numero del suo responsabile, per verificare se l’iniziativa è effettivamente questa, ti sembra troppo comodo per essere vero!"
-  question-11:
-    type: "radiogroup"
-    name: "question11"
-    text: "Dopo quanto tempo pensi che sia una buona pratica cambiare la password?"
-    choices:
-      choice-1:
-        value: "item1"
-        text: "Una volta l’anno come indicato dalle corrette pratiche di sicurezza."
-      choice-2:
-        value: "item2"
-        text: "Almeno ogni sei mesi."
-      choice-3:
-        value: "item3"
-        text: "Almeno ogni 3 mesi."
-      choice-4:
-        value: "item4"
-        text: "Ogni settimana."
-      choice-5:
-        value: "item5"
-        text: "Quando reputo che sia necessario, anche prima del tempo consigliato."
-  question-12:
-    type: "radiogroup"
-    name: "question12"
+    name: "question9"
     text: "Ti chiama un collega e ti dice che ha smarrito le sue credenziali per accedere al programma di gestione. Cosa fai per aiutarlo?"
     choices:
       choice-1:
@@ -215,26 +161,9 @@ questions:
       choice-4:
         value: "item4"
         text: "Se è disponibile il pulsante \"recupera password\" gli consigli di usarlo e di cambiare la password utilizzando una password generata con il suo software di password manager."
-  question-13:
+  question-10:
     type: "radiogroup"
-    name: "question13"
-    text: "Mentre inserisci le nuove credenziali, per il recupero della password, il programma di gestione ti chiede di scegliere delle risposte che serviranno per il recupero. Alle domande: \n\nQual è il nome con cui ti chiamavano da piccola/o? \nQual è il tuo colore preferito? \n\nCome risposte scegli:"
-    choices:
-      choice-1:
-        value: "item1"
-        text: "Inserisco Scricciola il nome con cui mi chiamavano tutti e il Rosso. Sanno tutti che è così."
-      choice-2:
-        value: "item2"
-        text: "Inserisco delle risposte che non conosce nessuno e non sono recuperabili, in modo che solo io le conosca."
-      choice-3:
-        value: "item3"
-        text: "Inserisco qwerty a tutti e due i campi, tanto serve solo per il recupero password, non la perderò mai."
-      choice-4:
-        value: "item4"
-        text: "Inserisco 1234 al primo campo e 5678 al secondo. è facile da ricordare!"
-  question-14:
-    type: "radiogroup"
-    name: "question14"
+    name: "question10"
     text: "Il programma di gestione ha l’autenticazione a due fattori. Sai di cosa si tratta?"
     choices:
       choice-1:
@@ -246,4 +175,123 @@ questions:
       choice-3:
         value: "item3"
         text: "è un sistema che autentica due volte sul programma di gestione, così se per diverso tempo non viene usato, l’accesso dura il doppio."
+  question-11:
+    type: "radiogroup"
+    name: "question11"
+    text: "Come riconoscere una email di spear phishing?"
+    choices:
+      choice-1:
+        value: "item1"
+        text: "Una email di spear phishing è ingannevole da riconoscere perché è creata sulla base degli interessi o attività della vittima e sembra provenire da un interlocutore abituale. Solitamente possono contenere: un allegato, che spesso include un malware; un link da cui si scarica un malware o inserire credenziali di accesso o carte di credito; oppure il testo invita a fare un trasferimento di denaro."
+      choice-2:
+        value: "item2"
+        text: "Una email di spear phishing è scritta sempre in modo sgrammaticato ed impersonale."
+      choice-3:
+        value: "item3"
+        text: "Una email di spear phishing proviene sempre da un mittente sconosciuto. Solitamente possono contenere: un allegato, che spesso include un malware; un link da cui si scarica un malware o inserire credenziali di accesso o carte di credito; oppure il testo invita a fare un trasferimento di denaro."
+      choice-4:
+        value: "item4"
+        text: "Una email di sper phishing è un email pubblicitaria non gradita."
+  question-12:
+    type: "radiogroup"
+    name: "question12"
+    text: "Quali sono le principali differenze tra una email di phishing ed una email di spear phishing?"
+    choices:
+      choice-1:
+        value: "item1"
+        text: "Lo spear phishing è una versione evoluta del phishing, tramite una comunicazione modellata sul destinatario della comunicazione, creata da utenti malintenzionati che hanno raccolto informazioni specifiche, per esempio tramite tecniche di ingegneria sociale, ricerche specifiche sull’individuo o sull'organizzazione da colpire."
+      choice-2:
+        value: "item2"
+        text: "Lo spear phishing a differenza del phishing è una email non desiderata che contiene informazioni a carattere pubblicitario ricevuta da un interlocutore abituale."
+      choice-3:
+        value: "item3"
+        text: "Un’email di spear phishing è una comunicazione sporadica, mentre un’email di phishing è una comunicazione pervasiva e continua."
+      choice-4:
+        value: "item4"
+        text: "Non c’è alcuna differenza."
+  question-13:
+    type: "checkbox"
+    name: "question13"
+    text: "Qual è il rischio conseguente ad una email spear phishing?"
+    choices:
+      choice-1:
+        value: "item1"
+        text: "Una email di spear phishing mira a rubare denaro tramite sottrazione indebita o ricatto."
+      choice-2:
+        value: "item2"
+        text: "Una email di spear phishing mira a sottrarre dati aziendali sensibili, procurare danni alla reputazione, fare spionaggio."
+      choice-3:
+        value: "item3"
+        text: "Una email di spear phishing tramite campagne di marketing pervasive induce l’individuo o l’azienda ad investire in prodotti finanziari ad alto rendimento."
+      choice-4:
+        value: "item4"
+        text: "Una email di spear phishing invita ad acquistare prodotti commerciali."
+  question-14:
+    type: "checkbox"
+    name: "question14"
+    text: "Qual è il miglior comportamento da tenere nel caso si abbia il ragionevole sospetto di avere aperto un allegato o un link sospetto?"
+    choices:
+      choice-1:
+        value: "item1"
+        text: "Segnalare immediatamente al proprio responsabile e referente tecnico informatico l’email ricevuta e l’azione sospetta eseguita, quindi spegnere il computer."
+      choice-2:
+        value: "item2"
+        text: "Non divulgare mai informazioni sensibili se non sei certo che la fonte sia legittima e abbia il titolo per ricevere tale informazione."
+      choice-3:
+        value: "item3"
+        text: "Inviare l’email ad un collega per verificare che anche aprendo l’allegato o il link sul suo computer c’è un comportamento anomalo."
+      choice-4:
+        value: "item4"
+        text: "Cliccare sul link o aprire l’allegato dallo smartphone invece che dal computer."
+  question-15:
+    type: "checkbox"
+    name: "question15"
+    text: "Sei davanti ad una schermata che ti chiede di inserire una nuova password, quali di queste sono sicure?"
+    choices:
+      choice-1:
+        value: "item1"
+        text: "qwerty1234"
+      choice-2:
+        value: "item2"
+        text: "Password01"
+      choice-3:
+        value: "item3"
+        text: "H3pk7@1!"
+      choice-4:
+        value: "item4"
+        text: "Giorgio11121985"
+  question-16:
+    type: "radiogroup"
+    name: "question16"
+    text: "Il supporto IT installa la nuova versione del gestionale di lavoro. Dopo aver fatto le sue configurazioni ci comunica la nostra nuova password. Per ricordarla rapidamente cosa fai?"
+    choices:
+      choice-1:
+        value: "item1"
+        text: "Apro il mio password manager e la salvo tra le mie password."
+      choice-2:
+        value: "item2"
+        text: "Telefono al collega e chiedo di scriverla al volo da qualche parte e successivamente passerai per prenderla."
+      choice-3:
+        value: "item3"
+        text: "La segni su un post-it e la nascondi sotto la tastiera, è il modo migliore per ricordarla."
+      choice-4:
+        value: "item4"
+        text: "Chiedi al supporto di lasciare l'accesso senza password, così puoi sceglierla successivamente."
+  question-17:
+    type: "radiogroup"
+    name: "question17"
+    text: "Cosa deve avere una password per essere efficace?"
+    choices:
+      choice-1:
+        value: "item1"
+        text: "Deve essere facile da ricordare."
+      choice-2:
+        value: "item2"
+        text: "Deve contenere almeno 8 numeri."
+      choice-3:
+        value: "item3"
+        text: "Deve essere lunga almeno 8 caratteri, contenere maiuscole, minuscole e caratteri speciali."
+      choice-4:
+        value: "item4"
+        text: "Deve essere facile da recuperare."
 ---

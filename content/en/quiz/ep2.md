@@ -8,7 +8,7 @@ questions:
   question-1:
     type: "radiogroup"
     name: "question1"
-    text: "The new management software is installed in the office, allows access to more structured information, without having to go around to the right and left to verify the data of a practice, it is a nice step forward! It is a pity that it was developed again outside the corporate network and that it needs credentials different from those of the PC to use it ... You have to set the new password to use it, how do you proceed?"
+    text: "A new management software is installed in the office that allows access to more structured information, without having to go around to the right and left to verify the data of a case. It's a big step forward! It is a pity that it was developed again outside the company network and that it needs credentials different from those of the PC to use it. You have to set the new password to use it, how do you proceed?"
     choices:
       choice-1:
         value: "item1"
@@ -21,7 +21,7 @@ questions:
         text: "Another password? uhm ... you will use your secret technique that allows you to create long, complicated passwords, but that only you can understand / remember. Your coding is infallible, so far."
       choice-4:
         value: "item4"
-        text: "\"Unitedgo\" will be great, and since it's the fourth time you've changed it, add a nice 4!"
+        text: "The password \"unitedgo\" will be great, and since it's the fourth time you've changed it, add a nice 4!"
       choice-5:
         value: "item5"
         text: "Check if your IT support manager has any recommendations on how to proceed, waiting for the application to be integrated with your local PC user, eliminating the need for another password!"

@@ -23,7 +23,7 @@ questions:
         value: "item4"
         text: "Non distruggere i documenti riservati dopo l'uso."
   question-2:
-    type: "radiogroup"
+    type: "chackbox"
     name: "question2"
     text: "Cos'è la \"Clean Desk Policy\"?"
     choices:
