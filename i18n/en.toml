@@ -42,3 +42,6 @@ other = "You have successfully passed the quiz!"
 
 [not-passed-test]
 other = "You haven't passed the quiz, you made some errors..."
+
+[esito-test]
+other = "Quiz result"

@@ -60,7 +60,7 @@ questions:
         value: "item4"
         text: "Open the email in full screen, you never know, and read well if the email is sent from within the company or from outside and check the sender by reading the email address, then only if you come back, click and see where the page sends you, checking also the web address that opens... in case of further suspicions call also IT support..."
   question-4:
-    type: "radiogroup"
+    type: "checkbox"
     name: "question4"
     text: "Phone call from a centralized service technician. The company \"TISupport\" S.P.A., which manages all our IT systems, calls to the landline underlining that the user password has almost expired and recommends changing it. To facilitate this, the technician proposes to change it over the phone, how do you proceed?"
     choices:

@@ -42,3 +42,6 @@ other = "Hai passato il quiz con successo!"
 
 [not-passed-test]
 other = "Non hai passato il quiz, hai commesso qualche errore..."
+
+[esito-test]
+other = "Esito quiz"

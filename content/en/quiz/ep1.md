@@ -23,7 +23,7 @@ questions:
         value: "item4"
         text: "Do not destroy confidential documents after use."
   question-2:
-    type: "chackbox"
+    type: "checkbox"
     name: "question2"
     text: "What is the \"Clean Desk Policy\"?"
     choices:

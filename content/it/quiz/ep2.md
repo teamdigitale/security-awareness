@@ -60,7 +60,7 @@ questions:
         value: "item4"
         text: "Apri la mail a tutto schermo, che non si sa mai, e leggi bene se la mail è inviata dall’interno dell’azienda o dall’esterno e verifichi il mittente leggendo bene l’indirizzo email, poi solo se ti torna, clicchi e vedi dove ti manda la pagina, controllando anche l’indirizzo web che si apre... in caso di ulteriori sospetti chiami anche il supporto IT..."
   question-4:
-    type: "radiogroup"
+    type: "checkbox"
     name: "question4"
     text: "Telefonata da parte di un tecnico del servizio di assistenza centralizzato. L’azienda \"TISupport\" S.P.A., che ha in gestione tutti i nostri sistemi informatici, chiama al fisso sottolineando che la password utente è quasi scaduta e consiglia di cambiarla. Il tecnico, per facilitare la cosa, propone di cambiarla al telefono, come procedi?"
     choices:
