@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Team per la Trasformazione Digitale">
+
+<title>digital security  | Episodio 3 - Spearphishing</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/apple-touch-icon.png">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://teamdigitale.github.io/security-awareness/icons/favicons/manifest.webmanifest">
+<link rel="mask-icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/safari-pinned-tab.svg" color="#0066CC">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/bootstrap-italia/favicon.ico">
+<meta name="msapplication-config" content="https://teamdigitale.github.io/security-awareness/icons/favicons/browserconfig.xml">
+<meta name="theme-color" content="#0066CC">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@teamdigitaleIT">
+<meta name="twitter:creator" content="Team per la Trasformazione Digitale">
+<meta name="twitter:title" content="Security Awareness">
+<meta name="twitter:description" content="Security Awareness">
+<meta name="twitter:image" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+
+<meta property="og:url" content="https://teamdigitale.github.io/security-awareness/">
+<meta property="og:title" content="Security Awareness">
+<meta property="og:description" content="Basic course on cyber security">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+<meta property="og:image:secure_url" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/bootstrap-italia.min.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/main.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/style.css" type="text/css" />
+
+
+<script src="https://teamdigitale.github.io/security-awareness/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+
+<script src="https://unpkg.com/rough-viz@1.0.4"></script>
+
+
+  </head>
+
+  <body>
+    <div class="it-header-wrapper">
+  <div class="it-header-slim-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="d-none d-lg-block navbar-brand" href="http://teamdigitale.governo.it/en/">Digital Transformation Team</a>
+            <div class="nav-mobile">
+              <nav>
+                <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale" role="button" aria-expanded="false" aria-controls="menu-principale">
+                  <span>Digital Transformation Team</span>
+                  <svg class="icon">
+                    <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menu-principale">
+                  <ul class="link-list">
+                    
+                    <li><a href="https://forum.italia.it">Forum</a></li>
+                    
+                    <li><a href="https://docs.italia.it">Docs</a></li>
+                    
+                    <li><a href="https://developers.italia.it">Developers</a></li>
+                    
+                    <li><a href="https://designers.italia.it">Designers</a></li>
+                    
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="header-slim-right-zone">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <span>ENG</span>
+                  <svg class="icon d-none d-lg-block">
+                    <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12 padleft">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          
+                          <li>
+                            <a class="list-item" href="https://teamdigitale.github.io/security-awareness/">
+                              <div class="avatar size-xs">
+                                <img src="https://teamdigitale.github.io/security-awareness/img/ITA.png" alt="ITA">
+                              </div>
+
+                              <span>ITA</span>
+                            </a>
+                          </li>
+                          
+                          <li>
+                            <a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/">
+                              <div class="avatar size-xs">
+                                <img src="https://teamdigitale.github.io/security-awareness/img/ENG.png" alt="ENG">
+                              </div>
+
+                              <span>ENG</span>
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="/security-awareness/en">
+                  <img src="https://teamdigitale.github.io/security-awareness/img/sa-logo.png" alt="digital security" class="icon" />
+                  <div class="it-brand-text">
+                    <h2 class="no_toc nomargin"> digital security</h2>
+                    <h3 class="no_toc d-none d-md-block nomargin">for the public administration</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="it-right-zone">
+                <div class="it-socials d-none d-md-flex">
+                  <span>Follow us on</span>
+                  <ul>
+                    
+                      <li>
+                        <a href="https://github.com/teamdigitale/security-awareness" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-github"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.linkedin.com/company/teamdigitale" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://medium.com/team-per-la-trasformazione-digitale" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-medium"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://twitter.com/teamdigitaleIT" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-youtube"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="it-header-navbar-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg has-megamenu">
+              <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+                <svg class="icon">
+                  <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="nav10">
+                <div class="overlay"></div>
+                <div class="close-div sr-only">
+                  <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+                </div>
+                <div class="menu-wrapper">
+                  <ul class="navbar-nav">
+                     
+                      
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/">Home</a>
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/whoweare">Who are we</a>
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/why">Why this course?</a>
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/episodes">Episodes</a>
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/quiz">Quiz</a>
+                        </li>
+                      
+                     
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main>
+      
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-8 my-5">
+      <h1 class="otherpages">Episodio 3</h1>
+<h2 class="home">Spearphishing</h2>
+
+In this story we discover that the pitfalls <b>can also arise from the receipt of a simple email</b>, whose sender may not be what it seems at first sight. Surely you've ever received some "suspicious" emails, at work or at home: today we find out what the consequences and risks associated with this phenomenon can be, even in the real world.
+
+      <h2 id="i-personaggi">The characters of the story</h2>
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-1 align-self-center">
+            <a class="customPrevBtn carousel-control left" onclick="$('#personaggi').trigger('prev.owl.carousel')">
+              <img src="https://teamdigitale.github.io/security-awareness/img/prev.png" alt="&lt;" style="cursor: pointer" />
+            </a>
+          </div>
+          <div class="col-10">
+            <div class="it-carousel-wrapper it-carousel-landscape-abstract">
+              <div class="it-carousel-all owl-carousel" id="personaggi">
+                
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Francesco.png" title="Francesco, Carla&#39;s husband" alt="Francesco, Carla&#39;s husband" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading comicfont"><small>Francesco, Carla&#39;s husband</small></h5>
+                          <p class="card-text">Pleasant, cheerful, sporty, incurably optimistic. Francesco is Carla&#39;s husband. He works in the small town of Mangialarancia, where the two live. In this episode we will discover that he is very active on social networks...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Marta.png" title="Marta, Francesco&#39;s colleague" alt="Marta, Francesco&#39;s colleague" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading comicfont"><small>Marta, Francesco&#39;s colleague</small></h5>
+                          <p class="card-text">Marta is a timid employee of the Municipality of Mangialarancia, she works in the same office as Francesco, but we discovered that her calmness can explode and be decisive...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Giorgio.png" title="Giorgio, il collega dubbioso" alt="Giorgio, il collega dubbioso" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading comicfont"><small>Giorgio, il collega dubbioso</small></h5>
+                          <p class="card-text">Giorgio is a real nasty guy. He is always insecure and continually raises doubts and difficulties ready to point out every mistake others make in a non-constructive way. Really the colleague you wouldn&#39;t want to have!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-1 align-self-center">
+              <a class="customNextBtn carousel-control left" onclick="$('#personaggi').trigger('next.owl.carousel')">
+                <img src="https://teamdigitale.github.io/security-awareness/img/next.png" alt="&gt;" style="cursor: pointer" />
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="la-storia">The story</h2>
+      <div class="it-grid-list-wrapper">
+        <div class="grid-row" style="justify-content: center;">
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v01.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v02.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v03.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v04.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v05.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v06.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v07.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v08.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v09.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v10.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v11.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v12.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v13.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v14.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v15.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e3v16.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+
+      
+        <h2 id="glossario">Know more with external links</h2>
+        <div class="it-list-wrapper">
+          <ul class="it-list">
+            
+              <li>
+                <a href="" target="_blank">
+                  <div class="it-right-zone">
+                    <span class="text">Case 1<em style="margin-top: 12gipx">In 2011, two different emails were sent to two small groups of employees at RSA Security (then a division of EMC), a well-known company specializing in computer security. The emails sent over the course of two days had as object &#34;2011 Recruitment Plan&#34; and as an attachment an excel file. At least one of the employees opened the file and a program was installed on his PC that allowed the attackers to connect remotely and do damage to the company for several million dollars.</em></span>
+                    <span class="it-multiple">
+                      <span class="metadata">real case</span>
+                      <svg class="icon" style="margin-top: 8px">
+                        <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-code-circle"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            
+              <li>
+                <a href="" target="_blank">
+                  <div class="it-right-zone">
+                    <span class="text">Case 2<em style="margin-top: 12gipx">Between February and March 2014 the credentials (login and password) of some eBay employees were compromised, most likely through a Spear Phishing attack. The company has run for cover by asking for 145 million password changes only two months later, when the incident was discovered and disclosed. A lot of time during which intruders were able to &#34;rummage&#34; through the company network.</em></span>
+                    <span class="it-multiple">
+                      <span class="metadata">real case</span>
+                      <svg class="icon" style="margin-top: 8px">
+                        <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-code-circle"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            
+              <li>
+                <a href="" target="_blank">
+                  <div class="it-right-zone">
+                    <span class="text">Case 3<em style="margin-top: 12gipx">In 2015 it fell to the Anthem company, which was robbed of the data of 78 million users, through the compromise of a single e-mail box.</em></span>
+                    <span class="it-multiple">
+                      <span class="metadata">real case</span>
+                      <svg class="icon" style="margin-top: 8px">
+                        <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-code-circle"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+      
+      <h2 id="glossario">Glossary</h2>
+      
+      
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>Spearphishing</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Social Engineering</h5>
+              <p class="card-text">Social Engineering, represents the technique used by an attacker (criminal) to gather information or circumvent physical and logical security checks. It has this name because it exploits human ties, habits, rules or procedures that keep society together, to change them to their own advantage.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>Spearphishing</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Phishing</h5>
+              <p class="card-text">Recalling the gesture of "fishing", it refers, in computer jargon, to the action carried out by criminals, falsifying electronic communications (email), to "bite" the target by causing them to click a link or enter personal credentials.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>Spearphishing</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Spear Phishing</h5>
+              <p class="card-text">Similar to Phishing, it tends to trap the unfortunate user who receives it, but in a targeted manner. Spear translates into "lance", and in fact the contents of Spear Phishing are launched towards the target in a targeted way, contain true information (collected for example thanks to Social Engineering), combined with false information, and induce the target to believe again more to the content of the email.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>Spearphishing</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Target</h5>
+              <p class="card-text">The name of the cyber attacks has this name. It is not necessarily a human being, it can be a "given" or a "system", but it represents the ultimate objective pursued by a criminal or malicious software.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>Spearphishing</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">URL</h5>
+              <p class="card-text">Often called a web address, a URL is a sequence of characters that uniquely identifies the address of a website or any resource reachable from the internet, for example a video, an image, a document or an audio file. It is commonly used by typing it in the address bar of the browser or with other programs. The term URL is an acronym meaning "Uniform Resource Locator".</p>
+            </div>
+          </div>
+        </div>
+      
+
+      <h2 id="link">Today&#39;s lesson</h2>
+      <div class="callout callout-highlight note" style="max-width: 100% !important;">
+        <div class="callout-title"><svg class="icon"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-info-circle"></use></svg>Important</div>
+        <p>Does it seem incredible what you read? And yet this type of threat is very frequent and sometimes well masked, and a user&rsquo;s error can have serious consequences for companies and public administrations.</p>
+
+<p>What would have happened if the employee of our history had followed the link of the email, entered the fake site (completely resembling the Municipality&rsquo;s management) and entered his login credentials?
+Mr. Malinitenzionati, the creator of everything, would have obtained the credentials of Francesco to access the management of the Municipality, and could thus have obtained all the sensitive data of the citizens. Sensitive data that could be of various nature (addresses, telephone numbers, perhaps the income situation) and that could be used for many unlawful purposes.
+ 
+Finally, a note: Francesco had used or published his work email address on social networks, instead of using a personal address. A mistake that was going to cost him dearly!</p>
+
+      </div>
+
+      <h2 id="link">What should I do?</h2>
+      <p>When you receive an email:</p>
+
+<ul>
+<li>Always pay the utmost attention, check that the e-mail is authentic, look carefully at who the sender is and think twice before clicking on any links.</li>
+<li>Do not disclose personal or business information in an email or respond to email requests for such information.</li>
+<li>Before sending or entering sensitive information online, check the truthfulness and security of the website. Pay attention to the URL of the website. Malicious websites may appear to be identical to a legitimate site, but the URL may use a variation of the spelling (for example &ldquo;comunedimangialarencia.it&rdquo;) or a different domain (for example a replica of the original site, but which uses &ldquo;. net &ldquo;instead of&rdquo; .com &ldquo;.net).</li>
+<li>If you are not sure whether an e-mail request is legitimate, try to verify it by contacting the sending company directly, through the usual contacts.</li>
+<li>If the email seems suspicious to you, contact the internal group that deals with computer security, to ask for information or report the suspicious email.</li>
+</ul>
+
+
+      <div class="goto_test">
+        <a href="https://teamdigitale.github.io/security-awareness/quiz/ep3" class="btn btn-primary">
+          Go to the quiz
+          <svg class="icon icon-sm icon-white mr-2"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-arrow-right"></use></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+    
+<footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section class="py-4">
+        <div class="row">
+          <div class="col-lg-6 pb-4">
+            <h4><a>A project by</a></h4>
+            <a href="https://teamdigitale.governo.it/en">
+              <div class="d-flex">
+                <div class="d-flex footer-team">
+                  <img class="" src="https://teamdigitale.github.io/security-awareness/img/governo.svg" alt="">
+                  <img class="" src="https://teamdigitale.github.io/security-awareness/img/dt-logo.svg" alt="">
+                </div>
+                <div class="px-2 border-white border-left footer-team-text text-white">
+                  DIGITAL TRANSFORMATION TEAM
+                </div>
+              </div>
+            </a>
+
+            <p>&nbsp;</p>
+          
+            <div class="pb-4">
+              <h4><a>Follow us on</a></h4>
+              <ul class="list-inline text-left social">
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://github.com/teamdigitale/security-awareness" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-github"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.linkedin.com/company/teamdigitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-linkedin"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://medium.com/team-per-la-trasformazione-digitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-medium"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://twitter.com/teamdigitaleIT" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-twitter"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-youtube"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pb-4">
+            <h4><a>Security Awareness</a></h4>
+            <p>A short course for digital security</p>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en" title="Home">Home</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/whoweare" title="Who are we">Who are we</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/why" title="Why this course?">Why this course?</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/episodes" title="Episodes">Episodes</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/quiz" title="Quiz">Quiz</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <h3 class="sr-only">Section Useful Links</h3>
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        
+        <li class="list-inline-item"><a href="https://teamdigitale.github.io/security-awareness/#" title="Legal notes">Legal notes</a></li>
+        
+        <li class="list-inline-item"><a href="https://teamdigitale.github.io/security-awareness/#" title="Privacy policy">Privacy policy</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script>window.__PUBLIC_PATH__ = 'https:\/\/teamdigitale.github.io\/security-awareness\/fonts'</script>
+<script src="https://teamdigitale.github.io/security-awareness/js/bootstrap-italia.bundle.min.js"></script>
+</body>
+</html>
+
+  </body>
+</html>

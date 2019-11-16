@@ -34,7 +34,7 @@
 
           <div class="question {{ if ne $divnum 1 }}hidden{{ end }}" id="div_{{ $divnum }}">
             {{ $curquestion := . }}
-            <p class="title_question">{{ .text }}</p>
+            <p class="title_question">{{ .text | safeHTML }}</p>
                     
             <div class="shuffle">
               {{ range .choices }}

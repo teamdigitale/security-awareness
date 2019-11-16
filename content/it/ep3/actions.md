@@ -2,7 +2,7 @@
 name: "Cosa devo fare?"
 ---
 
-Quanto di ricevi un’email:
+Quando ricevi un’email:
 
 - Presta sempre la massima attenzione, verifica che la mail sia autentica, guarda bene chi è il mittente e pensaci due volte prima di cliccare eventuali link.  
 - Non rivelare informazioni personali o lavorative in un'email e non rispondere alle richieste via email per tali informazioni. 
