@@ -9,7 +9,7 @@ pm:
     title: Responsabile di sicurezza digitale
     org: Team per la Trasformazione Digitale
     img: andrea_ceresoni.png
-    descr: Andrea è un appassionato di tecnologia con 16 anni di esperienza pratica in sicurezza informatica, sistemi operativi e architetture di sicurezza cloud. Ha lavorato per e-commerce, società di telecomunicazioni e startup. Al momento è il "Security dude" per il team di trasformazione digitale.
+    descr: Andrea è un appassionato di tecnologia con 16 anni di esperienza pratica in sicurezza informatica, sistemi operativi e architetture di sicurezza cloud. Ha lavorato per e-commerce, società di telecomunicazioni e startup in Irlanda, Germania e Italia. Al momento è il "Security dude" per il team di trasformazione digitale.
   pm-2:
     name: Alice Casiraghi
     title: UX designer e illustratrice

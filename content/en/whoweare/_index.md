@@ -9,7 +9,7 @@ pm:
     title: Digital security manager
     org: Digital Transformation Team
     img: andrea_ceresoni.png
-    descr: Andrea is a technology enthusiastic with 16 years of hands-on of experience in Computer Security, Operating systems and Cloud security architectures. He has been working for e-commerce, telco an startup companies. At the moment is the “Security dude” for the Digital transformation Team.
+    descr: Andrea is a technology enthusiastic with 16 years of hands-on of experience in Computer Security, Operating systems and Cloud security architectures. He has been working for e-commerce, telco and startup companies in Ireland, Germany and Italy. At the moment is the “Security dude” for the Digital Transformation Team.
   pm-2:
     name: Alice Casiraghi
     title: UX designer and illustrator
