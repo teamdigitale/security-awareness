@@ -45,7 +45,9 @@
                                 <span class="it-griditem-text" style="margin-top: 20px">
                                     <small class="small comicfont" style="margin-bottom: .5em;">{{ .name }}<br/></small>
                                     <small class="small"><b><i>{{ .title }}</i></b><br/></small>
+                                    {{ if .org }}
                                     <small class="small"><b>{{ .org }}</b><br/></small>
+                                    {{ end }}
                                     <small class="small" style="margin-top: 12px;">{{ .descr | safeHTML }}</small>
                                 </span>
                             </span>

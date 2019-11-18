@@ -62,7 +62,6 @@ others:
   others-4:
     name: Michele Lestingi
     title: IS Security Professional
-    org: Fastweb
     img: michele_lestingi.png
     descr: Michele è un Security Professional. Le sue attività spaziano dalla consulenza, alla gestione degli incidenti, alla progettazione di sistemi per la risoluzione di problemi nel campo della sicurezza informatica. Ama condividere le sue conoscenze.
   others-5:

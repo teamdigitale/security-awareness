@@ -62,7 +62,6 @@ others:
   others-4:
     name: Michele Lestingi
     title: IS Security Professional
-    org: Fastweb
     img: michele_lestingi.png
     descr: Michele is a Technology passionate since he was 14 years old with over 10 years of experience in Computer Security. In his expierince Michele have worked with law enforcement, Telco, financial institutions. Among the activities are Cybersecurity incident handling, malware analysis, research vulnerabilities. He is proud to be part of the "Security Awareness" Digital Trasformation Team project because it is the risk awareness the most important part of ensuring security.
   others-5:
