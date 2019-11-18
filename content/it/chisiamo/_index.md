@@ -46,13 +46,13 @@ others:
     title: Chief Information Security Officer
     org: Open Fiber S.p.A.
     img: fabrizio_cilli.png
-    descr: Fabrizio attualmente opera come CISO nella società Open Fiber s.p.a., è un esperto responsabile della sicurezza con 20 anni di esperienza sul campo. Ha speso una buona metà della sua carriera in giro per il mondo&#58; Sud America, Europa, Medio Oriente ed Estremo Oriente, e l'altra metà sostenendo progetti complessi di trasformazione digitale nel settore Telco, Public e Banking in tutta Italia. Durante i suoi tre anni in Accenture Security (Italia) ha promosso e completato progetti per l'adozione di cloud e big data nell'ambito dell'iniziativa Open Innovation, per il governo e il settore pubblico.
+    descr: Fabrizio attualmente opera come CISO nella società Open Fiber s.p.a., è un esperto responsabile della sicurezza con 20 anni di esperienza sul campo. Ha speso una buona metà della sua carriera in giro per il mondo&colon; Sud America, Europa, Medio Oriente ed Estremo Oriente, e l'altra metà sostenendo progetti complessi di trasformazione digitale nel settore Telco, Public e Banking in tutta Italia. Durante i suoi tre anni in Accenture Security (Italia) ha promosso e completato progetti per l'adozione di cloud e big data nell'ambito dell'iniziativa Open Innovation, per il governo e il settore pubblico.
   others-2:
     name: Simona Forti
     title: 3D Pipeline Engineer
     org: Al-One S.r.l.
     img: simona_forti.png
-    descr: Simona è una persona creativa, eclettica e di larghe vedute con un forte background tecnico IT, come una delle poche ragazze della scena dell'hacking etico italiano dalla fine degli anni '90. Di recente è tornata in Italia da Tokyo, per perseguire una nuova sfida come ingegnere della pipeline di animazione 3D nel settore cinematografico, è entusiasta di unirsi a questo progetto e contribuire a rendere più accessibile la consapevolezza della sicurezza.
+    descr: Simona è una persona creativa, eclettica e multitasking con un forte background tecnico nel campo dell’Information Technology; appartenente, sin dalla fine degli anni '90, alla scena italiana dell'ethical hacking. Tornata di recente in Italia da Tokyo per intraprendere una nuova sfida come Pipeline engineer di animazione 3D nel settore cinematografico, è entusiasta di unirsi a questo progetto e poter contribuire a sviluppare maggior consapevolezza sulla sicurezza digitale.
   others-3:
     name: Andrea Lauria
     title: Cyber defence manager
@@ -62,21 +62,21 @@ others:
   others-4:
     name: Michele Lestingi
     title: IS Security Professional
-    org: Società
+    org: Fastweb
     img: michele_lestingi.png
-    descr: Michele è un appassionato di Tecnologia da quando aveva 14 anni con oltre 10 anni di esperienza nella Sicurezza Informatica. Nella sua esperienza ha lavorato con diverse realtà come forze dell'ordine, aziende di telecomunicazioni, Istituzioni finanziarie. Alcune delle attività che Michele svolge sono la gestione degli incidenti di sicurezza informatica, analisi malware, ricerca delle vulnerabilità. Michele è orgoglioso di far parte del progetto "Security Awareness" del Digital Trasformation Team perché è la conoscenza del rischio una delle parti più importanti per garantire la sicurezza.
+    descr: Michele è un Security Professional. Le sue attività spaziano dalla consulenza, alla gestione degli incidenti, alla progettazione di sistemi per la risoluzione di problemi nel campo della sicurezza informatica. Ama condividere le sue conoscenze.
   others-5:
     name: Christian Razzino
-    title: Ruolo
-    org: Società
+    title: CISO / Security Manager
+    org: Italpol
     img: christian_razzino.png
-    descr: Christian è un esperto ed entusiasta professionista IT Security con oltre 20 anni di esperienza nel settore. Nella scena hacking italiana dalla metà degli anni 90, produttore e sostenitore di musica elettronica, con una profonda passione per i sintetizzatori, attualmente opera come Security Manager in una società di sicurezza privata per guidare l'azienda in una complessa trasformazione digitale verso il campo della Cyber Security. Si è unito al progetto di "Security Awareness" per portare l'esperienza che il fattore umano può essere la prima vulnerabilità ma anche la prima misura di sicurezza.
+    descr: Christian è un professionista di Security, da oltre 20 anni nel settore e nella scena hacking dagli anni 90. Produttore di musica elettronica, con una profonda passione per i sintetizzatori, attualmente come Security Manager sta operando una complessa trasformazione digitale in una società di sicurezza privata. Si è unito al progetto di "Security Awareness" per sostenere l'idea che il fattore umano può essere la prima vulnerabilità ma anche la prima misura di sicurezza.
   others-6:
     name: Antonio Zindato
-    title: Ruolo
-    org: Società
+    title: Head of incident response
+    org: Poste italiane
     img: antonio_zindato.png
-    descr: Antonio è un responsabile della sicurezza ICT con 18 anni di esperienza nella sicurezza delle informazioni, nella rete e nella gestione degli incidenti. Ha lavorato per la più grande compagnia di telecomunicazioni in Italia e oggi è un gestore di incidenti per la più grande compagnia di servizi postali, bancari e assicurativi in ​​Italia
+    descr: Antonio è un responsabile della sicurezza ICT con 18 anni di esperienza nella sicurezza delle informazioni, nella rete e nella gestione degli incidenti. Ha lavorato per la più grande compagnia di telecomunicazioni in Italia e oggi è un gestore di incidenti per la più grande compagnia di servizi postali, bancari e assicurativi in ​​Italia.
 ---
 
 Siamo un gruppo di **sviluppatori, designer ed esperti di sicurezza digitale** con l’obiettivo di creare un corso di sicurezza digitale per la Pubblica Amministrazione che sia intuitivo, divertente ed accessibile per tutti. Il corso di sicurezza digitale nasce da un’idea del [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/).

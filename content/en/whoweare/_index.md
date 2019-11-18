@@ -12,7 +12,7 @@ pm:
     descr: Andrea is a technology enthusiastic with 16 years of hands-on of experience in Computer Security, Operating systems and Cloud security architectures. He has been working for e-commerce, telco an startup companies. At the moment is the “Security dude” for the Digital transformation Team.
   pm-2:
     name: Alice Casiraghi
-    title: UX designer e illustratrice
+    title: UX designer and illustrator
     org: Digital Transformation Team
     img: alice_casiraghi.png
     descr: Alice is a <em>service and digital graphic designer</em>, whose work ranges from consulting to <em>design research</em>, to <em>branding</em>, graphics, UX and UI design. He lived in London and Shanghai and worked as a consultant around Asia (Hong Kong, Singapore) before returning to Italy to join the Digital Transformation Team.
@@ -52,7 +52,7 @@ others:
     title: 3D Pipeline Engineer
     org: Al-One S.r.l.
     img: simona_forti.png
-    descr: Simona is a creative, eclectic and open-minded person with strong technical background IT, as one of the few girls from the italian ethical hacking scene since late '90s. Recently moved back to Italy from Tokyo, to pursue a new challenge as a 3D Animation Pipeline Engineer in the movie industry, she’s enthusiastic to join this project and help make security awareness more accessible.
+    descr: Simona is a creative, eclectic and open-minded person with strong technical background IT, as one of the few girls from the italian ethical hacking scene since late '90s. Recently moved back to Italy from Tokyo, to pursue a new challenge as a 3D Animation Pipeline Engineer in the movie industry, she’s keen to join this project and help make security awareness more accessible.
   others-3:
     name: Andrea Lauria
     title: Cyber defence manager
@@ -62,19 +62,19 @@ others:
   others-4:
     name: Michele Lestingi
     title: IS Security Professional
-    org: Società
+    org: Fastweb
     img: michele_lestingi.png
     descr: Michele is a Technology passionate since he was 14 years old with over 10 years of experience in Computer Security. In his expierince Michele have worked with law enforcement, Telco, financial institutions. Among the activities are Cybersecurity incident handling, malware analysis, research vulnerabilities. He is proud to be part of the "Security Awareness" Digital Trasformation Team project because it is the risk awareness the most important part of ensuring security.
   others-5:
     name: Christian Razzino
-    title: Ruolo
-    org: Società
+    title: CISO / Security Manager
+    org: Italpol
     img: christian_razzino.png
-    descr: Christian is a technology inspired and experienced Cyber Security professional with over 20 years hands-on experience, dealing with both offensive/defensive sides of security, in the Italian ethical hacking scene since half ’90. Electronic music lover and producer, with deep passion for synthesizers and retro computing, currently he operates as CISO in a private security company, leading a complex digital transformation to drive the company in cyber security field. He joined "Security Awareness" project to bring the field experience that the human factor can be the first vulnerability and the first security measure as well.
+    descr: Christian is a technology inspired Cyber Security professional with over 20 years hands-on experience, dealing with both offensive/defensive sides of security, in the Italian ethical hacking scene since half ’90. Electronic music lover and producer, with deep passion for synthesizers, now he operates as CISO in a private security company, leading a complex digital transformation. He joined "Security Awareness" project to bring the field experience that the human factor can be the first vulnerability and the first security measure as well.
   others-6:
     name: Antonio Zindato
-    title: Ruolo
-    org: Società
+    title: Ruolo Head of incident response
+    org: Poste italiane
     img: antonio_zindato.png
     descr: Antonio is a ICT security manager with 18 years of experience in information security, network and incident handling. Ha has been working for the most major telco company in Italy and today is a incident handler for the most great company of postal, banking and assurance service in Italy.
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Episodio 3 - Spearphishing"
 layout: episode
-quiz: "quiz/ep3"
+quiz: "en/quiz/ep3"
 ---
