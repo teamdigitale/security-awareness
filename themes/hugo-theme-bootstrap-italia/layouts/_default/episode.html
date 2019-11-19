@@ -90,6 +90,7 @@
       <h2 id="glossario">{{ ( .Page.Resources.GetMatch "glossary.md" ).Params.name }}</h2>
       {{ $title := ( .Page.Resources.GetMatch "glossary.md" ).Params.title }}
       {{ range ( .Page.Resources.GetMatch "glossary.md" ).Params.terms }}
+      <div> 
         <div class="card-wrapper card-space">
           <div class="card card-bg card-big border-bottom-card glossary">
             <div class="flag-icon"></div>
@@ -105,6 +106,7 @@
             </div>
           </div>
         </div>
+      </div>
       {{ end }}
 
       <h2 id="link">{{ ( .Page.Resources.GetMatch "lesson.md" ).Params.name }}</h2>

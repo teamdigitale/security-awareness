@@ -122,7 +122,6 @@ h3 {
 }
 
 .row [class*=col-]>.card-wrapper, .row [class*=col-]>.card-wrapper>.card .glossary {
-  height: unset !important;
   padding-bottom: 40px;
 }
 
