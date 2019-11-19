@@ -34,4 +34,4 @@ Questo corso è pensato per i dipendenti delle Pubbliche Amministrazioni ma è a
 - aiutare a proteggere la riservatezza, disponibilità e l'integrità dei dati della propria organizzazione.
 
 
-<center><a href="ep1" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Vai agli episodi</a></center>
+<center><a href="episodes" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Vai agli episodi</a></center>
