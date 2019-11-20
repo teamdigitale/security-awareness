@@ -1,5 +1,6 @@
 ---
 title: "List of episodes"
+curpage: "Episodes"
 layout: "episodes"
 episodes:
   episode-1:

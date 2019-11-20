@@ -1,6 +1,7 @@
 ---
 title: "Security awareness"
 layout: "timeline"
+curpage: "Home"
 ---
 
 <h1 class="home">Corso di base di sicurezza digitale</h1>

@@ -126,7 +126,11 @@
                         </li>
                         {{ else }}
                         <li class="nav-item">
+                          {{ if eq $.Page.Params.curpage .Name }}
+                          <a class="nav-link font-weight-bold" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                          {{ else }}
                           <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                          {{ end }}
                         </li>
                       {{ end }}
                      {{ end }}

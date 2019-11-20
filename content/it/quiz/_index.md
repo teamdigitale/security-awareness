@@ -1,5 +1,6 @@
 ---
 title: "Quiz"
+curpage: "Quiz"
 layout: quiz
 type: finale
 quiztitle: "Quiz di autovalutazione"

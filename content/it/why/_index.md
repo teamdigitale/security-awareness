@@ -1,5 +1,6 @@
 ---
 title: "Perchè questo corso?"
+curpage: "Perchè questo corso?"
 ---
 
 Ogni giorno la tecnologia diventa sempre più performante e inevitabilmente per alcuni aspetti, più complessa. è proprio questa complessità che alcuni malintenzionati sfruttano per ingannare le proprie vittime e trarre i propri profitti. Che si tratti di credenziali per accedere a sistemi informativi o ai dati della propria carta di credito, il Team per la Trasformazione Digitale ha realizzato questo corso per aumentare la consapevolezza dei rischi in questo mondo digitale.

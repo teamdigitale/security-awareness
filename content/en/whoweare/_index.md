@@ -1,5 +1,6 @@
 ---
-title: "Who we are"
+title: "Who are we"
+curpage: "Who are we"
 layout: "chisiamo"
 pmtitle: Project managers
 otherstitle: External collaborators

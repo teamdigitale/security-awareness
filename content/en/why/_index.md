@@ -1,5 +1,6 @@
 ---
 title: "Why this course?"
+curpage: "Why this course?"
 ---
 
 Every day the technology becomes more and more powerful and inevitably in some aspects, more complex. it is precisely this complexity that some attackers exploit to deceive their victims and make their own profits. Whether it's credentials to access information systems or your credit card data, the Digital Transformation Team has created this course to increase risk awareness in this digital world.

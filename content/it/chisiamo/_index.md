@@ -1,6 +1,7 @@
 ---
 title: "Chi siamo"
 layout: "chisiamo"
+curpage: "Chi siamo"
 pmtitle: Responsabili di progetto
 otherstitle: Collaboratori esterni
 pm:

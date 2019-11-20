@@ -1,5 +1,6 @@
 ---
 title: "Security awareness"
+curpage: "Home"
 layout: "timeline"
 ---
 
