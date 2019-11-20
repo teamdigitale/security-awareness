@@ -855,11 +855,12 @@ Come risposte scegli:</p>
 </div>
 
 <script type="text/javascript">
+  document.head = document.head || document.getElementsByTagName('head')[0];
   $('head').append('<link rel="stylesheet" href="https:\/\/teamdigitale.github.io\/security-awareness\/css/quiz.css" type="text/css" />');
 
   function nextQuestion(itemid) {
     if ($("input[name='question1']").filter(':checked').val() === undefined) {
-      $("#warn-message").html("Rispondere alla domanda!");
+      $("#warn-message").html('Rispondere alla domanda!');
       notificationShow('missing', 6000);
       return;
     }
