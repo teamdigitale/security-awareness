@@ -34,11 +34,11 @@ publishDir = "./docs"
 
 [languages]
   [languages.it]
-    title = "sicurezza digitale"
+    title = "Sicurezza Digitale"
     ente = "Team per la Trasformazione Digitale"
     enteLink = "http://teamdigitale.governo.it"
-    siteTitle = "sicurezza digitale"
-    siteDescription = "per la pubblica amministrazione"
+    siteTitle = "Sicurezza Digitale"
+    siteDescription = "per la Pubblica Amministrazione"
     languageName = "ITA"
     contentDir = "content/it"
     weight = 1
@@ -63,11 +63,11 @@ publishDir = "./docs"
     ]
 
   [languages.en]
-    title = "digital security"
+    title = "Digital Security"
     ente = "Digital Transformation Team"
     enteLink = "http://teamdigitale.governo.it/en/"
-    siteTitle = "digital security"
-    siteDescription = "for the public administration"
+    siteTitle = "Digital Security"
+    siteDescription = "For the Public Administration"
     languageName = "ENG"
     contentDir = "content/en"
     weight = 2

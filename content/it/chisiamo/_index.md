@@ -10,56 +10,56 @@ pm:
     title: Responsabile di sicurezza digitale
     org: Team per la Trasformazione Digitale
     img: andrea_ceresoni.png
-    descr: Andrea è un appassionato di tecnologia con 16 anni di esperienza pratica in sicurezza informatica, sistemi operativi e architetture di sicurezza cloud. Ha lavorato per e-commerce, società di telecomunicazioni e startup in Irlanda, Germania e Italia. Al momento è il "Security dude" per il team di trasformazione digitale.
+    descr: Andrea è un appassionato di tecnologia con 16 anni di esperienza pratica in sicurezza informatica, sistemi operativi e architetture di sicurezza cloud. Al momento è il "Security dude" del Team per la Trasformazione Digitale.
   pm-2:
     name: Alice Casiraghi
     title: UX designer e illustratrice
     org: Team per la Trasformazione Digitale
     img: alice_casiraghi.png
-    descr: Alice è una <em>service e digital graphic designer</em>, il cui lavoro va dalla consulenza al <em>design research</em>, al <em>branding</em>, la grafica, l’UX e l’UI design. Ha vissuto a Londra e a Shanghai e ha lavorato come consulente in giro per l’Asia (Hong Kong, Singapore) prima di tornare in Italia per entrare a far parte del Team per la Trasformazione Digitale. 
+    descr: Alice è una designer poliedrica&colon; da service designer alle prese con interfacce digitali, a volte si dedica anche alle illustrazioni e ai progetti di grafica. Si occupa della user experience dei prodotti del Team per la Trasformazione Digitale. 
   pm-3:
     name: Andrea Biancini
     title: Responsabile open source
     org: Team per la Trasformazione Digitale
     img: andrea_biancini.png
-    descr: Andrea è un <em>Executive Director</em> esperto nello sviluppo della <em>cultura organizzativa</em>, nella definizione della <em>strategia</em> e nell'<em>innovazione</em> e la trasformazione organizzativa. Laureato in Informatica e successivamente in Psicologia, Andrea ha 15 anni di esperienza presso aziende/istituti di rilevanza internazionale.
+    descr: Andrea è un direttore dell’esecutivo esperto nello sviluppo della cultura organizzativa, nella definizione della strategia, nell'innovazione ed esperto in trasformazione aziendale. Laureato in informatica e psicologia, è il responsabile open source del Team per la Trasformazione Digitale.
   pm-4:
     name: Francesco De Augustinis
     title: Comunicazione e gestione dei contenuti
     org: Team per la Trasformazione Digitale
     img: francesco_deaugustinis.png
-    descr: Francesco è giornalista freelance ed editore di contenuti. Amante dei fumetti e dei graphic novel, non ha potuto fare a meno di partecipare a questo folle progetto di sensibilizzazione sulla sicurezza!
+    descr: Francesco è giornalista freelance ed editore di contenuti. Amante dei fumetti e dei graphic novel, abile nella narrazione, non ha potuto fare a meno di partecipare a questo folle progetto di sensibilizzazione sulla sicurezza digitale per la pubblica amministrazione.
   pm-5:
     name: Daniela Battisti
     title: Relazioni internazionali
     org: Team per la Trasformazione Digitale
     img: daniela_battisti.png
-    descr: Daniela ha un dottorato in Classics ma sono un appassionata di tecnologia digitale. Daniela è a capo delle relazioni internazionali nel team di trasformazione digitale.
+    descr: Daniela ha un dottorato in studi classici ma è un’appassionata di tecnologia digitale. Daniela è a capo delle relazioni internazionali nel Team per la Trasformazione Digitale e la cybersecurity è una delle tante tematiche di cui si occupa a livello di policy.
   pm-6:
     name: Mirko Calvaresi
     title: Supporto sviluppo tecnico
     org: Team per la Trasformazione Digitale
     img: mirko_calvaresi.png
-    descr: Mirko è uno sviluppatore e architetto agile e motivato, entusiasta, analitico e creativo con oltre 20 anni di esperienza nello sviluppo di software.
+    descr: Mirko è uno sviluppatore e architetto agile e motivato, entusiasta, analitico e creativo con oltre 20 anni di esperienza nello sviluppo di software. Responsabile del progetto per l’anagrafe unica al Team per la Trasformazione Digitale, è l’eroe inaspettato, ispiratore di questo progetto.
 others:
   others-1:
     name: Fabrizio Cilli
     title: Chief Information Security Officer
     org: Open Fiber S.p.A.
     img: fabrizio_cilli.png
-    descr: Fabrizio attualmente opera come CISO nella società Open Fiber s.p.a., è un esperto responsabile della sicurezza con 20 anni di esperienza sul campo. Ha speso una buona metà della sua carriera in giro per il mondo&colon; Sud America, Europa, Medio Oriente ed Estremo Oriente, e l'altra metà sostenendo progetti complessi di trasformazione digitale nel settore Telco, Public e Banking in tutta Italia. Durante i suoi tre anni in Accenture Security (Italia) ha promosso e completato progetti per l'adozione di cloud e big data nell'ambito dell'iniziativa Open Innovation, per il governo e il settore pubblico.
+    descr: Fabrizio attualmente opera come CISO nella società Open Fiber s.p.a., è un esperto responsabile della sicurezza che in 20 anni ha girato il mondo per lavoro, occupandosi di  trasformazione digitale, adozione di cloud e big data, open innovation, per il pubblico e il privato.
   others-2:
     name: Simona Forti
     title: 3D Pipeline Engineer
     org: Al-One S.r.l.
     img: simona_forti.png
-    descr: Simona è una persona creativa, eclettica e multitasking con un forte background tecnico nel campo dell’Information Technology; appartenente, sin dalla fine degli anni '90, alla scena italiana dell'ethical hacking. Tornata di recente in Italia da Tokyo per intraprendere una nuova sfida come Pipeline engineer di animazione 3D nel settore cinematografico, è entusiasta di unirsi a questo progetto e poter contribuire a sviluppare maggior consapevolezza sulla sicurezza digitale.
+    descr: Simona è una professionista dell’IT, creativa, eclettica e multitasking, presente sin dalla fine degli anni '90 nella scena italiana dell'ethical hacking. Di recente è tornata in Italia da Tokyo per intraprendere una nuova sfida come Pipeline engineer di animazione 3D nel settore cinematografico.
   others-3:
     name: Andrea Lauria
     title: Cyber defence manager
     org: PwC IT Services Europe GmbH
     img: andrea_lauria.png
-    descr: Responsabile della difesa informatica tecnicamente benestante, lavora per PwC dal 2018. Si è unito al team con entusiasmo, con l'idea di presentare la consapevolezza della sicurezza in una prospettiva diversa. Con 20 anni di esperienza lavorativa è noto per la protezione contro le intrusioni di sistema e di rete istituendo controlli di sicurezza, mantenendo la governance e rafforzando attrezzature e infrastrutture.
+    descr: Responsabile della difesa informatica tecnicamente benestante, lavora per PwC dal 2018. Con 20 anni di esperienza lavorativa è noto per la protezione contro le intrusioni di sistema e di rete istituendo controlli di sicurezza, mantenendo la governance e rafforzando attrezzature e infrastrutture.
   others-4:
     name: Michele Lestingi
     title: IS Security Professional
@@ -70,7 +70,7 @@ others:
     title: CISO / Security Manager
     org: Italpol
     img: christian_razzino.png
-    descr: Christian è un professionista di Security, da oltre 20 anni nel settore e nella scena hacking dagli anni 90. Produttore di musica elettronica, con una profonda passione per i sintetizzatori, attualmente come Security Manager sta operando una complessa trasformazione digitale in una società di sicurezza privata. Si è unito al progetto di "Security Awareness" per sostenere l'idea che il fattore umano può essere la prima vulnerabilità ma anche la prima misura di sicurezza.
+    descr: Christian è un professionista di security, da oltre 20 anni nel settore e nella scena hacking dagli anni 90. Produttore di musica elettronica, con una profonda passione per i sintetizzatori, attualmente gestisce una sta complessa trasformazione digitale come Security Manager.
   others-6:
     name: Antonio Zindato
     title: Head of incident response
