@@ -10,7 +10,7 @@ characters:
     description: "Marta is a timid employee of the Municipality of Mangialarancia, she works in the same office as Francesco, but we discovered that her calmness can explode and be decisive..."
     image: "characters/Marta.png"
   character-3:
-    name: 'Giorgio, il collega dubbioso'
+    name: 'Giorgio, the doubtful colleague'
     description: "Giorgio is a real nasty guy. He is always insecure and continually raises doubts and difficulties ready to point out every mistake others make in a non-constructive way. Really the colleague you wouldn't want to have!"
     image: "characters/Giorgio.png"
 ---
