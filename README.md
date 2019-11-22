@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/github/license/teamdigitale/security-awareness.svg)](https://github.com/teamdigitale/security-awareness/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/teamdigitale/security-awareness.svg)](https://github.com/teamdigitale/security-awareness/issues) [![Join the #design channel](https://img.shields.io/badge/Slack%20channel-%23security-blue.svg)]( https://developersitalia.slack.com/archives/C7BB7SX4P/) [![Get invited](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/) [![sicurezza on forum.italia.it](https://img.shields.io/badge/Forum-sicurezza-blue.svg)](https://forum.italia.it/c/sicurezza)
+
 # Security awareness
 
 ![Security Awareness](https://teamdigitale.github.io/security-awareness/img/picture-home.png)
