@@ -169,3 +169,8 @@ footer > .h4, footer > h4 {
   text-align: center;
   font-family: "Anime Ace 2";
 }
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
