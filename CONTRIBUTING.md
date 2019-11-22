@@ -15,8 +15,7 @@ We love issues and pull requests from everyone.
 Please help development by reporting problems, suggesting changes and asking
 questions. To do this, you can [create a GitHub
 Issue](https://help.github.com/articles/creating-an-issue/) for this project in
-the [GitHub Issues for
-  publiccode.yml Editor](https://github.com/teamdigitale/security-awareness/issues).
+the [GitHub Issues](https://github.com/teamdigitale/security-awareness/issues).
 
 You don't need to change any of our code or documentation to be a contributor!
 
