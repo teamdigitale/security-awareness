@@ -1,4 +1,4 @@
-# Contributing to this standard
+# Contributing to this project
 
 🙇‍♀️ Thank you for contributing!
 
