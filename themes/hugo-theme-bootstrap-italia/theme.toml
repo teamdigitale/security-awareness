@@ -6,7 +6,7 @@ licenselink = "https://github.com/francescozaia/hugo-theme-bootstrap-italia/blob
 description = "A Base theme for building full featured Hugo sites"
 homepage = "https://github.com/francescozaia/hugo-theme-bootstrap-italia"
 tags = ["website", "starter", "responsive"]
-min_version = 0.30.2
+min_version = 0.30
 
 [author]
   name = "Francesco Zaia"

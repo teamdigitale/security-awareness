@@ -1,0 +1,158 @@
+# Configuration for language English
+en:
+  title: Digital Security
+  ente:  Digital Transformation Team
+  enteLink: 'http://teamdigitale.governo.it/en/'
+  siteTitle: Digital Security
+  siteDescription: For the Public Administration
+  languageName: ENG
+  contentDir: content/en
+  weight: 2
+  footerColumn1Title: Security Awareness
+  footerColumn1Text: A short course for digital security
+  footerColumn1Links:
+    -
+      label: Home
+      url: 'en'
+    -
+      label: Who are we
+      url: 'en/whoweare'
+    -
+      label: Why this course?
+      url: 'en/why'
+    -
+      label: Episodes
+      url: 'en/episodes'
+    -
+      label: Quiz
+      url: 'en/quiz'
+  footerColumn2Title: A project by
+  footerColumn2Text: DIGITAL TRANSFORMATION TEAM
+  footerColumn2Link: 'https://teamdigitale.governo.it/en'
+  footerBottomLinks:
+    -
+      label: Legal notes
+      url: '#'
+    -
+      label: Privacy policy
+      url: '#'
+  menu:
+    navbar:
+      -
+        name: Home
+        URL: '/'
+        weight: 1
+      -
+        name: Who are we
+        URL: '/en/whoweare'
+        weight: 2
+      -
+        name: Why this course?
+        URL: '/en/why'
+        weight: 3
+      -
+        name: Episodes
+        URL: /en/episodes
+        weight: 4
+      -
+        name: Quiz
+        URL: '/en/quiz'
+        weight: 5
+
+    main:
+      -
+        name: Forum
+        URL: 'https://forum.italia.it'
+        weight: 1
+      -
+        name: Docs
+        URL: 'https://docs.italia.it'
+        weight: 2
+      -
+        name: Developers
+        URL: 'https://developers.italia.it'
+        weight: 3
+      -
+        name: Designers
+        URL: 'https://designers.italia.it'
+        weight: 4
+
+# Configuration for language Italian
+it:
+  title: Sicurezza Digitale
+  ente: Team per la Trasformazione Digitale
+  enteLink: 'http://teamdigitale.governo.it'
+  siteTitle: Sicurezza Digitale
+  siteDescription: per la Pubblica Amministrazione
+  languageName: ITA
+  contentDir: content/it
+  weight: 1
+  footerColumn1Title: Security Awareness
+  footerColumn1Text: Un breve corso per la sicurezza digitale
+  footerColumn1Links:
+    -
+      label: Home
+      url: '/'
+    -
+      label: Chi siamo
+      url: 'chisiamo'
+    -
+      label: Perchè questo corso?
+      url: 'why'
+    -
+      label: Episodi
+      url: 'episodes'
+    -
+      label: Quiz
+      url: 'quiz'
+
+  footerColumn2Title: Un progetto di
+  footerColumn2Text: TEAM PER LA TRASFORMAZIONE DIGITALE
+  footerColumn2Link: 'https://teamdigitale.governo.it/'
+  footerBottomLinks:
+    -
+      label: Note legali
+      url: '#'
+    -
+      label: Privacy policy
+      url: '#'
+  menu:
+    main:
+      -
+        name: Forum
+        URL: 'https://forum.italia.it'
+        weight: 1
+      -
+        name: Docs
+        URL: 'https://docs.italia.it'
+        weight: 2
+      -
+        name: Developers
+        URL: 'https://developers.italia.it'
+        weight: 3
+      -
+        name: Designers
+        URL: 'https://designers.italia.it'
+        weight: 4
+
+    navbar:
+      -
+        name: Home
+        URL: '/'
+        weight: 1
+      -
+        name: Chi siamo
+        URL: '/chisiamo'
+        weight: 2
+      -
+        name: Perchè questo corso?
+        URL: '/why'
+        weight: 3
+      -
+        name: Episodi
+        URL: '/episodes'
+        weight: 4
+      -
+        name: Quiz
+        URL: '/quiz'
+        weight: 5

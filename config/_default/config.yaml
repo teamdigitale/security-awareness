@@ -1,0 +1,4 @@
+baseURL: 'https://teamdigitale.github.io/security-awareness/'
+theme: hugo-theme-bootstrap-italia
+DefaultContentLanguage: it
+publishDir: ./docs
