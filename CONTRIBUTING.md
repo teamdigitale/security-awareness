@@ -170,8 +170,6 @@ Now that you're done with the development branch, you're free to delete it.
 git branch -d newfeature
 ```
 
-
-
 **Copyright**
 
 Copyright 2017, Chase Pettit

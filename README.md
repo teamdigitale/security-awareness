@@ -5,6 +5,7 @@
 
 - [How to start](#how-to-start)
 - [How to contribute](#how-to-contribute)
+- [Translate the course](#translate-the-course)
 
 ![Security Awareness](https://teamdigitale.github.io/security-awareness/img/picture-home.png)
 
@@ -42,3 +43,24 @@ Web Server is available at http://localhost:1313/security-awareness/ (bind addre
 
 # How to contribute
 Contributions are always welcome! If you find some problems or glitches when using the app, we warmly encourage you to file an issue using GitHub's issue tracking feature. However, the CONTRIBUTING.md file located inside the root of the repo provides insightful details about how to collaborate in an efficient way with the community.
+
+# Translate the course
+If you want to add a language to this site, you can follow these steps:
+
+1. Add a language in the file `config/_default/languages.yaml`, for instance for Spanish:
+   ```
+   es:
+     urlPrefix: 'es/'
+     languageName: ESP
+     weight: 3
+     contentDir: content/es
+   ```
+2. Add an image with the flag of the corresponding language in `static/img/lang` with the proper name. For instance for Spanish: `ESP.png`
+
+3. Create a new file in the folder `i18n` (for instance `es.yaml`) by coping the English file `i18n/en.yaml` and translate all texts.
+
+4. Copy all the content of `content/en` folder to a new folder (for instance `content/es`) and proceed to translate all relevant texts.
+
+5. Test the correct translation of all parts.
+
+6. Create a pull request to propose the translation to the project maintainers.
