@@ -1,4 +1,43 @@
-baseURL: 'https://teamdigitale.github.io/security-awareness/'
 theme: hugo-theme-bootstrap-italia
 DefaultContentLanguage: it
 publishDir: ./docs
+
+menu:
+    navbar:
+      -
+        name: home-link
+        URL: '/'
+        weight: 1
+      -
+        name: who-we-are-link
+        URL: 'whoweare'
+        weight: 2
+      -
+        name: why-this-course-link
+        URL: 'why'
+        weight: 3
+      -
+        name: episodes-link
+        URL: 'episodes'
+        weight: 4
+      -
+        name: quiz-link
+        URL: 'quiz'
+        weight: 5
+    main:
+      -
+        name: Forum
+        URL: 'https://forum.italia.it'
+        weight: 1
+      -
+        name: Docs
+        URL: 'https://docs.italia.it'
+        weight: 2
+      -
+        name: Developers
+        URL: 'https://developers.italia.it'
+        weight: 3
+      -
+        name: Designers
+        URL: 'https://designers.italia.it'
+        weight: 4

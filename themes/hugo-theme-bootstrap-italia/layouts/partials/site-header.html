@@ -4,11 +4,11 @@
       <div class="row">
         <div class="col-12">
           <div class="it-header-slim-wrapper-content">
-            <a class="d-none d-lg-block navbar-brand" href="{{ .Site.Params.enteLink }}">{{ .Site.Params.ente }}</a>
+            <a class="d-none d-lg-block navbar-brand" href="{{ .Site.Params.enteLink }}">{{ T "ente" }}</a>
             <div class="nav-mobile">
               <nav>
                 <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale" role="button" aria-expanded="false" aria-controls="menu-principale">
-                  <span>{{ .Site.Params.ente }}</span>
+                  <span>{{ T "ente" }}</span>
                   <svg class="icon">
                     <use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-expand"></use>
                   </svg>
@@ -16,7 +16,7 @@
                 <div class="link-list-wrapper collapse" id="menu-principale">
                   <ul class="link-list">
                     {{ range .Site.Menus.main }}
-                    <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                    <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
                     {{ end}}
                   </ul>
                 </div>
@@ -68,8 +68,8 @@
                 <a href="{{ $.Site.BaseURL | relLangURL }}">
                   <img src="{{ $.Site.BaseURL }}img/sa-logo.png" alt="{{ .Site.Params.siteTitle }}" class="icon" />
                   <div class="it-brand-text">
-                    <h2 class="no_toc nomargin"> {{ .Site.Params.siteTitle }}</h2>
-                    <h3 class="no_toc d-none d-md-block nomargin">{{ .Site.Params.siteDescription }}</h3>
+                    <h2 class="no_toc nomargin"> {{ T "title"}}</h2>
+                    <h3 class="no_toc d-none d-md-block nomargin">{{ T "site-description" }}</h3>
                   </div>
                 </a>
               </div>
@@ -116,20 +116,20 @@
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                            {{ .Name }}
+                            {{ T .Name }}
                           </a>
                           <div class="dropdown-menu" >
                             {{ range .Children }}
-                            <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                            <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ T .Name }}</a>
                             {{ end }}
                           </div>
                         </li>
                         {{ else }}
                         <li class="nav-item">
                           {{ if eq $.Page.Params.curpage .Name }}
-                          <a class="nav-link font-weight-bold" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                          <a class="nav-link font-weight-bold" href="{{ .URL | absLangURL }}">{{ T .Name }}</a>
                           {{ else }}
-                          <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                          <a class="nav-link" href="{{ .URL | absLangURL }}">{{ T .Name }}</a>
                           {{ end }}
                         </li>
                       {{ end }}

@@ -158,6 +158,16 @@
   
   <url>
     <loc>https://teamdigitale.github.io/security-awareness/en/whoweare/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://teamdigitale.github.io/security-awareness/whoweare/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://teamdigitale.github.io/security-awareness/en/whoweare/"
+                />
   </url>
   
   <url>

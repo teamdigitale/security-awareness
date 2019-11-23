@@ -1,3 +1,36 @@
+enteLink: 'http://teamdigitale.governo.it/en/'
+footerColumn2Link: 'https://teamdigitale.governo.it/'
+
+footerColumn1Links:
+  -
+    label: home-link
+    url: '/'
+    weight: 1
+  -
+    label: who-we-are-link
+    url: 'whoweare'
+    weight: 2
+  -
+    label: why-this-course-link
+    url: 'why'
+    weight: 3
+  -
+    label: episodes-link
+    url: 'episodes'
+    weight: 4
+  -
+    label: quiz-link
+    url: 'quiz'
+    weight: 5
+
+footerBottomLinks:
+  -
+    label: legal-notes
+    url: '#'
+  -
+    label: privacy-policy
+    url: '#'
+
 socials:
   medium:
     name: Medium

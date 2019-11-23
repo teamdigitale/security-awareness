@@ -86,9 +86,6 @@
 </div>
 
 <script type="text/javascript">
-  document.head = document.head || document.getElementsByTagName('head')[0];
-  $('head').append('<link rel="stylesheet" href="{{ $.Site.BaseURL }}css/quiz.css" type="text/css" />');
-
   function nextQuestion(itemid) {
     if ($("input[name='question1']").filter(':checked').val() === undefined) {
       $("#warn-message").html('{{ T "answer-needed" }}');

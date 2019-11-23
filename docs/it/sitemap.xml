@@ -17,7 +17,17 @@
   </url>
   
   <url>
-    <loc>https://teamdigitale.github.io/security-awareness/chisiamo/</loc>
+    <loc>https://teamdigitale.github.io/security-awareness/whoweare/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://teamdigitale.github.io/security-awareness/en/whoweare/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://teamdigitale.github.io/security-awareness/whoweare/"
+                />
   </url>
   
   <url>

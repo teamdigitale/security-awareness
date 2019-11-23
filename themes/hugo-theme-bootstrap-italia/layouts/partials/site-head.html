@@ -3,7 +3,7 @@
 <meta name="description" content="">
 <meta name="author" content="Team per la Trasformazione Digitale">
 
-<title>{{ block "title" . }}{{ .Site.Params.title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+<title>{{ block "title" . }}{{ T "title" }}{{ end }}</title>
 
 <link rel="apple-touch-icon" sizes="57x57" href="{{ .Site.BaseURL }}img/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="{{ .Site.BaseURL }}img/apple-icon-60x60.png">
@@ -49,10 +49,10 @@
 <link rel="stylesheet" href="{{ $.Site.BaseURL }}css/bootstrap-italia.min.css" type="text/css" />
 <link rel="stylesheet" href="{{ $.Site.BaseURL }}css/main.css" type="text/css" />
 <link rel="stylesheet" href="{{ $.Site.BaseURL }}css/style.css" type="text/css" />
+<link rel="stylesheet" href="{{ $.Site.BaseURL }}css/quiz.css" type="text/css" />
 
 <!-- JQuery and Chart -->
 <script src="{{ $.Site.BaseURL }}js/jquery-3.1.1.min.js" type="text/javascript"></script>
-<!--script src="{{ $.Site.BaseURL }}js/chart-2.8.0.bundle.min.js" type="text/javascript"></script-->
-<script src="https://unpkg.com/rough-viz@1.0.4"></script>
+<script src="{{ $.Site.BaseURL }}js/rough-viz.js"></script>
 
 {{ template "_internal/google_analytics_async.html" . }}

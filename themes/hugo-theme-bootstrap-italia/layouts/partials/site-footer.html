@@ -5,7 +5,7 @@
       <section class="py-4">
         <div class="row">
           <div class="col-lg-6 pb-4">
-            <h4><a>{{ .Site.Params.footerColumn2Title }}</a></h4>
+            <h4><a>{{ T "footer-column2-title" }}</a></h4>
             <a href="{{ .Site.Params.footerColumn2Link }}">
               <div class="d-flex">
                 <div class="d-flex footer-team">
@@ -13,7 +13,7 @@
                   <img class="" src="{{ $.Site.BaseURL }}img/dt-logo.svg" alt="">
                 </div>
                 <div class="px-2 border-white border-left footer-team-text text-white">
-                  {{ .Site.Params.footerColumn2Text }}
+                  {{ T "footer-column2-text" }}
                 </div>
               </div>
             </a>
@@ -38,12 +38,12 @@
           </div>
 
           <div class="col-lg-6 pb-4">
-            <h4><a>{{ .Site.Params.footerColumn1Title }}</a></h4>
-            <p>{{ .Site.Params.footerColumn1Text }}</p>
+            <h4><a>{{ T "footer-column1-title" }}</a></h4>
+            <p>{{ T "footer-column1-text" }}</p>
             <div class="link-list-wrapper">
               <ul class="footer-list link-list clearfix">
                 {{ range .Site.Params.footerColumn1Links }}
-                  <li><a class="list-item" href="{{ $.Site.BaseURL }}{{ .url }}" title="{{ .label }}">{{ .label }}</a></li>
+                  <li><a class="list-item" href="{{ $.Site.BaseURL }}{{ .url }}" title="{{ T .label }}">{{ T .label }}</a></li>
                 {{ end }}
               </ul>
             </div>
@@ -57,7 +57,7 @@
       <h3 class="sr-only">{{ T "useful-link" }}</h3>
       <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
         {{ range .Site.Params.footerBottomLinks }}
-        <li class="list-inline-item"><a href="{{ $.Site.BaseURL }}{{ .url }}" title="{{ .label }}">{{ .label }}</a></li>
+        <li class="list-inline-item"><a href="{{ $.Site.BaseURL }}{{ .url }}" title="{{ T .label }}">{{ T .label }}</a></li>
         {{ end }}
       </ul>
     </div>
