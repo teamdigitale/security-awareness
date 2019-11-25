@@ -34,7 +34,7 @@ pm:
     title: Relazioni internazionali
     org: Team per la Trasformazione Digitale
     img: daniela_battisti.png
-    descr: Daniela ha un dottorato in studi classici ma è un’appassionata di tecnologia digitale. Daniela è a capo delle relazioni internazionali nel Team per la Trasformazione Digitale e la cybersecurity è una delle tante tematiche di cui si occupa a livello di policy.
+    descr: Ha un dottorato in studi classici ma è un’appassionata di tecnologia digitale. Daniela è a capo delle relazioni internazionali nel Team per la Trasformazione Digitale e la cybersecurity è una delle tante tematiche di cui si occupa a livello di policy.
   pm-6:
     name: Mirko Calvaresi
     title: Supporto sviluppo tecnico
@@ -59,7 +59,7 @@ others:
     title: Cyber defence manager
     org: PwC IT Services Europe GmbH
     img: andrea_lauria.png
-    descr: Responsabile della difesa informatica tecnicamente benestante, lavora per PwC dal 2018. Con 20 anni di esperienza lavorativa è noto per la protezione contro le intrusioni di sistema e di rete istituendo controlli di sicurezza, mantenendo la governance e rafforzando attrezzature e infrastrutture.
+    descr: Responsabile della sicurezza digitale, lavora dal 2018 per PwC. In 20 anni di esperienza sul campo si è distinto per le sue capacità e la passione nella protezione delle reti e dei sistemi informatici, per l’istituzione di controlli di sicurezza, la governance e l’hardening di asset e infrastrutture.
   others-4:
     name: Michele Lestingi
     title: IS Security Professional
