@@ -59,7 +59,7 @@ If you want to add a language to this site, you can follow these steps:
 
 3. Create a new file in the folder `i18n` (for instance `es.yaml`) by coping the English file `i18n/en.yaml` and translate all texts.
 
-4. Copy all the content of `content/en` folder to a new folder (for instance `content/es`) and proceed to translate all relevant texts.
+4. Copy all the content of `content/en` folder to a new folder (for instance `content/es`) and proceed to translate all relevant texts. All the vingettes and images can be found in a version without any text in the folder `images-languages`. You can use that version to add the texts in your language for transaltion.
 
 5. Test the correct translation of all parts.
 
