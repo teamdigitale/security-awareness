@@ -26,10 +26,10 @@ footerColumn1Links:
 footerBottomLinks:
   -
     label: legal-notes
-    url: '#'
+    url: 'legal'
   -
     label: privacy-policy
-    url: '#'
+    url: 'privacy'
 
 socials:
   medium:

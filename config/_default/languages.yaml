@@ -7,7 +7,7 @@ it:
 
 # Configuration for language English
 en:
-  urlPrefix: 'en/' 
+  urlPrefix: 'en/'
   languageName: ENG
   weight: 2
   contentDir: content/en

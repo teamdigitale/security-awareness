@@ -43,7 +43,7 @@
             <div class="link-list-wrapper">
               <ul class="footer-list link-list clearfix">
                 {{ range .Site.Params.footerColumn1Links }}
-                  <li><a class="list-item" href="{{ $.Site.BaseURL }}{{ .url }}" title="{{ T .label }}">{{ T .label }}</a></li>
+                  <li><a class="list-item" href="{{ .url | absLangURL }}" title="{{ T .label }}">{{ T .label }}</a></li>
                 {{ end }}
               </ul>
             </div>
@@ -57,7 +57,7 @@
       <h3 class="sr-only">{{ T "useful-link" }}</h3>
       <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
         {{ range .Site.Params.footerBottomLinks }}
-        <li class="list-inline-item"><a href="{{ $.Site.BaseURL }}{{ .url }}" title="{{ T .label }}">{{ T .label }}</a></li>
+        <li class="list-inline-item"><a href="{{ .url | absLangURL }}" title="{{ T .label }}">{{ T .label }}</a></li>
         {{ end }}
       </ul>
     </div>

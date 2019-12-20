@@ -6,7 +6,7 @@ menu:
     navbar:
       -
         name: home-link
-        URL: '/'
+        URL: ''
         weight: 1
       -
         name: who-we-are-link
