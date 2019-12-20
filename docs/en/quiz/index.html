@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Team per la Trasformazione Digitale">
+
+<title>Digital Security</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/apple-touch-icon.png">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://teamdigitale.github.io/security-awareness/icons/favicons/manifest.webmanifest">
+<link rel="mask-icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/safari-pinned-tab.svg" color="#0066CC">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/bootstrap-italia/favicon.ico">
+<meta name="msapplication-config" content="https://teamdigitale.github.io/security-awareness/icons/favicons/browserconfig.xml">
+<meta name="theme-color" content="#0066CC">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@teamdigitaleIT">
+<meta name="twitter:creator" content="Team per la Trasformazione Digitale">
+<meta name="twitter:title" content="Security Awareness">
+<meta name="twitter:description" content="Security Awareness">
+<meta name="twitter:image" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+
+<meta property="og:url" content="https://teamdigitale.github.io/security-awareness/">
+<meta property="og:title" content="Security Awareness">
+<meta property="og:description" content="Basic course on cyber security">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+<meta property="og:image:secure_url" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/bootstrap-italia.min.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/main.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/style.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/quiz.css" type="text/css" />
+
+
+<script src="https://teamdigitale.github.io/security-awareness/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="https://teamdigitale.github.io/security-awareness/js/rough-viz.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="it-header-wrapper">
+  <div class="it-header-slim-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="d-none d-lg-block navbar-brand" href="http://teamdigitale.governo.it/en/">Digital Transformation Team</a>
+            <div class="nav-mobile">
+              <nav>
+                <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale" role="button" aria-expanded="false" aria-controls="menu-principale">
+                  <span>Digital Transformation Team</span>
+                  <svg class="icon">
+                    <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menu-principale">
+                  <ul class="link-list">
+                    
+                    <li><a href="https://forum.italia.it">Forum</a></li>
+                    
+                    <li><a href="https://docs.italia.it">Docs</a></li>
+                    
+                    <li><a href="https://developers.italia.it">Developers</a></li>
+                    
+                    <li><a href="https://designers.italia.it">Designers</a></li>
+                    
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="header-slim-right-zone">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <span>ENG</span>
+                  <svg class="icon d-none d-lg-block">
+                    <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12 padleft">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          
+                          <li>
+                            <a class="list-item" href="https://teamdigitale.github.io/security-awareness/">
+                              <div class="avatar size-xs">
+                                <img src="https://teamdigitale.github.io/security-awareness/img/lang/ITA.png" alt="ITA">
+                              </div>
+
+                              <span>ITA</span>
+                            </a>
+                          </li>
+                          
+                          <li>
+                            <a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/">
+                              <div class="avatar size-xs">
+                                <img src="https://teamdigitale.github.io/security-awareness/img/lang/ENG.png" alt="ENG">
+                              </div>
+
+                              <span>ENG</span>
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="/security-awareness/en">
+                  <img src="https://teamdigitale.github.io/security-awareness/img/sa-logo.png" alt="" class="icon" />
+                  <div class="it-brand-text">
+                    <h2 class="no_toc nomargin"> Digital Security</h2>
+                    <h3 class="no_toc d-none d-md-block nomargin">for the Public Administration</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="it-right-zone">
+                <div class="it-socials d-none d-md-flex">
+                  <span>Follow us on</span>
+                  <ul>
+                    
+                      <li>
+                        <a href="https://github.com/teamdigitale/security-awareness" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-github"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.linkedin.com/company/teamdigitale" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://medium.com/team-per-la-trasformazione-digitale" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-medium"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://twitter.com/teamdigitaleIT" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-youtube"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="it-header-navbar-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg has-megamenu">
+              <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+                <svg class="icon">
+                  <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="nav10">
+                <div class="overlay"></div>
+                <div class="close-div sr-only">
+                  <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+                </div>
+                <div class="menu-wrapper">
+                  <ul class="navbar-nav">
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/">Home</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/whoweare">Who we are</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/why">Why this course?</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/episodes">Episodes</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/quiz">Quiz</a>
+                          
+                        </li>
+                      
+                     
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main>
+      
+<iframe name="hidden_iframe" id="hidden_iframe" class="hidden"></iframe>
+
+<div class="notification with-icon error" style="z-index: 1000" role="alert" aria-labelledby="missing-title" id="missing">
+  <h5 id="missing-title">
+    <svg class="icon"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-close-circle"></use></svg>
+    <span id="warn-message"></span>
+  </h5>
+</div>
+
+<div class="notification with-icon success" style="z-index: 1000" role="alert" aria-labelledby="uploaded-title" id="uploaded">
+  <h5 id="uploaded-title">
+    <svg class="icon"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-close-circle"></use></svg>
+    <span id="ok-message"></span>
+  </h5>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-8 my-5">
+      <h2>Self-assessment quiz</h2>
+      <div class="callout callout-highlight" id="message"><p>To verify the correct understanding and knowledge of the Security Awareness topics covered in this course, here it is possible to carry out a self-assessment quiz!</p></div>
+
+      <div id="result"></div>
+      <div id="doughnutChart"></div>
+
+      <form id="quiz">
+        
+        
+
+        
+          
+          
+
+          <div class="question " id="div_1">
+            
+            <p class="title_question">What is the "Clean Desk Policy"?</p>
+                    
+            <div class="shuffle">
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question1" id="question1_item1" type="checkbox" value="item1" />
+                      <label class="label_check" for="question1_item1" class="form-text">A prescription that requires you to clean the desk.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question1" id="question1_item2" type="checkbox" value="item2" />
+                      <label class="label_check" for="question1_item2" class="form-text">A prescription that asks you to keep your desk tidy.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question1" id="question1_item3" type="checkbox" value="item3" />
+                      <label class="label_check" for="question1_item3" class="form-text">A prescription that requires you not to leave sensitive material unattended on your desk.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question1" id="question1_item4" type="checkbox" value="item4" />
+                      <label class="label_check" for="question1_item4" class="form-text">A series of good practices, how to lock up sensitive documents before leaving the office.</label>
+                  </div>
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>1/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 1 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_2">
+            
+            <p class="title_question">The management program has two-factor authentication. Do you know what it is?</p>
+                    
+            <div class="shuffle">
+              
+                
+                  <div class="form-check valign">
+                      <input name="question10" id="question10_item1" type="radio" value="item1" required />
+                      <label class="label_check" for="question10_item1" class="form-text">It is an additional protection to the simple password, first enter the password and then a code generated by the token.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question10" id="question10_item2" type="radio" value="item2" required />
+                      <label class="label_check" for="question10_item2" class="form-text">It is a system that only wastes time.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question10" id="question10_item3" type="radio" value="item3" required />
+                      <label class="label_check" for="question10_item3" class="form-text">It is a system that authenticates twice on the management program, so if it is not used for some time, access lasts twice.</label>
+                  </div>
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>2/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 2 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_3">
+            
+            <p class="title_question">How to recognize a spear phishing email?</p>
+                    
+            <div class="shuffle">
+              
+                
+                  <div class="form-check valign">
+                      <input name="question11" id="question11_item1" type="radio" value="item1" required />
+                      <label class="label_check" for="question11_item1" class="form-text">A spear phishing email is deceptive to recognize because it is created based on the interests or activities of the victim and seems to come from a regular interlocutor. They can usually contain: an attachment, which often includes malware; a link to download a malware or insert access credentials or credit cards, or the text invites you to make a money transfer.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question11" id="question11_item2" type="radio" value="item2" required />
+                      <label class="label_check" for="question11_item2" class="form-text">A spear phishing email is always written in an ungrammatical and impersonal way.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question11" id="question11_item3" type="radio" value="item3" required />
+                      <label class="label_check" for="question11_item3" class="form-text">A spear phishing email always comes from an unknown sender. They can usually contain: an attachment, which often includes malware; a link from which you download malware or insert login credentials or credit cards; or the text invites to make a money transfer.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question11" id="question11_item4" type="radio" value="item4" required />
+                      <label class="label_check" for="question11_item4" class="form-text">An email of phishing phishing is an unwelcome advertising email.</label>
+                  </div>
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>3/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 3 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_4">
+            
+            <p class="title_question">What are the main differences between a phishing email and a spear phishing email?</p>
+                    
+            <div class="shuffle">
+              
+                
+                  <div class="form-check valign">
+                      <input name="question12" id="question12_item1" type="radio" value="item1" required />
+                      <label class="label_check" for="question12_item1" class="form-text">Spear phishing is an advanced version of phishing, through a communication modeled on the recipient of the communication, created by malicious users who have collected specific information, for example through social engineering techniques, specific research on the individual or organization to hit.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question12" id="question12_item2" type="radio" value="item2" required />
+                      <label class="label_check" for="question12_item2" class="form-text">Spear phishing unlike phishing is an unwanted email that contains advertising information received from a regular interlocutor.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question12" id="question12_item3" type="radio" value="item3" required />
+                      <label class="label_check" for="question12_item3" class="form-text">A spear phishing email is a sporadic communication, while a phishing email is a pervasive and continuous communication.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question12" id="question12_item4" type="radio" value="item4" required />
+                      <label class="label_check" for="question12_item4" class="form-text">There is no difference.</label>
+                  </div>
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>4/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 4 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_5">
+            
+            <p class="title_question">What is the risk resulting from an email spear phishing?</p>
+                    
+            <div class="shuffle">
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question13" id="question13_item1" type="checkbox" value="item1" />
+                      <label class="label_check" for="question13_item1" class="form-text">A spear phishing email aims to steal money through embezzlement or blackmail.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question13" id="question13_item2" type="checkbox" value="item2" />
+                      <label class="label_check" for="question13_item2" class="form-text">A spear phishing email aims to steal sensitive business data, damage reputation, espionage.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question13" id="question13_item3" type="checkbox" value="item3" />
+                      <label class="label_check" for="question13_item3" class="form-text">A spear phishing email through pervasive marketing campaigns induces the individual or company to invest in high-yield financial products.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question13" id="question13_item4" type="checkbox" value="item4" />
+                      <label class="label_check" for="question13_item4" class="form-text">A spear phishing email invites you to buy commercial products.</label>
+                  </div>
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>5/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 23%" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 5 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_6">
+            
+            <p class="title_question">What is the best behavior to keep in case you have the reasonable suspicion of having opened a suspicious attachment or link?</p>
+                    
+            <div class="shuffle">
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question14" id="question14_item1" type="checkbox" value="item1" />
+                      <label class="label_check" for="question14_item1" class="form-text">Immediately notify your manager and IT representative of the email received and the suspicious action performed, then turn off the computer.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question14" id="question14_item2" type="checkbox" value="item2" />
+                      <label class="label_check" for="question14_item2" class="form-text">Never disclose sensitive information unless you are certain that the source is legitimate and have the title to receive such information.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question14" id="question14_item3" type="checkbox" value="item3" />
+                      <label class="label_check" for="question14_item3" class="form-text">Send the email to a colleague to verify that even by opening the attachment or the link on his computer there is an anomalous behavior.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question14" id="question14_item4" type="checkbox" value="item4" />
+                      <label class="label_check" for="question14_item4" class="form-text">Click on the link or open the attachment from your smartphone instead of from your computer.</label>
+                  </div>
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>6/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 29%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 6 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_7">
+            
+            <p class="title_question">You are in front of a screen asking you to enter a new password, which of these are secure?</p>
+                    
+            <div class="shuffle">
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question15" id="question15_item1" type="checkbox" value="item1" />
+                      <label class="label_check" for="question15_item1" class="form-text">qwerty1234</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question15" id="question15_item2" type="checkbox" value="item2" />
+                      <label class="label_check" for="question15_item2" class="form-text">Password01</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question15" id="question15_item3" type="checkbox" value="item3" />
+                      <label class="label_check" for="question15_item3" class="form-text">H3pk7 @ 1!</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question15" id="question15_item4" type="checkbox" value="item4" />
+                      <label class="label_check" for="question15_item4" class="form-text">Giorgio11121985</label>
+                  </div>
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>7/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 7 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_8">
+            
+            <p class="title_question">The IT support installs the new version of the work management software. After doing its configurations it tells us our new password. To remember it quickly what do you do?</p>
+                    
+            <div class="shuffle">
+              
+                
+                  <div class="form-check valign">
+                      <input name="question16" id="question16_item1" type="radio" value="item1" required />
+                      <label class="label_check" for="question16_item1" class="form-text">I open my password manager and save it in my passwords.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question16" id="question16_item2" type="radio" value="item2" required />
+                      <label class="label_check" for="question16_item2" class="form-text">Phone the colleague and ask you to write it on the fly somewhere and then you will pass by to take it.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question16" id="question16_item3" type="radio" value="item3" required />
+                      <label class="label_check" for="question16_item3" class="form-text">Mark it on a post-it and hide it under the keyboard, it&#39;s the best way to remember it.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question16" id="question16_item4" type="radio" value="item4" required />
+                      <label class="label_check" for="question16_item4" class="form-text">Ask the support to leave the access without a password, so you can choose it later.</label>
+                  </div>
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>8/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 41%" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 8 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_9">
+            
+            <p class="title_question">What must a password have to be effective?</p>
+                    
+            <div class="shuffle">
+              
+                
+                  <div class="form-check valign">
+                      <input name="question17" id="question17_item1" type="radio" value="item1" required />
+                      <label class="label_check" for="question17_item1" class="form-text">It must be easy to remember.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question17" id="question17_item2" type="radio" value="item2" required />
+                      <label class="label_check" for="question17_item2" class="form-text">It must contain at least 8 numbers.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question17" id="question17_item3" type="radio" value="item3" required />
+                      <label class="label_check" for="question17_item3" class="form-text">It must be at least 8 characters long, contain upper and lower case letters and special characters.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question17" id="question17_item4" type="radio" value="item4" required />
+                      <label class="label_check" for="question17_item4" class="form-text">It must be easy to recover.</label>
+                  </div>
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>9/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 47%" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 9 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_10">
+            
+            <p class="title_question">You made a backup of confidential documents on a USB stick:</p>
+                    
+            <div class="shuffle">
+              
+                
+                  <div class="form-check valign">
+                      <input name="question2" id="question2_item1" type="radio" value="item1" required />
+                      <label class="label_check" for="question2_item1" class="form-text">Always carry it with you for greater security.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question2" id="question2_item2" type="radio" value="item2" required />
+                      <label class="label_check" for="question2_item2" class="form-text">You always leave it in the office.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question2" id="question2_item3" type="radio" value="item3" required />
+                      <label class="label_check" for="question2_item3" class="form-text">You should not create unauthorized backups.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question2" id="question2_item4" type="radio" value="item4" required />
+                      <label class="label_check" for="question2_item4" class="form-text">Leave it on your desk so you always have it available.</label>
+                  </div>
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>10/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 10 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_11">
+            
+            <p class="title_question">Select one or more places in the office where an attacker could access confidential data:</p>
+                    
+            <div class="shuffle">
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question3" id="question3_item1" type="checkbox" value="item1" />
+                      <label class="label_check" for="question3_item1" class="form-text">Waste bin.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question3" id="question3_item2" type="checkbox" value="item2" />
+                      <label class="label_check" for="question3_item2" class="form-text">Notebook notes.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question3" id="question3_item3" type="checkbox" value="item3" />
+                      <label class="label_check" for="question3_item3" class="form-text">Printer.</label>
+                  </div>
+                
+              
+                
+
+                
+                  <div class="form-check valign">
+                      <input name="question3" id="question3_item4" type="checkbox" value="item4" />
+                      <label class="label_check" for="question3_item4" class="form-text">USB flash drives.</label>
+                  </div>
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>11/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 11 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_12">
+            
+            <p class="title_question">Why is it important to adopt and follow the "Clean Desk Policy"?</p>
+                    
+            <div class="shuffle">
+              
+                
+
+                
+              
+                
+
+                
+              
+                
+
+                
+              
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>12/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 64%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 12 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_13">
+            
+            <p class="title_question">Do you know which legal text currently regulates and protects individuals with regard to the processing of personal data and the free circulation of such data?</p>
+                    
+            <div class="shuffle">
+              
+                
+                  <div class="form-check valign">
+                      <input name="question5" id="question5_item1" type="radio" value="item1" required />
+                      <label class="label_check" for="question5_item1" class="form-text">Yes it is the EU regulation 2016/679 also known as GDPR (General Data Protection Regulation).</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question5" id="question5_item2" type="radio" value="item2" required />
+                      <label class="label_check" for="question5_item2" class="form-text">Yes it is the EU regulation 2016/679 also known as GDPR (General Data Protection Regulation), but it does not apply to Public Administrations.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question5" id="question5_item3" type="radio" value="item3" required />
+                      <label class="label_check" for="question5_item3" class="form-text">Yes it is the Legislative Decree 196/2003 also known as the Privacy Code.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question5" id="question5_item4" type="radio" value="item4" required />
+                      <label class="label_check" for="question5_item4" class="form-text">Yes it is Legislative Decree 196/2003 also known as the Privacy Code, but it does not apply to Public Administrations.</label>
+                  </div>
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>13/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 13 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_14">
+            
+            <p class="title_question">The new management software is installed in the office, it allows access to more structured information, without having to go around to the right and left to verify the data of a practice, it is a nice step forward! Too bad it was developed out of the company network and that needs credentials different from those of the PC to use it ... You have to set the new password to use it, how do you proceed?</p>
+                    
+            <div class="shuffle">
+              
+                
+                  <div class="form-check valign">
+                      <input name="question6" id="question6_item1" type="radio" value="item1" required />
+                      <label class="label_check" for="question6_item1" class="form-text">When the new software asks you to create the password for your user, put the usual password you use for the PC, for gmail and for other services you use often, at least you are sure not to forget it!</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question6" id="question6_item2" type="radio" value="item2" required />
+                      <label class="label_check" for="question6_item2" class="form-text">When creating the new password, open your complex password management software, create a new one, and insert it, making sure it matches the one provided by the software... you won&#39;t remember it by heart, but it will be there when you need it!</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question6" id="question6_item3" type="radio" value="item3" required />
+                      <label class="label_check" for="question6_item3" class="form-text">Another password? uhm... you will use your secret technique that allows you to create long, complicated passwords, but only you can understand / remember. Your encoding is infallible, until now.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question6" id="question6_item4" type="radio" value="item4" required />
+                      <label class="label_check" for="question6_item4" class="form-text">The password &#34;unitedgo&#34; will be fine, and since it&#39;s the fourth time you change it, add a nice 4!</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question6" id="question6_item5" type="radio" value="item5" required />
+                      <label class="label_check" for="question6_item5" class="form-text">Check if your IT support manager has any recommendations on how to proceed, waiting for the application to be integrated with your local PC user, eliminating the need for another password!</label>
+                  </div>
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>14/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 14 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_15">
+            
+            <p class="title_question">You often use a specially modified password to always remember how to log in and not having to write your credentials around. Most of the password is the same, between the various sites, but some letters change to differentiate it according to the site. In the office you have to modify your credentials and this time it seems that the email is rather threatening, they recommend not using passwords that you already use, how do you behave?</p>
+                    
+            <div class="shuffle">
+              
+                
+                  <div class="form-check valign">
+                      <input name="question7" id="question7_item1" type="radio" value="item1" required />
+                      <label class="label_check" for="question7_item1" class="form-text">You decide that you will build a new, different password, which you will remember well, but which has nothing to do with the one you use for yourself.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question7" id="question7_item2" type="radio" value="item2" required />
+                      <label class="label_check" for="question7_item2" class="form-text">Use the password you remember, at least the base, and add the right sequence to remind you that this is the working one.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question7" id="question7_item3" type="radio" value="item3" required />
+                      <label class="label_check" for="question7_item3" class="form-text">You decide that the time has come to move to a more structured system and look for a tool for preserving digital credentials (password manager), to which you can entrust with a single password, all the others, making them more complex.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question7" id="question7_item4" type="radio" value="item4" required />
+                      <label class="label_check" for="question7_item4" class="form-text">Create credentials that do not use any of the previous passwords and since the e-mail is so threatening, lengthen the password by turning it into a pass phrase!</label>
+                  </div>
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>15/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 15 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_16">
+            
+            <p class="title_question">You are comfortably at your PC, check your corporate mail, at a certain point the following e-mail appears "Subject: confirmation of user password change management software you use every day". There is a button to proceed... what do you do?</p>
+                    
+            <div class="shuffle">
+              
+                
+                  <div class="form-check valign">
+                      <input name="question8" id="question8_item1" type="radio" value="item1" required />
+                      <label class="label_check" for="question8_item1" class="form-text">Follow the instructions and click, you will be presented with a form to enter the current password, and put it new. Remember that you have to change it for a while, then provide...</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question8" id="question8_item2" type="radio" value="item2" required />
+                      <label class="label_check" for="question8_item2" class="form-text">Open the email, in fact it seems to remind you that you have to change the password and some time has passed since you last remembered, open the email, click and change the password.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question8" id="question8_item3" type="radio" value="item3" required />
+                      <label class="label_check" for="question8_item3" class="form-text">Follow the link, change the password by adding the month and year number to the end of the one you remember well.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question8" id="question8_item4" type="radio" value="item4" required />
+                      <label class="label_check" for="question8_item4" class="form-text">Open the email in full screen, you never know, and read well if the email is sent from within the company or from outside and check the sender by reading the email address, then only if it comes back , click and see where the page sends you, checking also the web address that opens... in case of further suspicions call IT support... </label>
+                  </div>
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>16/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div class="mx-auto text-center">
+              <input type="button" class="btn btn-primary" value="Next question" onclick="nextQuestion( 16 )">
+            </div>
+            
+
+            
+          </div>
+        
+          
+          
+
+          <div class="question hidden" id="div_17">
+            
+            <p class="title_question">A colleague calls you and tells you that he has lost his credentials to access the management program. What do you do to help him?</p>
+                    
+            <div class="shuffle">
+              
+                
+                  <div class="form-check valign">
+                      <input name="question9" id="question9_item1" type="radio" value="item1" required />
+                      <label class="label_check" for="question9_item1" class="form-text">You give him your credentials, so you solve the problem quickly and he can work safely.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question9" id="question9_item2" type="radio" value="item2" required />
+                      <label class="label_check" for="question9_item2" class="form-text">Recommend him to call IT support to reset his accesses.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question9" id="question9_item3" type="radio" value="item3" required />
+                      <label class="label_check" for="question9_item3" class="form-text">If the &#34;recover password&#34; button is available, I advise you to use it, the email will arrive where you can change it. In that case you suggest him to enter a simple password such as the daughter&#39;s name and date of birth.</label>
+                  </div>
+                
+
+                
+              
+                
+                  <div class="form-check valign">
+                      <input name="question9" id="question9_item4" type="radio" value="item4" required />
+                      <label class="label_check" for="question9_item4" class="form-text">If the &#34;recover button&#34; is available, use it and to change the password using a password generated with its password manager software.</label>
+                  </div>
+                
+
+                
+              
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar-label"><span class="sr-only">Progresso </span>17/17</div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+
+            
+            <div class="mx-auto text-center">
+              <input type="submit" class="btn btn-primary" value="Send quiz for self evaluation">
+            </div>
+            
+          </div>
+        
+
+        <input type="hidden" id="quiztype" name="quiztype" value="finale">
+      </form>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function nextQuestion(itemid) {
+    if ($("input[name='question1']").filter(':checked').val() === undefined) {
+      $("#warn-message").html('Please, answer the question!');
+      notificationShow('missing', 6000);
+      return;
+    }
+    
+    $("#div_"+itemid).addClass("hidden");
+    $("#div_"+(itemid+1)).removeClass("hidden");
+  }
+
+  function showEsito(esito, responses) {
+    $("#message").addClass("hidden");
+
+    if (esito["passed"] == true) {
+      $('#result').addClass("alert alert-success");
+      $('#result').text('You have successfully passed the quiz!');
+
+      if ("success_rate" in esito) {
+        $("#doughnutChart").removeClass("hidden");
+
+        new roughViz.Donut({
+          element: '#doughnutChart',
+          legend: false,
+          data: {
+            labels: ['Passed the quiz', 'Failed the quiz'],
+            values: [esito['success_rate'] * 100, 100 - (esito['success_rate'] * 100)]
+          },
+          font: 'Anime Ace 2',
+          title: 'Quiz result',
+          labels: 'letter',
+          values: 'frequency',
+          titleFontSize: '1rem',
+          tooltipFontSize: '0.6rem',
+          colors: ['#0066cc', '#cacacc'],
+          fillWeight: 1.5,
+        });
+      }
+      return;
+    }
+    
+    $('#result').addClass("alert alert-danger");
+    $('#result').text('You haven\x27t passed the quiz, you made some errors...');
+    for (q in esito['errors']) {
+      var questionid = q.replace("question", "#div_");
+
+      $(".progress-bar-wrapper").addClass("hidden");
+      $(questionid).find("input[type='button']").addClass("hidden");
+      $(questionid).find("input").prop("disabled", true);
+
+      esito['errors'][q].split(',').forEach(function (a) {
+        $("#"+q+"_"+a).parent().addClass("wrong");
+      });
+
+      $(questionid).removeClass("hidden");
+    }
+  }
+
+  jQuery(document).ready(function($) {
+    var request;
+
+    $(function () {
+      $('.shuffle').each(function(i, obj) {
+        var parent = $(obj);
+        var divs = parent.children();
+        while (divs.length) {
+            parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+        }
+      });
+    });
+    
+    $("#quiz").submit(function(event) {
+      event.preventDefault();
+
+      $("#div_17").addClass("hidden");
+      $("#message").addClass("hidden");
+
+      if (request) request.abort();
+      
+      var $form = $(this);
+      var $inputs = $form.find("input, select, button, textarea");
+      
+      var arrayData = {};
+      var formData = $form.serializeArray();
+      formData.sort(function(a, b){
+        return a["value"] == b["value"] ? 0 : +(a["value"] > b["value"]) || -1;
+      });
+
+      formData.forEach(function(elem) {
+        var val = "";
+        if (elem["name"] in arrayData) {
+          val = arrayData[elem["name"]] + ",";
+        }
+        val += "" + elem["value"];
+        arrayData[elem["name"]] = val;
+      });
+      
+      var serializedData = $.param(arrayData);
+
+      $inputs.prop("disabled", true);
+      $('#result').html('<p>Sending quiz to server...</p>' +
+                        '<div class="progress-spinner progress-spinner-active"><span class="sr-only">...</span></div></div>');
+
+      request = $.ajax({
+        url: "https://script.google.com/a/teamdigitale.governo.it/macros/s/AKfycbwIWmC3tpgZSwBK_nK6JwmkVH2u23t0VLJkr4zszQ/exec",
+        type: "post",
+        data: serializedData,
+        target: '#hidden_iframe'
+      });
+    
+      request.done(function (response){
+        if (response.result == "error") {
+          $("#warn-message").html("We are experiencing a technical error.");
+          notificationShow('missing', 6000);
+          $('#result').text('We are experiencing a technical error.');
+        }
+        else {
+          $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Quiz submitted - see Google Sheet</a>');
+          notificationShow('uploaded', 6000);
+          showEsito(response['esito'], arrayData);
+        }
+      });
+    
+      request.fail(function (jqXHR, textStatus, errorThrown){
+        $("#warn-message").html("We are experiencing a technical error.: " + textStatus, errorThrown);
+        notificationShow('missing', 6000);
+        $('#result').text('We are experiencing a technical error.');
+      });
+    
+      request.always(function () {
+        $inputs.prop("disabled", false);
+      });
+    });
+  });
+</script>
+
+    </main>
+    
+<footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section class="py-4">
+        <div class="row">
+          <div class="col-lg-6 pb-4">
+            <h4><a>A project by</a></h4>
+            <a href="https://teamdigitale.governo.it/">
+              <div class="d-flex">
+                <div class="d-flex footer-team">
+                  <img class="" src="https://teamdigitale.github.io/security-awareness/img/governo.svg" alt="">
+                  <img class="" src="https://teamdigitale.github.io/security-awareness/img/dt-logo.svg" alt="">
+                </div>
+                <div class="px-2 border-white border-left footer-team-text text-white">
+                  DIGITAL TRANSFORMATION TEAM
+                </div>
+              </div>
+            </a>
+
+            <p>&nbsp;</p>
+          
+            <div class="pb-4">
+              <h4><a>Follow us on</a></h4>
+              <ul class="list-inline text-left social">
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://github.com/teamdigitale/security-awareness" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-github"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.linkedin.com/company/teamdigitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-linkedin"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://medium.com/team-per-la-trasformazione-digitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-medium"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://twitter.com/teamdigitaleIT" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-twitter"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-youtube"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pb-4">
+            <h4><a>Security Awareness</a></h4>
+            <p>A short course for digital security</p>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/en/" title="Home">Home</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/whoweare" title="Who we are">Who we are</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/why" title="Why this course?">Why this course?</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/episodes" title="Episodes">Episodes</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/quiz" title="Quiz">Quiz</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <h3 class="sr-only">Section Useful Links</h3>
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        
+        <li class="list-inline-item"><a href="https://teamdigitale.github.io/security-awareness/en/legal" title="Legal notes">Legal notes</a></li>
+        
+        <li class="list-inline-item"><a href="https://teamdigitale.github.io/security-awareness/en/privacy" title="Privacy Policy">Privacy Policy</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script>window.__PUBLIC_PATH__ = 'https:\/\/teamdigitale.github.io\/security-awareness\/fonts'</script>
+<script src="https://teamdigitale.github.io/security-awareness/js/bootstrap-italia.bundle.min.js"></script>
+</body>
+</html>
+
+  </body>
+</html>

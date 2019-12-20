@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Team per la Trasformazione Digitale">
+
+<title>Digital Security</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/apple-touch-icon.png">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://teamdigitale.github.io/security-awareness/icons/favicons/manifest.webmanifest">
+<link rel="mask-icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/safari-pinned-tab.svg" color="#0066CC">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/bootstrap-italia/favicon.ico">
+<meta name="msapplication-config" content="https://teamdigitale.github.io/security-awareness/icons/favicons/browserconfig.xml">
+<meta name="theme-color" content="#0066CC">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@teamdigitaleIT">
+<meta name="twitter:creator" content="Team per la Trasformazione Digitale">
+<meta name="twitter:title" content="Security Awareness">
+<meta name="twitter:description" content="Security Awareness">
+<meta name="twitter:image" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+
+<meta property="og:url" content="https://teamdigitale.github.io/security-awareness/">
+<meta property="og:title" content="Security Awareness">
+<meta property="og:description" content="Basic course on cyber security">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+<meta property="og:image:secure_url" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ENG.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/bootstrap-italia.min.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/main.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/style.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/quiz.css" type="text/css" />
+
+
+<script src="https://teamdigitale.github.io/security-awareness/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="https://teamdigitale.github.io/security-awareness/js/rough-viz.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="it-header-wrapper">
+  <div class="it-header-slim-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="d-none d-lg-block navbar-brand" href="http://teamdigitale.governo.it/en/">Digital Transformation Team</a>
+            <div class="nav-mobile">
+              <nav>
+                <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale" role="button" aria-expanded="false" aria-controls="menu-principale">
+                  <span>Digital Transformation Team</span>
+                  <svg class="icon">
+                    <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menu-principale">
+                  <ul class="link-list">
+                    
+                    <li><a href="https://forum.italia.it">Forum</a></li>
+                    
+                    <li><a href="https://docs.italia.it">Docs</a></li>
+                    
+                    <li><a href="https://developers.italia.it">Developers</a></li>
+                    
+                    <li><a href="https://designers.italia.it">Designers</a></li>
+                    
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="header-slim-right-zone">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <span>ENG</span>
+                  <svg class="icon d-none d-lg-block">
+                    <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12 padleft">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          
+                          <li>
+                            <a class="list-item" href="https://teamdigitale.github.io/security-awareness/">
+                              <div class="avatar size-xs">
+                                <img src="https://teamdigitale.github.io/security-awareness/img/lang/ITA.png" alt="ITA">
+                              </div>
+
+                              <span>ITA</span>
+                            </a>
+                          </li>
+                          
+                          <li>
+                            <a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/">
+                              <div class="avatar size-xs">
+                                <img src="https://teamdigitale.github.io/security-awareness/img/lang/ENG.png" alt="ENG">
+                              </div>
+
+                              <span>ENG</span>
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="/security-awareness/en">
+                  <img src="https://teamdigitale.github.io/security-awareness/img/sa-logo.png" alt="" class="icon" />
+                  <div class="it-brand-text">
+                    <h2 class="no_toc nomargin"> Digital Security</h2>
+                    <h3 class="no_toc d-none d-md-block nomargin">for the Public Administration</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="it-right-zone">
+                <div class="it-socials d-none d-md-flex">
+                  <span>Follow us on</span>
+                  <ul>
+                    
+                      <li>
+                        <a href="https://github.com/teamdigitale/security-awareness" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-github"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.linkedin.com/company/teamdigitale" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://medium.com/team-per-la-trasformazione-digitale" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-medium"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://twitter.com/teamdigitaleIT" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" aria-label="" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-youtube"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="it-header-navbar-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg has-megamenu">
+              <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+                <svg class="icon">
+                  <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="nav10">
+                <div class="overlay"></div>
+                <div class="close-div sr-only">
+                  <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+                </div>
+                <div class="menu-wrapper">
+                  <ul class="navbar-nav">
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/">Home</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/whoweare">Who we are</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/why">Why this course?</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/episodes">Episodes</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/en/quiz">Quiz</a>
+                          
+                        </li>
+                      
+                     
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main>
+      
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-8 my-5">
+      
+
+<h1 id="information-on-the-processing-of-personal-data">Information on the processing of personal data</h1>
+
+<p>This information describes the methods of processing of users&rsquo; personal data (hereinafter, also the &ldquo;Users&rdquo;) that consult the site <a href="https://teamdigitale.github.io/security -awareness /">teamdigitale.github.io/security-awareness</a> (hereinafter also the &ldquo;Site&rdquo;). The information is provided pursuant to art. 13 of the regulation (EU) <sup>2016</sup>&frasl;<sub>679</sub> (hereinafter the &ldquo;Regulation&rdquo;).</p>
+
+<p>The validity of the information contained in this page is limited to the Site only and does not extend to other websites that can be consulted through hypertext links.</p>
+
+<h1 id="data-controller">Data controller</h1>
+
+<p>The Data Controller is the Extraordinary Commissioner for the implementation of the Digital Agenda, based in Via della Mercede, 9 00187 Rome - Italy, email <a href="mailto: teamdigitale@governo.it">teamdigitale@governo.it</a>, which acts through its support structure (hereinafter jointly the &ldquo;<a href="https://teamdigitale.governo.it/">Digital Transformation Team</a>&rdquo; or just the &ldquo;Digital Team&rdquo;).</p>
+
+<p>The digital team has appointed its own Data Protection Officer, pursuant to art. 37 of EU Regulation <sup>2016</sup>&frasl;<sub>679</sub>, which can be contacted at the following address: <a href="mailto: dpo@teamdigitale.governo.it">dpo@teamdigitale.governo.it</a>.</p>
+
+<h1 id="categories-of-processed-data">Categories of processed data</h1>
+
+<h2 id="a-navigation-data">a) Navigation data</h2>
+
+<p>The computer systems and software procedures used to operate this site acquire, during their normal operation, some personal data whose transmission is implicit in the use of Internet communication protocols.</p>
+
+<p>This category of data includes IP addresses or domain names of computers and terminals used by users, the URI / URL (Uniform Resource Identifier / Locator) addresses of the requested resources, the time of the request, the method used in the submit the request to the server, the size of the file obtained in response, the numeric code indicating the status of the response given by the server (success, error, etc.) and other parameters relating to the operating system and the user&rsquo;s IT environment.</p>
+
+<p>These data, necessary for the use of web services, are also processed for the purpose of:</p>
+
+<ul>
+<li>obtain statistical information on the use of services (most visited pages, number of visitors by time or day, geographical areas of origin, etc.);</li>
+<li>check the correct functioning of the services offered.</li>
+</ul>
+
+<h2 id="b-data-provided-voluntarily-by-the-user">b) Data provided voluntarily by the User</h2>
+
+<p>The Owner will acquire the personal data that may be provided by the User through the Site in case of registration to one of the newsletter services, by filling in the forms available on the pages of the individual projects.</p>
+
+<p>In this case the personal data are provided by the User through a form to propose their candidacy. The sending of the data contained in the curriculum will be treated, also with the aid of IT tools, by the Digital Transformation Team of the Presidency of the Council of Ministers for the sole purpose of evaluating the candidacy and, possibly, contacting you. The User may request deletion of data at any time by writing to <a href="dpo@teamdigitale.governo.it">dpo@teamdigitale.governo.it</a>.</p>
+
+<h1 id="legal-basis-for-the-processing">Legal basis for the processing</h1>
+
+<p>The legal basis of this treatment is to be found in the institutional tasks entrusted to the commissioner structure, aimed at promoting knowledge, development and dissemination of the tools for implementing the digital agenda, in the specific case to provide information and updates on the activity and on the projects of the structure itself.</p>
+
+<p>The legal basis for processing only the data collected through analytical cookies is the consent of the User.</p>
+
+<h1 id="categories-of-subjects-to-whom-personal-data-can-be-communicated-and-the-purpose-of-communication">Categories of subjects to whom personal data can be communicated and the purpose of communication</h1>
+
+<p>The Data Controller may communicate, for the pursuit of the aforementioned purposes, some personal data also to third parties who provide a service to the owner himself and who will process said personal data as data processors.</p>
+
+<p>The list of data processors can be requested from the Data Controller at any time by writing to <a href="dpo@teamdigitale.governo.it">dpo@teamdigitale.governo.it</a>.</p>
+
+<h1 id="data-transfer-outside-the-eu">Data transfer outside the EU</h1>
+
+<p>Some of the third-party providers we use reside in the USA. We have entered into service agreements with these suppliers pursuant to art. 28 of the Regulation. All suppliers are in compliance with the Regulations and, when they are not certified Privacy Shield, we have concluded with them the Contractual Clauses of the European Commission to guarantee adequate levels of protection.</p>
+
+<h1 id="rights-of-interested-parties">Rights of interested parties</h1>
+
+<p>Interested parties have the right to obtain, in the cases provided, access to their personal data and the correction or cancellation of the same or the limitation of the treatment that concerns them or to oppose the processing (articles 15 and following of the Regulations) .</p>
+
+<p>These requests may be addressed to the Data Controller by writing to [dpo@teamdigitale.governo.it] (dpo@teamdigitale.governo.it.</p>
+
+<h1 id="claims">Claims</h1>
+
+<p>Interested parties who consider that the processing of personal data referring to them carried out through this site is in violation of the provisions of the Regulations have the right to lodge a complaint with the Guarantor, as envisaged by art. 77 of the same Regulation, or to take the appropriate judicial seats (art. 79 of the Regulation).</p>
+
+<p><center><i>Last update: 09/10/2019</i></center></p>
+
+    </div>
+  </div>
+</div>
+
+    </main>
+    
+<footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section class="py-4">
+        <div class="row">
+          <div class="col-lg-6 pb-4">
+            <h4><a>A project by</a></h4>
+            <a href="https://teamdigitale.governo.it/">
+              <div class="d-flex">
+                <div class="d-flex footer-team">
+                  <img class="" src="https://teamdigitale.github.io/security-awareness/img/governo.svg" alt="">
+                  <img class="" src="https://teamdigitale.github.io/security-awareness/img/dt-logo.svg" alt="">
+                </div>
+                <div class="px-2 border-white border-left footer-team-text text-white">
+                  DIGITAL TRANSFORMATION TEAM
+                </div>
+              </div>
+            </a>
+
+            <p>&nbsp;</p>
+          
+            <div class="pb-4">
+              <h4><a>Follow us on</a></h4>
+              <ul class="list-inline text-left social">
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://github.com/teamdigitale/security-awareness" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-github"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.linkedin.com/company/teamdigitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-linkedin"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://medium.com/team-per-la-trasformazione-digitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-medium"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://twitter.com/teamdigitaleIT" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-twitter"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-youtube"></use>
+                    </svg>
+                    <span class="sr-only"></span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pb-4">
+            <h4><a>Security Awareness</a></h4>
+            <p>A short course for digital security</p>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/en/" title="Home">Home</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/whoweare" title="Who we are">Who we are</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/why" title="Why this course?">Why this course?</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/episodes" title="Episodes">Episodes</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/quiz" title="Quiz">Quiz</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <h3 class="sr-only">Section Useful Links</h3>
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        
+        <li class="list-inline-item"><a href="https://teamdigitale.github.io/security-awareness/en/legal" title="Legal notes">Legal notes</a></li>
+        
+        <li class="list-inline-item"><a href="https://teamdigitale.github.io/security-awareness/en/privacy" title="Privacy Policy">Privacy Policy</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script>window.__PUBLIC_PATH__ = 'https:\/\/teamdigitale.github.io\/security-awareness\/fonts'</script>
+<script src="https://teamdigitale.github.io/security-awareness/js/bootstrap-italia.bundle.min.js"></script>
+</body>
+</html>
+
+  </body>
+</html>
