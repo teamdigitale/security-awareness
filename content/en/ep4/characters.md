@@ -6,8 +6,8 @@ characters:
     description: "Carla is Ludovica's assistant. He divides his time between his duties in the office (really many) and his second \"job\" as a mother, trying to be as present as possible in the family."
     image: "characters/Carla.png"
   character-2:
-    name: 'Francesco, the brilliant colleague'
-    description: "Francesco, friend of Carla's, employee for the Municipality of Mangialarancia."
+    name: 'Francesco, Carla''s friend'
+    description: "Pleasant, cheerful, sporty, incurably optimistic. Francesco is Carla's friend. He works in the small town of Mangialarancia, where the two live."
     image: "characters/Francesco.png"
   character-3:
     name: 'Luca, Carla''s son'

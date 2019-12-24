@@ -6,8 +6,8 @@ characters:
     description: "Carla è l’assistente di Ludovica. Si divide tra gli impegni in ufficio (davvero tanti) e il suo secondo \"lavoro\" di mamma, cercando di essere quanto più presente in famiglia."
     image: "characters/Carla.png"
   character-2:
-    name: 'Francesco, il collega brillante'
-    description: "Francesco, amico di Carla, dipendente del Comune di Mangialarancia."
+    name: 'Francesco, l''amico di Carla' 
+    description: "Simpatico, allegro, sportivo, inguaribile ottimista. Francesco è amico di Carla. Lavora nel piccolo Comune di Mangialarancia, dove i due abitano."
     image: "characters/Francesco.png"
   character-3:
     name: 'Luca, figlio di Carla'
