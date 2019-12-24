@@ -2,8 +2,8 @@
 name: "I personaggi della storia"
 characters:
   character-1:
-    name: 'Francesco, il marito di Carla' 
-    description: "Simpatico, allegro, sportivo, inguaribile ottimista. Francesco è il marito di Carla. Lavora nel piccolo Comune di Mangialarancia, dove i due abitano."
+    name: 'Francesco, l''amico di Carla' 
+    description: "Simpatico, allegro, sportivo, inguaribile ottimista. Francesco è amico di Carla. Lavora nel piccolo Comune di Mangialarancia, dove i due abitano."
     image: "characters/Francesco.png"
   character-2:
     name: 'Il sindaco di Mangialarancia'

@@ -2,8 +2,8 @@
 name: "The characters of the story"
 characters:
   character-1:
-    name: 'Francesco, Carla''s husband' 
-    description: "Pleasant, cheerful, sporty, incurably optimistic. Francesco is Carla's husband. He works in the small town of Mangialarancia, where the two live."
+    name: 'Francesco, Carla''s friend'
+    description: "Pleasant, cheerful, sporty, incurably optimistic. Francesco is Carla's friend. He works in the small town of Mangialarancia, where the two live."
     image: "characters/Francesco.png"
   character-2:
     name: 'The mayor of Mangialarancia'
