@@ -4,7 +4,7 @@
     <div class="col col-lg-8 my-5">
       {{ ( .Page.Resources.GetMatch "intro.md" ).Content }}
 
-      <h2 id="i-personaggi">{{ ( .Page.Resources.GetMatch "characters.md" ).Params.name }}</h2>
+      <h2 id="i-characters">{{ ( .Page.Resources.GetMatch "characters.md" ).Params.name }}</h2>
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col-1 align-self-center">
@@ -47,7 +47,7 @@
         </div>
       </div>
 
-      <h2 id="la-storia">{{ ( .Page.Resources.GetMatch "story.md" ).Params.name }}</h2>
+      <h2 id="the-story">{{ ( .Page.Resources.GetMatch "story.md" ).Params.name }}</h2>
       <div class="it-grid-list-wrapper">
         <div class="grid-row" style="justify-content: center;">
           {{ range ( .Page.Resources.GetMatch "story.md" ).Params.vignettes }}
@@ -64,7 +64,7 @@
         </div>
       </div>
       
-      <h2 id="glossario">{{ ( .Page.Resources.GetMatch "glossary.md" ).Params.name }}</h2>
+      <h2 id="glossary">{{ ( .Page.Resources.GetMatch "glossary.md" ).Params.name }}</h2>
       {{ $title := ( .Page.Resources.GetMatch "glossary.md" ).Params.title }}
       {{ range ( .Page.Resources.GetMatch "glossary.md" ).Params.terms }}
       <div> 
@@ -86,17 +86,17 @@
       </div>
       {{ end }}
 
-      <h2 id="link">{{ ( .Page.Resources.GetMatch "lesson.md" ).Params.name }}</h2>
+      <h2 id="lesson-learnt">{{ ( .Page.Resources.GetMatch "lesson.md" ).Params.name }}</h2>
       <div class="callout callout-highlight note" style="max-width: 100% !important;">
         <div class="callout-title"><svg class="icon"><use xlink:href="{{ $.Site.BaseURL }}svg/sprite.svg#it-info-circle"></use></svg>{{ T "important" }}</div>
         {{ ( .Page.Resources.GetMatch "lesson.md" ).Content }}
       </div>
 
-      <h2 id="link">{{ ( .Page.Resources.GetMatch "actions.md" ).Params.name }}</h2>
+      <h2 id="actions">{{ ( .Page.Resources.GetMatch "actions.md" ).Params.name }}</h2>
       {{ ( .Page.Resources.GetMatch "actions.md" ).Content }}
 
       {{ if ( .Page.Resources.GetMatch "links.md" ).Params.links }}
-        <h2 id="link">{{ ( .Page.Resources.GetMatch "links.md" ).Params.name }}</h2>
+        <h2 id="links">{{ ( .Page.Resources.GetMatch "links.md" ).Params.name }}</h2>
         <div class="it-list-wrapper">
           <ul class="it-list">
             {{ range ( .Page.Resources.GetMatch "links.md" ).Params.links }}
