@@ -46,7 +46,9 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="col col-lg-12">
       <h2 id="the-story">{{ ( .Page.Resources.GetMatch "story.md" ).Params.name }}</h2>
       <div class="it-grid-list-wrapper">
         <div class="grid-row" style="justify-content: center;">
@@ -63,7 +65,9 @@
           {{ end }}
         </div>
       </div>
+    </div>
       
+    <div class="col col-lg-8">
       <h2 id="glossary">{{ ( .Page.Resources.GetMatch "glossary.md" ).Params.name }}</h2>
       {{ $title := ( .Page.Resources.GetMatch "glossary.md" ).Params.title }}
       {{ range ( .Page.Resources.GetMatch "glossary.md" ).Params.terms }}

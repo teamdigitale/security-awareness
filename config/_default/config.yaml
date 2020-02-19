@@ -41,3 +41,8 @@ menu:
         name: Designers
         URL: 'https://designers.italia.it'
         weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
