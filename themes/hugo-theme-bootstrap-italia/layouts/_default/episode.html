@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="container">
   <div class="row">
-    <div class="col col-lg-8 my-5">
+    <div class="col-12 col-lg-8 my-5">
       {{ ( .Page.Resources.GetMatch "intro.md" ).Content }}
       <h2 id="i-characters">{{ ( .Page.Resources.GetMatch "characters.md" ).Params.name }}</h2>
       <div class="container">
@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <div class="col col-lg-12">
+    <div class="col-12">
       <h2 id="the-story">{{ ( .Page.Resources.GetMatch "story.md" ).Params.name }}</h2>
       <div class="it-grid-list-wrapper">
         <div class="grid-row" style="justify-content: center;">
@@ -66,7 +66,7 @@
       </div>
     </div>
 
-    <div class="col col-lg-8">
+    <div class="col-12 col-lg-8">
       <h2 id="glossary">{{ ( .Page.Resources.GetMatch "glossary.md" ).Params.name }}</h2>
       {{ $title := ( .Page.Resources.GetMatch "glossary.md" ).Params.title }}
       {{ range ( .Page.Resources.GetMatch "glossary.md" ).Params.terms }}
