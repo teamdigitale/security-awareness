@@ -3,7 +3,6 @@
   <div class="row">
     <div class="col col-lg-8 my-5">
       {{ ( .Page.Resources.GetMatch "intro.md" ).Content }}
-
       <h2 id="i-characters">{{ ( .Page.Resources.GetMatch "characters.md" ).Params.name }}</h2>
       <div class="container">
         <div class="row justify-content-md-center">
@@ -66,12 +65,12 @@
         </div>
       </div>
     </div>
-      
+
     <div class="col col-lg-8">
       <h2 id="glossary">{{ ( .Page.Resources.GetMatch "glossary.md" ).Params.name }}</h2>
       {{ $title := ( .Page.Resources.GetMatch "glossary.md" ).Params.title }}
       {{ range ( .Page.Resources.GetMatch "glossary.md" ).Params.terms }}
-      <div> 
+      <div>
         <div class="card-wrapper card-space">
           <div class="card card-bg card-big border-bottom-card glossary">
             <div class="flag-icon"></div>
