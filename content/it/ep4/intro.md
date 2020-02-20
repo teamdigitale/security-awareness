@@ -1,5 +1,8 @@
-<h1 class="otherpages">Episodio 4</h1>
-<h2 class="home">Ransomware</h2>
+---
+---
+
+# Episodio 4 {.otherpages}
+## Ransomware {.home}
 
 In questo episodio scopriamo un’altro “nemico della sicurezza”: <b>l’obsolescenza dei sistemi e dei software</b>.
 
