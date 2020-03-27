@@ -77,6 +77,12 @@ others:
     org: Poste italiane
     img: antonio_zindato.png
     descr: Antonio è un responsabile della sicurezza ICT con 18 anni di esperienza nella sicurezza delle informazioni, nella rete e nella gestione degli incidenti. Ha lavorato per la più grande compagnia di telecomunicazioni in Italia e oggi è un gestore di incidenti per la più grande compagnia di servizi postali, bancari e assicurativi in ​​Italia.
+   others-7:
+    name: Stefano Orciari
+    title: Head of security e fraud management
+    org: Communication Valley Reply
+    img: orciari_stefano.png
+    descr: Stefano è appassionato di tecnologia e matematica fin dalla giovane età. Si specializza in sicurezza e crittografia, conseguendo nel 2008 il Dottorato di Ricerca. Da più di 10 anni lavora e coordina numerosi progetti nel campo della sicurezza informatica. Attualmente è responsabile della Business Unit Cloud Security e Fraud Management di Communication Valley Reply. 
 ---
 
 Siamo un gruppo di **sviluppatori, designer ed esperti di sicurezza digitale** con l’obiettivo di creare un corso di sicurezza digitale per la Pubblica Amministrazione che sia intuitivo, divertente ed accessibile per tutti. Il corso di sicurezza digitale nasce da un’idea del [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/).
