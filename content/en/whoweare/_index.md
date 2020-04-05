@@ -77,6 +77,12 @@ others:
     org: Poste italiane
     img: antonio_zindato.png
     descr: Antonio is a ICT security manager with 18 years of experience in information security, network and incident handling. After working for the biggest telco company in Italy, today he is a incident handler for the lead Italian company of postal, banking and insurance services.
+  others-7:
+    name: Stefano Orciari
+    title: Head of security e fraud management
+    org: Communication Valley Reply
+    img: stefano_orciari.png
+    descr: Stefano has been technology and mathematics enthusiast since he was young. He received his Phd in Computer Science in 2008 focusing his research efforts on security and cryptography. He has been working and coordinating numerous projects in IT security for more than 10 years. He is currently in charge of the Cloud Security and Fraud Management Business Unit of Communication Valley Reply.
 ---
 
 We are a group of **developers, designers and digital security experts** with the aim of creating a digital security course for the Public Administration that is intuitive, fun and accessible for everyone. The digital security course stems from an idea of the [Digital Transformation Team](https://teamdigitale.governo.it/en).
