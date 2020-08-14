@@ -1546,9 +1546,9 @@
     
       request.done(function (response){
         if (response.result == "error") {
-          $("#warn-message").html("C\x27è stato un errore tecnico.");
+          $("#warn-message").html("C\u0027è stato un errore tecnico.");
           notificationShow('missing', 6000);
-          $('#result').text('C\x27è stato un errore tecnico.');
+          $('#result').text('C\u0027è stato un errore tecnico.');
         }
         else {
           $("#ok-message").html('<a href="https://docs.google.com/spreadsheets/d/1Yiz5JL7N36SQFbhpnuicSeS259mRfTzHy4XR4VKUvRc/edit#gid=0" target="_blank">Quiz inviato - vedi il Google Sheet</a>');
@@ -1558,9 +1558,9 @@
       });
     
       request.fail(function (jqXHR, textStatus, errorThrown){
-        $("#warn-message").html("C\x27è stato un errore tecnico.: " + textStatus, errorThrown);
+        $("#warn-message").html("C\u0027è stato un errore tecnico.: " + textStatus, errorThrown);
         notificationShow('missing', 6000);
-        $('#result').text('C\x27è stato un errore tecnico.');
+        $('#result').text('C\u0027è stato un errore tecnico.');
       });
     
       request.always(function () {

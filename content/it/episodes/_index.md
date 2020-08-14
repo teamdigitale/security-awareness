@@ -23,6 +23,16 @@ episodes:
     title: "Ransomware" 
     image: "ep4_cover.png"
     url: "ep4"
+  episode-5:
+      name: "Episodio 5"
+      title: "File Sharing" 
+      image: "ep5_cover.png"
+      url: "ep5"
+  episode-6:
+      name: "Episodio 6"
+      title: "Web Browsing" 
+      image: "ep6_cover.png"
+      url: "ep6"
 ---
 
 <h1 class="otherpages">Episodi</h1>

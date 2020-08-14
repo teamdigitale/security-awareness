@@ -35,4 +35,4 @@ This course is designed for Public Administration employees but is suitable for 
 - help protect the privacy, availability and integrity of your organization's data.
 
 
-<center><a href="episodes" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Vai agli episodi</a></center>
+<center><a href="episodes" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Go to the episodes</a></center>
