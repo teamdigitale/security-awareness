@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Team per la Trasformazione Digitale">
+
+<title>Sicurezza Digitale</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://teamdigitale.github.io/security-awareness/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://teamdigitale.github.io/security-awareness/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/apple-touch-icon.png">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://teamdigitale.github.io/security-awareness/icons/favicons/manifest.webmanifest">
+<link rel="mask-icon" href="https://teamdigitale.github.io/security-awareness/icons/favicons/safari-pinned-tab.svg" color="#0066CC">
+<link rel="icon" href="https://teamdigitale.github.io/security-awareness/bootstrap-italia/favicon.ico">
+<meta name="msapplication-config" content="https://teamdigitale.github.io/security-awareness/icons/favicons/browserconfig.xml">
+<meta name="theme-color" content="#0066CC">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@teamdigitaleIT">
+<meta name="twitter:creator" content="Team per la Trasformazione Digitale">
+<meta name="twitter:title" content="Security Awareness">
+<meta name="twitter:description" content="Security Awareness">
+<meta name="twitter:image" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ITA.png">
+
+<meta property="og:url" content="https://teamdigitale.github.io/security-awareness/">
+<meta property="og:title" content="Security Awareness">
+<meta property="og:description" content="Basic course on cyber security">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ITA.png">
+<meta property="og:image:secure_url" content="https://teamdigitale.github.io/security-awareness/icons/SA_card_ITA.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/bootstrap-italia.min.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/main.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/style.css" type="text/css" />
+<link rel="stylesheet" href="https://teamdigitale.github.io/security-awareness/css/quiz.css" type="text/css" />
+
+
+<script src="https://teamdigitale.github.io/security-awareness/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="https://teamdigitale.github.io/security-awareness/js/rough-viz.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="it-header-wrapper">
+  <div class="it-header-slim-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="d-none d-lg-block navbar-brand" href="http://teamdigitale.governo.it/en/">Team per la Trasformazione Digitale</a>
+            <div class="nav-mobile">
+              <nav>
+                <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale" role="button" aria-expanded="false" aria-controls="menu-principale">
+                  <span>Team per la Trasformazione Digitale</span>
+                  <svg class="icon">
+                    <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menu-principale">
+                  <ul class="link-list">
+                    
+                    <li><a href="https://forum.italia.it">Forum</a></li>
+                    
+                    <li><a href="https://docs.italia.it">Docs</a></li>
+                    
+                    <li><a href="https://developers.italia.it">Developers</a></li>
+                    
+                    <li><a href="https://designers.italia.it">Designers</a></li>
+                    
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="header-slim-right-zone">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <span>ITA</span>
+                  <svg class="icon d-none d-lg-block">
+                    <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12 padleft">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          
+                          <li>
+                            <a class="list-item" href="https://teamdigitale.github.io/security-awareness/">
+                              <div class="avatar size-xs">
+                                <img src="https://teamdigitale.github.io/security-awareness/img/lang/ITA.png" alt="ITA">
+                              </div>
+
+                              <span>ITA</span>
+                            </a>
+                          </li>
+                          
+                          <li>
+                            <a class="list-item" href="https://teamdigitale.github.io/security-awareness/en/">
+                              <div class="avatar size-xs">
+                                <img src="https://teamdigitale.github.io/security-awareness/img/lang/ENG.png" alt="ENG">
+                              </div>
+
+                              <span>ENG</span>
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="/security-awareness">
+                  <img src="https://teamdigitale.github.io/security-awareness/img/sa-logo.png" alt="" class="icon" />
+                  <div class="it-brand-text">
+                    <h2 class="no_toc nomargin"> Sicurezza Digitale</h2>
+                    <h3 class="no_toc d-none d-md-block nomargin">per la Pubblica Amministrazione</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="it-right-zone">
+                <div class="it-socials d-none d-md-flex">
+                  <span>Seguici su</span>
+                  <ul>
+                    
+                      <li>
+                        <a href="https://github.com/teamdigitale/security-awareness" aria-label="GitHub" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-github"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.linkedin.com/company/teamdigitale" aria-label="LinkedIn" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://medium.com/team-per-la-trasformazione-digitale" aria-label="Medium" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-medium"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://twitter.com/teamdigitaleIT" aria-label="Twitter" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" aria-label="YouTube" target="_blank">
+                          <svg class="icon">
+                            <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-youtube"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="it-header-navbar-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg has-megamenu">
+              <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+                <svg class="icon">
+                  <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="nav10">
+                <div class="overlay"></div>
+                <div class="close-div sr-only">
+                  <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+                </div>
+                <div class="menu-wrapper">
+                  <ul class="navbar-nav">
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/">Home</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/whoweare">Chi siamo</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/why">Perchè questo corso?</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/episodes">Episodi</a>
+                          
+                        </li>
+                      
+                     
+                      
+                        <li class="nav-item">
+                          
+                          <a class="nav-link" href="https://teamdigitale.github.io/security-awareness/quiz">Quiz</a>
+                          
+                        </li>
+                      
+                     
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main>
+      
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-8 my-5">
+      <h1 class="otherpages" id="episodio-5">Episodio 5</h1>
+<h2 class="home" id="file-sharing">File Sharing</h2>
+<p>In questo episodio scopriamo un’altro “nemico della sicurezza”: <b>da scrivere</b>.</p>
+<p>da scrivere</p>
+
+      <h2 id="i-characters">I personaggi della storia</h2>
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-1 align-self-center">
+            <a class="customPrevBtn carousel-control left" onclick="$('#personaggi').trigger('prev.owl.carousel')">
+              <img src="https://teamdigitale.github.io/security-awareness/img/prev.png" alt="&lt;" style="cursor: pointer" />
+            </a>
+          </div>
+          <div class="col-10">
+            <div class="it-carousel-wrapper it-carousel-landscape-abstract">
+              <div class="it-carousel-all owl-carousel" id="personaggi">
+                
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Carla.png" title="L&#39;assistente Carla" alt="L&#39;assistente Carla" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading comicfont"><small>L&#39;assistente Carla</small></h5>
+                          <p class="card-text">Carla è l’assistente di Ludovica. Si divide tra gli impegni in ufficio (davvero tanti) e il suo secondo &#34;lavoro&#34; di mamma, cercando di essere quanto più presente in famiglia.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Francesco.png" title="Francesco, l&#39;amico di Carla" alt="Francesco, l&#39;amico di Carla" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading comicfont"><small>Francesco, l&#39;amico di Carla</small></h5>
+                          <p class="card-text">Simpatico, allegro, sportivo, inguaribile ottimista. Francesco è amico di Carla. Lavora nel piccolo Comune di Mangialarancia, dove i due abitano.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Giorgio.png" title="Giorgio, il collega dubbioso" alt="Giorgio, il collega dubbioso" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading comicfont"><small>Giorgio, il collega dubbioso</small></h5>
+                          <p class="card-text">Giorgio è un vero antipatico. È sempre insicuro e pone continuamente dubbi e difficoltà pronto a sottolineare ogni errore degli altri in modo non costruttivo. Davvero il collega che non vorresti avere!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="it-single-slide-wrapper">
+                  <a style="flex-basis: 30% !important">
+                    <div class="img-responsive-wrapper">
+                      <div class="img-responsive">
+                        <div class="img-wrapper"><img src="characters/Marta.png" title="Marta, la collega di Francesco" alt="Marta, la collega di Francesco" class="character"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="it-text-slider-wrapper-outside" style="flex-basis: 70% !important">
+                    <div class="card-wrapper">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title big-heading comicfont"><small>Marta, la collega di Francesco</small></h5>
+                          <p class="card-text">Marta è una timida dipendente del Comune di Mangialarancia, lavora nello stesso ufficio di Francesco. In questo episodio scopriremo però che ha davvero delle qualità nascoste...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-1 align-self-center">
+              <a class="customNextBtn carousel-control left" onclick="$('#personaggi').trigger('next.owl.carousel')">
+                <img src="https://teamdigitale.github.io/security-awareness/img/next.png" alt="&gt;" style="cursor: pointer" />
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <h2 id="the-story">La storia</h2>
+      <div class="it-grid-list-wrapper">
+        <div class="grid-row" style="justify-content: center;">
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v01.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v02.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v03.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v04.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v05.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v06.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v07.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v08.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v09.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v10.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v11.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v12.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v13.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v14.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v15.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v16.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v17.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v18.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4 col-md-6 vignettes">
+              <div class="it-grid-item-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper"><img src="vignettes/e5v19.png" alt="vignetta" title="Vignetta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-8">
+      <h2 id="glossary">Glossario</h2>
+      
+      
+      <div>
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>File Sharing</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Cloud</h5>
+              <p class="card-text">Cos’è il cloud? Qualcuno direbbe&colon; “Il computer di qualcun altro!”. In realtà dobbiamo immaginare il cloud come un insieme di molti computer che sono collegati fra loro in modo così stretto, da apparire un unico grande centro di elaborazione, di cui ogni utente utilizza solo una piccola parte. Ha diverse declinazioni, privato, ibrido e pubblico, ma la sua natura non cambia&colon; risorse condivise suddivise logicamente tra utenti diversi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>File Sharing</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Online document sharing</h5>
+              <p class="card-text">I sistemi di “Condivisione di Documenti Online” o meglio di “Gestione Documentale”, sono sistemi che permettono attraverso il cloud, a più utenti di accedere allo stesso dato. Spesso permettono anche di lavorare direttamente online, ma in genere vengono usati per lo scambio di grandi documenti, quando si vuole dare accesso a documenti multipli o molto grandi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card glossary">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <svg class="icon">
+                <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-settings"></use>
+              </svg>
+              <span>File Sharing</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">MFA Multifactor authentication</h5>
+              <p class="card-text">In italiano Autenticazione a fattori Multipli. Tramite l'autenticazione a fattori multipli, oltre al nome utente (identificativo) e la passeord, ci verrà richiesto di fornire anche .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <h2 id="lesson-learnt">La lezione di oggi</h2>
+      <div class="callout callout-highlight note" style="max-width: 100% !important;">
+        <div class="callout-title"><svg class="icon"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-info-circle"></use></svg>Importante</div>
+        <p>da scrivere</p>
+
+      </div>
+
+      <h2 id="actions">Cosa devo fare?</h2>
+	  <div class="it-grid-list-wrapper">
+	          <div class="grid-row" style="justify-content: center;">
+      
+	  <div class="col-12 align-self-center tips">
+	                <div class="it-grid-item-wrapper">
+	                  <div class="img-responsive-wrapper">
+	                    <div class="img-responsive">
+	                      <div class="img-wrapper"><img src="tips/Tips_SA_5.png" alt="tips" title="Tips"></div>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+				  
+				 </div>
+				</div>
+      
+        <h2 id="links">Link di approfondimento</h2>
+        <div class="it-list-wrapper">
+          <ul class="it-list">
+            
+              <li>
+                <a href="https://www.comune.martis.ss.it/ente/avvisi/256" target="_blank">
+                  <div class="it-right-zone">
+                    <span class="text">Caso 1<em style="margin-top: 12gipx">Il Comune di Martis avvisa di fare attenzione ad una mail di phishing contenente un ransomware.</em></span>
+                    <span class="it-multiple">
+                      <span class="metadata">caso reale</span>
+                      <svg class="icon" style="margin-top: 8px">
+                        <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-code-circle"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            
+              <li>
+                <a href="http://www.comune.bracciano.rm.it/c058013/zf/index.php/servizi-aggiuntivi/index/index/idtesto/20120" target="_blank">
+                  <div class="it-right-zone">
+                    <span class="text">Caso 2<em style="margin-top: 12gipx">Una pagina di avviso del Comune di Bracciano - Allarmi Virus che mette in guardia gli utenti da infezioni (tra cui WannaCry) tramite email.</em></span>
+                    <span class="it-multiple">
+                      <span class="metadata">caso reale</span>
+                      <svg class="icon" style="margin-top: 8px">
+                        <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-code-circle"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://www.ilmessaggero.it/tecnologia/hitech/ransomware_virus_prendono_ostaggio_file-1624789.html" target="_blank">
+                  <div class="it-right-zone">
+                    <span class="text">News<em style="margin-top: 12gipx">Notizia del Messaggero sui ransomware. fa riferimento anche all&#39;infezione che ha contratto il comune di Alessandria.</em></span>
+                    <span class="it-multiple">
+                      <span class="metadata">notizia</span>
+                      <svg class="icon" style="margin-top: 8px">
+                        <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-code-circle"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+
+      <div class="goto_test">
+        <a href="https://teamdigitale.github.io/security-awareness/quiz/ep5" class="btn btn-primary">
+          Val al quiz
+          <svg class="icon icon-sm icon-white mr-2"><use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-arrow-right"></use></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+    
+<footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section class="py-4">
+        <div class="row">
+          <div class="col-lg-6 pb-4">
+            <h4><a>Un progetto di</a></h4>
+            <a href="https://teamdigitale.governo.it/">
+              <div class="d-flex">
+                <div class="d-flex footer-team">
+                  <img class="" src="https://teamdigitale.github.io/security-awareness/img/governo.svg" alt="">
+                  <img class="" src="https://teamdigitale.github.io/security-awareness/img/dt-logo.svg" alt="">
+                </div>
+                <div class="px-2 border-white border-left footer-team-text text-white">
+                  TEAM PER LA TRASFORMAZIONE DIGITALE
+                </div>
+              </div>
+            </a>
+
+            <p>&nbsp;</p>
+          
+            <div class="pb-4">
+              <h4><a>Seguici su</a></h4>
+              <ul class="list-inline text-left social">
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://github.com/teamdigitale/security-awareness" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-github"></use>
+                    </svg>
+                    <span class="sr-only">GitHub</span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.linkedin.com/company/teamdigitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-linkedin"></use>
+                    </svg>
+                    <span class="sr-only">LinkedIn</span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://medium.com/team-per-la-trasformazione-digitale" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-medium"></use>
+                    </svg>
+                    <span class="sr-only">Medium</span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://twitter.com/teamdigitaleIT" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-twitter"></use>
+                    </svg>
+                    <span class="sr-only">Twitter</span>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="https://www.youtube.com/channel/UCwOMMmrMXiktlvKXx4vHJ-g/" target="_blank">
+                    <svg class="icon icon-sm icon-white align-top">
+                      <use xlink:href="https://teamdigitale.github.io/security-awareness/svg/sprite.svg#it-youtube"></use>
+                    </svg>
+                    <span class="sr-only">YouTube</span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pb-4">
+            <h4><a>Security Awareness</a></h4>
+            <p>Un breve corso per la sicurezza digitale</p>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/" title="Home">Home</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/whoweare" title="Chi siamo">Chi siamo</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/why" title="Perchè questo corso?">Perchè questo corso?</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/episodes" title="Episodi">Episodi</a></li>
+                
+                  <li><a class="list-item" href="https://teamdigitale.github.io/security-awareness/quiz" title="Quiz">Quiz</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <h3 class="sr-only">Sezione Link Utili</h3>
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        
+        <li class="list-inline-item"><a href="https://teamdigitale.github.io/security-awareness/legal" title="Note legali">Note legali</a></li>
+        
+        <li class="list-inline-item"><a href="https://teamdigitale.github.io/security-awareness/privacy" title="Privacy Policy">Privacy Policy</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script>window.__PUBLIC_PATH__ = 'https:\/\/teamdigitale.github.io\/security-awareness\/fonts'</script>
+<script src="https://teamdigitale.github.io/security-awareness/js/bootstrap-italia.bundle.min.js"></script>
+</body>
+</html>
+
+  </body>
+</html>

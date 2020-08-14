@@ -96,8 +96,21 @@
       </div>
 
       <h2 id="actions">{{ ( .Page.Resources.GetMatch "actions.md" ).Params.name }}</h2>
-      {{ ( .Page.Resources.GetMatch "actions.md" ).Content }}
-
+	  <div class="it-grid-list-wrapper">
+	          <div class="grid-row" style="justify-content: center;">
+      {{ range ( .Page.Resources.GetMatch "actions.md" ).Params.tips }}
+	  <div class="col-12 align-self-center tips">
+	                <div class="it-grid-item-wrapper">
+	                  <div class="img-responsive-wrapper">
+	                    <div class="img-responsive">
+	                      <div class="img-wrapper"><img src="{{ . }}" alt="tips" title="Tips"></div>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+				  {{ end }}
+				 </div>
+				</div>
       {{ if ( .Page.Resources.GetMatch "links.md" ).Params.links }}
         <h2 id="links">{{ ( .Page.Resources.GetMatch "links.md" ).Params.name }}</h2>
         <div class="it-list-wrapper">

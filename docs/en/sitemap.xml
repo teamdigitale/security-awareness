@@ -59,6 +59,34 @@
   </url>
   
   <url>
+    <loc>https://teamdigitale.github.io/security-awareness/en/ep5/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://teamdigitale.github.io/security-awareness/ep5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://teamdigitale.github.io/security-awareness/en/ep5/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://teamdigitale.github.io/security-awareness/en/ep6/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://teamdigitale.github.io/security-awareness/ep6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://teamdigitale.github.io/security-awareness/en/ep6/"
+                />
+  </url>
+  
+  <url>
     <loc>https://teamdigitale.github.io/security-awareness/en/ep3/</loc>
     <xhtml:link
                 rel="alternate"
