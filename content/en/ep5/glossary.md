@@ -4,14 +4,14 @@ title: "File Sharing"
 terms:
   term-01:
     name: 'Cloud'
-    description: Cos’è il cloud? Qualcuno direbbe&colon; “Il computer di qualcun altro!”. In realtà dobbiamo immaginare il cloud come un insieme di molti computer che sono collegati fra loro in modo così stretto, da apparire un unico grande centro di elaborazione, di cui ogni utente utilizza solo una piccola parte. Ha diverse declinazioni, privato, ibrido e pubblico, ma la sua natura non cambia&colon; risorse condivise suddivise logicamente tra utenti diversi.
+    description: What is the cloud? Someone would say &colon; "Someone else's computer!". In reality we have to imagine the cloud as a set of many computers that are connected together so tightly, to appear a single large processing center, of which each user uses only a small part. It has different variations, private, hybrid and public, but its nature does not change &colon; shared resources logically divided between different users.
   term-02:
     name: 'Online document sharing'
-    description: I sistemi di “Condivisione di Documenti Online” o meglio di “Gestione Documentale”, sono sistemi che permettono attraverso il cloud, a più utenti di accedere allo stesso dato. Spesso permettono anche di lavorare direttamente online, ma in genere vengono usati per lo scambio di grandi documenti, quando si vuole dare accesso a documenti multipli o molto grandi.
+    description: The systems of "Online Document Sharing" or better of "Document Management", are systems that allow multiple users to access the same data through the cloud. Often they also allow you to work directly online, but generally they are used for the exchange of large documents, when you want to give access to multiple or very large documents.
   term-03:
     name: 'End-to-end encryption'
-    description: Sistema di cifratura per cui soltanto il mittente e il destinatario sono in grado di decifrare i dati. È molto importante se si vuole tenere i propri dati lontani da occhi indiscreti (terze parti).
-  term-03:
+    description: It's an ecnryption system that allows you to encrypt/decrypt data or messages only from authorized sender or receiver. It's extremely important if you want your data to remain secure and out of sight.
+  term-04:
     name: 'MFA Multifactor authentication'
-    description: In italiano Autenticazione a fattori Multipli. Tramite l'autenticazione a fattori multipli, oltre al nome utente (identificativo) e la passeord, ci verrà richiesto di fornire anche .
+    description: this system allows a user to get on in a system after doing several checks (two or more). For example in addition to username and password, we will be asked for another identity information. This may be a PIN number sent on your smartphone or randomly generated like a soft-token (for instance the system that you use to enter in your online bank account), or a smartcard. Furthermore, this requested information can be a physical characteristic of a user like fingerprint, hand scan, iris scan, etc...
 ---

@@ -12,6 +12,9 @@ terms:
     name: 'E-Commerce'
     description: "L'e-commerce, o commercio elettronico, è la tradizionale forma di acquisto di beni o servizi trasferita su internet. I siti di e-commerce sono dei veri e propri negozi onlinde dove le transazioni in denaro vengono effettuate in maniera completamente elettronica. Questo genere di siti e servizi possono essere particolarmente critici dal punto di vista della sicurezza, perché sono quelli su cui si utilizzano i propri dati personali e della propria carta di credito: per questo motivo sono quelli su  cui bisogna fare più attenzione."
   term-4:
+      name: 'URL'
+      description: "L'URL (Uniform Resource Locator) è uno degli elementi fondamentali del World Wide Web. Si tratta di quella stringa alfanumerica, composta da un numero variabile di caratteri, che identifica in maniera certa e univoca una risorsa di rete o sito internet, ad esempio www.cisco.com."
+  term-5:
     name: 'URL Shortening'
     description: "Gli URL Shortener sono degli strumenti online che permettono di comprimere e personalizzare gli URL, gli indirizzi usati per identificare i siti internet. Tramite questi strumenti è possibile accorciare link molto lunghi, composti da tantissimi caratteri, come <b>https;//www,sito.com/''?parametroUTM=tag20%xx20%valore&</b> in link molto più brevi come <b>http;//xyz.com/1234</b>, facili da ricordare e da utilizzare, ad esempio negli istant messaging o sui social.<br>
 	Purtroppo, come molti strumenti in rete, presentano anche una serie di svantaggi e possono essere utilizzati in modo malevolo, creando una serie di problem di sicurezza e di privacy: <br><br>

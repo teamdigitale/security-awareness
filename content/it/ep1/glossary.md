@@ -19,5 +19,5 @@ terms:
       </ul>
   term-4:
     name: 'Lavoro "da remoto"'
-    description: Lavoro legato alle proprie mansioni in azienda ma che, invece di essere svolto in sede, viene svolto da un qualsiasi altro luogo, appunto "remotamente". Va posta particolare attenzione a questo tipo di lavoro, sia nel trasferimento dei dati su cui si lavora, che potrebbe non essere sicuro, sia perchè qualsiasi altra postazione differente dall'azienda potrebbe non avere le stesse dinamiche di sicurezza.
+    description: Lavoro legato alle proprie mansioni in azienda che, invece di essere svolto in sede, viene svolto da un qualsiasi altro luogo, appunto "da remoto". Va posta particolare attenzione a questo tipo di lavoro, sia nel trasferimento dei dati su cui si lavora, che potrebbe non essere sicuro, sia perchè qualsiasi altra postazione differente dall'azienda potrebbe non avere le stesse dinamiche di sicurezza.
 ---

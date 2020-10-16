@@ -5,7 +5,7 @@ links:
     url: 
     src: caso reale
     text: Caso 1
-    caption: Nel 2011 due differenti email sono state spedite a due piccoli gruppi di impiegati presso la RSA Security (allora divisione di EMC), nota azienda specializzata in sicurezza informatica. Le email, spedite durante nell’arco di due giorni, avevano come oggetto “2011 Recruitment Plan” (Piano assunzioni 2011) e come allegato un file excel. Almeno uno dei dipendenti ha aperto il file e sul suo PC è stato installato un programma che ha permesso agli attaccanti di connettersi da remoto e di fare danni all’azienda per diversi milioni di dollari.
+    caption: Nel 2011 due differenti email sono state spedite a due piccoli gruppi di impiegati presso la RSA Security (allora divisione di EMC), nota azienda specializzata in sicurezza informatica. Le email, spedite nell’arco di due giorni, avevano come oggetto “2011 Recruitment Plan” (Piano assunzioni 2011) e come allegato un file excel. Almeno uno dei dipendenti ha aperto il file e sul suo PC è stato installato un programma che ha permesso agli attaccanti di connettersi da remoto e di fare danni all’azienda per diversi milioni di dollari.
   link-2:
     url: 
     src: caso reale
