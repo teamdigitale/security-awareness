@@ -10,8 +10,8 @@ terms:
     description: The systems of "Online Document Sharing" or better of "Document Management", are systems that allow multiple users to access the same data through the cloud. Often they also allow you to work directly online, but generally they are used for the exchange of large documents, when you want to give access to multiple or very large documents.
   term-03:
     name: 'End-to-end encryption'
-    description: Sistema di cifratura per cui soltanto il mittente e il destinatario sono in grado di decifrare i dati. È molto importante se si vuole tenere i propri dati lontani da occhi indiscreti (terze parti).
+    description: It's an ecnryption system that allows you to encrypt/decrypt data or messages only from authorized sender or receiver. It's extremely important if you want your data to remain secure and out of sight.
   term-04:
     name: 'MFA Multifactor authentication'
-    description: In italiano Autenticazione a fattori Multipli. Tramite l'autenticazione a fattori multipli, oltre al nome utente (identificativo) e la passeord, ci verrà richiesto di fornire anche .
+    description: this system allows a user to get on in a system after doing several checks (two or more). For example in addition to username and password, we will be asked for another identity information. This may be a PIN number sent on your smartphone or randomly generated like a soft-token (for instance the system that you use to enter in your online bank account), or a smartcard. Furthermore, this requested information can be a physical characteristic of a user like fingerprint, hand scan, iris scan, etc...
 ---
