@@ -19,7 +19,7 @@ Per sicurezza dai dati delle informazioni intendiamo:
 - **integrità** - i dati e le informazioni devono essere preservati integri e completi;
 - **disponibilità** - la possibilità, per i soggetti autorizzati, di poter accedere alle risorse necessarie nei tempi e nei modi stabiliti.
 
-Se da un lato le tecnologie di sicurezza (Antivirus, Firewall, IPS) ti aiutano a proteggere i dati e le informazioni (nel tuo computer, nello smartphone o nel pc in ufficio), dall’altro la formazione è fondamentale: statistiche rivelano che circa **l’80 per cento degli incidenti informatici è dovuto a errore umano!** 
+Se da un lato le tecnologie di sicurezza (Antivirus, Firewall, IPS) ti aiutano a proteggere i dati e le informazioni (nel tuo computer, nello smartphone o nel pc in ufficio), dall’altro la formazione dell'utente è fondamentale: statistiche rivelano che circa **l’80 per cento degli incidenti informatici è dovuto a errore umano!** 
 L’errore purtroppo è sempre dietro l’angolo, pertanto i rischi dovuti al comportamento delle persone non possono essere eliminati del tutto. Ma, aumentare la consapevolezza sulla sicurezza informatica può **aiutare a "diminuire la superficie di attacco"** e ad essere in grado di gestire nel modo migliore le tue informazioni, sia a casa che a lavoro.
 
 In altre parole: **tu sei l’anello più importante per la protezione dei dati** e delle informazioni. Sei pronto a diventare un supereroe della sicurezza informatica? 

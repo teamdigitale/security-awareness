@@ -5,7 +5,7 @@ links:
     url: https://www.money.it/Truffa-INPS-bonifico-880-euro-attenzione-false-email-telefonate
     src: money.it
     text: Approfondimento 1
-    caption: Una truffa in cui false mail e telefonate chiedevano alle vittime di versare dei soldi tramite un bonifico link c’è un riferimento oltre al phishing, anche a telefonate che sono arrivate alle vittime
+    caption: Una truffa in cui false mail e telefonate proponevano alle vittime un versamento a loro favore tramite un bonifico, prima però avrebbero dovuto modificare le credenziali tramite un link. C’è un riferimento, oltre al phishing, anche a telefonate che sono arrivate alle vittime
   link-2:
     url: https://assistenza.subito.it/hc/it/articles/360000743637-Telefonate-FINTO-Operatore-Subito 
     src: subito.it

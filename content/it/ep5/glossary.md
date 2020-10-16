@@ -13,5 +13,5 @@ terms:
     description: Sistema di cifratura per cui soltanto il mittente e il destinatario sono in grado di decifrare i dati. È molto importante se si vuole tenere i propri dati lontani da occhi indiscreti (terze parti).
   term-03:
     name: 'MFA Multifactor authentication'
-    description: In italiano Autenticazione a fattori Multipli. Tramite l'autenticazione a fattori multipli, oltre al nome utente (identificativo) e la passeord, ci verrà richiesto di fornire anche .
+    description: In italiano Autenticazione a fattori Multipli. Tramite l'autenticazione a fattori multipli, oltre al nome utente (identificativo) e la password, ci verrà richiesto di fornire anche un altro dato in nostro e solo nostro possesso. Questo dato può essere, ad esempio un oggetto posseduto come un pin, che verrà inviato sul nostro telefono o generato randomicamente ogni volta tramite un device conosciuto come 'token', o una Smartcard. Altre volte, questo dato, può riferirsi ad una caratteristica fisica come un'impronta digitale o del palmo della mano, la scansione della retina o dell'iride, ecc...
 ---

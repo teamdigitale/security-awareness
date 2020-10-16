@@ -5,7 +5,7 @@ layout: "timeline"
 ---
 
 <h1 class="home">Basic course on security awareness</h1>
-<h2 class="home">Course for civic servants</h2>
+<h2 class="home">Course for civil servants</h2>
 
 <center><img src="{{% baseurl %}}img/picture-home.png" %}}" style="width: 70%" /></center>
 
